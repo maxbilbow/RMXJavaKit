@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RMXJavaKit.iml" filepath="$PROJECT_DIR$/RMXJavaKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-core/rmx-core.iml" filepath="$PROJECT_DIR$/rmx-core/rmx-core.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-debug/rmx-debug.iml" filepath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-engine/rmx-engine.iml" filepath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-engine-gl/rmx-engine-gl.iml" filepath="$PROJECT_DIR$/rmx-engine-gl/rmx-engine-gl.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" group="RMXJavaKit" />
     </modules>
   </component>
 </project>
