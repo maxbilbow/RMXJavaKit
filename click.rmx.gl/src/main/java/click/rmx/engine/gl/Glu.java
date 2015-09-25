@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 public interface Glu {
 	public void display();
 	public void mousePassive(int x, int y);

@@ -1,6 +1,6 @@
-package behaviours;
+package click.rmx.engine.behaviours;
 
-import Node;
+import click.rmx.engine.Node;
 import click.rmx.engine.Scene;
 import click.rmx.engine.Transform;
 

@@ -1,14 +1,14 @@
-import javax.vecmath.AxisAngle4f;
-import javax.vecmath.Quat4f;
-import javax.vecmath.Vector3f;
+package click.rmx.engine;
 
-import click.rmx.Bugger;
+
+
+import click.rmx.debug.Bugger;
+import click.rmx.engine.math.Quat4;
+import click.rmx.engine.physics.PhysicsBody;
 import click.rmx.engine.math.EulerAngles;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Vector3;
-import physics.CollisionBody;
-import physics.PhysicsBody;
-
+import click.rmx.engine.physics.CollisionBody;
 
 
 public class Transform extends ANodeComponent {
@@ -19,7 +19,7 @@ public class Transform extends ANodeComponent {
 	private final Matrix4 _worldMatrix;
 	private final Matrix4 _axis;
 	private final Matrix4 _localMatrix;
-	private final Quat4f  _quaternion = new Quat4f();
+	private final Quat4 _quaternion = new Quat4();
 	private final Vector3 _left = new Vector3();
 	private final Vector3 _up = new Vector3();
 	private final Vector3 _fwd = new Vector3();

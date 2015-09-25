@@ -1,6 +1,4 @@
-package messages;
-
-import click.rmx.core.IRMXObject;
+package click.rmx.core;
 
 public interface KeyValueObserver {
 	void onValueForKeyWillChange(String key, Object value, IRMXObject sender);

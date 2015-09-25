@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 import static org.lwjgl.glfw.GLFW.*;
 //import static org.lwjgl.glfw.GLFW.GLFW_RELEASE;
 import static org.lwjgl.opengl.GL11.GL_TRUE;
@@ -5,12 +7,9 @@ import static org.lwjgl.opengl.GL11.GL_TRUE;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.lwjgl.glfw.GLFWKeyCallback;
-
 import click.rmx.engine.GameController;
 import click.rmx.engine.Nodes;
-
-
+import org.lwjgl.glfw.GLFWKeyCallback;
 
 
 public class KeyCallback extends GLFWKeyCallback {

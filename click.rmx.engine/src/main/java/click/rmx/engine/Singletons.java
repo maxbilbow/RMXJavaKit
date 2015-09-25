@@ -1,3 +1,5 @@
+package click.rmx.engine;
+
 public class Singletons {
 
 //	static bool _gameControllerInitialized = false;

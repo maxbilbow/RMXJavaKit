@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 import static org.lwjgl.opengl.GL11.*;
 
 import java.nio.FloatBuffer;
@@ -5,12 +7,11 @@ import java.util.Map;
 import java.util.Set;
 
 import click.rmx.engine.Scene;
-import click.rmx.math.Matrix4;
-import org.lwjgl.BufferUtils;
-
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.geometry.Shapes;
+import click.rmx.engine.math.Matrix4;
+import org.lwjgl.BufferUtils;
 
 
 //import org.lwjgl.util.glu.GLU;

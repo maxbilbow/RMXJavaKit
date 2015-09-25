@@ -1,7 +1,10 @@
+package click.rmx.engine;
+
 import static org.lwjgl.opengl.GL11.*;
 
-import click.rmx.gl.GLView;
+import click.rmx.engine.gl.GLView;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.gl.GLView;
 
 public class Camera extends ANodeComponent {
 	private float fovX, fovY, nearZ, farZ, aspect;

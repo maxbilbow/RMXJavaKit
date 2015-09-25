@@ -1,9 +1,12 @@
+package click.rmx.engine;
+
 import java.lang.ref.ReferenceQueue;
 import java.util.List;
 
 import static click.rmx.Tests.*;
 import click.rmx.WeakObject;
-import behaviours.IBehaviour;
+import click.rmx.core.WeakObject;
+import click.rmx.engine.behaviours.IBehaviour;
 import click.rmx.engine.math.Matrix4;
 
 public class WeakNode extends WeakObject<Node> implements Node {

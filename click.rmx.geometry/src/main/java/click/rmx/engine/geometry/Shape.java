@@ -1,9 +1,11 @@
-import java.nio.Buffer;
-import java.nio.ByteBuffer;
-import java.nio.FloatBuffer;
+package click.rmx.engine.geometry;
 
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.ARBVertexAttribBinding;
+
+import java.nio.Buffer;
+import java.nio.ByteBuffer;
+import java.nio.FloatBuffer;
 
 import static org.lwjgl.system.MemoryUtil.memAddress;
 public interface Shape {

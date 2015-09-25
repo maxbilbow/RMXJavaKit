@@ -1,8 +1,9 @@
-import org.lwjgl.glfw.GLFWCursorPosCallback;
+package click.rmx.engine.gl;
 
 import click.rmx.engine.GameController;
 import click.rmx.engine.Nodes;
-import click.rmx.math.Vector3;
+import click.rmx.engine.math.Vector3;
+import org.lwjgl.glfw.GLFWCursorPosCallback;
 
 public class CursorCallback extends GLFWCursorPosCallback {
 //	void center();

@@ -1,10 +1,10 @@
-package messages;
+package click.rmx.core;
+
+import click.rmx.debug.Bugger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import debug.Bugger;
 
 
 public final class NotificationCenter {

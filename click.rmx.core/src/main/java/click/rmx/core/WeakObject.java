@@ -1,3 +1,5 @@
+package click.rmx.core;
+
 import click.rmx.messages.KeyValueObserver;
 
 import java.lang.ref.ReferenceQueue;

@@ -1,7 +1,6 @@
-import java.lang.reflect.InvocationTargetException;
+package click.rmx.core;
 
-import messages.IEventListener;
-import messages.KeyValueObserver;
+import java.lang.reflect.InvocationTargetException;
 
 public interface IRMXObject extends IEventListener, KeyValueObserver, Categorizable  {
 

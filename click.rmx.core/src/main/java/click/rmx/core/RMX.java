@@ -1,3 +1,7 @@
+package click.rmx.core;
+
+import click.rmx.debug.Tests;
+
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.util.HashMap;
@@ -40,7 +44,7 @@ public final class RMX {
 	}
 
 	public static void rmxTodo() {
-		Tests.note(null,1);
+		Tests.note(null, 1);
 	}
 
 	private static HashMap<String,Integer> liveObjects = new HashMap<>();

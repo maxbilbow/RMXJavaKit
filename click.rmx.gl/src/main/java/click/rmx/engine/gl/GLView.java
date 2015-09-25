@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 import static org.lwjgl.glfw.GLFW.GLFW_RESIZABLE;
 import static org.lwjgl.glfw.GLFW.GLFW_VISIBLE;
 import static org.lwjgl.glfw.GLFW.glfwCreateWindow;
@@ -18,6 +20,7 @@ import static org.lwjgl.system.MemoryUtil.NULL;
 
 import java.nio.ByteBuffer;
 
+import click.rmx.engine.Node;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWWindowSizeCallback;
 import org.lwjgl.glfw.GLFWvidmode;
@@ -25,7 +28,6 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GLContext;
 
 import click.rmx.Bugger;
-import click.rmx.engine.Node;
 
 public interface GLView {
 	void setWindowSizeCallback(GLFWWindowSizeCallback cbfun);

@@ -1,13 +1,11 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Stream;
+package click.rmx.engine;
 
-import click.rmx.RMXObject;
-import behaviours.IBehaviour;
+import click.rmx.core.RMXObject;
+import click.rmx.engine.behaviours.IBehaviour;
 import click.rmx.engine.math.Matrix4;
+
+import java.util.*;
+import java.util.stream.Stream;
 
 
 public class GameNode extends RMXObject implements Node {

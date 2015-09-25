@@ -1,3 +1,5 @@
+package click.rmx.engine;
+
 import static org.lwjgl.opengl.GL11.*;
 
 import click.rmx.engine.math.Vector3;

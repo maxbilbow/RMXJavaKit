@@ -1,4 +1,7 @@
+package click.rmx.engine;
+
 import click.rmx.RMXObject;
+import click.rmx.core.RMXObject;
 
 public abstract class ANodeComponent extends RMXObject implements NodeComponent {
 	private boolean enabled = true;

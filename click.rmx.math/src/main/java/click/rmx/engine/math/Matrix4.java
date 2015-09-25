@@ -1,3 +1,5 @@
+package click.rmx.engine.math;
+
 import java.nio.FloatBuffer;
 
 import javax.vecmath.Matrix4f;

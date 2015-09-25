@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 public class Mesh {
 //	public Vector3[] vertices;
 //	public Vector3[] colors;

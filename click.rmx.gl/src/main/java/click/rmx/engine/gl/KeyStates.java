@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 import java.util.HashMap;
 
 public final class KeyStates extends HashMap<Integer,Boolean> {

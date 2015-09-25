@@ -1,13 +1,14 @@
+package click.rmx.engine.geometry;
+
 import static org.lwjgl.opengl.GL11.*;
 
-import org.lwjgl.opengl.GL11;
-
+import click.rmx.core.NotificationCenter;
 import click.rmx.engine.ANodeComponent;
 import click.rmx.engine.Node;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Vector3;
 import click.rmx.engine.math.Vector4;
-import click.rmx.messages.NotificationCenter;
+import org.lwjgl.opengl.GL11;
 
 //@Categorizable(category = Categories.GEOMETRY)
 public class GeometryImpl extends ANodeComponent implements Geometry {

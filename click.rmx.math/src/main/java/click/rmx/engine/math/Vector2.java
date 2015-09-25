@@ -1,8 +1,4 @@
-import java.nio.FloatBuffer;
-
-import javax.vecmath.Vector4f;
-
-/*
+package click.rmx.engine.math;/*
  * The MIT License (MIT)
  *
  * Copyright © 2015, Heiko Brumme
@@ -27,44 +23,40 @@ import javax.vecmath.Vector4f;
  */
 
 
+import java.nio.FloatBuffer;
+
+import javax.vecmath.Vector2f;
+
 import org.lwjgl.BufferUtils;
 
 /**
- * This class represents a (x,y,z,w)-Vector. GLSL equivalent to vec4.
+ * This class represents a (x,y)-Vector. GLSL equivalent to vec2.
  *
  * @author Heiko Brumme
  */
-public class Vector4 extends Vector4f {
+public class Vector2 extends Vector2f {
 
-    public static final Vector4 Zero = new Vector4();
-	public float x;
-    public float y;
-    public float z;
-    public float w;
 
     /**
-     * Creates a default 4-tuple vector with all values set to 0.
+	 * 
+	 */
+	private static final long serialVersionUID = 6601387796955602745L;
+
+	/**
+     * Creates a default 2-tuple vector with all values set to 0.
      */
-    public Vector4() {
-        this.x = 0f;
-        this.y = 0f;
-        this.z = 0f;
-        this.w = 0f;
+    public Vector2() {
+    	super();
     }
 
     /**
-     * Creates a 4-tuple vector with specified values.
+     * Creates a 2-tuple vector with specified values.
      *
      * @param x x value
      * @param y y value
-     * @param z z value
-     * @param w w value
      */
-    public Vector4(float x, float y, float z, float w) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.w = w;
+    public Vector2(float x, float y) {
+        super(x,y);
     }
 
     /**
@@ -73,7 +65,7 @@ public class Vector4 extends Vector4f {
      * @return Squared length of this vector
      */
     public float getLengthSquared() {
-        return x * x + y * y + z * z + w * w;
+        return x * x + y * y;
     }
 
     /**
@@ -90,7 +82,7 @@ public class Vector4 extends Vector4f {
      *
      * @return Normalized vector
      */
-    public Vector4 getNormalized() {
+    public Vector2 getNormalized() {
         float length = length();
         return divide(length);
     }
@@ -101,12 +93,10 @@ public class Vector4 extends Vector4f {
      * @param other The other vector
      * @return Sum of this + other
      */
-    public Vector4 add(Vector4 other) {
+    public Vector2 getSum(Vector2f other) {
         float x = this.x + other.x;
         float y = this.y + other.y;
-        float z = this.z + other.z;
-        float w = this.w + other.w;
-        return new Vector4(x, y, z, w);
+        return new Vector2(x, y);
     }
 
     /**
@@ -114,8 +104,8 @@ public class Vector4 extends Vector4f {
      *
      * @return Negated vector
      */
-    public Vector4 getNegated() {
-        return getScale(-1f);
+    public Vector2 getNegated() {
+        return getScaled(-1f);
     }
 
     /**
@@ -124,8 +114,8 @@ public class Vector4 extends Vector4f {
      * @param other The other vector
      * @return Difference of this - other
      */
-    public Vector4 subtract(Vector4 other) {
-        return this.add(other.getNegated());
+    public Vector2 getSubtraction(Vector2 other) {
+        return getSum(other.getNegated());
     }
 
     /**
@@ -134,12 +124,10 @@ public class Vector4 extends Vector4f {
      * @param scalar Scalar to multiply
      * @return Scalar product of this * scalar
      */
-    public Vector4 getScale(float scalar) {
+    public Vector2 getScaled(float scalar) {
         float x = this.x * scalar;
         float y = this.y * scalar;
-        float z = this.z * scalar;
-        float w = this.w * scalar;
-        return new Vector4(x, y, z, w);
+        return new Vector2(x, y);
     }
 
     /**
@@ -148,8 +136,8 @@ public class Vector4 extends Vector4f {
      * @param scalar Scalar to multiply
      * @return Scalar quotient of this / scalar
      */
-    public Vector4 divide(float scalar) {
-        return getScale(1f / scalar);
+    public Vector2 divide(float scalar) {
+        return getScaled(1f / scalar);
     }
 
     /**
@@ -158,8 +146,8 @@ public class Vector4 extends Vector4f {
      * @param other The other vector
      * @return Dot product of this * other
      */
-    public float dot(Vector4 other) {
-        return this.x * other.x + this.y * other.y + this.z * other.z + this.w * other.w;
+    public float dot(Vector2 other) {
+        return this.x * other.x + this.y * other.y;
     }
 
     /**
@@ -170,8 +158,8 @@ public class Vector4 extends Vector4f {
      * @param alpha The alpha value, must be between 0.0 and 1.0
      * @return Linear interpolated vector
      */
-    public Vector4 lerp(Vector4 other, float alpha) {
-        return this.getScale(1f - alpha).add(other.getScale(alpha));
+    public Vector2 lerp(Vector2 other, float alpha) {
+        return this.getScaled(1f - alpha).getSum(other.getScaled(alpha));
     }
 
     /**
@@ -180,8 +168,8 @@ public class Vector4 extends Vector4f {
      * @return Vector as FloatBuffer
      */
     public FloatBuffer getBuffer() {
-        FloatBuffer buffer = BufferUtils.createFloatBuffer(4);
-        buffer.put(x).put(y).put(z).put(w);
+        FloatBuffer buffer = BufferUtils.createFloatBuffer(2);
+        buffer.put(x).put(y);
         buffer.flip();
         return buffer;
     }

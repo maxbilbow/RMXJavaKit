@@ -1,9 +1,13 @@
+package click.rmx.engine;
+
 import java.util.stream.Stream;
 
 import click.rmx.Bugger;
 import click.rmx.RMXObject;
+import click.rmx.core.RMXObject;
+import click.rmx.engine.gl.RenderDelegate;
 import click.rmx.engine.math.Matrix4;
-import physics.PhysicsWorld;
+import click.rmx.engine.physics.PhysicsWorld;
 import click.rmx.gl.RenderDelegate;
 
 

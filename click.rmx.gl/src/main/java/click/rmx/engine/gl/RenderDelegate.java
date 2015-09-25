@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 public interface RenderDelegate {
 	public void updateBeforeSceneLogic(Object... args);
 	public void updateBeforeSceneRender(Object... args);

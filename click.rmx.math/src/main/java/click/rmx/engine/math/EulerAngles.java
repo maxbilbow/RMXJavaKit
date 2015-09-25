@@ -1,3 +1,5 @@
+package click.rmx.engine.math;
+
 public class EulerAngles extends Vector3 {
 	
 //	public EulerAngles(float x, float y, float z) {

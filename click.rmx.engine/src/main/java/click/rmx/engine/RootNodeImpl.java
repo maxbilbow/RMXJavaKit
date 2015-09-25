@@ -1,15 +1,17 @@
-import static click.rmx.RMX.rmxObjectCount;
+package click.rmx.engine;
+
+import click.rmx.core.Categories;
+import click.rmx.engine.geometry.Geometry;
+import click.rmx.engine.geometry.GeometryImpl;
+import click.rmx.engine.geometry.Shape;
+import com.sun.istack.internal.NotNull;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.sun.istack.internal.NotNull;
-
-import click.rmx.Categories;
-import click.rmx.engine.geometry.Geometry;
-import click.rmx.engine.geometry.GeometryImpl;
-import click.rmx.engine.geometry.Shape;
+import static click.rmx.core.RMX.rmxObjectCount;
 
 public class RootNodeImpl extends GameNode implements RootNode {
 

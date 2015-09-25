@@ -1,4 +1,6 @@
-import click.rmx.messages.IMessageable;
+package click.rmx.engine;
+
+import click.rmx.core.IMessageable;
 
 public interface NodeComponent extends IMessageable {
 

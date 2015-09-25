@@ -1,3 +1,5 @@
+package click.rmx.engine;
+
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_W;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_S;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_A;
@@ -7,6 +9,8 @@ import static org.lwjgl.glfw.GLFW.GLFW_KEY_E;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_X;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_Z;
 
+import click.rmx.core.RMXObject;
+import click.rmx.engine.gl.*;
 import click.rmx.gl.*;
 import gl.*;
 import org.lwjgl.glfw.GLFW;

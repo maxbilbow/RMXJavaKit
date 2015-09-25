@@ -1,8 +1,9 @@
-/**
+package click.rmx.engine; /**
  * 
  */
 
 import click.rmx.RMXObject;
+import click.rmx.core.RMXObject;
 
 
 /**

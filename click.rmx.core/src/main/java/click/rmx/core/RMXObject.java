@@ -1,14 +1,13 @@
-import java.util.LinkedList;
-import java.util.Map.Entry;
-import java.util.Set;
+package click.rmx.core;
 
-import messages.IEventListener;
-import messages.KeyValueObserver;
-import messages.NotificationCenter;
+import click.rmx.debug.Bugger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class RMXObject  implements IRMXObject {
 	private HashMap<String, Object> values = new HashMap<String, Object> ();

@@ -1,9 +1,11 @@
+package click.rmx.engine.geometry;
+
 import click.rmx.core.Categories;
 import click.rmx.core.Categorizable;
 import click.rmx.engine.NodeComponent;
-import click.rmx.math.Matrix4;
-import click.rmx.math.Vector3;
-import click.rmx.math.Vector4;
+import click.rmx.engine.math.Matrix4;
+import click.rmx.engine.math.Vector3;
+import click.rmx.engine.math.Vector4;
 import com.sun.istack.internal.NotNull;
 
 //@Categorizable(category = Categories.GEOMETRY)

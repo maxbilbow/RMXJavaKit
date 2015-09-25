@@ -1,4 +1,4 @@
-package messages;
+package click.rmx.core;
 
 public enum EventStatus {
 

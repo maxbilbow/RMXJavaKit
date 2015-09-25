@@ -1,3 +1,5 @@
+package click.rmx.engine.gl;
+
 import static org.lwjgl.glfw.Callbacks.errorCallbackPrint;
 import static org.lwjgl.glfw.GLFW.glfwPollEvents;
 import static org.lwjgl.glfw.GLFW.glfwSetCursorPosCallback;
@@ -14,16 +16,16 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.LinkedList;
 
-import click.rmx.math.Vector4;
-import org.lwjgl.glfw.GLFWErrorCallback;
-import org.lwjgl.glfw.GLFWWindowSizeCallback;
-
-import click.rmx.Bugger;
 import click.rmx.core.RMXObject;
 import click.rmx.engine.Camera;
 import click.rmx.engine.Node;
 import click.rmx.engine.Nodes;
 import click.rmx.engine.Scene;
+import click.rmx.engine.math.Vector4;
+import org.lwjgl.glfw.GLFWErrorCallback;
+import org.lwjgl.glfw.GLFWWindowSizeCallback;
+
+import click.rmx.Bugger;
 import click.rmx.engine.behaviours.Behaviour;
 
 public abstract class GameView extends RMXObject implements GLView {

@@ -1,4 +1,4 @@
-package behaviours;
+package click.rmx.engine.behaviours;
 
 public @interface Warning {
 

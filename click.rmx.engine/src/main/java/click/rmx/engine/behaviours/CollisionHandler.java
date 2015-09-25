@@ -1,6 +1,6 @@
-package behaviours;
+package click.rmx.engine.behaviours;
 
-import physics.CollisionEvent;
+import click.rmx.engine.physics.CollisionEvent;
 
 public abstract class CollisionHandler extends Behaviour implements ICollisionHandler {
 

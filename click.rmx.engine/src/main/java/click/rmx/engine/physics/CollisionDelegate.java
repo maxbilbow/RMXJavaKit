@@ -1,4 +1,4 @@
-package physics;
+package click.rmx.engine.physics;
 
 import click.rmx.engine.Node;
 

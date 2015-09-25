@@ -1,4 +1,4 @@
-package behaviours;
+package click.rmx.engine.behaviours;
 
 import click.rmx.engine.ANodeComponent;
 import click.rmx.engine.math.Vector3;

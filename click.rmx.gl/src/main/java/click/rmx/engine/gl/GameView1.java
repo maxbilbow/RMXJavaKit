@@ -1,10 +1,11 @@
+package click.rmx.engine.gl;
+
+import click.rmx.core.RMX;
 import click.rmx.engine.Scene;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.*;
 //import org.lwjgl.util.Display;
 //import org.lwjgl.util.glu.GLU;
-
-import click.rmx.core.RMX;
 
 import java.nio.FloatBuffer;
 import static org.lwjgl.opengl.GL11.*;

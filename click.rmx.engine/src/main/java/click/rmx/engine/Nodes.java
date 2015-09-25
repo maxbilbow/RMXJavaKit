@@ -1,12 +1,14 @@
+package click.rmx.engine;
+
 import java.util.Collection;
 import java.util.stream.Stream;
 
-import behaviours.Behaviour;
-import behaviours.CameraBehaviour;
-import behaviours.IBehaviour;
+import click.rmx.engine.behaviours.Behaviour;
+import click.rmx.engine.behaviours.CameraBehaviour;
+import click.rmx.engine.behaviours.IBehaviour;
 import click.rmx.engine.geometry.Shapes;
+import click.rmx.engine.physics.PhysicsBody;
 import click.rmx.engine.math.Tools;
-import physics.PhysicsBody;
 
 public final class Nodes {
 //	public static Node newWeakNode() {

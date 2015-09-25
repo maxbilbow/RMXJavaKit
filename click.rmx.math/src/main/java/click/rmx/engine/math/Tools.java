@@ -1,3 +1,5 @@
+package click.rmx.engine.math;
+
 import static java.lang.Math.random;
 
 public final class Tools {

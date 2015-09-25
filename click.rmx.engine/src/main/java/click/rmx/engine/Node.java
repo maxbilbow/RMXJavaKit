@@ -1,13 +1,15 @@
-import java.util.List;
-import java.util.Set;
+package click.rmx.engine;
 
-import click.rmx.IRMXObject;
+import click.rmx.core.IRMXObject;
 import click.rmx.engine.behaviours.IBehaviour;
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.math.Matrix4;
-import physics.CollisionBody;
-import physics.PhysicsBody;
+import click.rmx.engine.physics.CollisionBody;
+import click.rmx.engine.physics.PhysicsBody;
+
+import java.util.List;
+import java.util.Set;
 
 public interface Node extends IRMXObject {
 

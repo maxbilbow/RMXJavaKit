@@ -1,4 +1,6 @@
-import click.rmx.math.Vector3;
+package click.rmx.engine.gl;
+
+import click.rmx.engine.math.Vector3;
 
 abstract class MoveableObject
 {
