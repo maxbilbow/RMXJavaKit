@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="rmx-core:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/rmx_core_jar</output-path>
+    <root id="archive" name="rmx-core.jar">
+      <element id="module-output" name="rmx-core" />
+      <element id="module-output" name="rmx-debug" />
+    </root>
+  </artifact>
+</component>
