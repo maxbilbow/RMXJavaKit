@@ -1,15 +1,17 @@
 package click.rmx.engine.components;
 
 import click.rmx.engine.Scene;
-import click.rmx.engine.actors.behaviours.Behaviour;
-import click.rmx.engine.actors.behaviours.CameraBehaviour;
-import click.rmx.engine.actors.behaviours.IBehaviour;
+
+import click.rmx.engine.behaviour.CameraBehaviour;
+import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Shapes;
 import click.rmx.engine.math.Tools;
 import click.rmx.engine.physics.PhysicsBody;
 
 import java.util.Collection;
 import java.util.stream.Stream;
+
+import static click.rmx.engine.behaviour.Ai.*;
 
 
 public final class Nodes {
@@ -69,11 +71,11 @@ public final class Nodes {
 	public static Node randomAiNode() {
 		Stream stream;
 		
-			@SuppressWarnings("unchecked")
+
 			Collection<Node> nodes =  Scene.getCurrent().rootNode().getChildren();//.clone();
 
 			stream = nodes.stream().filter(n -> {
-				return n.getValue(Behaviour.GET_AI_STATE) == null;
+				return n.getValue(GET_AI_STATE) == null;
 			});
 		
 //		nodes.stream()

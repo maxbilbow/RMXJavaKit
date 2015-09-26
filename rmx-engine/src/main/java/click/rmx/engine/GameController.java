@@ -5,7 +5,7 @@ import click.rmx.debug.Bugger;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.components.Nodes;
 import click.rmx.engine.gl.*;
-import org.lwjgl.glfw.GLFW;
+//import org.lwjgl.glfw.GLFW;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -56,7 +56,7 @@ public abstract class GameController extends RMXObject implements RenderDelegate
         @Override
 	public void run() {
 //        
-       System.out.println("Hello LWJGL " + GLFW.glfwGetVersionString() + "!");
+//       System.out.println("Hello LWJGL " + GLFW.glfwGetVersionString() + "!");
        Bugger.log("Setup GameController");
       
        this.view.run();

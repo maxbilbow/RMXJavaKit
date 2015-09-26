@@ -1,7 +1,8 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.IRMXObject;
-import click.rmx.engine.actors.behaviours.IBehaviour;
+
+import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.math.Matrix4;

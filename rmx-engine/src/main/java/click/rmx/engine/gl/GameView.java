@@ -27,7 +27,7 @@ import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWWindowSizeCallback;
 
 import click.rmx.debug.Bugger;
-import click.rmx.engine.actors.behaviours.Behaviour;
+import click.rmx.engine.behaviour.Behaviour;
 
 public abstract class GameView extends RMXObject implements GLView {
 

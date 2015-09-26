@@ -1,7 +1,7 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.WeakObject;
-import click.rmx.engine.actors.behaviours.IBehaviour;
+import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
 
 import java.lang.ref.ReferenceQueue;

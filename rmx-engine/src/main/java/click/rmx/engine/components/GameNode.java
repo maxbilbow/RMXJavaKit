@@ -2,7 +2,7 @@ package click.rmx.engine.components;
 
 import click.rmx.core.RMXObject;
 import click.rmx.engine.Scene;
-import click.rmx.engine.actors.behaviours.IBehaviour;
+import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
 
 import java.util.*;
