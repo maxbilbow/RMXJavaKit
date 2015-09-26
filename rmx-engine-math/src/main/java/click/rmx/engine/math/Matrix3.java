@@ -29,8 +29,6 @@ import javax.vecmath.Matrix3f;
  */
 
 
-import org.lwjgl.BufferUtils;
-
 /**
  * This class represents a 3x3-Matrix. GLSL equivalent to mat3.
  *
@@ -42,9 +40,9 @@ public class Matrix3 extends Matrix3f {
 	 * 
 	 */
 	private static final long serialVersionUID = -7421289732835841419L;
-	private float m00, m01, m02;
-    private float m10, m11, m12;
-    private float m20, m21, m22;
+	protected float m00, m01, m02;
+    protected float m10, m11, m12;
+    protected float m20, m21, m22;
 
     /**
      * Creates a 3x3 identity matrix.
@@ -202,32 +200,6 @@ public class Matrix3 extends Matrix3f {
         return result;
     }
 
-    /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-    public FloatBuffer rowBuffer() {
-        FloatBuffer buffer = BufferUtils.createFloatBuffer(9);
-        buffer.put(m00).put(m01).put(m02);
-        buffer.put(m10).put(m11).put(m12);
-        buffer.put(m20).put(m21).put(m22);
-        buffer.flip();
-        return buffer;
-    }
-    
-    /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-    public FloatBuffer colBuffer() {
-        FloatBuffer buffer = BufferUtils.createFloatBuffer(9);
-        buffer.put(m00).put(m10).put(m20);
-        buffer.put(m01).put(m11).put(m21);
-        buffer.put(m02).put(m12).put(m22);
-        buffer.flip();
-        return buffer;
-    }
+
 }
 

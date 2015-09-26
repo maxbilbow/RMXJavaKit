@@ -2,6 +2,9 @@ package click.rmx.engine;
 
 import click.rmx.core.RMXObject;
 import click.rmx.debug.Bugger;
+import click.rmx.engine.components.Node;
+import click.rmx.engine.components.Nodes;
+import click.rmx.engine.components.RootNode;
 import click.rmx.engine.gl.RenderDelegate;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.physics.PhysicsWorld;

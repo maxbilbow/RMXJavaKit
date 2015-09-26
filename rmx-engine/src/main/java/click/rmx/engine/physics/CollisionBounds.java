@@ -1,7 +1,7 @@
 package click.rmx.engine.physics;
 
-import click.rmx.engine.Node;
-import click.rmx.engine.Transform;
+import click.rmx.engine.components.Node;
+import click.rmx.engine.components.Transform;
 
 public abstract class CollisionBounds {
 

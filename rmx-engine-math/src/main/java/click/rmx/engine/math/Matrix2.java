@@ -1,7 +1,5 @@
 package click.rmx.engine.math;
 
-import org.lwjgl.BufferUtils;
-
 import java.nio.FloatBuffer;
 
 /*
@@ -35,8 +33,8 @@ import java.nio.FloatBuffer;
  */
 public class Matrix2 {
 
-    private float m00, m01;
-    private float m10, m11;
+    protected float m00, m01;
+    protected float m10, m11;
 
     /**
      * Create a 2x2 identity matrix.
@@ -172,16 +170,5 @@ public class Matrix2 {
         return result;
     }
 
-    /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-    public FloatBuffer getBuffer() {
-        FloatBuffer buffer = BufferUtils.createFloatBuffer(4);
-        buffer.put(m00).put(m10);
-        buffer.put(m01).put(m11);
-        buffer.flip();
-        return buffer;
-    }
+
 }

@@ -3,8 +3,8 @@ package click.rmx.engine.physics;
 
 
 
-import click.rmx.engine.Node;
-import click.rmx.engine.ANodeComponent;
+import click.rmx.engine.components.Node;
+import click.rmx.engine.components.ANodeComponent;
 import click.rmx.engine.math.Vector3;
 import static click.rmx.engine.physics.CollisionBody.*;
 public class PhysicsBody extends ANodeComponent {

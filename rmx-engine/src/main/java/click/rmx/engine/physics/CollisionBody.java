@@ -1,6 +1,6 @@
 package click.rmx.engine.physics;
 
-import click.rmx.engine.ANodeComponent;
+import click.rmx.engine.components.ANodeComponent;
 
 public class CollisionBody extends ANodeComponent {
 

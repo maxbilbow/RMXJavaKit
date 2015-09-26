@@ -18,16 +18,16 @@ import java.time.Instant;
 import java.util.LinkedList;
 
 import click.rmx.core.RMXObject;
-import click.rmx.engine.Camera;
-import click.rmx.engine.Node;
-import click.rmx.engine.Nodes;
+import click.rmx.engine.components.Camera;
+import click.rmx.engine.components.Node;
+import click.rmx.engine.components.Nodes;
 import click.rmx.engine.Scene;
 import click.rmx.engine.math.Vector4;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWWindowSizeCallback;
 
 import click.rmx.debug.Bugger;
-import click.rmx.engine.behaviours.Behaviour;
+import click.rmx.engine.actors.behaviours.Behaviour;
 
 public abstract class GameView extends RMXObject implements GLView {
 

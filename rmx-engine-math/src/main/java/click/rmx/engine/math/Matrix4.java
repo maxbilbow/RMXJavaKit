@@ -1,10 +1,8 @@
 package click.rmx.engine.math;
 
-import org.lwjgl.BufferUtils;
 
 import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector4f;
-import java.nio.FloatBuffer;
 
 public class Matrix4 extends Matrix4f {
 	private static int SIZE = 16;
@@ -34,25 +32,11 @@ public class Matrix4 extends Matrix4f {
 		return m;
 	}
 	
-//	public ByteBuffer byteBuffer() {
-//		ByteBuffer buffer = ByteBuffer.allocateDirect(16).order(ByteOrder.nativeOrder());
-//		byte[] bytes = new byte[SIZE];
-//		float[] m = elements();
-//		for (int i = 0; i<SIZE; ++i)
-//			bytes[i] = (byte) m[i];
-//		buffer.put(bytes);
-//		return buffer;
-//	}
-	
-	private FloatBuffer buffer = BufferUtils.createFloatBuffer(SIZE);
-	private boolean _bufferReady = false;
 
 	
-	public void resetBuffers() {
-		_bufferReady = false;
-	}
+
 	
-	
+
 	
 	
 	public void setPosition(Vector3 v) {
@@ -94,43 +78,7 @@ public class Matrix4 extends Matrix4f {
 		return _eulerAngles;
 	}
 
-	 /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-	public FloatBuffer rowBuffer() {
-		if (_bufferReady)
-			return buffer;
-		else {
-			buffer.clear();
-			buffer.put(m00).put(m01).put(m02).put(m03);
-			buffer.put(m10).put(m11).put(m12).put(m13);
-			buffer.put(m20).put(m21).put(m22).put(m23);
-			buffer.put(m30).put(m31).put(m32).put(m33);
-			buffer.flip();
-			return buffer;
-		}
-	}
-	
-	 /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-	public FloatBuffer colBuffer() {
-		if (_bufferReady)
-			return buffer;
-		else {
-			buffer.clear();
-			buffer.put(m00).put(m10).put(m20).put(m30);
-	        buffer.put(m01).put(m11).put(m21).put(m31);
-	        buffer.put(m02).put(m12).put(m22).put(m32);
-	        buffer.put(m03).put(m13).put(m23).put(m33);
-			buffer.flip();
-			return buffer;
-		}
-	}
+
 
     /**
      * Creates a orthographic projection matrix. Similar to
@@ -277,7 +225,7 @@ public class Matrix4 extends Matrix4f {
 
 
 
-    Vector3 _position = new Vector3();
+    private Vector3 _position = new Vector3();
 	public Vector3 position() {
 		_position.x = m30;
 		_position.y = m31;
@@ -285,11 +233,14 @@ public class Matrix4 extends Matrix4f {
 		return _position;
 	}
 	
-	
-	@Override
-	public Matrix4 clone() {
-		Matrix4 clone = new Matrix4();
-		clone.set(this);
-		return clone;
+	//
+	@Override//
+	public Matrix4 clone() {//
+		Matrix4 clone = new Matrix4();//
+		clone.set(this);//
+		return clone;//
 	}
+
+
+
 }

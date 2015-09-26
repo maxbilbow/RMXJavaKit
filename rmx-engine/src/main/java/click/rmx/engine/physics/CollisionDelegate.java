@@ -1,6 +1,6 @@
 package click.rmx.engine.physics;
 
-import click.rmx.engine.Node;
+import click.rmx.engine.components.Node;
 
 public interface CollisionDelegate {
 	public void doAfterCollision(Node nodeA, Node nodeB, CollisionEvent eventData);

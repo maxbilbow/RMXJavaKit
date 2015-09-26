@@ -18,7 +18,7 @@ public interface IMessageable {
 	 * @throws IllegalAccessException 
      *   @since 0.1
      */
-    public void sendMessage(String message, Object args) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
+    void sendMessage(String message, Object args) ;//throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
     
     
     /**
@@ -29,7 +29,7 @@ public interface IMessageable {
      *   @param args    any object.
      *   @since 0.1
      */
-    public void broadcastMessage(String message);
+    void broadcastMessage(String message);
     
     /**
      *   @author Max Bilbow, 15-08-04 16:08:55
@@ -39,7 +39,7 @@ public interface IMessageable {
      *   @param args    any object.
      *   @since 0.1
      */
-    public void broadcastMessage(String message, Object args);
+    void broadcastMessage(String message, Object args);
 
 
     /**

@@ -103,10 +103,10 @@ public final class NotificationCenter {
 		for (IEventListener listener : listeners) {
 			try {
 				listener.sendMessage(message, args);
-			} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException
-					| InvocationTargetException e) {
-				Bugger.log(this.getClass().getName() + " " + e.getMessage() + ": " + message + " with args: " + args);
-//				e.printStackTrace();
+			} catch (SecurityException e){
+				Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+				e.printStackTrace();
+				System.exit(1);
 			}
 		}
 	}

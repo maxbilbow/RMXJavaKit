@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import click.rmx.engine.GameController;
-import click.rmx.engine.Nodes;
+import click.rmx.engine.components.Nodes;
 import org.lwjgl.glfw.GLFWKeyCallback;
 
 

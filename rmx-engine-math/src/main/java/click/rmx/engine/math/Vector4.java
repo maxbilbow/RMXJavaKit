@@ -29,8 +29,6 @@ import javax.vecmath.Vector4f;
  */
 
 
-import org.lwjgl.BufferUtils;
-
 /**
  * This class represents a (x,y,z,w)-Vector. GLSL equivalent to vec4.
  *
@@ -176,15 +174,5 @@ public class Vector4 extends Vector4f {
         return this.getScale(1f - alpha).add(other.getScale(alpha));
     }
 
-    /**
-     * Returns the Buffer representation of this vector.
-     *
-     * @return Vector as FloatBuffer
-     */
-    public FloatBuffer getBuffer() {
-        FloatBuffer buffer = BufferUtils.createFloatBuffer(4);
-        buffer.put(x).put(y).put(z).put(w);
-        buffer.flip();
-        return buffer;
-    }
+
 }

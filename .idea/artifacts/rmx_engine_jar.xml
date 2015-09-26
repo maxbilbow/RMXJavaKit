@@ -1,13 +1,19 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="rmx-engine:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/rmx_engine_jar</output-path>
+    <properties id="ant-preprocessing">
+      <options enabled="true" />
+    </properties>
     <root id="archive" name="rmx-engine.jar">
       <element id="module-output" name="rmx-engine" />
       <element id="module-output" name="rmx-core" />
       <element id="module-output" name="rmx-debug" />
       <element id="module-output" name="rmx-engine-math" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/resources/lib/lwjgl/jar/lwjgl.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/rmx-engine-math/src/main/resources/vecmath-1.5.1.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/rmx-engine/lib/lwjgl/native" />
+      <element id="dir-copy" path="$PROJECT_DIR$/rmx-engine/src/main/resources" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-engine/lib/lwjgl/jar/lwjgl.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-engine/lib/lwjgl/doc/javadoc.zip" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-engine/lib/lwjgl/src.zip" />
     </root>
   </artifact>
 </component>

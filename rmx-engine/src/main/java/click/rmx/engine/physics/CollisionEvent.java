@@ -2,9 +2,9 @@ package click.rmx.engine.physics;
 
 import click.rmx.core.RMX;
 
-import click.rmx.engine.Node;
+import click.rmx.engine.components.Node;
 import click.rmx.engine.Scene;
-import click.rmx.engine.Transform;
+import click.rmx.engine.components.Transform;
 import click.rmx.engine.math.Vector3;
 
 public final class CollisionEvent {

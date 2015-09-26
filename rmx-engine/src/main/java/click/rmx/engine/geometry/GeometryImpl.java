@@ -2,8 +2,8 @@ package click.rmx.engine.geometry;
 
 import click.rmx.core.NotificationCenter;
 import click.rmx.core.RMX;
-import click.rmx.engine.ANodeComponent;
-import click.rmx.engine.Node;
+import click.rmx.engine.components.ANodeComponent;
+import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Vector3;
 import click.rmx.engine.math.Vector4;

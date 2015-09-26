@@ -56,7 +56,7 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 
 	@Override
 	public void sendMessage(String message)
-			throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	{//throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		this.get().sendMessage(message);
 
 	}
@@ -101,8 +101,8 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 	}
 
 	@Override
-	public void sendMessage(String message, Object args) throws NoSuchMethodException, SecurityException,
-			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public void sendMessage(String message, Object args){//} throws NoSuchMethodException, SecurityException,
+//			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		// TODO Auto-generated method stub
 		todo();
 	}

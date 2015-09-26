@@ -18,8 +18,8 @@ public interface IRMXObject extends IEventListener, KeyValueObserver, Categoriza
 
 	void removeObserver(KeyValueObserver observer);
 
-	void sendMessage(String message)
-			throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
+	void sendMessage(String message);
+			//throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
 
 	String uniqueName();
 

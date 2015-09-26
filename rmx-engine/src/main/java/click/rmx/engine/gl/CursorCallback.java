@@ -1,7 +1,7 @@
 package click.rmx.engine.gl;
 
 import click.rmx.engine.GameController;
-import click.rmx.engine.Nodes;
+import click.rmx.engine.components.Nodes;
 import click.rmx.engine.math.Vector3;
 import org.lwjgl.glfw.GLFWCursorPosCallback;
 

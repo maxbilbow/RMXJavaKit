@@ -108,7 +108,7 @@ public class Bugger {
 			FileWriter writer = null;
 			try {
 				createDirectories(Paths.get("bugger"));
-				writer = new FileWriter("click/rmx/core/debug/rmx_log" + ".log", true);
+				writer = new FileWriter("rmx_bugger" + ".log", true);
 				systemLog = systemLog.replace("\n", "\r\n");
 				writer.write(systemLog);
 			} catch (IOException e) {

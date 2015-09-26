@@ -2,6 +2,8 @@ package click.rmx.engine;
 
 import click.rmx.core.RMXObject;
 import click.rmx.debug.Bugger;
+import click.rmx.engine.components.Node;
+import click.rmx.engine.components.Nodes;
 import click.rmx.engine.gl.*;
 import org.lwjgl.glfw.GLFW;
 

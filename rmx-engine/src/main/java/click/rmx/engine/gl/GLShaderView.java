@@ -14,7 +14,6 @@ import click.rmx.engine.math.Matrix4;
 import org.lwjgl.BufferUtils;
 
 
-//import org.lwjgl.util.glu.GLU;
 
 public class GLShaderView extends GameView implements GLView {
 

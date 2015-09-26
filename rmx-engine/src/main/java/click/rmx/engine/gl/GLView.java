@@ -1,7 +1,7 @@
 package click.rmx.engine.gl;
 
 import click.rmx.debug.Bugger;
-import click.rmx.engine.Node;
+import click.rmx.engine.components.Node;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWWindowSizeCallback;
 import org.lwjgl.glfw.GLFWvidmode;

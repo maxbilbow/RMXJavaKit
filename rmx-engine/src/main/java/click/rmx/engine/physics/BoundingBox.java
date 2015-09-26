@@ -1,6 +1,6 @@
 package click.rmx.engine.physics;
 
-import click.rmx.engine.Node;
+import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Vector3;
 
 public class BoundingBox extends CollisionBounds {

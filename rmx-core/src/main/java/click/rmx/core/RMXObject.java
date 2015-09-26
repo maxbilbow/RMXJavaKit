@@ -234,13 +234,23 @@ public class RMXObject  implements IRMXObject {
 	}
 
 	@Override
-	public void sendMessage(String message, Object args) throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
+	public void sendMessage(String message, Object args){//} throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
 		if (args != null && this.implementsMethod(message,args.getClass())) {
 			try {
 				this.getClass().getMethod(message, args.getClass()).invoke(this,args);
 			} catch (NoSuchMethodException e) {
-				Bugger.logAndPrint(message, true);
-				e.printStackTrace();
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+                e.printStackTrace();
+                System.exit(1);
+			} catch (InvocationTargetException e) {
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+                e.printStackTrace();
+                System.exit(1);
+			} catch (IllegalAccessException e) {
+                e.printStackTrace();
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+                System.out.println("Likely cause: receiver was abstract");
+                System.exit(1);
 			}
 		} else {
 			this.sendMessage(message);
@@ -251,13 +261,24 @@ public class RMXObject  implements IRMXObject {
 	 * @see IRMXObject#sendMessage(java.lang.String)
 	 */
 	@Override
-	public void sendMessage(String message) throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
+	public void sendMessage(String message) {//} throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
 		if (this.implementsMethod(message)) {
 			try {
 				this.getClass().getMethod(message).invoke(this);
 			} catch (NoSuchMethodException e) {
-				Bugger.log(e);
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+                e.printStackTrace();
+                System.exit(1);
+			} catch (InvocationTargetException e) {
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+                e.printStackTrace();
+                System.exit(1);
+			} catch (IllegalAccessException e) {
 				e.printStackTrace();
+                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+				System.out.println("Likely cause: receiver was abstract");
+				System.exit(1);
+
 			}
 		}
 	}
@@ -336,10 +357,10 @@ public class RMXObject  implements IRMXObject {
 	public void broadcastMessage(String message) {
 		try {
 			this.sendMessage(message);
-		} catch (SecurityException | IllegalAccessException 
-				| InvocationTargetException e) {
+		} catch (SecurityException e) {
 			Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
 			e.printStackTrace();
+			System.exit(1);
 		} 
 
 	}
@@ -348,10 +369,10 @@ public class RMXObject  implements IRMXObject {
 	public void broadcastMessage(String message, Object args) {
 		try {
 			this.sendMessage(message, args);
-		} catch ( SecurityException | IllegalAccessException | IllegalArgumentException
-				| InvocationTargetException e) {
+		} catch ( SecurityException e) {
 			Bugger.log(e.getClass().getSimpleName() + ": " + message + "("+args +")");
 			e.printStackTrace();
+			System.exit(1);
 		} 
 	}
 
