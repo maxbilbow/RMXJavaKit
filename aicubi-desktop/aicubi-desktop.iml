@@ -14,22 +14,6 @@
     <orderEntry type="module" module-name="rmx-engine-math" />
     <orderEntry type="module" module-name="rmx-engine" />
     <orderEntry type="module" module-name="rmx-engine-ai" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/jar/lwjgl.jar!/" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/doc/javadoc.zip!/" />
-        </JAVADOC>
-        <NATIVE>
-          <root url="file://$MODULE_DIR$/lib/lwjgl/native" />
-        </NATIVE>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/src.zip!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="module-library" scope="TEST">
       <library>
         <CLASSES>
@@ -50,6 +34,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="lwjgl" level="project" />
+    <orderEntry type="module" module-name="rmx-persistence" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

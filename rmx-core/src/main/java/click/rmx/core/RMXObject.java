@@ -14,17 +14,21 @@ public class RMXObject  implements IRMXObject {
 	private HashMap<String, LinkedList<KeyValueObserver>> observers = new HashMap<String, LinkedList<KeyValueObserver>>  ();
 	//	protected String name = "Unnamed RMXObject";
 
-	private static int _count = 0;
-	private int id = _count++;
+	private static long _count = 0;
+	private final long id = _count++;
+
+	public long rmxID() {
+		return id;
+	}
 
 	/* (non-Javadoc)
 	 * @see IRMXObject#uniqueID()
 	 */
 	@Override
-	public int uniqueID() {
+	public Long getId() {
 		return this.id;
 	}
-	public static int Count() {
+	public static long Count() {
 		return _count;
 	}
 	

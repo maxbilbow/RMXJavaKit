@@ -2,7 +2,8 @@ package click.rmx.engine.behaviour;
 
 import click.rmx.engine.components.Node;
 import click.rmx.engine.Scene;
-import click.rmx.engine.components.Transform;
+import click.rmx.engine.math.Float3;
+import click.rmx.persistence.model.Transform;
 
 import click.rmx.engine.math.Vector3;
 
@@ -69,11 +70,11 @@ public class SpriteBehaviour extends Behaviour {
 	
 	private boolean crouching = false;
 	public void crouch() {
-		Vector3 scale = this.getNode().transform().scale();
+		Float3 scale = this.getNode().transform().scale();
 		crouching = !crouching;
-		this.getNode().transform().setScale(scale.x, 
-				scale.y * (crouching ? 0.9f : 1/0.9f), 
-				scale.z);
+		this.getNode().transform().setScale(scale.x(),
+				scale.y() * (crouching ? 0.9f : 1/0.9f),
+				scale.z());
 	}
 	
 	public void jump(float force) {

@@ -4,6 +4,8 @@ import click.rmx.core.RMXObject;
 import click.rmx.engine.Scene;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -11,9 +13,8 @@ import java.util.stream.Stream;
 
 public class GameNode extends RMXObject implements Node {
 
-	
-	private Node parent;
 
+	private Transform transform;
 	
 	private final HashMap<Class<?>,NodeComponent> components = new HashMap<>();
 	private final Set<IBehaviour> behaviours = new HashSet<>();
@@ -53,17 +54,10 @@ public class GameNode extends RMXObject implements Node {
 		return components.getOrDefault(type,null);
 	}
 	
-	private final Transform transform;
+
 
 	private ArrayList<Node> children = new ArrayList<Node>();
-	/* (non-Javadoc)
-	 * @see click.rmx.Node#getChildren()
-	 */
-	@Override
-	public List<Node> getChildren() {
-		return this.children;
-	}
-	
+
 	/* (non-Javadoc)
 	 * @see click.rmx.Node#addChild(click.rmx.Node)
 	 */
@@ -118,8 +112,8 @@ public class GameNode extends RMXObject implements Node {
 		children.forEach(child -> {
 			child.updateLogic(time);
 		});
-		
-	
+
+
 	}
 
 	private long _timeStamp = -1;
@@ -136,10 +130,11 @@ public class GameNode extends RMXObject implements Node {
 		
 		for (Node child: this.children)
 			child.updateAfterPhysics(time);
-		this.transform.updateLastPosition();
+		transform.update();
 //		this.updateTick(time);
 		///.set(arg0);
 		_timeStamp = time;
+
 	}
 	
 	/* (non-Javadoc)
@@ -161,7 +156,8 @@ public class GameNode extends RMXObject implements Node {
 	 */
 	@Override
 	public Node getParent() {
-		return parent;
+		PersistenceTransform parent = transform.getParent();
+		return parent.isRoot() ? null : parent.getNode();
 	}
 
 	/* (non-Javadoc)
@@ -169,10 +165,8 @@ public class GameNode extends RMXObject implements Node {
 	 */
 	@Override
 	public void setParent(Node parent) {
-		if (this.parent != null && parent != this.parent) {
-			this.parent.removeChildNode(this);
-;		}
-		this.parent = parent;
+
+		this.transform.setParent(parent.transform());
 	}
 	
 	/* (non-Javadoc)
@@ -259,13 +253,6 @@ public class GameNode extends RMXObject implements Node {
 //	}
 
 	
-
-	@Override
-	public Transform transform() {
-		return this.transform;
-	}
-
-	
 	public static GameNode newInstance() {
 		return new GameNode();
 	}
@@ -274,9 +261,16 @@ public class GameNode extends RMXObject implements Node {
 	public static RootNode newRootNode() {
 		return RootNodeImpl.newInstance();
 	}
-	
-	
-	
+
+
+	public Transform getTransform() {
+		return transform;
+	}
+
+	@Override
+	public void setTransform(Transform transform) {
+		this.transform = transform;
+	}
 }
 
 

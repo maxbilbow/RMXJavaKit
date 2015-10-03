@@ -4,7 +4,11 @@ import java.lang.reflect.InvocationTargetException;
 
 public interface IRMXObject extends IEventListener, KeyValueObserver, Categorizable  {
 
-	int uniqueID();
+	Long getId();
+
+	default Long uniqueID() {
+		return getId();
+	}
 
 	Object setValue(String forKey, Object value);
 

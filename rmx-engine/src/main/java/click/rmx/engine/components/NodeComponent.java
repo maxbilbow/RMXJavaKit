@@ -1,6 +1,7 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.IMessageable;
+import click.rmx.persistence.model.Transform;
 
 public interface NodeComponent extends IMessageable {
 

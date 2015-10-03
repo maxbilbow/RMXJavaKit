@@ -6,6 +6,8 @@ import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.physics.CollisionBody;
 import click.rmx.engine.physics.PhysicsBody;
 
@@ -20,11 +22,17 @@ public interface Node extends IRMXObject {
 
 	NodeComponent getComponent(Class<?> type);
 
-	List<Node> getChildren();
+	default List<PersistenceTransform> getChildren() {
+		return transform().getChildren();
+	}
 
+	@Deprecated
 	void addChild(Node child);
 
-	boolean removeChildNode(Node node);
+
+	default boolean removeChildNode(Node node) {
+		return transform().removeChild(node);
+	}
 
 	Node getChildWithName(String name);
 
@@ -105,11 +113,17 @@ public interface Node extends IRMXObject {
 
 	void addToCurrentScene();
 
-	Transform transform();
+	PersistenceTransform getTransform();
+
+	default Transform transform() {
+		return (Transform) getTransform();
+	}
 
 	default void addGeometryToList(Set<Geometry> geometries) {
 		if (this.geometry() != null && this.geometry().isVisible())
 			geometries.add(this.geometry());
-		this.getChildren().stream().forEach(child -> child.addGeometryToList(geometries));
+		this.getChildren().stream().forEach(child -> child.getNode().addGeometryToList(geometries));
 	}
+
+	void setTransform(Transform transform);
 }

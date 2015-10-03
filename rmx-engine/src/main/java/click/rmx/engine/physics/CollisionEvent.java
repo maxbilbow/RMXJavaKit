@@ -4,7 +4,7 @@ import click.rmx.core.RMX;
 
 import click.rmx.engine.components.Node;
 import click.rmx.engine.Scene;
-import click.rmx.engine.components.Transform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.math.Vector3;
 
 public final class CollisionEvent {
@@ -161,8 +161,8 @@ public final class CollisionEvent {
 	
 		log += "\n\nCollision Momentum Report: " + nodeA.uniqueName() + " vs. " + nodeB.uniqueName();
 
-		Vector3 Va = A.node.physicsBody().getVelocity();
-		Vector3 Vb = B.node.physicsBody().getVelocity();
+		Vector3 Va = A.getNode().physicsBody().getVelocity();
+		Vector3 Vb = B.getNode().physicsBody().getVelocity();
 		Vector3 direction = Vector3.makeSubtraction(Va, Vb);
 		if (direction.isZero())
 			return;
@@ -179,8 +179,8 @@ public final class CollisionEvent {
 
 
 
-		float lossA = 1 - A.node.physicsBody().getRestitution();
-		float lossB = 1 - B.node.physicsBody().getRestitution();
+		float lossA = 1 - A.getNode().physicsBody().getRestitution();
+		float lossB = 1 - B.getNode().physicsBody().getRestitution();
 		float v1 = Va.length();
 		float v2 = Vb.length();
 

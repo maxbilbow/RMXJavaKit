@@ -1,16 +1,17 @@
 <component name="libraryTable">
   <library name="lwjgl">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/aicubi-desktop/lib/lwjgl/jar/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl/jar/lwjgl.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/aicubi-desktop/lib/lwjgl/doc/javadoc.zip!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lwjgl/doc/javadoc.zip!/" />
     </JAVADOC>
     <NATIVE>
-      <root url="file://$PROJECT_DIR$/aicubi-desktop/lib/lwjgl/native" />
+      <root url="file://$PROJECT_DIR$/lib/lwjgl/native" />
     </NATIVE>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/aicubi-desktop/lib/lwjgl/src.zip!/" />
+      <root url="file://$PROJECT_DIR$/lib/lwjgl" />
     </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/lwjgl" recursive="false" type="SOURCES" />
   </library>
 </component>

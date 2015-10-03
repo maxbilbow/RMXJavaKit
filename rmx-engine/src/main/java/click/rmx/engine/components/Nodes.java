@@ -7,6 +7,7 @@ import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Shapes;
 import click.rmx.engine.math.Tools;
 import click.rmx.engine.physics.PhysicsBody;
+import click.rmx.persistence.model.PersistenceTransform;
 
 import java.util.Collection;
 import java.util.stream.Stream;
@@ -72,10 +73,10 @@ public final class Nodes {
 		Stream stream;
 		
 
-			Collection<Node> nodes =  Scene.getCurrent().rootNode().getChildren();//.clone();
+			Collection<PersistenceTransform> nodes =  Scene.getCurrent().rootNode().getChildren();//.clone();
 
-			stream = nodes.stream().filter(n -> {
-				return n.getValue(GET_AI_STATE) == null;
+			stream = nodes.stream().filter(transform -> {
+				return transform.getNode().getValue(GET_AI_STATE) == null;
 			});
 		
 //		nodes.stream()

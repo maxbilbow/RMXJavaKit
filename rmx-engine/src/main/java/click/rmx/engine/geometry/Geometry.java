@@ -3,6 +3,7 @@ package click.rmx.engine.geometry;
 import click.rmx.core.Categories;
 import click.rmx.core.Categorizable;
 import click.rmx.engine.components.NodeComponent;
+import click.rmx.engine.math.Float3;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Vector3;
 import click.rmx.engine.math.Vector4;
@@ -24,7 +25,7 @@ public interface Geometry extends NodeComponent, Categorizable {
 		return this.transform().worldMatrix();
 	}
 	
-	default Vector3 scale() {
+	default Float3 scale() {
 		return this.transform().scale();
 	}
 	

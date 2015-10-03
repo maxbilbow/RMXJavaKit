@@ -3,13 +3,14 @@ package click.rmx.engine.components;
 import click.rmx.core.WeakObject;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.Transform;
 
 import java.lang.ref.ReferenceQueue;
 import java.util.List;
 
 import static click.rmx.debug.Tests.todo;
 
-public class WeakNode extends WeakObject<Node> implements Node {
+public abstract class WeakNode extends WeakObject<Node> implements Node {
 
 	private WeakNode() {
 		super(Nodes.newGameNode());
@@ -44,12 +45,7 @@ public class WeakNode extends WeakObject<Node> implements Node {
 		return null;
 	}
 
-	@Override
-	public List<Node> getChildren() {
-		// TODO Auto-generated method stub
-		todo();
-		return null;
-	}
+
 
 	@Override
 	public void addChild(Node child) {
@@ -136,13 +132,10 @@ public class WeakNode extends WeakObject<Node> implements Node {
 	public Transform transform() {
 		todo();
 		// TODO Auto-generated method stub
-		return null;
+		return get().transform();
 	}
 
-	public static WeakNode newInstnance() {
-		todo();
-		return new WeakNode(GameNode.newInstance());
-	}
+
 	
 
 }

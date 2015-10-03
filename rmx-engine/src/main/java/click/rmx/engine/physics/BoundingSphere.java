@@ -11,7 +11,7 @@ public class BoundingSphere extends CollisionBounds {
 	}
 
 	public float radius() {
-		return this.transform.scale().length();
+		return (float) this.transform.scale().length();
 //		new Vector3(
 //				this.transform.collisionBody().boundingBox.xMax(),
 //				this.transform.collisionBody().boundingBox.yMax(),

@@ -11,31 +11,8 @@
     <orderEntry type="module" module-name="rmx-core" />
     <orderEntry type="module" module-name="rmx-engine-math" />
     <orderEntry type="module" module-name="rmx-engine" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../rmx-engine-math/lib/vecmath-1.5.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/jar/lwjgl.jar!/" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/doc/javadoc.zip!/" />
-        </JAVADOC>
-        <NATIVE>
-          <root url="file://$MODULE_DIR$/lib/lwjgl/native" />
-        </NATIVE>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib/lwjgl/src.zip!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="vecmath-1.5.1" level="project" />
+    <orderEntry type="module" module-name="rmx-persistence" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

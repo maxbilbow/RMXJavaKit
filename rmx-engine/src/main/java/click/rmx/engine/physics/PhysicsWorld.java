@@ -5,6 +5,7 @@ package click.rmx.engine.physics;
 import click.rmx.core.RMXObject;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Vector3;
+import click.rmx.persistence.model.PersistenceTransform;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -33,12 +34,12 @@ public class PhysicsWorld extends RMXObject {
 	}
 
 	public void updatePhysics(Node rootNode) {
-		Stream<Node> children = rootNode.getChildren().stream();
+		Stream<PersistenceTransform> children = rootNode.getChildren().stream();
 		
-		children.forEach(node -> {
-			if (node.physicsBody() != null) {
-				this.applyGravityToNode(node);
-				node.physicsBody().updatePhysics(this);
+		children.forEach(transform -> {
+			if (transform.getNode().physicsBody() != null) {
+				this.applyGravityToNode(transform.getNode());
+				transform.getNode().physicsBody().updatePhysics(this);
 			}
 		});
 //		children.close();
@@ -67,21 +68,21 @@ public class PhysicsWorld extends RMXObject {
 	private Collection<CollisionBody> staticBodies = new LinkedList<>();
 	private Collection<CollisionBody> dynamicBodies = new LinkedList<>();
 	private Collection<CollisionBody> kinematicBodies = new LinkedList<>();
-	void buildCollisionList(Collection<Node> collection) {
+	void buildCollisionList(Collection<PersistenceTransform> collection) {
 		this.staticBodies.clear();
 		this.dynamicBodies.clear();
 		this.kinematicBodies.clear();
-		collection.forEach(node -> {
-			if (node.collisionBody() != null) {
-				switch (node.physicsBody().getType()) {
+		collection.forEach(transform -> {
+			if (transform.getNode().collisionBody() != null) {
+				switch (transform.getNode().physicsBody().getType()) {
 				case Dynamic:
-					this.dynamicBodies.add(node.collisionBody());
+					this.dynamicBodies.add(transform.getNode().collisionBody());
 					break;
 				case Static:
-					this.staticBodies.add(node.collisionBody());
+					this.staticBodies.add(transform.getNode().collisionBody());
 					break;
 				case Kinematic:
-					this.kinematicBodies.add(node.collisionBody());
+					this.kinematicBodies.add(transform.getNode().collisionBody());
 					break;
 				default:
 					break;

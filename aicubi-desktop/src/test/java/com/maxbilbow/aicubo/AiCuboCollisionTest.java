@@ -244,8 +244,8 @@ public class AiCuboCollisionTest implements CollisionDelegate {
 	public void doAfterCollision(Node nodeA, Node nodeB, CollisionEvent event) {
 		this.tick = scene.tick();
 		if (event.getDistance() < event.startingDistance)  {
-			int idA = nodeA.uniqueID();
-			int idB = nodeB.uniqueID();
+			Long idA = nodeA.uniqueID();
+			Long idB = nodeB.uniqueID();
 
 			if (idB < idA) {
 				Node temp = nodeA;

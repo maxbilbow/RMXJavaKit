@@ -8,20 +8,22 @@ import org.lwjgl.opengl.GL11;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.net.URL;
 
 import static org.lwjgl.opengl.ARBFragmentShader.GL_FRAGMENT_SHADER_ARB;
 import static org.lwjgl.opengl.ARBVertexShader.GL_VERTEX_SHADER_ARB;
 public class Shader {
 	
-	
-	private final int defaultVertexShader() throws Exception {
-		String url = "src/main/resources/shaders/Shader.vsh";
+
+
+	private int defaultVertexShader() throws Exception {
+		String url = this.getClass().getResource("Shader.vsh").getFile();
 		Bugger.log(url);
 		return createShader(url, GL_VERTEX_SHADER_ARB);
 	}
 	
-	private final int defaultFragmentShader() throws Exception {
-		String url = "src/main/resources/shaders/Shader.fsh";
+	private int defaultFragmentShader() throws Exception {
+		String url = this.getClass().getResource("Shader.fsh").getFile();
 		Bugger.log(url);
 		return createShader(url, GL_FRAGMENT_SHADER_ARB);
 	}
@@ -32,7 +34,7 @@ public class Shader {
 	public final int fragmentShader;
 	public final int program;
 
-	private boolean useShader;
+
 	
 	public Shader(int type) throws Exception {
 		switch (type) {
@@ -44,10 +46,10 @@ public class Shader {
 		this.program = bindAndCreateProgram();
 	}
 	
-	public Shader(String vertexShader, String fragmentShader) throws Exception {
+	public Shader(URL vertexShader, URL fragmentShader) throws Exception {
 		ARBShaderObjects.glCreateProgramObjectARB();
-		this.vertexShader = createShader(vertexShader, GL_VERTEX_SHADER_ARB);
-		this.fragmentShader = createShader(fragmentShader, GL_FRAGMENT_SHADER_ARB);
+		this.vertexShader = createShader(vertexShader.getFile(), GL_VERTEX_SHADER_ARB);
+		this.fragmentShader = createShader(fragmentShader.getFile(), GL_FRAGMENT_SHADER_ARB);
 		this.program = bindAndCreateProgram();
 	}
 	
@@ -74,7 +76,6 @@ public class Shader {
 			System.err.println(getLogInfo(program));
 			return 0;
 		}
-		useShader = true;
 		return program;
 	}
 

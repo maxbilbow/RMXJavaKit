@@ -1,6 +1,7 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.RMXObject;
+import click.rmx.persistence.model.Transform;
 
 public abstract class ANodeComponent extends RMXObject implements NodeComponent {
 	private boolean enabled = true;
@@ -55,7 +56,7 @@ public abstract class ANodeComponent extends RMXObject implements NodeComponent 
 	 */
 	@Override
 	public Transform transform() {
-		return this.node.transform();
+		return this.getNode().transform();
 	}
 	
 	/* (non-Javadoc)

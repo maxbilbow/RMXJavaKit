@@ -12,7 +12,7 @@ import click.rmx.engine.behaviour.ants.AntBehaviour;
 import click.rmx.engine.components.LightSource;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.components.Nodes;
-import click.rmx.engine.components.Transform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.geometry.Shapes;
 import click.rmx.engine.gl.IKeyCallback;
 import click.rmx.engine.math.Tools;
@@ -92,8 +92,8 @@ public final class AiCubo extends GameController {
 
 					body.addChild(head);
 					head.transform().setPosition(0, //put head where a head should be
-							body.transform().scale().y + head.transform().scale().y,
-							body.transform().scale().z + head.transform().scale().z);
+							body.transform().scale().y() + head.transform().scale().y(),
+							body.transform().scale().z() + head.transform().scale().z());
 					Node trailingCam = Nodes.newCameraNode();
 					body.addChild(trailingCam);
 					trailingCam.setName("trailingCam");
@@ -210,7 +210,7 @@ public final class AiCubo extends GameController {
 						Node n, cam;
 						Nodes.getCurrent().sendMessageToBehaviour(AntBehaviour.class,"setDefaultState");
 						do {
-							n = Scene.getCurrent().rootNode().getChildren().get((int)Tools.rBounds(0, max));
+							n = Scene.getCurrent().rootNode().getChildren().get((int)Tools.rBounds(0, max)).getNode();
 							cam = n.getChildWithName("trailingCam");
 						} while (cam == null);
 						n.setValue(GET_AI_STATE, AI_STATE_POSSESSED);//.sendMessageToBehaviour(Behaviour.class,"setState", Behaviour.AI_STATE_POSSESSED);

@@ -56,9 +56,9 @@ public class GeometryImpl extends ANodeComponent implements Geometry {
 		glRotatef(modelA.z, 0,0,1);
 
 		float 
-		X = node.transform().scale().x,
-		Y = node.transform().scale().y,
-		Z = node.transform().scale().z;
+		X = node.transform().scale().x(),
+		Y = node.transform().scale().y(),
+		Z = node.transform().scale().z();
 		drawWithScale(X, Y, Z);
 
 		GL11.glPopMatrix();
