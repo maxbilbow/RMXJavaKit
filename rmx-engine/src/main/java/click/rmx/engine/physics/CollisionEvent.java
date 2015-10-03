@@ -98,9 +98,9 @@ public final class CollisionEvent {
 							new Vector3(axis == "x" ? 1 : 0, axis == "y" ? 1 : 0, axis == "z" ? 1 : 0
 									);
 
-								A.physicsBody().applyForce(escapeForce * (A.mass() + diff), dir, hitPointA);//.translate(AtoB);
+								A.physicsBody().applyForce(escapeForce * (A.physicsBody().getTotalMass() + diff), dir, hitPointA);//.translate(AtoB);
 
-								B.physicsBody().applyForce(-escapeForce * (B.mass() + diff), dir, hitPointB);//translate(AtoB);
+								B.physicsBody().applyForce(-escapeForce * (B.physicsBody().getTotalMass() + diff), dir, hitPointB);//translate(AtoB);
 
 
 		}
@@ -169,8 +169,8 @@ public final class CollisionEvent {
 		else
 			direction.normalize();
 
-		float m1 = A.mass();
-		float m2 = B.mass();
+		float m1 = A.physicsBody().getTotalMass();
+		float m2 = B.physicsBody().getTotalMass();
 
 		//		float res = (1 - A.node.physicsBody().getRestitution()) * (1 - B.node.physicsBody().getRestitution());
 		//		float resA = 1 - A.node.physicsBody().getRestitution();

@@ -23,10 +23,7 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 		return get().getId();
 	}
 
-	@Override
-	public Long uniqueID() {
-		return this.get().uniqueID();
-	}
+
 
 	@Override
 	public Object setValue(String forKey, Object value) {

@@ -31,8 +31,23 @@
         <processorPath useClasspath="true" />
         <module name="rmx-repository" />
       </profile>
+      <profile default="false" name="Annotation profile for rmx-persistence" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-persistence" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="aicubi-web" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="aicubi-web" target="1.8" />
       <module name="rmx-engine" target="1.8" />
       <module name="rmx-persistence" target="1.8" />
       <module name="rmx-repository" target="1.8" />

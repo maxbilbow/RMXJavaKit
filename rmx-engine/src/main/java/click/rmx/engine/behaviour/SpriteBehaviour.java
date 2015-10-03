@@ -85,7 +85,7 @@ public class SpriteBehaviour extends Behaviour {
 		this.getNode().physicsBody().applyForce(force, Vector3.Y, Vector3.Zero);
 	}
 	public void jump() {
-		float force = -this.getNode().transform().mass() * Scene.getCurrent().getPhysicsWorld().getGravity().y; //TODO: base this on gravity
+		float force = -this.getNode().physicsBody().getTotalMass() * Scene.getCurrent().getPhysicsWorld().getGravity().y; //TODO: base this on gravity
 		this.jump(force);
 	}
 	

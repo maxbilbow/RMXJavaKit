@@ -61,7 +61,7 @@ public class AiCuboCollisionTest implements CollisionDelegate {
 		box = GameNode.newInstance();//.makeCube(scale / 10, PhysicsBody.newStaticBody(), null);
 		box.setGeometry(Shapes.Cube);
 		box.setName("Box");
-		scene.rootNode().addChild(box);
+		box.addToCurrentScene();
 		scene.getPhysicsWorld().setGravity(0, 0, 0);
 
 		actor = front;
@@ -126,7 +126,7 @@ public class AiCuboCollisionTest implements CollisionDelegate {
 		n.setName(name);
 		n.physicsBody().setFriction(0.05f);
 		n.physicsBody().setDamping(0);
-		scene.rootNode().addChild(n);
+		n.addToCurrentScene();
 		return n;
 	}
 
@@ -244,15 +244,15 @@ public class AiCuboCollisionTest implements CollisionDelegate {
 	public void doAfterCollision(Node nodeA, Node nodeB, CollisionEvent event) {
 		this.tick = scene.tick();
 		if (event.getDistance() < event.startingDistance)  {
-			Long idA = nodeA.uniqueID();
-			Long idB = nodeB.uniqueID();
+			Long idA = nodeA.getId();
+			Long idB = nodeB.getId();
 
 			if (idB < idA) {
 				Node temp = nodeA;
 				nodeA = nodeB;
 				nodeB = temp;
 			}
-			String key = String.valueOf(nodeA.uniqueID()) +  String.valueOf(nodeB.uniqueID());
+			String key = String.valueOf(nodeA.getId()) +  String.valueOf(nodeB.getId());
 
 			if (collisions.containsKey(key)) {
 				collisions.get(key).update(tick);

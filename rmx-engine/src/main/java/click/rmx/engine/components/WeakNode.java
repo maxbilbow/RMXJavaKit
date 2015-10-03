@@ -47,12 +47,7 @@ public abstract class WeakNode extends WeakObject<Node> implements Node {
 
 
 
-	@Override
-	public void addChild(Node child) {
-		// TODO Auto-generated method stub
-		todo();
-		
-	}
+
 
 	@Override
 	public boolean removeChildNode(Node node) {
@@ -94,18 +89,8 @@ public abstract class WeakNode extends WeakObject<Node> implements Node {
 		todo();
 	}
 
-	@Override
-	public Node getParent() {
-		// TODO Auto-generated method stub
-		todo();
-		return null;
-	}
 
-	@Override
-	public void setParent(Node parent) {
-		// TODO Auto-generated method stub
-		todo();
-	}
+
 
 	@Override
 	public boolean sendMessageToBehaviour(Class<?> theBehaviour, String message) {
@@ -126,13 +111,6 @@ public abstract class WeakNode extends WeakObject<Node> implements Node {
 		todo();
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public Transform transform() {
-		todo();
-		// TODO Auto-generated method stub
-		return get().transform();
 	}
 
 

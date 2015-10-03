@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class RMXObject  implements IRMXObject {
+public class RMXObject implements IRMXObject {
 	private HashMap<String, Object> values = new HashMap<String, Object> ();
 	private HashMap<String, LinkedList<KeyValueObserver>> observers = new HashMap<String, LinkedList<KeyValueObserver>>  ();
 	//	protected String name = "Unnamed RMXObject";
@@ -26,8 +26,9 @@ public class RMXObject  implements IRMXObject {
 	 */
 	@Override
 	public Long getId() {
-		return this.id;
+		return rmxID();
 	}
+
 	public static long Count() {
 		return _count;
 	}

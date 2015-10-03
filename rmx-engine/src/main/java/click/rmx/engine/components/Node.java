@@ -13,6 +13,7 @@ import click.rmx.engine.physics.PhysicsBody;
 
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public interface Node extends IRMXObject {
 
@@ -22,13 +23,25 @@ public interface Node extends IRMXObject {
 
 	NodeComponent getComponent(Class<?> type);
 
+
+    Stream<NodeComponent> getComponents();
+
 	default List<PersistenceTransform> getChildren() {
 		return transform().getChildren();
 	}
 
-	@Deprecated
-	void addChild(Node child);
+//	/**
+//	 * @Deprecated {@See:setParent}
+//	 * @param child
+//	 */
+//	@Deprecated
+//	void addChild(Node child);
 
+	void updateLogic(long time);
+
+	void updateAfterPhysics(long time);
+
+	void draw(Matrix4 viewMatrix);
 
 	default boolean removeChildNode(Node node) {
 		return transform().removeChild(node);
@@ -78,16 +91,28 @@ public interface Node extends IRMXObject {
 	default void setLightSource(LightSource light) {
 		this.setComponent(LightSource.class, light);
 	}
-	
-	void updateLogic(long time);
 
-	void updateAfterPhysics(long time);
+	default Node getParent() {
+        PersistenceTransform parentTransform = getTransform().getParent();
+		return  parentTransform != null ? parentTransform.getNode() : null;
+	}
 
-	void draw(Matrix4 viewMatrix);
+	default void setParent(Node parent) {
+		getTransform().setParent(parent);
+		setNeedsUpdate();
+	}
 
-	Node getParent();
+    default void setNeedsUpdate() {
+        Stream<NodeComponent> componentStream = this.getComponents();
+        componentStream.forEach(component -> component.setNeedsUpdate());
+    }
 
-	void setParent(Node parent);
+
+    default void setParent(PersistenceTransform parent) {
+		getTransform().setParent(parent);
+	}
+
+
 
 	default void shine() {
 		LightSource light = this.getLight();
@@ -125,5 +150,5 @@ public interface Node extends IRMXObject {
 		this.getChildren().stream().forEach(child -> child.getNode().addGeometryToList(geometries));
 	}
 
-	void setTransform(Transform transform);
+//	void setTransform(Transform transform);
 }

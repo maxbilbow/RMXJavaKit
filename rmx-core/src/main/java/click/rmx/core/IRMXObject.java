@@ -6,10 +6,6 @@ public interface IRMXObject extends IEventListener, KeyValueObserver, Categoriza
 
 	Long getId();
 
-	default Long uniqueID() {
-		return getId();
-	}
-
 	Object setValue(String forKey, Object value);
 
 	Object getValue(String forKey);

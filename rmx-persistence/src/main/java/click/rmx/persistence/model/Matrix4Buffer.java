@@ -2,12 +2,10 @@ package click.rmx.persistence.model;
 
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.ValueBuffer;
-import click.rmx.persistence.annotations.Entity;
+import click.rmx.persistence.view.Entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
 
 
 /**

@@ -12,7 +12,7 @@ import click.rmx.engine.math.Vector3;
 
 import static click.rmx.engine.math.BufferFactory.*;
 
-public class Transform extends PersistenceTransform{
+public class Transform extends PersistenceTransform {
 
 //	private Matrix4 _rMatrix = new Matrix4();
 	private final BufferedMatrix4 _worldMatrix;
@@ -38,7 +38,7 @@ public class Transform extends PersistenceTransform{
 
 	private int stepsBack = 0;
 	public synchronized boolean stepBack(String args) {
-		int steps = getHistory().size() - stepsBack;
+		int steps = getHistory().size() - 1 - stepsBack;
 		if (steps < 0)
 			return false;
 
@@ -111,20 +111,8 @@ public class Transform extends PersistenceTransform{
 //	}
 	
 	
-	private float totalMass; private long _tmTimestamp = -1;
-	/**
-	 * TODO: Test with children
-	 * @return
-	 */
-	public float mass() {
-		if (Scene.getCurrent().tick() == _tmTimestamp)
-			return this.totalMass;
-		totalMass = getNode().physicsBody() != null ? getNode().physicsBody().getMass() : 0;
-		for (PersistenceTransform child : getNode().getChildren()) {
-			totalMass += child.mass();
-		}
-		return totalMass;
-	}
+//	private float totalMass; private long _tmTimestamp = -1;
+//
 	
 	
 	/**
@@ -356,6 +344,8 @@ public class Transform extends PersistenceTransform{
 		// TODO Auto-generated method stub
 		return scale().z() * 2;
 	}
+
+
 
 
 //	Vector3[] history = new Vector3[3];

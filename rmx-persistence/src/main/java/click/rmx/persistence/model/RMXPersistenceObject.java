@@ -2,7 +2,6 @@ package click.rmx.persistence.model;
 
 import click.rmx.core.RMXObject;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 

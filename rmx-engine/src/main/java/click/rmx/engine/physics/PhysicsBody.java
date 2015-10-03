@@ -3,13 +3,18 @@ package click.rmx.engine.physics;
 
 
 
+import click.rmx.engine.Scene;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.components.ANodeComponent;
 import click.rmx.engine.math.Vector3;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.service.TransformService;
+
 import static click.rmx.engine.physics.CollisionBody.*;
 public class PhysicsBody extends ANodeComponent {
 
-	private float mass = 1.0f; 
+	private float mass = 1.0f;
+	private float totalMass = mass;
 	private float friction = 0.1f; 
 	private float rollingFriction = 0.5f;
 	private float damping = 0.1f; 
@@ -109,13 +114,11 @@ public class PhysicsBody extends ANodeComponent {
 		return mass;
 	}
 
-	public float TotalMass() {
-		return this.getNode().transform().mass();
-	}
 
 
 
 	public void setMass(float mass) {
+		this.setNeedsUpdate();
 		this.mass = mass;
 	}
 
@@ -195,13 +198,27 @@ public class PhysicsBody extends ANodeComponent {
 		}
 	}
 
+	public void updateProperties() {
+		if (needsUpdate())
+			super.updateProperties();
+		else
+			return;
+
+		totalMass = this.mass;
+		for (PersistenceTransform transform : transform().getChildren())
+			if (transform.getNode().physicsBody() != null)
+				this.totalMass += transform.getNode().physicsBody().getTotalMass();
+	}
+
 	public void updatePhysics(PhysicsWorld physics){
+		this.updateProperties();
 		if (this.type != PhysicsBodyType.Dynamic)
 			return;
 		Node node = this.getNode();
 
 
-		float mass = TotalMass();
+
+		float mass = getTotalMass();
 		//Update velocity with forces
 		this.velocity.x += this.forces.x / mass;
 		this.velocity.y += this.forces.y / mass;
@@ -225,6 +242,7 @@ public class PhysicsBody extends ANodeComponent {
 		//lose energy
 		this.velocity.scale(1 / (1 + this.friction));
 		this.rotationalVelocity.scale(1 / (1 + this.rollingFriction));
+
 
 	}
 
@@ -271,4 +289,12 @@ public class PhysicsBody extends ANodeComponent {
 		return this.effectedByGravity;
 	}
 
+
+	public float getTotalMass() {
+		return totalMass;
+	}
+
+	public void setTotalMass(float totalMass) {
+		this.totalMass = totalMass;
+	}
 }

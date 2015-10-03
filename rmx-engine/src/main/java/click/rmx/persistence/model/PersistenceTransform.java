@@ -1,22 +1,36 @@
 package click.rmx.persistence.model;
 
-import click.rmx.core.HirarchyObject;
+import click.rmx.core.HierarchyObject;
+import click.rmx.engine.components.ANodeComponent;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Float3;
-import click.rmx.persistence.annotations.Entity;
+import click.rmx.persistence.view.Entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
  * Created by Max on 03/10/2015.
  */
 @Entity(name = "transform")
-public abstract class PersistenceTransform extends RMXPersistenceObject implements HirarchyObject {
+public abstract class PersistenceTransform extends ANodeComponent implements RMXPersistence,  HierarchyObject {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     @OneToOne
     private Node node;
@@ -84,17 +98,15 @@ public abstract class PersistenceTransform extends RMXPersistenceObject implemen
         return this.children;
     }
 
-    @Override
-    public boolean isRoot() {
-        return this.parent == null;
+    public boolean isGameRoot() {
+        return this.isRoot();
     }
 
-    public void setParent(PersistenceTransform parent) {
-        if (this.parent != null && this.parent != parent) {
-            this.parent.removeChild(this);
-        }
-        this.parent = parent;
+    public boolean isNodeRoot() {
+        return !this.isRoot() && this.parent.isRoot();
     }
+
+
 
 
 
@@ -110,12 +122,17 @@ public abstract class PersistenceTransform extends RMXPersistenceObject implemen
         return true;
     }
 
+    public void setParent(Node node) {
+        this.setParent(node.getTransform());
+    }
+
     @Override
-    public void setParent(Object parent) {
-        if (parent.getClass().isAssignableFrom(PersistenceTransform.class))
-           this.parent = (PersistenceTransform) parent;
-        else
-            throw new IllegalArgumentException("Parent must be of type " + this.getClass().getSimpleName());
+    public void setParent(HierarchyObject parent) {
+        if (this.getParent() == parent)
+            return;
+        if (this.getParent() != null)
+            this.getParent().removeChild(this);
+        parent.getChildren().add(this);
     }
 
     public Matrix4 localMatrix() {
@@ -177,8 +194,11 @@ public abstract class PersistenceTransform extends RMXPersistenceObject implemen
     public Node getNode() {
         return node;
     }
-    public abstract float mass();
 
 
+
+    public abstract float getHeight();
+
+    public abstract Matrix4 worldMatrix();
 }
 
