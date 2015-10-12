@@ -76,10 +76,13 @@ public class RexSpringApplication {
     public static void main(String[] args) {
         SQLConnectionDescriber sqlDescriber;// = SQLConnectionDescriber.newMySQLDescriber();
 
+
         switch (sqlType) {
             case HSQLDB:
                 sqlDescriber = SQLConnectionDescriber.newHSQLDBDescriber();
-                sqlDescriber.setConnectionUrl("jdbc:hsqldb:file:/Users/Max/Gits/rex-spring/hsqldb/rmxdb" +
+                String file = RexSpringApplication.class.getResource("").getFile() + "hsqldb/rmxdb";
+                Bugger.logAndPrint(file,true);
+                sqlDescriber.setConnectionUrl("jdbc:hsqldb:file:" + file +
                         "?autoReconnect=true&createDatabaseIfNotExist=true");
                 break;
             case MY_SQL:

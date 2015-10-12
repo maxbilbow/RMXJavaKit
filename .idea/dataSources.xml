@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="756947139">
+    <data-source source="LOCAL" name="HSQLDB - rmxdb" uuid="e8c628b0-7ac7-4f4c-bb8b-fb608625cdd1">
+      <driver-ref>hsqldb.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

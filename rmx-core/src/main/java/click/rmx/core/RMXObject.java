@@ -33,7 +33,10 @@ public class RMXObject implements IRMXObject {
 		return _count;
 	}
 	
-	
+	public void setId(Long id)
+	{
+		System.out.print("setId(" + id + ") - " + this.getName() + " is not a RMXPersistence object");
+	}
 	
 	public RMXObject() {
 		this.setName("Unnamed RMXObject");

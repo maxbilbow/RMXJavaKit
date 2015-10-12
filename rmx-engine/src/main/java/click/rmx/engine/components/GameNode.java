@@ -5,7 +5,6 @@ import click.rmx.engine.Scene;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.persistence.model.PersistenceTransform;
-import click.rmx.persistence.model.RMXPersistence;
 import click.rmx.persistence.model.Transform;
 
 import javax.persistence.*;
@@ -13,7 +12,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 
-public class GameNode extends RMXObject implements Node , RMXPersistence {
+public class GameNode extends RMXObject implements Node  {
 
 	@Id
 	@GeneratedValue
@@ -24,7 +23,7 @@ public class GameNode extends RMXObject implements Node , RMXPersistence {
 		return id;
 	}
 
-	@Override
+//	@Override
 	public void setId(Long id) {
 		this.id = id;
 	}

@@ -35,7 +35,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="lwjgl" level="project" />
-    <orderEntry type="module" module-name="rmx-persistence" />
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">
