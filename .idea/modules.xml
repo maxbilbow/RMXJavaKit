@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-engine/rmx-engine.iml" filepath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-engine-ai/rmx-engine-ai.iml" filepath="$PROJECT_DIR$/rmx-engine-ai/rmx-engine-ai.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" group="RMXJavaKit" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" filepath="$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-persistence/rex-spring.iml" filepath="$PROJECT_DIR$/rmx-persistence/rex-spring.iml" group="RMXJavaKit" />
     </modules>
   </component>
 </project>

@@ -15,11 +15,5 @@ public interface RMXPersistence {
     }
 
 
-    default boolean onSave() {
-        //TODO
-        return true;
-    }
-
-
 }
 

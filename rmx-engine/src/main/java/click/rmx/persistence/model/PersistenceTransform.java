@@ -5,7 +5,7 @@ import click.rmx.engine.components.ANodeComponent;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Float3;
-import click.rmx.persistence.view.Entity;
+
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Max on 03/10/2015.
  */
 @Entity(name = "transform")
-public abstract class PersistenceTransform extends ANodeComponent implements RMXPersistence,  HierarchyObject {
+public abstract class PersistenceTransform extends ANodeComponent implements HierarchyObject, RMXPersistence {
 
     @Id
     @GeneratedValue
@@ -115,11 +115,13 @@ public abstract class PersistenceTransform extends ANodeComponent implements RMX
     }
 
     public boolean removeChild(PersistenceTransform child) {
-        if (!this.children.contains(child))
+        if (child.parent != this )//(!this.children.contains(child))
             return false;
-        else
+        else {
             this.children.remove(child);
-        return true;
+            child.parent = null;
+            return true;
+        }
     }
 
     public void setParent(Node node) {
@@ -128,10 +130,11 @@ public abstract class PersistenceTransform extends ANodeComponent implements RMX
 
     @Override
     public void setParent(HierarchyObject parent) {
-        if (this.getParent() == parent)
+        if (this.parent == parent)
             return;
-        if (this.getParent() != null)
-            this.getParent().removeChild(this);
+        if (this.parent != null)
+            this.parent.getChildren().remove(this);
+        this.parent = (PersistenceTransform) parent;
         parent.getChildren().add(this);
     }
 

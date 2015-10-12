@@ -7,14 +7,13 @@ import click.rmx.engine.math.Matrix4;
 import click.rmx.persistence.model.PersistenceTransform;
 import click.rmx.persistence.model.RMXPersistence;
 import click.rmx.persistence.model.Transform;
-import org.hibernate.annotations.ManyToAny;
 
 import javax.persistence.*;
 import java.util.*;
 import java.util.stream.Stream;
 
 
-public class GameNode extends RMXObject implements Node, RMXPersistence {
+public class GameNode extends RMXObject implements Node , RMXPersistence {
 
 	@Id
 	@GeneratedValue
@@ -31,7 +30,7 @@ public class GameNode extends RMXObject implements Node, RMXPersistence {
 	}
 
 	@OneToOne
-	private PersistenceTransform transform;
+	private Transform transform;
 
 	@Transient
 	private final HashMap<Class<?>,NodeComponent> components = new HashMap<>();
@@ -272,7 +271,7 @@ public class GameNode extends RMXObject implements Node, RMXPersistence {
 	}
 
 
-	public PersistenceTransform getTransform() {
+	public Transform transform() {
 		return transform;
 	}
 
@@ -280,7 +279,7 @@ public class GameNode extends RMXObject implements Node, RMXPersistence {
 
 
 	public void setTransform(PersistenceTransform transform) {
-		this.setComponent(PersistenceTransform.class, this.transform = transform);
+		this.setComponent(PersistenceTransform.class, this.transform = (Transform) transform);
 	}
 }
 

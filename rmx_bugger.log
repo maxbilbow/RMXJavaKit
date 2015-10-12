@@ -635,3 +635,87 @@
 [00:43:58.820x1] click.rmx.engine.gl.GLView::run on line 51: Enter Gameloop
 ====== END OF LOG ======
 
+====== BEGIN LOG ======
+[12:18:59.145x1] click.rmx.engine.Scene::<init> on line 23: Scene initializing...
+[12:18:59.175x1] com.maxbilbow.aicubo.AiCubo::initActors on line 60: Setting up scene...
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 62: SUCCESS
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 64: Setting up actors...
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 66: POV success
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 67: Initializing entity generator
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 106: Entity generator initialized
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 111: Generating...
+[12:18:59.176x1] com.maxbilbow.aicubo.AiCubo::initActors on line 116: Success. Creating floor
+[12:18:59.183x1] com.maxbilbow.aicubo.AiCubo::initActors on line 128: Actors set up successfully...
+[12:18:59.193x1] click.rmx.engine.GameController::run on line 60: Setup GameController
+[12:18:59.193x1] click.rmx.engine.gl.GLView::run on line 35: Load Shared Libraries
+[12:18:59.365x1] click.rmx.engine.gl.GLView::run on line 46: Init GL
+[12:18:59.871x1] click.rmx.engine.gl.Shader::defaultVertexShader on line 21: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.vsh
+[12:18:59.877x1] click.rmx.engine.gl.Shader::defaultFragmentShader on line 27: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.fsh
+[12:18:59.891x1] click.rmx.engine.gl.GLView::run on line 51: Enter Gameloop
+[12:19:11.549x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+[12:19:15.332x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: false
+[12:19:16.815x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[12:31:06.961x1] click.rmx.engine.Scene::<init> on line 23: Scene initializing...
+[12:31:06.975x1] com.maxbilbow.aicubo.AiCubo::initActors on line 60: Setting up scene...
+[12:31:06.975x1] com.maxbilbow.aicubo.AiCubo::initActors on line 62: SUCCESS
+[12:31:06.975x1] com.maxbilbow.aicubo.AiCubo::initActors on line 64: Setting up actors...
+[12:31:06.976x1] com.maxbilbow.aicubo.AiCubo::initActors on line 66: POV success
+[12:31:06.976x1] com.maxbilbow.aicubo.AiCubo::initActors on line 67: Initializing entity generator
+[12:31:06.976x1] com.maxbilbow.aicubo.AiCubo::initActors on line 106: Entity generator initialized
+[12:31:06.976x1] com.maxbilbow.aicubo.AiCubo::initActors on line 111: Generating...
+[12:31:06.976x1] com.maxbilbow.aicubo.AiCubo::initActors on line 116: Success. Creating floor
+[12:31:06.981x1] com.maxbilbow.aicubo.AiCubo::initActors on line 128: Actors set up successfully...
+[12:31:06.986x1] click.rmx.engine.GameController::run on line 60: Setup GameController
+[12:31:06.986x1] click.rmx.engine.gl.GLView::run on line 35: Load Shared Libraries
+[12:31:07.150x1] click.rmx.engine.gl.GLView::run on line 46: Init GL
+[12:31:07.485x1] click.rmx.engine.gl.Shader::defaultVertexShader on line 21: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.vsh
+[12:31:07.489x1] click.rmx.engine.gl.Shader::defaultFragmentShader on line 27: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.fsh
+[12:31:07.497x1] click.rmx.engine.gl.GLView::run on line 51: Enter Gameloop
+[12:31:28.174x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+[12:31:35.848x2] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: false
+[12:31:36.925x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[13:15:03.115x1] click.rmx.engine.Scene::<init> on line 23: Scene initializing...
+[13:15:03.170x1] com.maxbilbow.aicubo.AiCubo::initActors on line 60: Setting up scene...
+[13:15:03.170x1] com.maxbilbow.aicubo.AiCubo::initActors on line 62: SUCCESS
+[13:15:03.170x1] com.maxbilbow.aicubo.AiCubo::initActors on line 64: Setting up actors...
+[13:15:03.171x1] com.maxbilbow.aicubo.AiCubo::initActors on line 66: POV success
+[13:15:03.171x1] com.maxbilbow.aicubo.AiCubo::initActors on line 67: Initializing entity generator
+[13:15:03.171x1] com.maxbilbow.aicubo.AiCubo::initActors on line 106: Entity generator initialized
+[13:15:03.171x1] com.maxbilbow.aicubo.AiCubo::initActors on line 111: Generating...
+[13:15:03.172x1] com.maxbilbow.aicubo.AiCubo::initActors on line 116: Success. Creating floor
+[13:15:03.189x1] com.maxbilbow.aicubo.AiCubo::initActors on line 128: Actors set up successfully...
+[13:15:03.208x1] click.rmx.engine.GameController::run on line 60: Setup GameController
+[13:15:03.208x1] click.rmx.engine.gl.GLView::run on line 35: Load Shared Libraries
+[13:15:03.835x1] click.rmx.engine.gl.GLView::run on line 46: Init GL
+[13:15:04.926x1] click.rmx.engine.gl.Shader::defaultVertexShader on line 21: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.vsh
+[13:15:04.937x1] click.rmx.engine.gl.Shader::defaultFragmentShader on line 27: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.fsh
+[13:15:04.964x1] click.rmx.engine.gl.GLView::run on line 51: Enter Gameloop
+[13:15:30.100x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[18:57:07.604x1] click.rmx.engine.Scene::<init> on line 23: Scene initializing...
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 60: Setting up scene...
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 62: SUCCESS
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 64: Setting up actors...
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 66: POV success
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 67: Initializing entity generator
+[18:57:07.624x1] com.maxbilbow.aicubo.AiCubo::initActors on line 106: Entity generator initialized
+[18:57:07.625x1] com.maxbilbow.aicubo.AiCubo::initActors on line 111: Generating...
+[18:57:07.625x1] com.maxbilbow.aicubo.AiCubo::initActors on line 116: Success. Creating floor
+[18:57:07.630x1] com.maxbilbow.aicubo.AiCubo::initActors on line 128: Actors set up successfully...
+[18:57:07.636x1] click.rmx.engine.GameController::run on line 60: Setup GameController
+[18:57:07.637x1] click.rmx.engine.gl.GLView::run on line 35: Load Shared Libraries
+[18:57:07.787x1] click.rmx.engine.gl.GLView::run on line 46: Init GL
+[18:57:08.212x1] click.rmx.engine.gl.Shader::defaultVertexShader on line 21: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.vsh
+[18:57:08.231x1] click.rmx.engine.gl.Shader::defaultFragmentShader on line 27: /Users/Max/Gits/RMXJavaKit/rmx-engine/target/classes/click/rmx/engine/gl/Shader.fsh
+[18:57:08.241x1] click.rmx.engine.gl.GLView::run on line 51: Enter Gameloop
+[18:57:21.745x1] click.rmx.core.RMXObject::onEventDidEnd on line 300: rootNode (9) => Event Ended: CanWalkThroughWalls (Completed), with args: true
+====== END OF LOG ======
+

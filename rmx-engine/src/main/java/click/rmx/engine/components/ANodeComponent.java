@@ -65,7 +65,7 @@ public abstract class ANodeComponent extends RMXObject implements NodeComponent,
 	 */
 	@Override
 	public Transform transform() {
-		return this.getNode().transform();
+		return (Transform) this.getNode().transform();
 	}
 	
 	/* (non-Javadoc)

@@ -138,16 +138,20 @@ public interface Node extends IRMXObject {
 
 	void addToCurrentScene();
 
-	PersistenceTransform getTransform();
-
-	default Transform transform() {
-		return (Transform) getTransform();
+	default PersistenceTransform getTransform() {
+		return transform();
 	}
+
+	Transform transform();
 
 	default void addGeometryToList(Set<Geometry> geometries) {
 		if (this.geometry() != null && this.geometry().isVisible())
 			geometries.add(this.geometry());
 		this.getChildren().stream().forEach(child -> child.getNode().addGeometryToList(geometries));
+	}
+
+	default void removeFromParent() {
+		this.getTransform().getParent().removeChild(this.getTransform());
 	}
 
 //	void setTransform(Transform transform);

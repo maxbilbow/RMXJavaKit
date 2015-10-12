@@ -1,0 +1,53 @@
+====== BEGIN LOG ======
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:08:08.504x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 62: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:08:08.598x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 66: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:14:24.595x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 64: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:14:24.730x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 68: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:15:18.249x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 64: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:15:18.350x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 68: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:15:33.349x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 64: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:15:33.544x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 68: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:35:01.537x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:35:01.637x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:35:24.367x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:35:24.522x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:36:16.022x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:36:16.109x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:37:16.296x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:37:16.368x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:37:31.915x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:37:31.986x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[01:39:49.308x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[01:39:49.458x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
