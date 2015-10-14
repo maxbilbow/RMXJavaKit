@@ -2,7 +2,6 @@ package click.rmx.persistence;
 
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
-import click.rmx.persistence.model.Box;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,13 +26,13 @@ import java.util.Properties;
 @EnableJpaRepositories
 @EnableTransactionManagement
 @ComponentScan("click.rmx.persistence")
-public class RexSpringApplication {
+public class RmxSpringApplication {
 
     private static SQLConnectionDescriber sqlConnectionTemp;
 
     private final SQLConnectionDescriber sqlConnectionDescriber;
 
-    public RexSpringApplication()
+    public RmxSpringApplication()
     {
         this.sqlConnectionDescriber = sqlConnectionTemp;
         sqlConnectionTemp = null;
@@ -48,9 +47,9 @@ public class RexSpringApplication {
      * @throws RMXException
      */
     public static void startDatabaseWithProperties(
-            Class<? extends RexSpringApplication> springBootApplication,
+            Class<? extends RmxSpringApplication> springBootApplication,
             SQLConnectionDescriber sqlConnectionDescriber,
-            String [] args)
+            String... args)
     {
 
         sqlConnectionTemp = sqlConnectionDescriber;
@@ -68,47 +67,19 @@ public class RexSpringApplication {
             hibernateProperties.setProperty("hibernate.globally_quoted_identifiers", "true");
         }
 
-        SpringApplication.run(springBootApplication, args);
+        if (springBootApplication != null)
+            SpringApplication.run(springBootApplication, args);
     }
 
-    private static final SQLType sqlType = SQLType.HSQLDB;
 
     public static void main(String[] args) {
-        SQLConnectionDescriber sqlDescriber;// = SQLConnectionDescriber.newMySQLDescriber();
-
-
-        switch (sqlType) {
-            case HSQLDB:
-                sqlDescriber = SQLConnectionDescriber.newHSQLDBDescriber();
-                String file = RexSpringApplication.class.getResource("").getFile() + "hsqldb/rmxdb";
-                Bugger.logAndPrint(file,true);
-                sqlDescriber.setConnectionUrl("jdbc:hsqldb:file:" + file +
-                        "?autoReconnect=true&createDatabaseIfNotExist=true");
-                break;
-            case MY_SQL:
-            default:
-                sqlDescriber = SQLConnectionDescriber.newMySQLDescriber();
-                sqlDescriber.setConnectionUrl("jdbc:mysql://localhost:3306/rmxdb" +
-                        "?autoReconnect=true&createDatabaseIfNotExist=true");
-                break;
-
+        if (sqlConnectionTemp == null) {
+            Bugger.logAndPrint("sqlConnectionDescriber was not prepared before booting application", true);
+            System.exit(1);
         }
 
-        sqlDescriber.setPackagesToScan("click.rmx.persistence.model");
+        SpringApplication.run(RmxSpringApplication.class,args);
 
-        startDatabaseWithProperties(
-                RexSpringApplication.class,
-                sqlDescriber,
-                args);
-
-
-//        SpringApplication.run(RexSpringApplication.class, args);
-        Box box = new Box();
-        box.setName("Boxy: " + Math.random());
-//        boxRepository.save(box);
-        BoxController.getInstance().save(box);
-
-        BoxController.getInstance().getAll().stream().forEach(System.out::println);
     }
 
 

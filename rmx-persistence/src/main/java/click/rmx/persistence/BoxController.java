@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * Created by Max on 09/10/2015.
@@ -46,5 +47,13 @@ public class BoxController {
     public List<Box> getAll()
     {
         return boxRepository.findAll();
+    }
+
+    public BoxRepository getBoxRepository() {
+        return boxRepository;
+    }
+
+    public void forEach(Consumer<? super Box> action) {
+        boxRepository.findAll().stream().forEach(action);
     }
 }

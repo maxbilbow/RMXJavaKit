@@ -767,3 +767,29 @@
 [09:03:13.067x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
 ====== END OF LOG ======
 
+====== BEGIN LOG ======
+[17:17:49.354x1] click.rmx.persistence.RexSpringApplication::main on line 84: /Users/Max/Gits/RMXJavaKit/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb
+[17:17:49.453x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:17:49.453x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[17:19:34.749x1] click.rmx.persistence.RexSpringApplication::main on line 84: /Users/Max/Gits/RMXJavaKit/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb
+[17:19:34.839x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:19:34.839x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[17:28:12.759x1] click.rmx.persistence.RexSpringApplication::main on line 84: /Users/Max/Gits/RMXJavaKit/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb
+[17:28:12.839x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 63: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:28:12.839x1] click.rmx.persistence.RexSpringApplication::startDatabaseWithProperties on line 67: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[20:15:06.726x1] click.rmx.persistence.RmxSpringApplication::main on line 77: sqlConnectionDescriber was not prepared before booting application
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[20:16:04.135x1] click.rmx.persistence.RmxSpringApplication::main on line 77: sqlConnectionDescriber was not prepared before booting application
+====== END OF LOG ======
+
