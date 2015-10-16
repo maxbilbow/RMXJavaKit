@@ -2,7 +2,6 @@ package click.rmx.persistence.model;
 
 
 import click.rmx.debug.Bugger;
-import click.rmx.engine.Scene;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.math.*;
 import click.rmx.engine.physics.CollisionBody;

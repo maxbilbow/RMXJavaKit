@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-engine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rmx-engine-math" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-engine-math/pom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-engine/pom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-multithread-toolkit" charset="UTF-8" />

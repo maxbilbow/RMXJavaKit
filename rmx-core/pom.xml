@@ -26,7 +26,7 @@
               <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
               <!--<start-class>fjwa.Application</start-class>-->
               <java.version>1.8</java.version>
-              <rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>
+              <!--<rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>-->
               <rmx.version>${version}</rmx.version>
        </properties>
        <parent>
@@ -40,9 +40,12 @@
                      <groupId>click.rmx.debug</groupId>
                      <artifactId>rmx-debug</artifactId>
                      <version>${rmx.version}</version>
-                     <scope>system</scope>
-                     <systemPath>${rmx.kit.dir}/rmx-debug.jar</systemPath>
               </dependency>
+           <dependency>
+               <groupId>click.rmx.core</groupId>
+               <artifactId>rmx-core</artifactId>
+               <version>${rmx.version}</version>
+           </dependency>
            <dependency>
                <groupId>junit</groupId>
                <artifactId>junit</artifactId>
@@ -89,5 +92,17 @@
               </plugins>
 
        </build>
+
+    <repositories>
+        <repository>
+            <id>rmx</id>
+            <name>RMXJavaKit</name>
+            <layout>default</layout>
+            <url>C:\Users\bilbowm\.m2\RMXJavaKit</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
 

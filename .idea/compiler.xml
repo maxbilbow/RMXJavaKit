@@ -67,12 +67,20 @@
         <processorPath useClasspath="true" />
         <module name="rmx-multithread-toolkit" />
       </profile>
+      <profile default="false" name="Annotation profile for rmx-engine-math" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-engine-math" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="aicubi-web" target="1.8" />
       <module name="rmx-core" target="1.8" />
       <module name="rmx-debug" target="1.8" />
       <module name="rmx-engine" target="1.8" />
+      <module name="rmx-engine-math" target="1.8" />
       <module name="rmx-multithread-toolkit" target="1.8" />
       <module name="rmx-persistence" target="1.8" />
     </bytecodeTargetLevel>

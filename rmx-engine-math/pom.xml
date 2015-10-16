@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
        <modelVersion>4.0.0</modelVersion>
 
-       <groupId>click.rmx.multithread</groupId>
-       <artifactId>rmx-multithread-toolkit</artifactId>
+       <groupId>click.rmx.engine</groupId>
+       <artifactId>rmx-engine-math</artifactId>
        <version>v0.0.2-SNAPSHOT</version>
        <packaging>jar</packaging>
 
-       <name>rmx-multithread-toolkit</name>
-       <description>RMXJavaKit Multithread Toolkit</description>
+       <name>rmx-engine-math</name>
+       <description>RMXGameEngine Maths Kit</description>
        <properties>
               <java.version>1.8</java.version>
-              <!--<rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>-->
               <rmx.version>${version}</rmx.version>
+           <vecmath.version>1.5.2</vecmath.version>
        </properties>
        <parent>
               <groupId>org.springframework.boot</groupId>
@@ -22,22 +22,40 @@
               <relativePath/> <!-- lookup parent from repository -->
        </parent>
        <dependencies>
+           <dependency>
+               <groupId>click.rmx.core</groupId>
+               <artifactId>rmx-core</artifactId>
+               <version>${rmx.version}</version>
+           </dependency>
               <dependency>
                      <groupId>click.rmx.debug</groupId>
                      <artifactId>rmx-debug</artifactId>
                      <version>${rmx.version}</version>
-                     <!--<scope>system</scope>-->
-                     <!--<systemPath>${rmx.kit.dir}/rmx-debug.jar</systemPath>-->
               </dependency>
+
+           <dependency>
+               <groupId>click.rmx.persistence</groupId>
+               <artifactId>rmx-persistence</artifactId>
+               <version>${rmx.version}</version>
+           </dependency>
+
            <dependency>
                <groupId>junit</groupId>
                <artifactId>junit</artifactId>
                <version>4.12</version>
                <scope>test</scope>
            </dependency>
+
+           <dependency>
+               <groupId>javax.vecmath</groupId>
+               <artifactId>vecmath</artifactId>
+               <version>${vecmath.version}</version>
+           </dependency>
+
+
        </dependencies>
        <build>
-              <finalName>rmx-multithread-toolkit</finalName>
+              <finalName>rmx-engine-math</finalName>
               <plugins>
                      <!-- Set a JDK compiler level -->
                      <plugin>
@@ -67,7 +85,7 @@
                           <archive>
                               <manifest>
                                   <!-- Jar file entry point -->
-                                  <mainClass>click.rmx.multithread.App</mainClass>
+                                  <mainClass>click.rmx.engine.math.App</mainClass>
                               </manifest>
                           </archive>
                       </configuration>

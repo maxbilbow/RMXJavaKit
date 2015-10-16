@@ -3,10 +3,9 @@ package click.rmx.persistence.model;
 import click.rmx.core.HierarchyObject;
 import click.rmx.engine.components.ANodeComponent;
 import click.rmx.engine.components.Node;
-import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.math.Float3;
+import click.rmx.engine.math.Matrix4;
 import com.sun.istack.internal.NotNull;
-
 
 import javax.persistence.*;
 import java.util.ArrayList;

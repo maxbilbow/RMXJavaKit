@@ -31,7 +31,7 @@
               <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
               <!--<start-class>fjwa.Application</start-class>-->
               <java.version>1.8</java.version>
-              <rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>
+              <!--<rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>-->
               <rmx.version>${version}</rmx.version>
        </properties>
 
@@ -71,8 +71,19 @@
                             </configuration>
                      </plugin>
 
-
               </plugins>
+
        </build>
+       <repositories>
+              <repository>
+                     <id>rmx</id>
+                     <name>RMXJavaKit</name>
+                     <layout>default</layout>
+                     <url>C:\Users\bilbowm\.m2\RMXJavaKit</url>
+                     <snapshots>
+                            <enabled>false</enabled>
+                     </snapshots>
+              </repository>
+       </repositories>
 </project>
 

@@ -1,15 +1,15 @@
 package click.rmx.engine.components;
 
-import click.rmx.core.IRMXObject;
 
+import click.rmx.core.IRMXObject;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.math.Matrix4;
-import click.rmx.persistence.model.PersistenceTransform;
-import click.rmx.persistence.model.Transform;
 import click.rmx.engine.physics.CollisionBody;
 import click.rmx.engine.physics.PhysicsBody;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 
 import java.util.List;
 import java.util.Set;

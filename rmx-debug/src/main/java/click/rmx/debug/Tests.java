@@ -3,6 +3,7 @@
 package click.rmx.debug;
 
 import java.lang.reflect.Method;
+import java.time.Instant;
 
 public class Tests {
 	public static int colWidth = 40;
@@ -55,7 +56,8 @@ public class Tests {
 		if (file.endsWith(".java"))
 			file = file.substring(0, file.length() - 5);
 		String method = trace.getMethodName();
-		String log = file + "::" + method + "() ";
+		String timestamp = Instant.now().toString();
+		String log = "[ "+timestamp+" ] " + file + "::" + method + "() ";
 		if (log.length() < colWidth) {
 			int diff = colWidth - log.length();
 			for (int i = 0; i<=diff; ++i)

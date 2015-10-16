@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/rmx-core/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-debug/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-engine-math/pom.xml" />
       </list>
     </option>
   </component>
