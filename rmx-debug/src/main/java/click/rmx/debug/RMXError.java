@@ -15,7 +15,7 @@ public enum RMXError {
 	 /**
 	  * We were not expecting this!
 	  */
-	 Unexpected("red", true);
+	 Unexpected("red", true), JustForFun("pink", false);
 //	 /**
 //	  * Undefined error type
 //	  */

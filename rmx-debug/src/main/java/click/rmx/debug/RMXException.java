@@ -32,7 +32,10 @@ public class RMXException extends Exception {
 		return err;
 	}
 	
-	public static RMXException unexpected(Exception e) {
+	public static RMXException unexpected(Exception e)
+	{
+		if (RMXException.class.isAssignableFrom(e.getClass()))
+			return (RMXException) e;
 		e.printStackTrace();
 		return new RMXException(e, RMXError.Unexpected, getLocation(1));
 	}
@@ -59,7 +62,7 @@ public class RMXException extends Exception {
 		this.log = e.toString();
 	}
 
-	private RMXException(RMXError type,  String location) {
+	private RMXException(RMXError type, String location) {
 		super(type.toString());
 		this.originalException = this;
 		this.type = type;
@@ -107,6 +110,10 @@ public class RMXException extends Exception {
 			System.out.println("Expected but should be managed: ");
 			System.out.println(this.getLocalizedMessage());
 			break;
+			case JustForFun:
+				System.out.println("Oh Crikey!");
+				System.out.println(this.getLocalizedMessage());
+				break;
 		case Unexpected:
 			System.err.println("UNEXPECTED ERROR!");
 			if (originalException == this)
@@ -116,4 +123,11 @@ public class RMXException extends Exception {
 			break;
 		}
 	}
+
+
+	public static RMXException expected(String message) {
+		RMXException e = new RMXException(RMXError.Expected, message);
+		return e;
+	}
+
 }

@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>click.rmx.spring</groupId>
-	<artifactId>rex-spring</artifactId>
+	<artifactId>rmx-persistence</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>rex-spring</name>
+	<name>rmx-persistence</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
