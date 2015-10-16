@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+       <modelVersion>4.0.0</modelVersion>
+
+       <groupId>click.rmx.debug</groupId>
+       <artifactId>rmx-debug</artifactId>
+       <version>v0.0.2-SNAPSHOT</version>
+       <packaging>jar</packaging>
+       <parent>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-parent</artifactId>
+              <version>1.2.6.RELEASE</version>
+              <relativePath/> <!-- lookup parent from repository -->
+       </parent>
+       <name>rmx-debug</name>
+       <description>RMXJavaKit debug Bundle</description>
+       <properties>
+              <!--<spring.version>4.2.1.RELEASE</spring.version>-->
+              <!--<spring-security.version>4.0.2.RELEASE</spring-security.version>-->
+              <!--&lt;!&ndash;<hibernate.version>5.2.1.Final</hibernate.version>&ndash;&gt;-->
+              <!--<hibernate.version>4.3.2.Final</hibernate.version>-->
+              <!--<hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>-->
+              <!--<hibernate-validator.version>${hibernate.version}</hibernate-validator.version>-->
+              <!--&lt;!&ndash;<junit.version>4.12</junit.version>&ndash;&gt;-->
+              <!--<spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>-->
+              <!--&lt;!&ndash;<javax-validation.version>1.1.0.Final</javax-validation.version>&ndash;&gt;-->
+              <!--<mysql.version>5.1.36</mysql.version>-->
+              <!--<tomcat.version>8.0.26</tomcat.version>-->
+              <!--<commons-logging.version>1.2</commons-logging.version>-->
+              <!--<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+              <!--<start-class>fjwa.Application</start-class>-->
+              <java.version>1.8</java.version>
+              <rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>
+              <rmx.version>${version}</rmx.version>
+       </properties>
+
+       <build>
+              <finalName>rmx-debug</finalName>
+              <plugins>
+                     <!-- Set a JDK compiler level -->
+                     <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <version>3.3</version>
+                            <configuration>
+                                   <source>${java.version}</source>
+                                   <target>${java.version}</target>
+                            </configuration>
+                     </plugin>
+                     <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                     </plugin>
+
+                     <!-- Make this jar executable -->
+                     <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-jar-plugin</artifactId>
+                            <configuration>
+                                   <!-- DO NOT include log4j.properties file in your Jar -->
+                                   <excludes>
+                                          <exclude>**/log4j.properties</exclude>
+                                   </excludes>
+                                   <archive>
+                                          <manifest>
+                                                 <!-- Jar file entry point -->
+                                                 <mainClass>click.rmx.debug.Bugger</mainClass>
+                                          </manifest>
+                                   </archive>
+                            </configuration>
+                     </plugin>
+
+
+              </plugins>
+       </build>
+</project>
+

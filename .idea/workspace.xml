@@ -2,45 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/ExceptionHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/OnlineBugger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_engine_math_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_multithread_toolkit_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_persistence_jar.xml" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\.idea\artifacts\spring_test_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\OpenAL.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\OpenAL32.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\javadoc.zip" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\liblwjgl.dylib" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\liblwjgl.so" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\liblwjgl32.so" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\libopenal.dylib" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\libopenal.so" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\libopenal32.so" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\lwjgl.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\lwjgl.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\lwjgl32.dll" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine\src.zip" afterPath="" />
-      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-persistence-old.zip" afterPath="" />
-      <change type="MOVED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-persistence\rex-spring.iml" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/rmx_core_jar/rmx-core.jar" afterPath="$PROJECT_DIR$/out/artifacts/rmx_core_jar/rmx-core.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/rmx_debug_jar/rmx-debug.jar" afterPath="$PROJECT_DIR$/out/artifacts/rmx_debug_jar/rmx-debug.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/rmx_engine_math_jar/rmx-engine-math.jar" afterPath="$PROJECT_DIR$/out/artifacts/rmx_engine_math_jar/rmx-engine-math.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/rmx_engine_jar/rmx-engine.jar" afterPath="$PROJECT_DIR$/out/artifacts/rmx_engine_jar/rmx-engine.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.lck" afterPath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXError.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXError.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXException.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-core/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-core/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-debug/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-engine/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_core_jar\rmx-core.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_debug_jar\rmx-debug.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_jar\rmx-engine.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\out\artifacts\rmx_engine_math_jar\rmx-engine-math.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-persistence\target\test-classes\click\rmx\persistence\hsqldb\rmxdb.lck" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-persistence\target\test-classes\click\rmx\persistence\hsqldb\rmxdb.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-persistence\target\test-classes\click\rmx\persistence\hsqldb\rmxdb.script" afterPath="" />
+      <change type="MOVED" beforePath="C:\ide\projects\rmx\RMXJavaKit\rmx-debug\src\main\java\click\rmx\debug\OnlineBugger.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java" afterPath="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/pom.xml" afterPath="$PROJECT_DIR$/rmx-persistence/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-core/rmx-core.iml" afterPath="$PROJECT_DIR$/rmx-core/rmx-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" afterPath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" afterPath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" afterPath="$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.properties" afterPath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.script" afterPath="$PROJECT_DIR$/rmx-persistence/target/classes/click/rmx/persistence/hsqldb/rmxdb.script" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/rmx_bugger.log" afterPath="$PROJECT_DIR$/rmx-persistence/rmx_bugger.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_core_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_core_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_engine_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_engine_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_engine_math_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_engine_math_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_multithread_toolkit_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_multithread_toolkit_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_persistence_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_persistence_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
@@ -51,6 +45,9 @@
     <ignored path="$PROJECT_DIR$/rmx-repository/target/" />
     <ignored path="$PROJECT_DIR$/rmx-persistence/target/" />
     <ignored path="$PROJECT_DIR$/aicubi-web/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-core/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-debug/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-multithread-toolkit/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,79 +105,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OnlineBugger.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/OnlineBugger.java">
+      <file leaf-file-name="RMXJavaKit.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RMXJavaKit.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMXException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMXError.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7586207">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMXThreadGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMXThreadMap.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65600884">
-              <caret line="40" column="79" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -188,8 +118,48 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-persistence/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9310346">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="47" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rmx-engine/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70011026">
+              <caret line="69" column="61" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rmx-engine-math.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationCenterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-core/src/test/java/click/rmx/core/NotificationCenterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -199,20 +169,32 @@
         <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+              <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
               <folding>
                 <element signature="e#1112#1113#0" expanded="true" />
                 <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
+                <element signature="e#2039#2040#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMXJavaKit.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RMXJavaKit.iml">
+      <file leaf-file-name="HierarchyObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/HierarchyObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.62069">
-              <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebBugger.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -227,9 +209,9 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="TestNG Test Class" />
-        <option value="spring-beans.schema" />
         <option value="Singleton" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -258,17 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/aicubi-web/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/HirarchyObject.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/WeakNode.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/actors/EntityGenerator.java" />
-        <option value="$PROJECT_DIR$/aicubi-desktop/src/main/java/com/maxbilbow/aicubo/AiCubo.java" />
-        <option value="$PROJECT_DIR$/aicubi-web/src/main/java/web/AicuboWebApplication.java" />
-        <option value="$PROJECT_DIR$/aicubi-web/src/test/java/web/AicuboWebApplicationTests.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/persistence/model/Transform.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/Updateable.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/UpdateableVars.java" />
-        <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/physics/PhysicsWorld.java" />
         <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/NodeComponent.java" />
         <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/physics/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/physics/CollisionEvent.java" />
@@ -302,13 +273,24 @@
         <option value="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence/repository/ExtendedBoxRepository.java" />
         <option value="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence/model/ExtendedBox.java" />
         <option value="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence/RmxSpringApplicationTests.java" />
-        <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/OnlineBugger.java" />
         <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/RMXException.java" />
-        <option value="$PROJECT_DIR$/rmx-persistence/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java" />
         <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java" />
         <option value="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java" />
         <option value="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java" />
+        <option value="$PROJECT_DIR$/rmx-debug/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/rmx-multithread-toolkit/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/HierarchyObject.java" />
+        <option value="$PROJECT_DIR$/rmx-core/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/OnlineBugger.java" />
+        <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" />
+        <option value="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" />
+        <option value="$PROJECT_DIR$/rmx-debug/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java" />
+        <option value="$PROJECT_DIR$/rmx-core/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/App.java" />
+        <option value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-engine/pom.xml" />
       </list>
     </option>
   </component>
@@ -329,6 +311,11 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -337,8 +324,14 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
+      </PATH>
+      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="rmx-repository" />
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rmx-debug" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -346,6 +339,24 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rmx-core" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="rmx-core" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -402,8 +413,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -428,22 +437,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-multithread-toolkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-multithread-toolkit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="multithread" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-engine-math" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="AiCubo-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20804597" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
@@ -461,11 +544,11 @@
       <recent name="click.rmx.engine.math" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-engine" />
+      <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-engine-math" />
+      <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-multithread-toolkit" />
+      <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-debug" />
       <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-multithread-toolkit\src\main\java\click\rmx\multithread" />
-      <recent name="$PROJECT_DIR$/rmx-persistence/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence" />
-      <recent name="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug" />
-      <recent name="$PROJECT_DIR$/rmx-persistence/src/test/java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-multithread-toolkit\src" />
@@ -695,6 +778,28 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
@@ -1086,7 +1191,9 @@
       <workItem from="1444598164650" duration="3209000" />
       <workItem from="1444634332748" duration="7870000" />
       <workItem from="1444849190927" duration="2677000" />
-      <workItem from="1444988493881" duration="916000" />
+      <workItem from="1444988493881" duration="5474000" />
+      <workItem from="1444994162553" duration="1454000" />
+      <workItem from="1444999990734" duration="155000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1130,24 +1237,29 @@
       <option name="project" value="LOCAL" />
       <updated>1444851527477</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Up to date with persistence, thread tools and new debug classes">
+      <created>1444989437725</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1444989437725</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84296000" />
+    <option name="totallyTimeSpent" value="90463000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277849" sideWeight="0.5078684" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.336887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25989306" sideWeight="0.49213162" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1162,9 +1274,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49167734" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4909091" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1191,7 +1304,8 @@
     <MESSAGE value="meh... not quite" />
     <MESSAGE value="getting there" />
     <MESSAGE value="Works on MySql and HSQLDB. Seems that it may be impossible to subclass an Entity. Important knowledge for building a data-driven game..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Works on MySql and HSQLDB. Seems that it may be impossible to subclass an Entity. Important knowledge for building a data-driven game..." />
+    <MESSAGE value="Up to date with persistence, thread tools and new debug classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up to date with persistence, thread tools and new debug classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1211,86 +1325,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rmx-persistence/src/main/java/click/rmx/persistence/RmxSpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/actors/EntityGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55776894">
-          <caret line="30" column="72" selection-start-line="30" selection-start-column="72" selection-end-line="30" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubi-web/src/test/java/web/AicuboWebApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03984064">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/physics/PhysicsWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7370518">
-          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/persistence/model/Transform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="30" selection-start-line="113" selection-start-column="30" selection-end-line="114" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/physics/CollisionEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="50" selection-start-line="172" selection-start-column="50" selection-end-line="172" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/behaviour/SpriteBehaviour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="64" selection-start-line="87" selection-start-column="64" selection-end-line="87" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/NodeComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="73" selection-start-line="5" selection-start-column="73" selection-end-line="5" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/IRMXObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18145162">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/UpdateableProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48387095">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/WeakObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aicubi-desktop/src/test/java/com/maxbilbow/aicubo/AiCuboCollisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1382,13 +1416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-persistence/src/main/java/click/rmx/persistence/model/Box.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12096774">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/persistence/model/Matrix4Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27217743">
@@ -1442,7 +1469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.451613">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,17 +1490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.1671388">
           <caret line="115" column="35" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-persistence/src/main/java/click/rmx/persistence/BoxController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6175637">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#1310#1311#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1483,16 +1498,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/OnlineBugger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,18 +1519,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-persistence/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/GameNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9310346">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12014134">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16868798">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8246968">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RMXJavaKit.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.62069">
-          <caret line="66" column="68" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-core/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/Categorizable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-persistence/src/main/java/click/rmx/persistence/model/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="17" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/HierarchyObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1531,58 +1607,99 @@
     <entry file="file://$PROJECT_DIR$/rmx-core/src/main/java/click/rmx/core/RMX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
           <folding>
             <element signature="e#1112#1113#0" expanded="true" />
             <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-engine/src/main/java/click/rmx/engine/components/GameNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7586207">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/ExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/rmx-core/src/test/java/click/rmx/core/NotificationCenterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84821427">
+          <caret line="90" column="15" selection-start-line="52" selection-start-column="6" selection-end-line="90" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-persistence/src/main/java/click/rmx/persistence/BoxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9026128">
+          <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-debug/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8788599">
+          <caret line="71" column="30" selection-start-line="54" selection-start-column="0" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="47" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4174107">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8950894">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java">
+    <entry file="file://$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65600884">
-          <caret line="40" column="79" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-engine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70011026">
+          <caret line="69" column="61" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,7 +1741,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lwjgl</last-edited>
+          <last-edited>rmx-core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1671,5 +1788,11 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/rmx-multithread-toolkit" />
+    <option value="clean compile install -DskipTests=true" />
+    <option value="clean compile install" />
+    <option value="clean compile" />
   </component>
 </project>

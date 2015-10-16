@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>click.rmx.spring</groupId>
+	<groupId>click.rmx.persistence</groupId>
 	<artifactId>rmx-persistence</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>v0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>rmx-persistence</name>
@@ -21,6 +21,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
+		<rmx.kit.dir>C:\ide\projects\rmx\lib</rmx.kit.dir>
+		<rmx.version>v0.0.2-SNAPSHOT</rmx.version>
+
 	</properties>
 
 	<dependencies>
@@ -52,15 +55,60 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.35</version>
 		</dependency>
+		<dependency>
+			<groupId>click.rmx.debug</groupId>
+			<artifactId>rmx-debug</artifactId>
+			<version>${rmx.version}</version>
+			<scope>system</scope>
+			<systemPath>${rmx.kit.dir}/rmx-debug.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>click.rmx.core</groupId>
+			<artifactId>rmx-core</artifactId>
+			<version>${rmx.version}</version>
+			<scope>system</scope>
+			<systemPath>${rmx.kit.dir}/rmx-core.jar</systemPath>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
+		<finalName>rmx-persistence</finalName>
 		<plugins>
+			<!-- Set a JDK compiler level -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- Make this jar executable -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<!-- DO NOT include log4j.properties file in your Jar -->
+					<excludes>
+						<exclude>**/log4j.properties</exclude>
+					</excludes>
+					<archive>
+						<manifest>
+							<!-- Jar file entry point -->
+							<mainClass>click.rmx.persistence.RmxSpringApplication</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 		</plugins>
+
 	</build>
 	
 

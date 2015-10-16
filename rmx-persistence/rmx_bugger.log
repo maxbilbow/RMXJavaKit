@@ -411,3 +411,8 @@
 [20:37:06.028x1] click.rmx.persistence.RmxSpringApplication::startDatabaseWithProperties on line 66: hibernate.globally_quoted_identifiers not given. Default will be "true"
 ====== END OF LOG ======
 
+====== BEGIN LOG ======
+[12:30:48.978x1] click.rmx.persistence.RmxSpringApplication::startDatabaseWithProperties on line 62: hibernate.hbm2ddl.auto not given. Default will be "update"
+[12:30:49.018x1] click.rmx.persistence.RmxSpringApplication::startDatabaseWithProperties on line 66: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+

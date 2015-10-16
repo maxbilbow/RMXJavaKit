@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/rmx-repository/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-persistence/pom.xml" />
         <option value="$PROJECT_DIR$/aicubi-web/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-core/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-debug/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
       </list>
     </option>
   </component>

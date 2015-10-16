@@ -136,4 +136,9 @@ public class Bugger {
 
 	
 	}
+
+	public static void main (String [] args)
+	{
+		Bugger.log("Hello!");
+	}
 }

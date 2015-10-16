@@ -18,8 +18,8 @@
         <processorPath useClasspath="true" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-engine" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="rmx-engine" />
@@ -38,15 +38,43 @@
         <processorPath useClasspath="true" />
         <module name="aicubi-web" />
         <module name="rex-spring" />
+      </profile>
+      <profile default="false" name="Annotation profile for rmx-core" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-core" />
+      </profile>
+      <profile default="false" name="Annotation profile for rmx-debug" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-debug" />
+      </profile>
+      <profile default="false" name="Annotation profile for rmx-persistence" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="rmx-persistence" />
+      </profile>
+      <profile default="false" name="Annotation profile for rmx-multithread-toolkit" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-multithread-toolkit" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="aicubi-web" target="1.8" />
-      <module name="rex-spring" target="1.8" />
+      <module name="rmx-core" target="1.8" />
+      <module name="rmx-debug" target="1.8" />
       <module name="rmx-engine" target="1.8" />
+      <module name="rmx-multithread-toolkit" target="1.8" />
       <module name="rmx-persistence" target="1.8" />
-      <module name="rmx-repository" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
