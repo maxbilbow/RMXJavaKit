@@ -26,6 +26,9 @@ public static int colWidth = 40;
 	public static void note(String s) {
 		_note(s,0);
 	}
+	public static void note(Object s) {
+		_note(s.toString(),0);
+	}
 	
 	public static void note(String s, int depth) {
 		_note(s,depth);

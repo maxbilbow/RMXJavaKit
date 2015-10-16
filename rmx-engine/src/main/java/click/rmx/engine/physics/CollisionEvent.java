@@ -4,7 +4,7 @@ import click.rmx.core.RMX;
 
 import click.rmx.engine.components.Node;
 import click.rmx.engine.Scene;
-import click.rmx.engine.components.Transform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.math.Vector3;
 
 public final class CollisionEvent {
@@ -98,9 +98,9 @@ public final class CollisionEvent {
 							new Vector3(axis == "x" ? 1 : 0, axis == "y" ? 1 : 0, axis == "z" ? 1 : 0
 									);
 
-								A.physicsBody().applyForce(escapeForce * (A.mass() + diff), dir, hitPointA);//.translate(AtoB);
+								A.physicsBody().applyForce(escapeForce * (A.physicsBody().getTotalMass() + diff), dir, hitPointA);//.translate(AtoB);
 
-								B.physicsBody().applyForce(-escapeForce * (B.mass() + diff), dir, hitPointB);//translate(AtoB);
+								B.physicsBody().applyForce(-escapeForce * (B.physicsBody().getTotalMass() + diff), dir, hitPointB);//translate(AtoB);
 
 
 		}
@@ -161,16 +161,16 @@ public final class CollisionEvent {
 	
 		log += "\n\nCollision Momentum Report: " + nodeA.uniqueName() + " vs. " + nodeB.uniqueName();
 
-		Vector3 Va = A.node.physicsBody().getVelocity();
-		Vector3 Vb = B.node.physicsBody().getVelocity();
+		Vector3 Va = A.getNode().physicsBody().getVelocity();
+		Vector3 Vb = B.getNode().physicsBody().getVelocity();
 		Vector3 direction = Vector3.makeSubtraction(Va, Vb);
 		if (direction.isZero())
 			return;
 		else
 			direction.normalize();
 
-		float m1 = A.mass();
-		float m2 = B.mass();
+		float m1 = A.physicsBody().getTotalMass();
+		float m2 = B.physicsBody().getTotalMass();
 
 		//		float res = (1 - A.node.physicsBody().getRestitution()) * (1 - B.node.physicsBody().getRestitution());
 		//		float resA = 1 - A.node.physicsBody().getRestitution();
@@ -179,8 +179,8 @@ public final class CollisionEvent {
 
 
 
-		float lossA = 1 - A.node.physicsBody().getRestitution();
-		float lossB = 1 - B.node.physicsBody().getRestitution();
+		float lossA = 1 - A.getNode().physicsBody().getRestitution();
+		float lossB = 1 - B.getNode().physicsBody().getRestitution();
 		float v1 = Va.length();
 		float v2 = Vb.length();
 

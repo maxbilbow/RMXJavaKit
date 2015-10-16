@@ -2,7 +2,6 @@ package click.rmx.engine.behaviour.ants;
 
 import click.rmx.core.RMX;
 import click.rmx.engine.Scene;
-import click.rmx.engine.behaviour.Ai;
 import click.rmx.engine.behaviour.CollisionHandler;
 import click.rmx.engine.behaviour.SpriteBehaviour;
 import click.rmx.engine.behaviour.ai.Strategy;
@@ -257,7 +256,7 @@ public class AntBehaviour extends SpriteBehaviour implements CollisionHandler, I
 	boolean limit(float bounds, boolean doubleCheck) {
 		Matrix4 m = this.transform().localMatrix();
 		boolean outOfBounds = false;
-		if (m.m30 > bounds) {
+		if (m.m30() > bounds) {
 			m.m30 *= -0.5;
 			m.m31 = (float)Tools.rBounds(10, 100);
 			outOfBounds = true;

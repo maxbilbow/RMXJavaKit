@@ -8,6 +8,7 @@ import click.rmx.engine.components.RootNode;
 import click.rmx.engine.gl.RenderDelegate;
 import click.rmx.engine.math.Matrix4;
 import click.rmx.engine.physics.PhysicsWorld;
+import click.rmx.persistence.model.PersistenceTransform;
 
 import java.util.stream.Stream;
 
@@ -70,12 +71,12 @@ public class Scene extends RMXObject {
 	
 	public void renderScene(Matrix4 viewMatrix) {
 
-		 Stream<Node> stream = this.rootNode.getChildren().stream();
+		 Stream<PersistenceTransform> stream = this.rootNode.getChildren().stream();
 	
 		 stream.forEach(n -> {
-			 n.shine();
+			 n.getNode().shine();
 			 if (viewMatrix != null) 
-				 n.draw(viewMatrix);
+				 n.getNode().draw(viewMatrix);
 		 });
 
 		

@@ -1,6 +1,8 @@
 package click.rmx.engine.math;
 
 
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+
 import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector4f;
 
@@ -13,12 +15,24 @@ public class Matrix4 extends Matrix4f {
 
 	private float[] m = new float[SIZE];
 
-	public static final Matrix4 Identity;
+	private static final Matrix4 IDENTITY;
+
+    public Matrix4(float[] elements) {
+        super(elements);
+    }
+
+    public Matrix4() {
+        super();
+    }
+
+    public static final Matrix4 Identity() {
+        return IDENTITY.clone();
+    }
 
 	static {
 		Matrix4 identity = new Matrix4();
 		identity.setIdentity();
-		Identity = identity;
+        IDENTITY = identity;
 	}
 	/**
 	 * 
@@ -31,11 +45,59 @@ public class Matrix4 extends Matrix4f {
 		m[12] = m30; m[13] = m31; m[14] = m32; m[15] = m33;
 		return m;
 	}
-	
 
-	
 
-	
+
+    public float m00() {
+        return m00;
+    }
+
+    public float m01() {
+        return m01;
+    }
+    public float m02() {
+        return m02;
+    }
+    public float m03() {
+        return m03;
+    }
+    public float m10() {
+        return m10;
+    }
+    public float m11() {
+        return m11;
+    }
+    public float m12() {
+        return m12;
+    }
+    public float m13() {
+        return m13;
+    }
+    public float m20() {
+        return m20;
+    }
+    public float m21() {
+        return m21;
+    }
+    public float m22() {
+        return m22;
+    }
+    public float m23() {
+        return m23;
+    }
+    public float m30() {
+        return m30;
+    }
+    public float m31() {
+        return m31;
+    }
+    public float m32() {
+        return m32;
+    }
+    public float m33() {
+        return m33;
+    }
+
 
 	
 	
@@ -242,5 +304,24 @@ public class Matrix4 extends Matrix4f {
 	}
 
 
+    public void attachBuffer(ValueBuffer buffer) {
+        float [] m = buffer.getElements();
+        if (m.length != this.m.length)
+            throw new ArrayIndexOutOfBoundsException("Buffer length should be 16 in matrix4");
+        this.m = buffer.getElements();
+        this.set(m);
+    }
 
+    public void setElements(float[] elements) {
+        this.m = elements;
+        super.set(elements);
+    }
+
+    public static void setElements(Matrix4 mat, float[] elements) {
+        mat.setElements(elements);
+    }
+
+//    public static void attacheBuffer(Matrix4 mat, ValueBuffer matrix4Buffer) {
+//        mat.attachBuffer(matrix4Buffer);
+//    }
 }

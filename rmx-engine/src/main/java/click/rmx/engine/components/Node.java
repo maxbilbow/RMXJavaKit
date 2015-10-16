@@ -6,11 +6,14 @@ import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.geometry.Geometry;
 import click.rmx.engine.geometry.Shape;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.physics.CollisionBody;
 import click.rmx.engine.physics.PhysicsBody;
 
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public interface Node extends IRMXObject {
 
@@ -20,11 +23,29 @@ public interface Node extends IRMXObject {
 
 	NodeComponent getComponent(Class<?> type);
 
-	List<Node> getChildren();
 
-	void addChild(Node child);
+    Stream<NodeComponent> getComponents();
 
-	boolean removeChildNode(Node node);
+	default List<PersistenceTransform> getChildren() {
+		return transform().getChildren();
+	}
+
+//	/**
+//	 * @Deprecated {@See:setParent}
+//	 * @param child
+//	 */
+//	@Deprecated
+//	void addChild(Node child);
+
+	void updateLogic(long time);
+
+	void updateAfterPhysics(long time);
+
+	void draw(Matrix4 viewMatrix);
+
+	default boolean removeChildNode(Node node) {
+		return transform().removeChild(node);
+	}
 
 	Node getChildWithName(String name);
 
@@ -70,16 +91,28 @@ public interface Node extends IRMXObject {
 	default void setLightSource(LightSource light) {
 		this.setComponent(LightSource.class, light);
 	}
-	
-	void updateLogic(long time);
 
-	void updateAfterPhysics(long time);
+	default Node getParent() {
+        PersistenceTransform parentTransform = getTransform().getParent();
+		return  parentTransform != null ? parentTransform.getNode() : null;
+	}
 
-	void draw(Matrix4 viewMatrix);
+	default void setParent(Node parent) {
+		getTransform().setParent(parent);
+		setNeedsUpdate();
+	}
 
-	Node getParent();
+    default void setNeedsUpdate() {
+        Stream<NodeComponent> componentStream = this.getComponents();
+        componentStream.forEach(component -> component.setNeedsUpdate());
+    }
 
-	void setParent(Node parent);
+
+    default void setParent(PersistenceTransform parent) {
+		getTransform().setParent(parent);
+	}
+
+
 
 	default void shine() {
 		LightSource light = this.getLight();
@@ -105,11 +138,21 @@ public interface Node extends IRMXObject {
 
 	void addToCurrentScene();
 
+	default PersistenceTransform getTransform() {
+		return transform();
+	}
+
 	Transform transform();
 
 	default void addGeometryToList(Set<Geometry> geometries) {
 		if (this.geometry() != null && this.geometry().isVisible())
 			geometries.add(this.geometry());
-		this.getChildren().stream().forEach(child -> child.addGeometryToList(geometries));
+		this.getChildren().stream().forEach(child -> child.getNode().addGeometryToList(geometries));
 	}
+
+	default void removeFromParent() {
+		this.getTransform().getParent().removeChild(this.getTransform());
+	}
+
+//	void setTransform(Transform transform);
 }

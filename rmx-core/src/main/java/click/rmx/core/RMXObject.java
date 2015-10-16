@@ -9,26 +9,34 @@ import java.util.LinkedList;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class RMXObject  implements IRMXObject {
+public class RMXObject implements IRMXObject {
 	private HashMap<String, Object> values = new HashMap<String, Object> ();
 	private HashMap<String, LinkedList<KeyValueObserver>> observers = new HashMap<String, LinkedList<KeyValueObserver>>  ();
 	//	protected String name = "Unnamed RMXObject";
 
-	private static int _count = 0;
-	private int id = _count++;
+	private static long _count = 0;
+	private final long id = _count++;
+
+	public long rmxID() {
+		return id;
+	}
 
 	/* (non-Javadoc)
 	 * @see IRMXObject#uniqueID()
 	 */
 	@Override
-	public int uniqueID() {
-		return this.id;
+	public Long getId() {
+		return rmxID();
 	}
-	public static int Count() {
+
+	public static long Count() {
 		return _count;
 	}
 	
-	
+	public void setId(Long id)
+	{
+		System.out.print("setId(" + id + ") - " + this.getName() + " is not a RMXPersistence object");
+	}
 	
 	public RMXObject() {
 		this.setName("Unnamed RMXObject");

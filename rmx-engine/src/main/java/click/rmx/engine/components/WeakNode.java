@@ -3,13 +3,14 @@ package click.rmx.engine.components;
 import click.rmx.core.WeakObject;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.Transform;
 
 import java.lang.ref.ReferenceQueue;
 import java.util.List;
 
 import static click.rmx.debug.Tests.todo;
 
-public class WeakNode extends WeakObject<Node> implements Node {
+public abstract class WeakNode extends WeakObject<Node> implements Node {
 
 	private WeakNode() {
 		super(Nodes.newGameNode());
@@ -44,19 +45,9 @@ public class WeakNode extends WeakObject<Node> implements Node {
 		return null;
 	}
 
-	@Override
-	public List<Node> getChildren() {
-		// TODO Auto-generated method stub
-		todo();
-		return null;
-	}
 
-	@Override
-	public void addChild(Node child) {
-		// TODO Auto-generated method stub
-		todo();
-		
-	}
+
+
 
 	@Override
 	public boolean removeChildNode(Node node) {
@@ -98,18 +89,8 @@ public class WeakNode extends WeakObject<Node> implements Node {
 		todo();
 	}
 
-	@Override
-	public Node getParent() {
-		// TODO Auto-generated method stub
-		todo();
-		return null;
-	}
 
-	@Override
-	public void setParent(Node parent) {
-		// TODO Auto-generated method stub
-		todo();
-	}
+
 
 	@Override
 	public boolean sendMessageToBehaviour(Class<?> theBehaviour, String message) {
@@ -132,17 +113,7 @@ public class WeakNode extends WeakObject<Node> implements Node {
 		
 	}
 
-	@Override
-	public Transform transform() {
-		todo();
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	public static WeakNode newInstnance() {
-		todo();
-		return new WeakNode(GameNode.newInstance());
-	}
 	
 
 }

@@ -12,7 +12,7 @@ import click.rmx.engine.behaviour.ants.AntBehaviour;
 import click.rmx.engine.components.LightSource;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.components.Nodes;
-import click.rmx.engine.components.Transform;
+import click.rmx.persistence.model.Transform;
 import click.rmx.engine.geometry.Shapes;
 import click.rmx.engine.gl.IKeyCallback;
 import click.rmx.engine.math.Tools;
@@ -37,10 +37,10 @@ public final class AiCubo extends GameController {
 		//		body.physicsBody().setDamping(0);
 		body.addBehaviour(new SpriteBehaviour());
 		body.transform().setScale(4f, 4.0f, 4f);	
-		Scene.getCurrent().rootNode().addChild(body);
+		body.addToCurrentScene();
 		//		body.setCollisionBody(new CollisionBody());
 		Node head = Nodes.newCameraNode();
-		body.addChild(head);
+		head.setParent(body);
 		body.transform().setPosition(10f,20f,20f);
 
 
@@ -90,12 +90,12 @@ public final class AiCubo extends GameController {
 						}
 					});
 
-					body.addChild(head);
+					head.setParent(body);
 					head.transform().setPosition(0, //put head where a head should be
-							body.transform().scale().y + head.transform().scale().y,
-							body.transform().scale().z + head.transform().scale().z);
+							body.transform().scale().y() + head.transform().scale().y(),
+							body.transform().scale().z() + head.transform().scale().z());
 					Node trailingCam = Nodes.newCameraNode();
-					body.addChild(trailingCam);
+					trailingCam.setParent(head);
 					trailingCam.setName("trailingCam");
 					trailingCam.transform().translate(0, 20, 50);
 					return body;
@@ -116,7 +116,7 @@ public final class AiCubo extends GameController {
 			Bugger.log("Success. Creating floor");
 			Node floor = Nodes.newGameNode();
 			floor.transform().setPosition(0,-10,0);
-			scene.rootNode().addChild(floor);
+			floor.addToCurrentScene();
 			//Float.POSITIVE_INFINITY;
 			floor.transform().setScale(inf, 10, inf);
 			floor.setGeometry(Shapes.Cube);
@@ -210,7 +210,7 @@ public final class AiCubo extends GameController {
 						Node n, cam;
 						Nodes.getCurrent().sendMessageToBehaviour(AntBehaviour.class,"setDefaultState");
 						do {
-							n = Scene.getCurrent().rootNode().getChildren().get((int)Tools.rBounds(0, max));
+							n = Scene.getCurrent().rootNode().getChildren().get((int)Tools.rBounds(0, max)).getNode();
 							cam = n.getChildWithName("trailingCam");
 						} while (cam == null);
 						n.setValue(GET_AI_STATE, AI_STATE_POSSESSED);//.sendMessageToBehaviour(Behaviour.class,"setState", Behaviour.AI_STATE_POSSESSED);

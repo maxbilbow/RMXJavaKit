@@ -5,6 +5,8 @@ package click.rmx.engine.physics;
 import click.rmx.core.RMXObject;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.math.Vector3;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -33,12 +35,12 @@ public class PhysicsWorld extends RMXObject {
 	}
 
 	public void updatePhysics(Node rootNode) {
-		Stream<Node> children = rootNode.getChildren().stream();
+		Stream<PersistenceTransform> children = rootNode.getChildren().stream();
 		
-		children.forEach(node -> {
-			if (node.physicsBody() != null) {
-				this.applyGravityToNode(node);
-				node.physicsBody().updatePhysics(this);
+		children.forEach(transform -> {
+			if (transform.getNode().physicsBody() != null) {
+				this.applyGravityToNode(transform.getNode().physicsBody());
+				transform.getNode().physicsBody().updatePhysics(this);
 			}
 		});
 //		children.close();
@@ -46,42 +48,42 @@ public class PhysicsWorld extends RMXObject {
 	}
 
 
-	private void applyGravityToNode(Node node) {
-		if (this.gravity.isZero() || !node.physicsBody().isEffectedByGravity())
+	private void applyGravityToNode(PhysicsBody body) {
+		if (this.gravity.isZero() || !body.getNode().physicsBody().isEffectedByGravity())
 			return;
-		float ground = node.transform().getHeight() / 2;//.scale().y / 2;
-		float mass = node.transform().mass();
+		float ground = body.transform().getHeight() / 2;//.scale().y / 2;
+		float mass = body.getTotalMass();
 		float framerate = rmxGetCurrentFramerate();
-		float height = node.transform().worldMatrix().m31;
+		float height = body.transform().worldMatrix().m31;
 		if (height > ground) {
 			//			System.out.println(node.getName() + " >> BEFORE: " + m.position());
-			node.physicsBody().applyForce(framerate * mass, this.gravity, Vector3.Zero);
+			body.getNode().physicsBody().applyForce(framerate * mass, this.gravity, Vector3.Zero);
 			//			node.forces.x += g.x * framerate * mass;
 			//			this.forces.y += g.y * framerate * mass;
 			//			this.forces.z += g.z * framerate * mass;
-		} else if (node.getParent().getParent() == null) {
-			node.transform().localMatrix().m31 = ground;
+		} else if (body.transform().isGameRoot()) {
+			body.transform().localMatrix().m31 = ground;
 		}
 
 	}
 	private Collection<CollisionBody> staticBodies = new LinkedList<>();
 	private Collection<CollisionBody> dynamicBodies = new LinkedList<>();
 	private Collection<CollisionBody> kinematicBodies = new LinkedList<>();
-	void buildCollisionList(Collection<Node> collection) {
+	void buildCollisionList(Collection<PersistenceTransform> collection) {
 		this.staticBodies.clear();
 		this.dynamicBodies.clear();
 		this.kinematicBodies.clear();
-		collection.forEach(node -> {
-			if (node.collisionBody() != null) {
-				switch (node.physicsBody().getType()) {
+		collection.forEach(transform -> {
+			if (transform.getNode().collisionBody() != null) {
+				switch (transform.getNode().physicsBody().getType()) {
 				case Dynamic:
-					this.dynamicBodies.add(node.collisionBody());
+					this.dynamicBodies.add(transform.getNode().collisionBody());
 					break;
 				case Static:
-					this.staticBodies.add(node.collisionBody());
+					this.staticBodies.add(transform.getNode().collisionBody());
 					break;
 				case Kinematic:
-					this.kinematicBodies.add(node.collisionBody());
+					this.kinematicBodies.add(transform.getNode().collisionBody());
 					break;
 				default:
 					break;

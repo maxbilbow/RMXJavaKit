@@ -1,0 +1,16 @@
+
+*.class
+
+*.log
+
+rmx-persistence/hsqldb/rmxdb.script
+
+.idea/dataSources.xml
+
+.idea/dataSources.xml
+
+rmx-persistence/hsqldb/rmxdb?autoReconnect=true&createDatabaseIfNotExist=true.log
+
+*.log
+
+*.log

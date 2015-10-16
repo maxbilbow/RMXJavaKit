@@ -4,18 +4,37 @@ import click.rmx.core.RMXObject;
 import click.rmx.engine.Scene;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.engine.math.Matrix4;
+import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.persistence.model.Transform;
 
+import javax.persistence.*;
 import java.util.*;
 import java.util.stream.Stream;
 
 
-public class GameNode extends RMXObject implements Node {
+public class GameNode extends RMXObject implements Node  {
 
-	
-	private Node parent;
+	@Id
+	@GeneratedValue
+	private Long id;
 
-	
+	@Override
+	public Long getId() {
+		return id;
+	}
+
+//	@Override
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	@OneToOne
+	private Transform transform;
+
+	@Transient
 	private final HashMap<Class<?>,NodeComponent> components = new HashMap<>();
+
+	@ManyToMany
 	private final Set<IBehaviour> behaviours = new HashSet<>();
 	
 	/* (non-Javadoc)
@@ -26,10 +45,14 @@ public class GameNode extends RMXObject implements Node {
 		this.components.put(type, component);
 		component.setNode(this);
 	}
-	
+
+	public Stream<NodeComponent> getComponents() {
+		return components.values().stream();
+	}
+
 	/* (non-Javadoc)
-	 * @see click.rmx.Node#addBehaviour(click.rmx.IBehaviour)
-	 */
+         * @see click.rmx.Node#addBehaviour(click.rmx.IBehaviour)
+         */
 	@Override
 	public void addBehaviour(IBehaviour behaviour) {
 		if (behaviour != null) {
@@ -53,34 +76,27 @@ public class GameNode extends RMXObject implements Node {
 		return components.getOrDefault(type,null);
 	}
 	
-	private final Transform transform;
 
-	private ArrayList<Node> children = new ArrayList<Node>();
-	/* (non-Javadoc)
-	 * @see click.rmx.Node#getChildren()
-	 */
-	@Override
-	public List<Node> getChildren() {
-		return this.children;
-	}
-	
-	/* (non-Javadoc)
-	 * @see click.rmx.Node#addChild(click.rmx.Node)
-	 */
-	@Override
-	public void addChild(Node child) {
-		if (!this.children.contains(child)) {
-			this.children.add(child);
-			child.setParent(this);
-		}
-	}
+
+//	private ArrayList<Node> children = new ArrayList<Node>();
+
+//	/* (non-Javadoc)
+//	 * @see click.rmx.Node#addChild(click.rmx.Node)
+//	 */
+//	@Override
+//	public void addChild(Node child) {
+//		if (!this.children.contains(child)) {
+//			this.children.add(child);
+//			child.setParent(this);
+//		}
+//	}
 	
 	/* (non-Javadoc)
 	 * @see click.rmx.Node#removeChildNode(click.rmx.Node)
 	 */
 	@Override
 	public boolean removeChildNode(Node node) {
-		return this.children.remove(node);
+		return this.getTransform().removeChild(node);
 	}
 	
 	/* (non-Javadoc)
@@ -88,16 +104,15 @@ public class GameNode extends RMXObject implements Node {
 	 */
 	@Override
 	public Node getChildWithName(String name) {
-		for (Node child : this.children) {
-			if (child.getName() == name)
-				return child;
+		for (PersistenceTransform child: this.getChildren()) {
+			if (child.getNode().getName() == name)
+				return child.getNode();
 		}
 		return null;
 	}
 	
 	protected GameNode(){
-		this.transform = new Transform(this);
-		
+		setComponent(PersistenceTransform.class, this.transform = new Transform(this));
 	}
 
 	
@@ -114,15 +129,16 @@ public class GameNode extends RMXObject implements Node {
 		});
 //		behaviours.close();		
 		
-		Stream<Node> children = this.children.stream();
+		Stream<PersistenceTransform> children = this.getTransform().getChildren().stream();
 		children.forEach(child -> {
-			child.updateLogic(time);
+			child.getNode().updateLogic(time);
 		});
-		
-	
+
+
 	}
 
-	private long _timeStamp = -1;
+
+//	private long _timeStamp = -1;
 	
 	/* (non-Javadoc)
 	 * @see click.rmx.Node#updateAfterPhysics(long)
@@ -134,12 +150,13 @@ public class GameNode extends RMXObject implements Node {
 				behaviour.broadcastMessage("lateUpdate");
 		});
 		
-		for (Node child: this.children)
-			child.updateAfterPhysics(time);
-		this.transform.updateLastPosition();
+		for (PersistenceTransform child: this.getChildren())
+			child.getNode().updateAfterPhysics(time);
+		transform.update();
 //		this.updateTick(time);
 		///.set(arg0);
-		_timeStamp = time;
+//		_timeStamp = time;
+
 	}
 	
 	/* (non-Javadoc)
@@ -147,33 +164,15 @@ public class GameNode extends RMXObject implements Node {
 	 */
 	@Override
 	public void draw(Matrix4 viewMatrix) {
+		this.geometry().updateProperties();
 		if (this.geometry() != null) 
 			this.geometry().render();//, modelMatrix);
-		for (Node child : this.children) 
-			child.draw(viewMatrix);
-	}
-	
-	
-		
-	
-	/* (non-Javadoc)
-	 * @see click.rmx.Node#getParent()
-	 */
-	@Override
-	public Node getParent() {
-		return parent;
-	}
+		for (PersistenceTransform child: this.getChildren())
+			child.getNode().draw(viewMatrix);
 
-	/* (non-Javadoc)
-	 * @see click.rmx.Node#setParent(click.rmx.Node)
-	 */
-	@Override
-	public void setParent(Node parent) {
-		if (this.parent != null && parent != this.parent) {
-			this.parent.removeChildNode(this);
-;		}
-		this.parent = parent;
 	}
+	
+
 	
 	/* (non-Javadoc)
 	 * @see click.rmx.Node#broadcastMessage(java.lang.String)
@@ -187,8 +186,8 @@ public class GameNode extends RMXObject implements Node {
 		for (IBehaviour b : this.behaviours) {
 			b.broadcastMessage(message);
 		}
-		for (Node child : this.children) {
-			child.broadcastMessage(message);
+		for (PersistenceTransform child: this.getChildren()) {
+			child.getNode().broadcastMessage(message);
 		}
 	}
 
@@ -204,8 +203,8 @@ public class GameNode extends RMXObject implements Node {
 		for (IBehaviour b : this.behaviours) {
 			b.broadcastMessage(message, args);
 		}
-		for (Node child : this.children) {
-			child.broadcastMessage(message, args);
+		for (PersistenceTransform child: this.getChildren()) {
+			child.getNode().broadcastMessage(message, args);
 		}
 	}
 	
@@ -242,7 +241,9 @@ public class GameNode extends RMXObject implements Node {
 	 */
 	@Override
 	public void addToCurrentScene() {
-		Scene.getCurrent().rootNode().addChild(this);
+		this.setParent(
+				Scene.getCurrent().rootNode()
+		);
 	}
 
 //	private long tick = System.currentTimeMillis();
@@ -259,13 +260,6 @@ public class GameNode extends RMXObject implements Node {
 //	}
 
 	
-
-	@Override
-	public Transform transform() {
-		return this.transform;
-	}
-
-	
 	public static GameNode newInstance() {
 		return new GameNode();
 	}
@@ -274,9 +268,18 @@ public class GameNode extends RMXObject implements Node {
 	public static RootNode newRootNode() {
 		return RootNodeImpl.newInstance();
 	}
-	
-	
-	
+
+
+	public Transform transform() {
+		return transform;
+	}
+
+
+
+
+	public void setTransform(PersistenceTransform transform) {
+		this.setComponent(PersistenceTransform.class, this.transform = (Transform) transform);
+	}
 }
 
 

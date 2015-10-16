@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aicubi-desktop/aicubi-desktop.iml" filepath="$PROJECT_DIR$/aicubi-desktop/aicubi-desktop.iml" group="AiCubo-Java" />
+      <module fileurl="file://$PROJECT_DIR$/aicubi-web/aicubi-web.iml" filepath="$PROJECT_DIR$/aicubi-web/aicubi-web.iml" group="AiCubo-Java" />
       <module fileurl="file://$PROJECT_DIR$/rmx-core/rmx-core.iml" filepath="$PROJECT_DIR$/rmx-core/rmx-core.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-debug/rmx-debug.iml" filepath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-engine/rmx-engine.iml" filepath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-engine-ai/rmx-engine-ai.iml" filepath="$PROJECT_DIR$/rmx-engine-ai/rmx-engine-ai.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-persistence/rex-spring.iml" filepath="$PROJECT_DIR$/rmx-persistence/rex-spring.iml" group="RMXJavaKit" />
     </modules>
   </component>
 </project>

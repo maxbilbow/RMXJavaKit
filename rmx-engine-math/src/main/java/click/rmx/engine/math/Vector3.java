@@ -1,5 +1,6 @@
 package click.rmx.engine.math;
 
+
 import javax.vecmath.Tuple3f;
 import java.io.Serializable;
 
@@ -148,5 +149,60 @@ public class Vector3 extends Tuple3f implements Serializable {
 	}
 
 
+    public Vector3 setAsUp(Matrix4 mat)
+    {
+        this.set(
+                mat.m10,
+                mat.m11,
+                mat.m12
+        );
+        return this;
+    }
 
+    public Vector3 setAsLeft(Matrix4 mat)
+    {
+        this.set(
+                mat.m00,
+                mat.m01,
+                mat.m02
+        );
+        return this;
+    }
+
+    public Vector3 setAsForward(Matrix4 mat)
+    {
+        this.set(
+                mat.m20,
+                mat.m21,
+                mat.m22
+        );
+        return this;
+    }
+
+    public Vector3 setAsPosition(Matrix4 mat)
+    {
+        this.set(
+                mat.m30,
+                mat.m31,
+                mat.m32
+        );
+        return this;
+    }
+
+
+
+	public Vector3 setValue(float var1, float var2, float var3) {
+		this.x = var1;
+		this.y = var2;
+		this.z = var3;
+		return this;
+	}
+
+    public static float[] random() {
+        return new float[] {
+                (float) Math.random() * 100,
+                (float) Math.random() * 100,
+                (float) Math.random() * 100,
+        };
+    }
 }

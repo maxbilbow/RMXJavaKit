@@ -1,17 +1,27 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.RMXObject;
+import click.rmx.persistence.model.Transform;
 
-public abstract class ANodeComponent extends RMXObject implements NodeComponent {
+public abstract class ANodeComponent extends RMXObject implements NodeComponent, UpdateableProperties {
 	private boolean enabled = true;
-	
-//	public abstract void update();
+	private boolean needsUpdate = true;
+	/**
+	 * Called everytime a change, t
+	 */
+
 
 	public ANodeComponent() {
 		super();
 		this.setName(this.getClass().getName());
+		setNeedsUpdate();
 	}
-	
+
+	public void updateProperties() {
+		needsUpdate = false;
+	}
+
+
 	/* (non-Javadoc)
 	 * @see click.rmx.NodeComponent#isEnabled()
 	 */
@@ -55,7 +65,7 @@ public abstract class ANodeComponent extends RMXObject implements NodeComponent 
 	 */
 	@Override
 	public Transform transform() {
-		return this.node.transform();
+		return (Transform) this.getNode().transform();
 	}
 	
 	/* (non-Javadoc)
@@ -73,8 +83,13 @@ public abstract class ANodeComponent extends RMXObject implements NodeComponent 
 	public Object setValue(String forKey, Object value) {
 		return this.getNode().setValue(forKey, value);
 	}
-	
-	
-	
 
+
+	public boolean needsUpdate() {
+		return needsUpdate;
+	}
+
+	public void setNeedsUpdate() {
+		this.needsUpdate = true;
+	}
 }
