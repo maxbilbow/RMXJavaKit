@@ -416,3 +416,24 @@
 [12:30:49.018x1] click.rmx.persistence.RmxSpringApplication::startDatabaseWithProperties on line 66: hibernate.globally_quoted_identifiers not given. Default will be "true"
 ====== END OF LOG ======
 
+====== BEGIN LOG ======
+[17:02:05.906x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:02:05.966x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[17:03:36.183x1] click.rmx.debug.Bugger::logAndPrint on line 47: /C:/ide/projects/rmx/RMXJavaKit/rmx-persistence/target/test-classes/click/rmx/persistence/hsqldb/rmxdb
+[17:03:36.236x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:03:36.236x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[17:04:25.173x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:04:25.214x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+
+====== BEGIN LOG ======
+[17:05:06.754x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.hbm2ddl.auto not given. Default will be "update"
+[17:05:06.794x1] click.rmx.debug.Bugger::logAndPrint on line 47: hibernate.globally_quoted_identifiers not given. Default will be "true"
+====== END OF LOG ======
+

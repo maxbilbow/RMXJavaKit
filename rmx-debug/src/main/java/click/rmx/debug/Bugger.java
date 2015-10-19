@@ -55,9 +55,8 @@ public class Bugger {
 	{
 		if (logging) {
 			Bugger b = getInstance();
-			String log = b.logMessage(o);
-				b.logs.removeLast();
-			System.out.println(log);
+			b.logMessage(o);
+			Tests.note(String.valueOf(o),1);
 		}
 	}
 	public static void print(Object o, boolean andLog) {
@@ -67,7 +66,7 @@ public class Bugger {
 			if (!andLog) {
 				b.logs.removeLast();
 			}
-			System.out.println(log);
+			Tests.note(String.valueOf(o));
 		}
 	}
 	
