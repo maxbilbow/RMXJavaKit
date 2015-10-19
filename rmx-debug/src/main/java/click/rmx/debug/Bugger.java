@@ -36,12 +36,35 @@ public class Bugger {
 		}
 		return singleton;
 	}
-	
+
+	/**
+	 * @Depricated Use @{link:print} instead
+	 * @param o
+	 * @param keep
+	 */
+	@Deprecated
 	public static void logAndPrint(Object o, boolean keep) {
+		print(o,keep);
+	}
+
+	/**
+	 * Print but do not store output in log
+	 * @param o
+	 */
+	public static void print(Object o)
+	{
 		if (logging) {
 			Bugger b = getInstance();
 			String log = b.logMessage(o);
-			if (!keep) {
+				b.logs.removeLast();
+			System.out.println(log);
+		}
+	}
+	public static void print(Object o, boolean andLog) {
+		if (logging) {
+			Bugger b = getInstance();
+			String log = b.logMessage(o);
+			if (!andLog) {
 				b.logs.removeLast();
 			}
 			System.out.println(log);
