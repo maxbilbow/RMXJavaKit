@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence/RmxSpringApplicationTests.java" afterPath="$PROJECT_DIR$/rmx-persistence/src/test/java/click/rmx/persistence/RmxSpringApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/rmx_bugger.log" afterPath="$PROJECT_DIR$/rmx-persistence/rmx_bugger.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
@@ -1166,7 +1163,7 @@
       <workItem from="1445254646458" duration="336000" />
       <workItem from="1445255261809" duration="370000" />
       <workItem from="1445256882361" duration="689000" />
-      <workItem from="1445270489401" duration="2296000" />
+      <workItem from="1445270489401" duration="2305000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1234,11 +1231,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445252624982</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Simplified Bugger.longAndPrint to print()">
+      <created>1445272946530</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1445272946530</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97990000" />
+    <option name="totallyTimeSpent" value="97999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
