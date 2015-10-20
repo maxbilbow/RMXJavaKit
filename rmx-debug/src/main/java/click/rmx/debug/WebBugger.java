@@ -71,7 +71,7 @@ public class WebBugger {
 
     public void addException(String message)
     {
-        this.addException("<span style=\"color: red;\">ERR >> </span>" + toHtml(message));
+        this.addLog("<span style=\"color: red;\">ERR >> </span>" + toHtml(message));
     }
 
 
@@ -137,7 +137,7 @@ public class WebBugger {
             channel.queueBind(queueName, DEBUG_EXCHANGE_NAME, bindingKey);
         }
 
-        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+        print(" [WebBugger] Waiting for messages. To exit press CTRL+C");
 
         Consumer consumer = new DefaultConsumer(channel) {
             @Override
