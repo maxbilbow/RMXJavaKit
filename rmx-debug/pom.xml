@@ -35,6 +35,13 @@
               <rmx.version>${version}</rmx.version>
        </properties>
 
+       <dependencies>
+              <dependency>
+                     <groupId>org.springframework.amqp</groupId>
+                     <artifactId>spring-rabbit</artifactId>
+                     <version>${spring-amqp.version}</version>
+              </dependency>
+       </dependencies>
        <build>
               <finalName>rmx-debug</finalName>
               <plugins>

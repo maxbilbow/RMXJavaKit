@@ -1,23 +1,52 @@
 package click.rmx.debug;
 
+import com.rabbitmq.client.*;
+
+import java.io.IOException;
 import java.util.*;
+
+import static click.rmx.debug.Bugger.print;
+import static click.rmx.debug.Bugger.timestamp;
 
 /**
  * Created by bilbowm on 13/10/2015.
  */
 public class WebBugger {
 
+    public static final String DEBUG_EXCHANGE_NAME = "debug_topic_exchange";
+
+    private Connection connection;
+    private Channel channel;
 
     private static WebBugger instance;
 
     public static WebBugger getInstance()
     {
-        return instance != null ? instance : new WebBugger();
+        return instance != null ? instance : (instance = new WebBugger());
     }
 
     private WebBugger()
     {
-        instance = this;
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                if (instance != null) {
+                    if (channel != null)
+                        try {
+                            channel.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    if (connection != null)
+                        try {
+                            connection.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                }
+
+            }
+        });
     }
 
     private final Set<String> errors = new HashSet<>();
@@ -83,5 +112,50 @@ public class WebBugger {
 
     public void addFunException(String message) {
         this.addException(RMXException.newInstance(message, RMXError.JustForFun));
+    }
+
+
+    public void startDebugQueue(String... topics) throws IOException {
+        List<String> argv = Arrays.asList("debug.#", "#.log", "#.error", "#.exception");
+        for (String s : topics)
+            argv.add(s);
+
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost");
+        connection = factory.newConnection();
+        channel = connection.createChannel();
+
+        channel.exchangeDeclare(DEBUG_EXCHANGE_NAME, "topic");
+        String queueName = channel.queueDeclare().getQueue();
+
+        if (argv.size() < 1) {
+            System.err.println("Usage: ReceiveLogsTopic [binding_key]...");
+            System.exit(1);
+        }
+
+        for (String bindingKey : argv) {
+            channel.queueBind(queueName, DEBUG_EXCHANGE_NAME, bindingKey);
+        }
+
+        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+
+        Consumer consumer = new DefaultConsumer(channel) {
+            @Override
+            public void handleDelivery(String consumerTag, Envelope envelope,
+                                       AMQP.BasicProperties properties, byte[] body) throws IOException {
+                String message = new String(body, "UTF-8");
+                String topic = envelope.getRoutingKey().toLowerCase();
+                String log = "[" + timestamp() + "] WebBugger received '" +
+                        topic +
+                        "':'" + message + "'";
+                print(log);
+                if (topic.contains("error") || topic.contains("exception"))
+                    instance.addException(log);
+                else
+                    instance.addLog(log);
+
+            }
+        };
+        channel.basicConsume(queueName, true, consumer);
     }
 }

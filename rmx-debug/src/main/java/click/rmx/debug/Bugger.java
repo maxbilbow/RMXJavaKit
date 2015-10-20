@@ -3,6 +3,8 @@ package click.rmx.debug;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -114,7 +116,11 @@ public class Bugger {
 		this.logs.addLast(newLog);	
 		return newLog;
 	}
-	
+	public static String timestamp()
+	{
+		return DateTimeFormatter.ISO_INSTANT
+				.format(Instant.now()).split("T")[1];//.split(".")[0];
+	}
 
 	public void printAll(boolean toConsole) {
 		String systemLog = "====== BEGIN LOG ======\n";
