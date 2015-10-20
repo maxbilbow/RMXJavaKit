@@ -38,7 +38,11 @@ public class Bugger {
 		}
 		return singleton;
 	}
-
+	public static String timestamp()
+	{
+		return DateTimeFormatter.ISO_INSTANT
+				.format(Instant.now()).split("T")[1];//.split(".")[0];
+	}
 	/**
 	 * @Depricated Use @{link:print} instead
 	 * @param o
@@ -116,11 +120,7 @@ public class Bugger {
 		this.logs.addLast(newLog);	
 		return newLog;
 	}
-	public static String timestamp()
-	{
-		return DateTimeFormatter.ISO_INSTANT
-				.format(Instant.now()).split("T")[1];//.split(".")[0];
-	}
+
 
 	public void printAll(boolean toConsole) {
 		String systemLog = "====== BEGIN LOG ======\n";

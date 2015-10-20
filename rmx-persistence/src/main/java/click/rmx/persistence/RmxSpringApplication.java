@@ -74,7 +74,7 @@ public class RmxSpringApplication {
 
     public static void main(String[] args) {
         if (sqlConnectionTemp == null) {
-            Bugger.logAndPrint("sqlConnectionDescriber was not prepared before booting application", true);
+            Bugger.print("sqlConnectionDescriber was not prepared before booting application", true);
             System.exit(1);
         }
 

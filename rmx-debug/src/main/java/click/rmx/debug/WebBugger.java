@@ -17,6 +17,7 @@ public class WebBugger {
 
     private Connection connection;
     private Channel channel;
+    private Consumer consumer;
 
     private static WebBugger instance;
 
@@ -43,6 +44,7 @@ public class WebBugger {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
+                    consumer = null;
                 }
 
             }
@@ -139,7 +141,7 @@ public class WebBugger {
 
         print(" [WebBugger] Waiting for messages. To exit press CTRL+C");
 
-        Consumer consumer = new DefaultConsumer(channel) {
+        consumer = new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
