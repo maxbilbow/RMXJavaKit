@@ -46,9 +46,14 @@ public class WebBugger {
     }
 
 
+    public void addException(Exception e, String message)
+    {
+        this.addException(RMXException.unexpected(e, message, 1));
+    }
+
     public void addException(Exception e)
     {
-        this.addException(RMXException.unexpected(e));
+        this.addException(RMXException.unexpected(e,1));
     }
 
     public void addException(RMXException e) {
