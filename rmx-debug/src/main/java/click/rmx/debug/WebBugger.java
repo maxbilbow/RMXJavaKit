@@ -68,12 +68,12 @@ public class WebBugger {
     }
 
     public void addLog(String log) {
-        this.logs.addFirst("<span style=\"color: green;\">LOG >> </span>" + toHtml(log));
+        this.logs.addFirst("<span style=\"color: green;\">LOG ["+timestamp()+"] >> </span>" + toHtml(log));
     }
 
     public void addException(String message)
     {
-        this.addLog("<span style=\"color: red;\">ERR >> </span>" + toHtml(message));
+        this.addLog("<span style=\"color: red;\">ERR ["+timestamp()+"] >> </span>" + toHtml(message));
     }
 
 
