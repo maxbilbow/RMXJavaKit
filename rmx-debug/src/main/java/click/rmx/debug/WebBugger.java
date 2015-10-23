@@ -1,5 +1,8 @@
 package click.rmx.debug;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
@@ -129,8 +132,10 @@ public class WebBugger {
         this.addException(RMXException.newInstance(message, RMXError.JustForFun));
     }
 
-
     public void startDebugQueue(String... topics) throws IOException {
+        startDebugQueue(null, topics);
+    }
+    public void startDebugQueue(final Consumer consumer, String... topics) throws IOException {
         List<String> argv = Arrays.asList("debug.#", "#.log", "#.error", "#.exception");
         for (String s : topics)
             argv.add(s);
@@ -153,24 +158,57 @@ public class WebBugger {
         }
 
         print(" [WebBugger] Waiting for messages. To exit press CTRL+C");
+
+        this.consumer = consumer != null ? consumer : this.defaultConsumer();
+        channel.basicConsume(queueName, true, this.consumer);
+    }
+
+    private Consumer defaultConsumer() {
         final WebBugger thisInstance = this;
-        this.consumer = new DefaultConsumer(channel) {
+        final ObjectMapper mapper = new ObjectMapper();
+        return new DefaultConsumer(this.channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
+
                 String message = new String(body, "UTF-8");
                 String topic = envelope.getRoutingKey().toLowerCase();
-                String log =  "WebBugger received '" +
-                        topic +
-                        "':'" + message + "'";
-                print( "[" + timestamp() + "]" + log);
-                if (topic.contains("error") || topic.contains("exception"))
-                    thisInstance.addException(message + " (via "+topic+")");
+                String log = "";
+                Map map = null;
+                if (message.startsWith("{") && message.endsWith("}"))
+                    try {
+                        map = mapper.readValue(message, new TypeReference<Map<String, String>>() {
+                        });
+                    } catch (JsonParseException e) {
+                        print("Failed to parse as JSON: " + e.getMessage());
+                    } finally {
+                        if (map != null) {
+                            log += "Via "+topic+":";
+                            for (Object key : map.keySet()) {
+                                log += "\n -->" + key + ": " + map.get(key);
+                            }
+                        } else {
+                            log += message + " (via "+topic+")";
+                        }
+
+
+                    }
                 else
-                    thisInstance.addLog(message + " (via "+topic+")");
+                    log = message + " (via "+topic+")";
+
+
+                print(log);
+                if (topic.contains("error") || topic.contains("exception"))
+                    thisInstance.addException(log);
+                else
+                    thisInstance.addLog(log);
+
 
             }
         };
-        channel.basicConsume(queueName, true, this.consumer);
+    }
+
+    public static void main(String[] args) throws IOException {
+        getInstance().startDebugQueue();
     }
 }
