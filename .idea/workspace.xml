@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-core/rmx-core.iml" afterPath="$PROJECT_DIR$/rmx-core/rmx-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/pom.xml" afterPath="$PROJECT_DIR$/rmx-debug/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" afterPath="$PROJECT_DIR$/rmx-debug/rmx-debug.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" afterPath="$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" afterPath="$PROJECT_DIR$/rmx-engine-math/rmx-engine-math.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-engine/pom.xml" afterPath="$PROJECT_DIR$/rmx-engine/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" afterPath="$PROJECT_DIR$/rmx-engine/rmx-engine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" afterPath="$PROJECT_DIR$/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" afterPath="$PROJECT_DIR$/rmx-persistence/rmx-persistence.iml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.55705994">
-              <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
+              <caret line="187" column="45" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
               <folding>
                 <element signature="e#3212#3213#0" expanded="true" />
                 <element signature="e#3239#3240#0" expanded="true" />
@@ -1375,7 +1364,7 @@
       <workItem from="1445593316262" duration="291000" />
       <workItem from="1445593626192" duration="15000" />
       <workItem from="1445598364386" duration="2867000" />
-      <workItem from="1445605173567" duration="5784000" />
+      <workItem from="1445605173567" duration="5917000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1515,11 +1504,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445611302860</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Default consumer can now spot JSON data">
+      <created>1445615727047</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1445615727047</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111053000" />
+    <option name="totallyTimeSpent" value="111186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1585,7 +1580,8 @@
     <MESSAGE value="general improvements" />
     <MESSAGE value="general improvements to debugger" />
     <MESSAGE value="Refinded RabbitMQ webDebug server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refinded RabbitMQ webDebug server" />
+    <MESSAGE value="Default consumer can now spot JSON data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default consumer can now spot JSON data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2009,7 +2005,7 @@
     <entry file="file://$PROJECT_DIR$/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55705994">
-          <caret line="187" column="44" selection-start-line="187" selection-start-column="44" selection-end-line="187" selection-end-column="44" />
+          <caret line="187" column="45" selection-start-line="187" selection-start-column="45" selection-end-line="187" selection-end-column="45" />
           <folding>
             <element signature="e#3212#3213#0" expanded="true" />
             <element signature="e#3239#3240#0" expanded="true" />

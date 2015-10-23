@@ -185,7 +185,7 @@ public class WebBugger {
                         if (map != null) {
                             log += "Via "+topic+":";
                             for (Object key : map.keySet()) {
-                                log += "\n -->" + key + ": " + map.get(key);
+                                log += "\n   --> " + key + ": " + map.get(key);
                             }
                         } else {
                             log += message + " (via "+topic+")";
