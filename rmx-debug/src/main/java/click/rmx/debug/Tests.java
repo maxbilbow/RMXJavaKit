@@ -57,7 +57,7 @@ public class Tests {
 			file = file.substring(0, file.length() - 5);
 		String method = trace.getMethodName();
 		String timestamp = Instant.now().toString();
-		String log = "[ "+timestamp+" ] " + file + "::" + method + "() ";
+		String log = "["+Bugger.timestamp()+"] " + file + "::" + method + "() ";
 		if (log.length() < colWidth) {
 			int diff = colWidth - log.length();
 			for (int i = 0; i<=diff; ++i)

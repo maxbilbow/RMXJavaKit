@@ -14,29 +14,47 @@ import static java.nio.file.Files.createDirectories;
 
 
 public class Bugger {
-	public static  boolean logging = true;
-	public static  boolean debug = true;
-	
+
+	private boolean printLogOnExit = false;
+	private boolean printLogImmediately = true;
+
+	public boolean willUpdateLogFile() {
+		return updateLogFile;
+	}
+
+	public void setUpdateLogFile(boolean updateLogFile) {
+		this.updateLogFile = updateLogFile;
+	}
+
+	public boolean willPrintLogOnExit() {
+		return printLogOnExit;
+	}
+
+	public void setPrintLogOnExit(boolean printLogOnExit) {
+		this.printLogOnExit = printLogOnExit;
+	}
+
+	private boolean updateLogFile = false;
 	private final LinkedList<String> logs = new LinkedList<>();
 
-	private static Bugger singleton;
+	private static Bugger instance;
 	private Bugger(){ 
 		Runtime.getRuntime().addShutdownHook(new Thread() {
                     @Override
 		    public void run() {
-		        if (singleton != null)
-		        	singleton.printAll(debug);
+		        if (instance != null)
+		        	instance.printAll();
 		    }
 		});
 	}
 	
 	public static Bugger getInstance() {
-		if (singleton != null)
-			return singleton;
+		if (instance != null)
+			return instance;
 		else {
-			singleton = new Bugger();
+			instance = new Bugger();
 		}
-		return singleton;
+		return instance;
 	}
 	public static String timestamp()
 	{
@@ -59,35 +77,25 @@ public class Bugger {
 	 */
 	public static void print(Object o)
 	{
-		if (logging) {
-			Bugger b = getInstance();
-			b.logMessage(o);
+		if (instance.printLogOnExit)
+			instance.logMessage(o);
+		if (instance.printLogImmediately)
 			Tests.note(String.valueOf(o),1);
-		}
 	}
 	public static void print(Object o, boolean andLog) {
-		if (logging) {
-			Bugger b = getInstance();
-			String log = b.logMessage(o);
-			if (!andLog) {
-				b.logs.removeLast();
-			}
-			Tests.note(String.valueOf(o));
-		}
+		if (instance.printLogOnExit && andLog)
+			instance.logMessage(o);
+		if (instance.printLogImmediately)
+			Tests.note(String.valueOf(o),1);
 	}
-	
-//	private void newLog() {
-////		this.logs.addLast("");
-//	}
+
 	
 	public static void log(Object o) {
-		if (logging) 
-			getInstance().logMessage(o);
+		instance.logMessage(o);
 	}
+
 	int count = 1;
-//	private String previousLog = "";
-	
-	
+
 	public static void PrintTrace() {
 		StackTraceElement[] trace = Thread.currentThread().getStackTrace();//[2];
 		System.out.println("TRACE:");
@@ -122,7 +130,7 @@ public class Bugger {
 	}
 
 
-	public void printAll(boolean toConsole) {
+	public void printAll() {
 		String systemLog = "====== BEGIN LOG ======\n";
 		Iterator<String> i = getInstance().logs.iterator();
 //		String systemLog = "";
@@ -130,9 +138,9 @@ public class Bugger {
 			systemLog +=  i.next() + "\n";
 		}
 		systemLog += "====== END OF LOG ======\n\n"; //= systemLog.substring(0, systemLog.length()) +
-		if (toConsole)
+		if (printLogOnExit)
 			System.out.println(systemLog);
-		if (logging) {
+		if (updateLogFile) {
 			FileWriter writer = null;
 			try {
 				createDirectories(Paths.get("bugger"));
@@ -160,7 +168,7 @@ public class Bugger {
 //		Print(true);
 		
 		log("Hello again!");
-		logAndPrint("My Friends!", true); logAndPrint("My Friends!", true);
+		print("My Friends!", true); print("My Friends!", true);
 
 	
 	}
@@ -168,5 +176,13 @@ public class Bugger {
 	public static void main (String [] args)
 	{
 		Bugger.log("Hello!");
+	}
+
+	public boolean willPrintLogImmediately() {
+		return printLogImmediately;
+	}
+
+	public void setPrintLogImmediately(boolean printLogImmediately) {
+		this.printLogImmediately = printLogImmediately;
 	}
 }

@@ -19,5 +19,6 @@
     <file url="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-persistence" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
