@@ -107,8 +107,13 @@ public class WebBugger {
                 .replace("FAILED", "<span style=\"color=red;\">FAILED</span>");
     }
 
+
     public List<String> getLogs() {
-        int max = upTo(logs,10);
+        return logs;
+    }
+
+    public List<String> getLogs(int limit) {
+        int max = upTo(logs,limit);
         return logs.subList(0,max > 0 ? max : 0);
     }
 
