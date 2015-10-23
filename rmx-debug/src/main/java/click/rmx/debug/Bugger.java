@@ -13,7 +13,7 @@ import static java.nio.file.Files.createDirectories;
 
 
 
-public class Bugger {
+public class Bugger extends RMXDebugInstance {
 
 	private boolean printLogOnExit = false;
 	private boolean printLogImmediately = true;
@@ -37,25 +37,18 @@ public class Bugger {
 	private boolean updateLogFile = false;
 	private final LinkedList<String> logs = new LinkedList<>();
 
-	private static Bugger instance;
-	private Bugger(){ 
+
+	public Bugger(){
+        Bugger b = this;
 		Runtime.getRuntime().addShutdownHook(new Thread() {
                     @Override
 		    public void run() {
-		        if (instance != null)
-		        	instance.printAll();
+		        	b.printAll();
 		    }
 		});
 	}
 	
-	public static Bugger getInstance() {
-		if (instance != null)
-			return instance;
-		else {
-			instance = new Bugger();
-		}
-		return instance;
-	}
+
 	public static String timestamp()
 	{
 		return DateTimeFormatter.ISO_INSTANT
@@ -77,21 +70,21 @@ public class Bugger {
 	 */
 	public static void print(Object o)
 	{
-		if (instance.printLogOnExit)
-			instance.logMessage(o);
-		if (instance.printLogImmediately)
+		if (getInstance().printLogOnExit)
+			getInstance().logMessage(o);
+		if (getInstance().printLogImmediately)
 			Tests.note(String.valueOf(o),1);
 	}
 	public static void print(Object o, boolean andLog) {
-		if (instance.printLogOnExit && andLog)
-			instance.logMessage(o);
-		if (instance.printLogImmediately)
+		if (getInstance().printLogOnExit && andLog)
+			getInstance().logMessage(o);
+		if (getInstance().printLogImmediately)
 			Tests.note(String.valueOf(o),1);
 	}
 
 	
 	public static void log(Object o) {
-		instance.logMessage(o);
+		getInstance().logMessage(o);
 	}
 
 	int count = 1;
