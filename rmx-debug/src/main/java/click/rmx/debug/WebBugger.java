@@ -28,30 +28,38 @@ public class WebBugger {
 
     private WebBugger()
     {
+        final WebBugger b = this;
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
             public void run() {
-                if (instance != null) {
-                    if (channel != null)
-                        try {
-                            channel.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    if (connection != null)
-                        try {
-                            connection.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    consumer = null;
+                if (b != null) {
+                    try {
+                        b.closeServer();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
 
             }
         });
     }
 
-    private final Set<String> errors = new HashSet<>();
+    public boolean closeServer() throws IOException {
+        boolean chClosed = false, cnnClosed = false;
+        if (this.channel != null) {
+            this.channel.close();
+            this.channel = null;
+            chClosed = true;
+        }
+        if (this.connection != null) {
+            this.connection.close();
+            this.connection = null;
+            cnnClosed = true;
+        }
+        this.consumer = null;
+        return chClosed && cnnClosed;
+    }
+    private final LinkedList<String> errors = new LinkedList<>();
 
     private final LinkedList<String> logs = new LinkedList<>();
 
@@ -73,7 +81,7 @@ public class WebBugger {
 
     public void addException(String message)
     {
-        this.addLog("<span style=\"color: red;\">ERR ["+timestamp()+"] >> </span>" + toHtml(message));
+        this.errors.addFirst("<span style=\"color: red;\">ERR ["+timestamp()+"] >> </span>" + toHtml(message));
     }
 
 
@@ -140,24 +148,24 @@ public class WebBugger {
         }
 
         print(" [WebBugger] Waiting for messages. To exit press CTRL+C");
-
-        consumer = new DefaultConsumer(channel) {
+        final WebBugger thisInstance = this;
+        this.consumer = new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
                 String message = new String(body, "UTF-8");
                 String topic = envelope.getRoutingKey().toLowerCase();
-                String log = "[" + timestamp() + "] WebBugger received '" +
+                String log =  "WebBugger received '" +
                         topic +
                         "':'" + message + "'";
-                print(log);
+                print( "[" + timestamp() + "]" + log);
                 if (topic.contains("error") || topic.contains("exception"))
-                    instance.addException(log);
+                    thisInstance.addException(message + " (via "+topic+")");
                 else
-                    instance.addLog(log);
+                    thisInstance.addLog(message + " (via "+topic+")");
 
             }
         };
-        channel.basicConsume(queueName, true, consumer);
+        channel.basicConsume(queueName, true, this.consumer);
     }
 }
