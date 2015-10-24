@@ -4,7 +4,7 @@
     <root id="archive" name="rmx-debug.jar">
       <element id="module-output" name="rmx-debug" />
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/rmx-core/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-core/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>

@@ -5,8 +5,8 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/rmx-engine" />
-    <file type="web" url="file://$PROJECT_DIR$/rmx-persistence" />
+    <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core" />
+    <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-persistence" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,7 +19,14 @@
         <option value="$PROJECT_DIR$/rmx-debug/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-engine-math/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
+        <option value="$PROJECT_DIR$/aicubo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">

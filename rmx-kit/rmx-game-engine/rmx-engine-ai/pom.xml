@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>click.rmx.engine</groupId>
+    <artifactId>rmx-engine-ai</artifactId>
+    <packaging>jar</packaging>
+
+    <name>rmx-engine-ai</name>
+    <description>Ai functionality for the game engine</description>
+
+    <parent>
+        <groupId>click.rmx.engine</groupId>
+        <artifactId>rmx-game-engine</artifactId>
+        <version>v0.0.3-SNAPSHOT</version>
+        <!--<relativePath/>-->
+    </parent>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>click.rmx</groupId>
+            <artifactId>rmx-core</artifactId>
+            <version>${rmx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>click.rmx</groupId>
+            <artifactId>rmx-debug</artifactId>
+            <version>${rmx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>click.rmx.engine</groupId>
+            <artifactId>rmx-engine-core</artifactId>
+            <version>v0.0.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>click.rmx</groupId>
+            <artifactId>rmx-persistence</artifactId>
+            <version>${rmx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>click.rmx</groupId>
+            <artifactId>rmx-math</artifactId>
+            <version>${rmx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+    </dependencies>
+    <build>
+        <plugins>
+            <!-- Set a JDK compiler level -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- Make this jar executable -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <!-- DO NOT include log4j.properties file in your Jar -->
+                    <excludes>
+                        <exclude>**/log4j.properties</exclude>
+                    </excludes>
+                    <archive>
+                        <manifest>
+                            <!-- Jar file entry point -->
+                            <mainClass>click.rmx.engine.ai.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+</project>
+

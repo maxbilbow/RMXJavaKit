@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="rmx-engine-math:jar">
     <output-path>$PROJECT_DIR$/../lib</output-path>
     <root id="archive" name="rmx-engine-math.jar">
-      <element id="module-output" name="rmx-engine-math" />
+      <element id="module-output" name="rmx-math" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/vecmath-1.5.11.jar" path-in-jar="/" />
     </root>
   </artifact>
