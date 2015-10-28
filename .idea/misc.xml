@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/rmx-engine-math/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
         <option value="$PROJECT_DIR$/aicubo/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

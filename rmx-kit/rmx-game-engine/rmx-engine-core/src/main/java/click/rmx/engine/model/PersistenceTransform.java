@@ -1,4 +1,4 @@
-package click.rmx.persistence.model;
+package click.rmx.engine.model;
 
 import click.rmx.core.HierarchyObject;
 import click.rmx.engine.components.ANodeComponent;

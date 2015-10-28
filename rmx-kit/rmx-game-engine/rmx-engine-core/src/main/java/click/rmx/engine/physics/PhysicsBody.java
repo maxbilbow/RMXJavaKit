@@ -6,7 +6,7 @@ package click.rmx.engine.physics;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.components.ANodeComponent;
 import click.rmx.math.Vector3;
-import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.engine.model.PersistenceTransform;
 
 import static click.rmx.engine.physics.CollisionBody.*;
 public class PhysicsBody extends ANodeComponent {

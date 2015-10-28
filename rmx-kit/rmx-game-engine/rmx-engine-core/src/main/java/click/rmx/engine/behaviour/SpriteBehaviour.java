@@ -3,7 +3,7 @@ package click.rmx.engine.behaviour;
 import click.rmx.engine.components.Node;
 import click.rmx.engine.Scene;
 import click.rmx.math.Float3;
-import click.rmx.persistence.model.Transform;
+import click.rmx.engine.model.Transform;
 
 import click.rmx.math.Vector3;
 

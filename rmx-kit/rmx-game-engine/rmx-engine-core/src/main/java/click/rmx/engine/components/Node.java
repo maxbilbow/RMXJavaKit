@@ -8,8 +8,8 @@ import click.rmx.engine.geometry.Shape;
 import click.rmx.math.Matrix4;
 import click.rmx.engine.physics.CollisionBody;
 import click.rmx.engine.physics.PhysicsBody;
-import click.rmx.persistence.model.PersistenceTransform;
-import click.rmx.persistence.model.Transform;
+import click.rmx.engine.model.PersistenceTransform;
+import click.rmx.engine.model.Transform;
 
 import java.util.List;
 import java.util.Set;

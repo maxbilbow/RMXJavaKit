@@ -11,8 +11,9 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <local-repository.url>~/.m2/repository</local-repository.url>
-        <rmx.version>${version}</rmx.version>
+        <!--<local-repository.url>~/.m2/repository</local-repository.url>-->
+        <windows.repository>C:\Users\bilbowm\.m2\repository</windows.repository>
+        <rmx.version>${project.version}</rmx.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
     </properties>
 
@@ -32,7 +33,7 @@
     <module>rmx-persistence</module>
     <module>rmx-multithread-toolkit</module>
     <module>rmx-math</module>
-    <module>rmx-game-engine</module>
+    <!--<module>rmx-game-engine</module>-->
 </modules>
 
     <build>
@@ -63,7 +64,8 @@
             <id>rmx</id>
             <name>RMXJavaKit</name>
             <layout>default</layout>
-            <url>${settings.localRepository}</url>
+            <url>${windows.repository}</url>
+            <!--<url>${settings.localRepository}</url>-->
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>

@@ -4,8 +4,8 @@ import click.rmx.core.RMXObject;
 import click.rmx.engine.Scene;
 import click.rmx.engine.behaviour.IBehaviour;
 import click.rmx.math.Matrix4;
-import click.rmx.persistence.model.PersistenceTransform;
-import click.rmx.persistence.model.Transform;
+import click.rmx.engine.model.PersistenceTransform;
+import click.rmx.engine.model.Transform;
 
 import javax.persistence.*;
 import java.util.*;

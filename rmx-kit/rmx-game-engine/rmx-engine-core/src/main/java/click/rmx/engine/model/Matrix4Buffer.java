@@ -1,4 +1,4 @@
-package click.rmx.persistence.model;
+package click.rmx.engine.model;
 
 import click.rmx.math.Matrix4;
 import click.rmx.math.ValueBuffer;

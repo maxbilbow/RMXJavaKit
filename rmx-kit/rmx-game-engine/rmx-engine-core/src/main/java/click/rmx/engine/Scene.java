@@ -7,7 +7,7 @@ import click.rmx.engine.components.RootNode;
 import click.rmx.engine.gl.RenderDelegate;
 import click.rmx.math.Matrix4;
 import click.rmx.engine.physics.PhysicsWorld;
-import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.engine.model.PersistenceTransform;
 
 import java.util.stream.Stream;
 

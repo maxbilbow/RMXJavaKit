@@ -1,7 +1,7 @@
 package click.rmx.engine.components;
 
 import click.rmx.core.RMXObject;
-import click.rmx.persistence.model.Transform;
+import click.rmx.engine.model.Transform;
 
 public abstract class ANodeComponent extends RMXObject implements NodeComponent, UpdateableProperties {
 	private boolean enabled = true;

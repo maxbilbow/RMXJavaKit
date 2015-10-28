@@ -3,7 +3,7 @@ package click.rmx.engine.components;
 
 import click.rmx.engine.GameController;
 import click.rmx.engine.Scene;
-import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.engine.model.PersistenceTransform;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;

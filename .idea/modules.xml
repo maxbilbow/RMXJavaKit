@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine-core.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-game-engine.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-game-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" />

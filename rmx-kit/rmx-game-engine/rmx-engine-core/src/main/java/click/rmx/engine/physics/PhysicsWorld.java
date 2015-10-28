@@ -5,7 +5,7 @@ package click.rmx.engine.physics;
 import click.rmx.core.RMXObject;
 import click.rmx.engine.components.Node;
 import click.rmx.math.Vector3;
-import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.engine.model.PersistenceTransform;
 
 import java.util.Collection;
 import java.util.Iterator;

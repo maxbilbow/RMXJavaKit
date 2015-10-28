@@ -8,7 +8,7 @@ import click.rmx.engine.behaviour.SpriteBehaviour;
 import click.rmx.engine.geometry.Shapes;
 import click.rmx.math.Tools;
 import click.rmx.engine.physics.PhysicsBody;
-import click.rmx.persistence.model.PersistenceTransform;
+import click.rmx.engine.model.PersistenceTransform;
 
 import java.util.Collection;
 import java.util.stream.Stream;

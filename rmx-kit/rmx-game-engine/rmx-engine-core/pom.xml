@@ -13,8 +13,8 @@
        <parent>
            <groupId>click.rmx.engine</groupId>
            <artifactId>rmx-game-engine</artifactId>
-           <version>v0.0.3-SNAPSHOT</version>
-           <!--<relativePath/>-->
+           <version>0.2.APLHA</version>
+           <!--<relativePath>../rmx-game-engine</relativePath>-->
        </parent>
 
 
@@ -53,7 +53,11 @@
                <artifactId>lwjgl</artifactId>
                <version>${lwjgl.version}</version>
            </dependency>
-
+           <dependency>
+               <groupId>javax.vecmath</groupId>
+               <artifactId>vecmath</artifactId>
+               <version>${java3d-vecmath.version}</version>
+           </dependency>
        </dependencies>
        <build>
               <plugins>
@@ -90,6 +94,20 @@
                           </archive>
                       </configuration>
                   </plugin>
+                  <plugin>
+                      <groupId>com.googlecode.mavennatives</groupId>
+                      <artifactId>maven-nativedependencies-plugin</artifactId>
+                      <version>${natives.version}</version>
+                      <executions>
+                          <execution>
+                              <id>unpacknatives</id>
+                              <goals>
+                                  <goal>copy</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+
               </plugins>
 
        </build>
