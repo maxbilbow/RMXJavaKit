@@ -30,7 +30,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="rex-spring" />
-        <module name="rmx-engine-core" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-debug" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -95,6 +94,13 @@
         <processorPath useClasspath="true" />
         <module name="aicubi-desktop" />
       </profile>
+      <profile default="false" name="Annotation profile for rmx-engine-mvc" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-engine-mvc" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="aicubi-desktop" target="1.8" />
@@ -106,6 +112,7 @@
       <module name="rmx-engine-ai" target="1.8" />
       <module name="rmx-engine-core" target="1.5" />
       <module name="rmx-engine-math" target="1.8" />
+      <module name="rmx-engine-mvc" target="1.8" />
       <module name="rmx-game-engine" target="1.8" />
       <module name="rmx-kit" target="1.8" />
       <module name="rmx-math" target="1.8" />

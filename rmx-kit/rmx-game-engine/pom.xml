@@ -23,6 +23,7 @@
     <modules>
         <!--<module>rmx-engine-core</module>-->
         <!--<module>rmx-engine-ai</module>-->
+        <module>rmx-engine-mvc</module>
     </modules>
 
 
@@ -51,7 +52,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>rmx-kit</finalName>
+        <finalName>rmx-game-engine</finalName>
         <plugins>
             <!-- Set a JDK compiler level -->
             <plugin>
