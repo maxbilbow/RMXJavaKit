@@ -1,23 +1,16 @@
-package click.rmx.engine.model;
+package click.rmx.engine.model.interfaces;
 
 /**
  * Created by bilbowm on 28/10/2015.
  */
 public interface PhysicsBody {
-    enum Type {
-        Static, Dynamic, Kinematic
-    }
     GameObject getGameObject();
 
     Type getType();
 
-    void setVelocity(float[] velocity);
+    void setType(Type type);
 
     float setMass(float mass);
-
-    void setScale(float[] scale);
-
-    void setType(Type type);
 
     GameObject setGameObject(GameObject gameObject);
 
@@ -49,14 +42,36 @@ public interface PhysicsBody {
 
     float[] getRotationalVelocity();
 
-    void setRotationalVelocity(float[] rotationalVelocity);
+//    void setRotationalVelocity(float[] rotationalVelocity);
 
     float[] getVelocity();
+
+//    void setVelocity(float[] velocity);
 
     float getMass();
 
     float[] getScale();
 
+//    void setScale(float[] scale);
+
+    enum Type {
+        Static, Dynamic, Kinematic
+    }
 
 
+    /**
+     * NOTE: The root not must have a PhysicsWorld object. It is not necessary for its children.
+     * @return the physics to be applied to the children of this node or null
+     */
+    PhysicsWorld getInternalPhysicsWorld();
+
+    /**
+     *
+     * @return the physics world acting on this body.
+     */
+    PhysicsWorld getExternalPhysicsWorld();
+
+    class DB {
+        public static final String TABLE_NAME = "PhysicsBodies";
+    }
 }

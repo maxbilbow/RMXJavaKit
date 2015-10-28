@@ -1,4 +1,4 @@
-package click.rmx.engine.model;
+package click.rmx.engine.model.interfaces;
 
 import java.util.List;
 
@@ -10,6 +10,10 @@ public interface GameObject {
 
     float [] getOrientation();
 
+    GameObject getParent();
+
+    List<GameObject> getChildren();
+
     List<GameComponent> getComponents();
 
     List<Behaviour> getBehaviours();
@@ -17,5 +21,6 @@ public interface GameObject {
     PhysicsBody getPhysicsBody();
 
     Geometry getGeometry();
+
 
 }
