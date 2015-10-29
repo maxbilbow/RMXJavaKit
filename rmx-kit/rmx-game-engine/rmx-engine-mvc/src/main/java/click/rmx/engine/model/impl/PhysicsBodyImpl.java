@@ -15,9 +15,11 @@ public class PhysicsBodyImpl implements PhysicsBody{
 
     private GameObject gameObject;
     private CollisionBody collisionBody;
-    private float mass, friction, rotationalFriction, drag, rotationalDrag, restitution;
-    private float[] scale, velocity;
+    private float mass, friction, rollingFriction, drag, rotationalDrag, restitution, damping, rotationalDamping;
+    private float[] scale, velocity, rotationalVelocity;
     private boolean effectedByGravity;
+    private PhysicsBody.Type type;
+    private PhysicsWorld internalPhysicsWorld, externalPhysicsWorld;
 
     public PhysicsBodyImpl()
     {
@@ -28,7 +30,8 @@ public class PhysicsBodyImpl implements PhysicsBody{
     {
         PhysicsBodyImpl body = new PhysicsBodyImpl();
         body.gameObject = gameObject;
-        body.collisionBody = CollisionBodyImpl.newInstance();
+        body.collisionBody = CollisionBodyImpl.newInstance(body);
+        return body;
     }
 
     @Override
@@ -38,32 +41,27 @@ public class PhysicsBodyImpl implements PhysicsBody{
 
     @Override
     public Type getType() {
-        return null;
+        return type;
     }
 
     @Override
     public void setType(Type type) {
-
+        this.type = type;
     }
 
     @Override
-    public float setMass(float mass) {
-        return 0;
-    }
-
-    @Override
-    public GameObject setGameObject(GameObject gameObject) {
-        return null;
+    public void setMass(float mass) {
+        this.mass = mass;
     }
 
     @Override
     public CollisionBody getCollisionBody() {
-        return null;
+        return this.collisionBody;
     }
 
     @Override
     public float getFriction() {
-        return 0;
+        return this.friction;
     }
 
     @Override
@@ -73,22 +71,22 @@ public class PhysicsBodyImpl implements PhysicsBody{
 
     @Override
     public float getRollingFriction() {
-        return 0;
+        return this.rollingFriction;
     }
 
     @Override
     public void setRollingFriction(float rollingFriction) {
-
+        this.rollingFriction = rollingFriction;
     }
 
     @Override
     public float getDamping() {
-        return 0;
+        return this.damping;
     }
 
     @Override
     public void setDamping(float damping) {
-
+        this.damping = damping;
     }
 
     @Override
@@ -98,56 +96,42 @@ public class PhysicsBodyImpl implements PhysicsBody{
 
     @Override
     public void setRotationalDamping(float rotationalDamping) {
-
+        this.rotationalDamping = rotationalDamping;
     }
 
     @Override
     public float getRestitution() {
-        return 0;
+        return restitution;
     }
 
     @Override
     public void setRestitution(float restitution) {
-
+        this.restitution = restitution;
     }
 
     @Override
     public boolean isEffectedByGravity() {
-        return false;
+        return effectedByGravity;
     }
 
     @Override
     public void setEffectedByGravity(boolean effectedByGravity) {
-
+        this.effectedByGravity = effectedByGravity;
     }
 
     @Override
     public float[] getRotationalVelocity() {
-        return new float[0];
+        return rotationalVelocity;
     }
 
     @Override
     public float[] getVelocity() {
-        return new float[0];
+        return velocity;
     }
 
     @Override
     public float getMass() {
-        return 0;
+        return mass;
     }
 
-    @Override
-    public float[] getScale() {
-        return new float[0];
-    }
-
-    @Override
-    public PhysicsWorld getInternalPhysicsWorld() {
-        return null;
-    }
-
-    @Override
-    public PhysicsWorld getExternalPhysicsWorld() {
-        return null;
-    }
 }

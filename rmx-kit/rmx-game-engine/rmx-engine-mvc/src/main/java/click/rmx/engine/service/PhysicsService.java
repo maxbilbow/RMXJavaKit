@@ -25,9 +25,8 @@ public interface PhysicsService {
      * A database model can be used to apply these
      * @param body
      */
-    default void updatePhysicsFor(PhysicsBody body) {
-        PhysicsWorld externalForces = body.getExternalPhysicsWorld();
-        if (externalForces != null) {
+    default void updatePhysicsFor(PhysicsBody body, PhysicsWorld externalForces) {
+//        if (externalForces != null) {
             float[] gravity = externalForces.getGravity();
             float[] weight = new float[gravity.length];
             float mass = body.getMass();
@@ -35,7 +34,7 @@ public interface PhysicsService {
                 weight[i] = gravity[i] * mass;
             applyForceTo(body, weight);
             checkConstraints(body.getGameObject());
-        }
+//        }
 //        if (body.getInternalPhysicsWorld() != null)
 //            body.getGameObject()
 //                    .getChildren()

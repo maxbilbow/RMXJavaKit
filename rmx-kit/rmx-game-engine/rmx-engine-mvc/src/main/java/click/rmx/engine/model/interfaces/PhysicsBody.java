@@ -10,9 +10,9 @@ public interface PhysicsBody {
 
     void setType(Type type);
 
-    float setMass(float mass);
+    void setMass(float mass);
 
-    GameObject setGameObject(GameObject gameObject);
+//    GameObject setGameObject(GameObject gameObject);
 
     CollisionBody getCollisionBody();
 
@@ -50,26 +50,12 @@ public interface PhysicsBody {
 
     float getMass();
 
-    float[] getScale();
 
 //    void setScale(float[] scale);
 
     enum Type {
         Static, Dynamic, Kinematic
     }
-
-
-    /**
-     * NOTE: The root not must have a PhysicsWorld object. It is not necessary for its children.
-     * @return the physics to be applied to the children of this node or null
-     */
-    PhysicsWorld getInternalPhysicsWorld();
-
-    /**
-     *
-     * @return the physics world acting on this body.
-     */
-    PhysicsWorld getExternalPhysicsWorld();
 
     class DB {
         public static final String TABLE_NAME = "PhysicsBodies";

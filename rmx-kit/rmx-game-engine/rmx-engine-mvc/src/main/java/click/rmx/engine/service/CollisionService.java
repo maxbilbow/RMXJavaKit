@@ -1,5 +1,6 @@
 package click.rmx.engine.service;
 
+import click.rmx.engine.model.interfaces.BoundingVolume;
 import click.rmx.engine.model.interfaces.CollisionBody;
 
 
@@ -18,4 +19,9 @@ public interface CollisionService {
 
     Integer getSecureKey();
 
+
+    default boolean checkForCollision(BoundingVolume volumeA, BoundingVolume volumeB)
+    {
+
+    }
 }
