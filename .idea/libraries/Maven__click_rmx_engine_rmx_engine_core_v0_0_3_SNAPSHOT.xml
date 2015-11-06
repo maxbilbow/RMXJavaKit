@@ -1,7 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: click.rmx.engine:rmx-engine-core:v0.0.3-SNAPSHOT">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/engine/rmx-engine-core/v0.0.3-SNAPSHOT/rmx-engine-core-v0.0.3-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/engine/rmx-engine-core/v0.0.3-SNAPSHOT/rmx-engine-core-v0.0.3-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/engine/rmx-engine-core/v0.0.3-SNAPSHOT/rmx-engine-core-v0.0.3-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

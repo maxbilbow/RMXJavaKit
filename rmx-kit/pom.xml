@@ -57,19 +57,31 @@
 
 
         </plugins>
-
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>1.0-alpha-6</version>
+            </extension>
+        </extensions>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>m2.rmx.click</id>
+            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
+        </repository>
+        <!--<server> for settings.xml-->
+            <!--<id>m2.rmx.click</id>-->
+            <!--<username>rmxmaven</username>-->
+            <!--<password>YHGVi8SE</password>-->
+        <!--</server>-->
+    </distributionManagement>
+
     <repositories>
         <repository>
-            <id>rmx</id>
+            <id>rmx-kit</id>
             <name>RMXJavaKit</name>
-            <layout>default</layout>
-            <url>${windows.repository}</url>
-            <!--<url>${settings.localRepository}</url>-->
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <url>http://m2.rmx.click</url>
         </repository>
     </repositories>
-
 </project>
