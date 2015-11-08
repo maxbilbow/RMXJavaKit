@@ -78,11 +78,6 @@
             <id>m2.rmx.click</id>
             <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
         </repository>
-        <!--<server> for settings.xml-->
-            <!--<id>m2.rmx.click</id>-->
-            <!--<username>rmxmaven</username>-->
-            <!--<password>YHGVi8SE</password>-->
-        <!--</server>-->
     </distributionManagement>
 
     <repositories>
