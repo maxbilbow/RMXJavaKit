@@ -59,7 +59,7 @@
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:1.4.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:1.4.6.RELEASE" level="project" />
-    <orderEntry type="module" module-name="rmx-debug-logger" />
+    <orderEntry type="library" name="Maven: click.rmx:rmx-debug-logger:1.1" level="project" />
     <orderEntry type="library" name="Maven: javax.json:javax.json-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.3.11.Final" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.3.GA" level="project" />
