@@ -1,5 +1,5 @@
-click/rmx/debug/client/WSLogger.class
-click/rmx/debug/client/LogBuilder.class
-click/rmx/debug/client/Logger.class
-click/rmx/debug/client/RMQLogger.class
-click/rmx/debug/client/LogBuilder$MapBuilder.class
+click/rmx/debug/server/LogBuilder.class
+click/rmx/debug/server/Logger.class
+click/rmx/debug/server/RMQLogger.class
+click/rmx/debug/server/LogBuilder$MapBuilder.class
+click/rmx/debug/server/WSLogger.class

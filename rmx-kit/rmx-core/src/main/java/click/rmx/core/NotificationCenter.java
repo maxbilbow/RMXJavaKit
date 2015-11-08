@@ -21,9 +21,9 @@ public final class NotificationCenter {
 	}
 	private static NotificationCenter singleton;
 	
-	private ArrayList<IEventListener> listeners = new ArrayList<IEventListener> ();
+	private ArrayList<IEventListener> listeners = new ArrayList<> ();
 
-	private HashMap<String, EventStatus> events = new HashMap<String, EventStatus> ();
+	private HashMap<String, EventStatus> events = new HashMap<> ();
 
 	public boolean hasListener(IEventListener listener) {
 		return listeners.contains(listener);

@@ -10,13 +10,14 @@ import java.util.LinkedList;
 
 import static java.nio.file.Files.createDirectories;
 
-
+import click.rmx.debug.server.Logger;
 
 
 public class Bugger extends RMXDebugInstance {
 
 	private boolean printLogOnExit = false;
 	private boolean printLogImmediately = true;
+	private Logger logger;
 
 	public boolean willUpdateLogFile() {
 		return updateLogFile;
@@ -100,6 +101,8 @@ public class Bugger extends RMXDebugInstance {
 	}
 	
 	private String logMessage(Object o) {
+		if (logger != null)
+			logger.logMessage(o);
 		
 		StackTraceElement trace = Thread.currentThread().getStackTrace()[3];
 		String theClass = trace.getClassName();

@@ -56,9 +56,9 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 	}
 
 	@Override
-	public void sendMessage(String message)
+	public Object sendMessageOnly(String message)
 	{//throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		this.get().sendMessage(message);
+		return this.get().sendMessageOnly(message);
 
 	}
 
@@ -102,10 +102,9 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 	}
 
 	@Override
-	public void sendMessage(String message, Object args){//} throws NoSuchMethodException, SecurityException,
+	public Object sendMessage(String message, Object args){//} throws NoSuchMethodException, SecurityException,
 //			IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		// TODO Auto-generated method stub
-		todo();
+		return get().sendMessage(message,args);
 	}
 
 	@Override
@@ -128,13 +127,13 @@ public class WeakObject<E extends IRMXObject> extends WeakReference<E> implement
 	}
 
 	@Override
-	public void onValueForKeyWillChange(String key, Object value, IRMXObject sender) {
+	public void onValueForKeyWillChange(String key, Object value, Object sender) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void onValueForKeyDidChange(String key, Object value, IRMXObject sender) {
+	public void onValueForKeyDidChange(String key, Object value, Object sender) {
 		// TODO Auto-generated method stub
 		todo();
 		

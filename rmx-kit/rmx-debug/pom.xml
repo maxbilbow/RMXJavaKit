@@ -10,7 +10,7 @@
        <parent>
               <groupId>click.rmx</groupId>
               <artifactId>rmx-kit</artifactId>
-              <version>v0.0.3-SNAPSHOT</version>
+              <version>0.1</version>
               <relativePath/> <!-- lookup parent from repository -->
        </parent>
        <name>rmx-debug</name>
@@ -33,6 +33,11 @@
                      <groupId>com.fasterxml.jackson.core</groupId>
                      <artifactId>jackson-databind</artifactId>
                      <version>${jackson.version}</version>
+              </dependency>
+              <dependency>
+                     <groupId>click.rmx</groupId>
+                     <artifactId>rmx-debug-logger</artifactId>
+                     <version>1.1</version>
               </dependency>
 
        </dependencies>

@@ -241,55 +241,31 @@ public class RMXObject implements IRMXObject {
 		return result;
 	}
 
-	@Override
-	public void sendMessage(String message, Object args){//} throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
-		if (args != null && this.implementsMethod(message,args.getClass())) {
-			try {
-				this.getClass().getMethod(message, args.getClass()).invoke(this,args);
-			} catch (NoSuchMethodException e) {
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-                e.printStackTrace();
-                System.exit(1);
-			} catch (InvocationTargetException e) {
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-                e.printStackTrace();
-                System.exit(1);
-			} catch (IllegalAccessException e) {
-                e.printStackTrace();
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-                System.out.println("Likely cause: receiver was abstract");
-                System.exit(1);
-			}
-		} else {
-			this.sendMessage(message);
-		}
-	}
+//	@Override
+//	public Object sendMessage(String message, Object args){//} throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
+//		if (args != null && this.implementsMethod(message,args.getClass())) {
+//			try {
+//				this.getClass().getMethod(message, args.getClass()).invoke(this,args);
+//			} catch (NoSuchMethodException e) {
+//                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+//                e.printStackTrace();
+//                System.exit(1);
+//			} catch (InvocationTargetException e) {
+//                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+//                e.printStackTrace();
+//                System.exit(1);
+//			} catch (IllegalAccessException e) {
+//                e.printStackTrace();
+//                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
+//                System.out.println("Likely cause: receiver was abstract");
+//                System.exit(1);
+//			}
+//		} else {
+//			this.sendMessage(message);
+//		}
+//	}
 
-	/* (non-Javadoc)
-	 * @see IRMXObject#sendMessage(java.lang.String)
-	 */
-	@Override
-	public void sendMessage(String message) {//} throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException{
-		if (this.implementsMethod(message)) {
-			try {
-				this.getClass().getMethod(message).invoke(this);
-			} catch (NoSuchMethodException e) {
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-                e.printStackTrace();
-                System.exit(1);
-			} catch (InvocationTargetException e) {
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-                e.printStackTrace();
-                System.exit(1);
-			} catch (IllegalAccessException e) {
-				e.printStackTrace();
-                Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
-				System.out.println("Likely cause: receiver was abstract");
-				System.exit(1);
 
-			}
-		}
-	}
 
 	@Override
 	public void onEventDidStart(String theEvent, Object args){
@@ -343,19 +319,21 @@ public class RMXObject implements IRMXObject {
 	}
 
 	@Override
-	public void onValueForKeyWillChange(String key, Object value, IRMXObject sender) {
-		Bugger.log(this.uniqueName() + " >> " + sender.uniqueName() + " will change: " + key + ", from old value: " + value);
+	public void onValueForKeyWillChange(String key, Object value, Object sender) {
+		String senderId = (sender instanceof IRMXObject) ? ((IRMXObject) sender).uniqueName() : sender.getClass().getName();
+		Bugger.log(this.uniqueName() + " >> " + senderId + " will change: " + key + ", from old value: " + value);
 	}
 
 	@Override
-	public void onValueForKeyDidChange(String key, Object value, IRMXObject sender) {
-		Bugger.log(this.uniqueName() + " >> " + sender.uniqueName() + " did change: " + key + ", to new value: " + value);
+	public void onValueForKeyDidChange(String key, Object value, Object sender) {
+		String senderId = (sender instanceof IRMXObject) ? ((IRMXObject) sender).uniqueName() : sender.getClass().getName();
+		Bugger.log(this.uniqueName() + " >> " + senderId + " did change: " + key + ", to new value: " + value);
 	}
 
 	@Override
-	public IEventListener clone() {
+	public IEventListener clone() throws CloneNotSupportedException {
 		RMX.rmxTodo();
-		return null;
+		return (IEventListener) super.clone();
 	}
 
 
@@ -364,7 +342,7 @@ public class RMXObject implements IRMXObject {
 	@Override
 	public void broadcastMessage(String message) {
 		try {
-			this.sendMessage(message);
+			this.sendMessage(message,null);
 		} catch (SecurityException e) {
 			Bugger.log( e.getClass().getSimpleName() + ": " + message + "()");
 			e.printStackTrace();

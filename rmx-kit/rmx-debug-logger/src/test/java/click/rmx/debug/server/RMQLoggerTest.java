@@ -1,4 +1,4 @@
-package click.rmx.debug.client;
+package click.rmx.debug.server;
 
 import org.junit.*;
 import org.junit.runner.RunWith;

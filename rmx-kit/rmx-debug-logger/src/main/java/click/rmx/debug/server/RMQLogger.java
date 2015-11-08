@@ -1,4 +1,4 @@
-package click.rmx.debug.client;
+package click.rmx.debug.server;
 
 import com.mongodb.util.JSONParseException;
 import com.rabbitmq.client.*;

@@ -1,4 +1,4 @@
-/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/WSLogger.java
-/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/RMQLogger.java
-/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/LogBuilder.java
-/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/Logger.java
+/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/WSLogger.java
+/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/RMQLogger.java
+/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/LogBuilder.java
+/Users/rattle/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/Logger.java

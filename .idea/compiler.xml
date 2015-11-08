@@ -136,6 +136,7 @@
       <module name="rmx-engine-mvc" target="1.8" />
       <module name="rmx-game-engine" target="1.8" />
       <module name="rmx-kit" target="1.8" />
+      <module name="rmx-math" target="1.8" />
       <module name="rmx-multithread-toolkit" target="1.8" />
       <module name="rmx-persistence" target="1.8" />
     </bytecodeTargetLevel>

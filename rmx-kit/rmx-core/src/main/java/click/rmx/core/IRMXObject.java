@@ -1,6 +1,6 @@
 package click.rmx.core;
 
-public interface IRMXObject extends IEventListener, KeyValueObserver, Categorizable  {
+public interface IRMXObject extends IEventListener, KeyValueObserver, Categorizable, IMessageable  {
 
 	Long getId();
 
@@ -15,9 +15,6 @@ public interface IRMXObject extends IEventListener, KeyValueObserver, Categoriza
 	void removeObserver(KeyValueObserver observer, String forKey);
 
 	void removeObserver(KeyValueObserver observer);
-
-	void sendMessage(String message);
-			//throws SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException;
 
 	String uniqueName();
 

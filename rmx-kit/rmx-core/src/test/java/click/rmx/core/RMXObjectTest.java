@@ -6,11 +6,7 @@ package click.rmx.core;
 import static click.rmx.debug.Tests.*;
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.experimental.categories.Category;
 
 import click.rmx.testsuite.ExcludeCat;
@@ -57,6 +53,7 @@ public class RMXObjectTest  {
 	}
 
 	@Test
+	@Ignore
 	@Category({FoundationTest.class, ExcludeCat.class})
 	public void test() {
 //		messageWasNotReceived();

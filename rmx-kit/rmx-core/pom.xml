@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>v0.0.3-SNAPSHOT</version>
+        <version>0.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
        <dependencies>
@@ -22,6 +22,7 @@
                   <artifactId>rmx-debug</artifactId>
                   <version>${rmx.version}</version>
               </dependency>
+
            <dependency>
                <groupId>junit</groupId>
                <artifactId>junit</artifactId>
@@ -69,17 +70,17 @@
 
        </build>
 
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>rmx</id>-->
-            <!--<name>RMXJavaKit</name>-->
-            <!--<layout>default</layout>-->
-            <!--&lt;!&ndash;<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>&ndash;&gt;-->
-            <!--<url>${local-[.url}</url>-->
+    <repositories>
+        <repository>
+            <id>rmx</id>
+            <name>RMXJavaKit</name>
+            <layout>default</layout>
+            <!--<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>-->
+            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
             <!--<snapshots>-->
                 <!--<enabled>false</enabled>-->
             <!--</snapshots>-->
-        <!--</repository>-->
-    <!--</repositories>-->
+        </repository>
+    </repositories>
 </project>
 

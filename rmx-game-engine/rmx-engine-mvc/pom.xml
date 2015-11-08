@@ -42,15 +42,11 @@
             <groupId>click.rmx</groupId>
             <artifactId>rmx-debug</artifactId>
             <version>${rmx.version}</version>
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${rmx.kit.dir}/rmx-debug.jar</systemPath>-->
         </dependency>
         <dependency>
             <groupId>click.rmx</groupId>
             <artifactId>rmx-core</artifactId>
             <version>${rmx.version}</version>
-            <!--<scope>system</scope>-->
-            <!--<systemPath>${rmx.kit.dir}/rmx-core.jar</systemPath>-->
         </dependency>
     </dependencies>
     <modelVersion>4.0.0</modelVersion>

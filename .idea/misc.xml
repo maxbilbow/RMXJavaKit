@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-game-engine/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

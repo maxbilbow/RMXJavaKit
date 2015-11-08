@@ -20,7 +20,7 @@ public interface IEventListener extends IMessageable {
      *  @param args     anything
      *  @since 0.1
      */
-    public abstract void onEventDidStart(String theEvent, Object args);
+    void onEventDidStart(String theEvent, Object args);
     
     /**
      *  @author Max Bilbow, 15-08-04 16:08:53
@@ -30,7 +30,7 @@ public interface IEventListener extends IMessageable {
      *  @param args     anything
      *  @since 0.1
      */
-    public abstract void onEventDidEnd(String theEvent, Object args); 
+    void onEventDidEnd(String theEvent, Object args);
 
     
     
@@ -44,7 +44,7 @@ public interface IEventListener extends IMessageable {
      *   @see NotificationCenter::addListener(listener)
      *   @since 0.1
      */
-    public void startListening();
+    void startListening();
     
     /**
      *   @author Max Bilbow, 15-08-04 16:08:22
@@ -53,7 +53,7 @@ public interface IEventListener extends IMessageable {
      *   @see NotificationCenter::removeListener(listener)
      *   @since <#0.1#>
      */
-    public void stopListening();
+    void stopListening();
 
     
 };

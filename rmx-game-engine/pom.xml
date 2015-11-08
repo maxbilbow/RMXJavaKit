@@ -10,7 +10,7 @@
     <parent>
         <artifactId>rmx-kit</artifactId>
         <groupId>click.rmx</groupId>
-        <version>v0.0.3-SNAPSHOT</version>
+        <version>0.1</version>
         <!--<relativePath/>-->
     </parent>
     <properties>
@@ -23,7 +23,7 @@
     <modules>
         <!--<module>rmx-engine-core</module>-->
         <!--<module>rmx-engine-ai</module>-->
-        <module>rmx-engine-mvc</module>
+        <!--<module>rmx-engine-mvc</module>-->
     </modules>
 
 
@@ -79,7 +79,7 @@
             <id>rmx</id>
             <name>RMXJavaKit</name>
             <layout>default</layout>
-            <url>${windows.repository}</url>
+            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
             <!--<url>${settings.localRepository}</url>-->
             <snapshots>
                 <enabled>false</enabled>
