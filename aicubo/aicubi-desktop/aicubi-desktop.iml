@@ -31,7 +31,7 @@
     <orderEntry type="module" module-name="rmx-core" />
     <orderEntry type="library" name="Maven: click.rmx.engine:rmx-engine-ai:v0.0.3-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: click.rmx.engine:rmx-engine-core:v0.0.3-SNAPSHOT" level="project" />
-    <orderEntry type="module" module-name="rmx-engine-math" />
+    <orderEntry type="module" module-name="rmx-math" />
     <orderEntry type="library" name="Maven: javax.vecmath:vecmath:1.5.2" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />

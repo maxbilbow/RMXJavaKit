@@ -64,7 +64,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-engine-mvc" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-core" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

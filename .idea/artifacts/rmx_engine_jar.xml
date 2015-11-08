@@ -9,11 +9,11 @@
       <element id="module-output" name="rmx-core" />
       <element id="module-output" name="rmx-debug" />
       <element id="module-output" name="rmx-math" />
-      <element id="dir-copy" path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/lib/lwjgl/native" />
-      <element id="dir-copy" path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/resources" />
-      <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/lib/lwjgl/jar/lwjgl.jar" />
-      <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/lib/lwjgl/doc/javadoc.zip" />
-      <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/lib/lwjgl/src.zip" />
+      <element id="dir-copy" path="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/lib/lwjgl/native" />
+      <element id="dir-copy" path="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/resources" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/lib/lwjgl/jar/lwjgl.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/lib/lwjgl/doc/javadoc.zip" />
+      <element id="file-copy" path="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/lib/lwjgl/src.zip" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-core/META-INF/MANIFEST.MF" />
       </element>
