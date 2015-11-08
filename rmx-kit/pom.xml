@@ -11,8 +11,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <!--<local-repository.url>~/.m2/repository</local-repository.url>-->
-        <windows.repository>C:\Users\bilbowm\.m2\repository</windows.repository>
         <rmx.version>${project.version}</rmx.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
     </properties>

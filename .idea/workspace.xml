@@ -2,12 +2,213 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_3_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_api_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_catalina_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_coyote_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_el_api_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jni_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jsp_api_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_util_scan_8_0_28.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_12_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_11_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_9_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_8_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_1_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/LogBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/Logger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/RMQLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/WSLogger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/test/java/click/rmx/debug/client/RMQLoggerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/coders/LogDecoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/coders/LogEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/DBConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/EndpointConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/DebugController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/FTLLogController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/JSPLogController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/ListenerEndpoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/LiveUpdatesController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/Log.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/LogType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/repository/LogRepository.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version1.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version3.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/bootstrap-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/bootstrap-responsive.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/chat.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/debug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/server/model/LogTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_rmx_core_0_2_ALPHA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_rmx_debug_0_2_ALPHA.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" afterPath="$PROJECT_DIR$/rmx-game-engine/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/pom.xml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/Warning.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/Warning.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/Strategy.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/Strategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/StrategyEngine.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/StrategyEngine.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/pom.xml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine-core.iml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/rmx-engine-core.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/rmx-engine.iml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/rmx-engine.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/ASingleton.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/ASingleton.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Engine.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Engine.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/GameController.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/GameController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Scene.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Scene.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Singletons.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Singletons.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/StructClass.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/StructClass.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Ticker.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Ticker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/actors/AxisGenerator.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/actors/AxisGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/actors/EntityGenerator.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/actors/EntityGenerator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/Ai.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/Ai.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/Behaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/Behaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/CameraBehaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/CameraBehaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/CollisionHandler.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/CollisionHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/IBehaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/IBehaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/SpriteBehaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/behaviour/SpriteBehaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/ANodeComponent.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/ANodeComponent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Camera.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Camera.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/GameNode.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/GameNode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/LightSource.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/LightSource.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Node.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Node.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/NodeComponent.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/NodeComponent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Nodes.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Nodes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNode.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNodeImpl.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNodeImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/UpdateableProperties.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/UpdateableProperties.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/WeakNode.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/WeakNode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Geometry.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Geometry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/GeometryImpl.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/GeometryImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Shape.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Shape.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/ShapeObject.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/ShapeObject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Shapes.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Shapes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/CursorCallback.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/CursorCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GL.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GL.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLShaderView.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLShaderView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLView.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLViewPerFrameLog.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLViewPerFrameLog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView1.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Glu.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Glu.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/IKeyCallback.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/IKeyCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/KeyCallback.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/KeyCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/KeyStates.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/KeyStates.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Mesh.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Mesh.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/MobavleObject.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/MobavleObject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/RenderDelegate.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/RenderDelegate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Shader.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Shader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/ShaderTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/ShaderTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/SharedLibraryLoader.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/SharedLibraryLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Tree.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/Tree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/VertexBufferTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/VertexBufferTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferFactory.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix2.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix2.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix3.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix3.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix4.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedMatrix4.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedValue.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedValue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector2.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector2.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector3.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector3.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector4.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector4.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/ValueBuffer.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/ValueBuffer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/GameObject.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/GameObject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/Matrix4Buffer.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/Matrix4Buffer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/PersistenceTransform.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/PersistenceTransform.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/Transform.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/Transform.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/ACollisionHandler.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/ACollisionHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingBox.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingBox.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingSphere.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingSphere.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBody.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBounds.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBounds.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionDelegate.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionDelegate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionEvent.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBody.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBodyType.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBodyType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsWorld.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsWorld.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/persistence/service/TransformService.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/persistence/service/TransformService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/resources/click/rmx/engine/gl/Shader.fsh" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/target/classes/click/rmx/engine/gl/Shader.fsh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/resources/click/rmx/engine/gl/Shader.vsh" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/target/classes/click/rmx/engine/gl/Shader.vsh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/RMXEngineTests.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/RMXEngineTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/components/GameNodeTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/components/GameNodeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/geometry/ShapesTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/geometry/ShapesTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/physics/PhysicsWorldTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/engine/physics/PhysicsWorldTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/math/ToolsTest.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/test/java/click/rmx/math/ToolsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/target/classes/click/rmx/engine/gl/Shader.fsh" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/resources/click/rmx/engine/gl/Shader.fsh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/target/classes/click/rmx/engine/gl/Shader.vsh" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/resources/click/rmx/engine/gl/Shader.vsh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/pom.xml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/rmx-engine-mvc.iml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/rmx-engine-mvc.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/BoundingVolumeImpl.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/BoundingVolumeImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Behaviour.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Behaviour.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/BoundingVolume.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/BoundingVolume.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/CollisionBody.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/CollisionBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameComponent.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameComponent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObject.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObject.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Geometry.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Geometry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsWorld.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsWorld.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-game-engine.iml" afterPath="$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_ai_v0_0_3_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_ai_v0_0_3_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_core_v0_0_3_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_core_v0_0_3_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aicubo/aicubi-desktop/aicubi-desktop.iml" afterPath="$PROJECT_DIR$/aicubo/aicubi-desktop/aicubi-desktop.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-persistence/rmx-persistence.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-persistence/rmx-persistence.iml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,6 +246,10 @@
     <ignored path="$PROJECT_DIR$/aicubo/target/" />
     <ignored path="$PROJECT_DIR$/aicubo/aicubi-desktop/target/" />
     <ignored path="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-kit/debug-server/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-kit/rmx-debug-server/target/" />
+    <ignored path="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,108 +307,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/pom.xml">
+      <file leaf-file-name="BoundingVolumeImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/BoundingVolumeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.017482517">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhysicsBodyRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/Strategy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyEngine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/StrategyEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntBehaviour.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Warning.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/Warning.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rmx-engine-ai.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="PhysicsBodyImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5664845">
-              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CollisionBodyImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java">
+        <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding>
-                <element signature="e#747#748#0" expanded="false" />
-                <element signature="e#784#785#0" expanded="false" />
-                <element signature="e#841#842#0" expanded="false" />
-                <element signature="e#893#894#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhysicsBody.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Behaviour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Behaviour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="19" selection-start-line="19" selection-start-column="4" selection-end-line="62" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollisionBodyRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhysicsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -249,25 +447,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Camera.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/GameNode.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Node.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/Nodes.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/WeakNode.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/GeometryImpl.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/CursorCallback.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GLShaderView.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/MobavleObject.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingBox.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingSphere.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNodeImpl.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Geometry.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/components/RootNode.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/ACollisionHandler.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/pom.xml" />
-        <option value="$USER_HOME$/.m2/settings.xml" />
-        <option value="$PROJECT_DIR$/aicubi-desktop/pom.xml" />
         <option value="$PROJECT_DIR$/aicubo/aicubi-desktop/src/test/java/com/maxbilbow/aicubo/AiCuboCollisionTest.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/math/BufferedVector4.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector4.java" />
@@ -291,15 +470,34 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/CollisionBody.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/PhysicsWorld.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/GameObject.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObjectComponent.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/CollisionBody.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameComponent.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObject.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Geometry.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/BoundingVolume.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/BoundingVolumeImpl.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/DBConfig.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/RMQLogger.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/test/java/click/rmx/debug/client/RMQLoggerTest.java" />
       </list>
     </option>
   </component>
@@ -318,6 +516,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
@@ -338,10 +537,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -368,6 +565,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -388,7 +586,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,351 +617,22 @@
               <option name="myItemId" value="RMXJavaKit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-persistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-game-engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-engine-mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29885057" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
@@ -772,14 +640,15 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="click.rmx.engine.model.interfaces" />
       <recent name="click.rmx.engine.model.impl" />
       <recent name="click.rmx.engine.model" />
       <recent name="click.rmx.debug" />
       <recent name="click.rmx.engine.components" />
-      <recent name="click.rmx.persistence.model" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="click.rmx.engine.components" />
@@ -806,14 +675,129 @@
       <recent name="click.rmx.persistence.security" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/aicubo" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/rmx-kit" />
+      <recent name="$PROJECT_DIR$/aicubo" />
       <recent name="$PROJECT_DIR$/rmx-kit/rmx-game-engine" />
       <recent name="$PROJECT_DIR$/rmx-kit/rmx-engine" />
-      <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-multithread-toolkit\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.RMXJavaKit">
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/compiler.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_ai_v0_0_3_SNAPSHOT.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_engine_rmx_engine_core_v0_0_3_SNAPSHOT.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/aicubo/aicubi-desktop/aicubi-desktop.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/rmx-kit/pom.xml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Debug Server">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -1237,19 +1221,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -1366,7 +1337,7 @@
             <option name="environmentProperties">
               <map />
             </option>
-            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="jreName" value="1.9" />
             <option name="mavenProperties">
               <map />
             </option>
@@ -1485,11 +1456,19 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fjwasockets.debugserver.Application" />
+      <module name="rmx-debug-server" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Debug Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
       <option name="BROWSER_ID" value="e5120d43-2c3f-47ef-9f26-65e539e05186" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
-        <artifact name="rmx-persistence:war exploded">
+        <artifact name="rmx-debug-server:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -1497,6 +1476,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_RMXJavaKit" />
+        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1553,10 +1533,13 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <method>
-        <option name="BuildArtifacts" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="rmx-debug-server:war exploded" />
+        </option>
       </method>
     </configuration>
-    <configuration default="false" name="Tomcat 8.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+    <configuration default="false" name="Tomcat 8.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="spring-test:war exploded">
           <settings>
@@ -1625,7 +1608,7 @@
         <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
-    <list size="13">
+    <list size="14">
       <item index="0" class="java.lang.String" itemvalue="Application.Debug Receiver" />
       <item index="1" class="java.lang.String" itemvalue="Application.AiCubo (Win)" />
       <item index="2" class="java.lang.String" itemvalue="Application.AiCubo (Mac)" />
@@ -1637,8 +1620,9 @@
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.AiCubo Run" />
       <item index="9" class="java.lang.String" itemvalue="Spring Boot.RMXPersistence" />
       <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringTest" />
-      <item index="11" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="12" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.26" />
+      <item index="11" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="12" class="java.lang.String" itemvalue="Tomcat Server.Debug Server" />
+      <item index="13" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.26" />
     </list>
   </component>
   <component name="SbtLocalSettings">
@@ -1648,7 +1632,7 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -1702,8 +1686,14 @@
       <workItem from="1445940208784" duration="442000" />
       <workItem from="1446040616193" duration="4497000" />
       <workItem from="1446045566579" duration="4714000" />
-      <workItem from="1446108754809" duration="25000" />
-      <workItem from="1446802133382" duration="1383000" />
+      <workItem from="1446058610918" duration="7442000" />
+      <workItem from="1446294203226" duration="413000" />
+      <workItem from="1446299611619" duration="770000" />
+      <workItem from="1446300787124" duration="2000" />
+      <workItem from="1446300865945" duration="1054000" />
+      <workItem from="1446302463223" duration="603000" />
+      <workItem from="1446667080018" duration="635000" />
+      <workItem from="1447007750225" duration="2785000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1865,24 +1855,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143227000" />
+    <option name="totallyTimeSpent" value="155523000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32335767" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5078684" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3347548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25989306" sideWeight="0.49213162" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35438973" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33439237" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14744526" sideWeight="0.49213162" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35328466" sideWeight="0.4899857" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28518122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15766482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1890,18 +1883,15 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32441112" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32650447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1946,7 +1936,7 @@
           <properties />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1955,290 +1945,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7345133">
-          <caret line="66" column="27" selection-start-line="50" selection-start-column="17" selection-end-line="66" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubo/aicubi-desktop/src/test/java/com/maxbilbow/aicubo/AiCuboCollisionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.296296">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubo/aicubi-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3473685">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/src/main/java/click/rmx/math/Vector4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0220441">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/vecmath/vecmath/1.5.2/vecmath-1.5.2.jar!/javax/vecmath/Tuple3f.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33258426">
-          <caret line="150" column="41" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/src/main/java/click/rmx/math/Vector3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46067417">
-          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/ValueBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39078155">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21042085">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18036072">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/src/main/java/click/rmx/math/RMXValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18907563">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25210086">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/math/BufferedVector4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.063025214">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/StrategyEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.44117647">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubo/aicubi-desktop/src/main/java/com/maxbilbow/aicubo/AiCubo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="93" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/gl/GameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33193278">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22040074">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44262296">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3406193">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34790528">
-          <caret line="1903" column="6" selection-start-line="1903" selection-start-column="6" selection-end-line="1903" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/Transform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70434785">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48087433">
-          <caret line="33" column="24" selection-start-line="29" selection-start-column="10" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-game-engine.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8573913">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/model/PersistenceTransform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20695652">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7959927">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56173915">
-          <caret line="24" column="0" selection-start-line="13" selection-start-column="4" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14782609">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Geometry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1773913">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08869565">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aicubo/aicubi-desktop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8068182">
-          <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBody.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/CollisionBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.093818985">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsWorld.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2246,92 +1963,467 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="19" selection-start-line="19" selection-start-column="4" selection-end-line="62" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Behaviour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/PhysicsBodyRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Entity.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26269317">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.119521916">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/Repository/CollisionBodyRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Behaviour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/CollisionBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/BoundingBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/BoundingVolume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/PhysicsService.java">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <caret line="82" column="23" selection-start-line="71" selection-start-column="8" selection-end-line="82" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/PhysicsBody.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/Geometry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
           <folding>
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
+            <element signature="e#193#194#0" expanded="false" />
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#314#315#0" expanded="false" />
+            <element signature="e#486#487#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#543#544#0" expanded="false" />
+            <element signature="e#567#568#0" expanded="false" />
+            <element signature="e#599#600#0" expanded="false" />
+            <element signature="e#623#624#0" expanded="false" />
+            <element signature="e#660#661#0" expanded="false" />
+            <element signature="e#726#727#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+            <element signature="e#2037#2038#0" expanded="false" />
+            <element signature="e#2076#2077#0" expanded="false" />
+            <element signature="e#2135#2136#0" expanded="false" />
+            <element signature="e#2171#2172#0" expanded="false" />
+            <element signature="e#2230#2231#0" expanded="false" />
+            <element signature="e#2268#2269#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
+            <element signature="e#2365#2366#0" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2453#2454#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java">
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/geometry/Shapes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <caret line="270" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#741#742#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#853#854#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#965#966#0" expanded="false" />
+            <element signature="e#988#989#0" expanded="false" />
+            <element signature="e#1044#1045#0" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
+            <element signature="e#1372#1373#0" expanded="false" />
+            <element signature="e#1419#1420#0" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1521#1522#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1628#1629#0" expanded="false" />
+            <element signature="e#1662#1663#0" expanded="false" />
+            <element signature="e#1698#1699#0" expanded="false" />
+            <element signature="e#1737#1738#0" expanded="false" />
+            <element signature="e#1762#1763#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/interfaces/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/PhysicsBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="13" selection-start-column="4" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2280#2281#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
+            <element signature="e#2356#2357#0" expanded="false" />
+            <element signature="e#2382#2383#0" expanded="false" />
+            <element signature="e#2434#2435#0" expanded="false" />
+            <element signature="e#2491#2492#0" expanded="false" />
+            <element signature="e#2535#2536#0" expanded="false" />
+            <element signature="e#2585#2586#0" expanded="false" />
+            <element signature="e#2636#2637#0" expanded="false" />
+            <element signature="e#2693#2694#0" expanded="false" />
+            <element signature="e#2888#2889#0" expanded="false" />
+            <element signature="e#2906#2907#0" expanded="false" />
+            <element signature="e#6201#6202#0" expanded="false" />
+            <element signature="e#6226#6227#0" expanded="false" />
+            <element signature="e#6459#6460#0" expanded="false" />
+            <element signature="e#6477#6478#0" expanded="false" />
+            <element signature="e#6523#6524#0" expanded="false" />
+            <element signature="e#6546#6547#0" expanded="false" />
+            <element signature="e#6590#6591#0" expanded="false" />
+            <element signature="e#6617#6618#0" expanded="false" />
+            <element signature="e#6679#6680#0" expanded="false" />
+            <element signature="e#6720#6721#0" expanded="false" />
+            <element signature="e#6784#6785#0" expanded="false" />
+            <element signature="e#6833#6834#0" expanded="false" />
+            <element signature="e#6875#6876#0" expanded="false" />
+            <element signature="e#6911#6912#0" expanded="false" />
+            <element signature="e#6944#6945#0" expanded="false" />
+            <element signature="e#6967#6968#0" expanded="false" />
+            <element signature="e#7013#7014#0" expanded="false" />
+            <element signature="e#7046#7047#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/src/main/java/click/rmx/engine/physics/CollisionBounds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#230#231#0" expanded="false" />
+            <element signature="e#270#271#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39848197">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/service/CollisionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="57" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1446300399000" expanded="true" signature="1570:1584" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-51.411766">
+          <caret line="281" column="20" selection-start-line="281" selection-start-column="20" selection-end-line="281" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/WSLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/LogBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2222223">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.111111">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6862745">
+          <caret line="96" column="24" selection-start-line="96" selection-start-column="27" selection-end-line="100" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/client/RMQLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/test/java/click/rmx/debug/client/RMQLoggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5664845">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/Strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ai/StrategyEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/Warning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/PhysicsBodyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/CollisionBodyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/src/main/java/click/rmx/engine/model/impl/BoundingVolumeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.017482517">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2339,14 +2431,25 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor>
             <show-content>
+              <type id="artifact" />
               <type id="library" />
               <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
-              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>rmx-core:jar</last-edited>
@@ -2386,11 +2489,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20804597" />
+                <option value="0.29885057" />
               </list>
             </option>
           </splitter-proportions>
@@ -2398,12 +2501,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>rmx-engine-mvc</last-edited>
+          <last-edited>aicubi-desktop</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.29885057" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2421,13 +2523,24 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29885057" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="$PROJECT_DIR$/rmx-kit" />
-    <option value="deploy -DskipTests" />
+    <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger" />
     <option value="deploy" />
     <option value="compile" />
+    <option value="install" />
     <option value="clean compile" />
     <option value="clean compile install -DskipTests" />
     <option value="clean compile install" />

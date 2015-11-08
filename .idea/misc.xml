@@ -5,7 +5,8 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-game-engine/rmx-engine-core" />
+    <file type="web" url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core" />
+    <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server" />
     <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-persistence" />
   </component>
   <component name="MavenProjectsManager">
@@ -22,6 +23,10 @@
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
         <option value="$PROJECT_DIR$/aicubo/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

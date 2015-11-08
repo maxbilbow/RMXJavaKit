@@ -1,0 +1,42 @@
+
+.error {
+    color: #ff0000;
+}
+
+.errorblock  {
+    color: #000;
+    background-color: #ffEEEE;
+    border: 3px solid #ff0000;
+    padding: 8px;
+    margin: 16px;
+}
+
+
+.rmx-error-log div{
+    font-size: 80% !important;
+    width: 100%;
+    font-family: "Courier New";
+    padding: 8px;
+    display: block;
+    float: left;
+    /*clear: right;*/
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+#fjwa-errors {
+    background-color: #ffEEEE;
+    border: 3px solid #ff0000;
+}
+
+#fjwa-log {
+    background-color: #d3ffff;
+    border: 3px solid #3189ff;
+    padding: 8px;
+
+    /*width: 50%;*/
+    /*line-height: 50%;*/
+    
+    /*display: inline-block;*/
+}

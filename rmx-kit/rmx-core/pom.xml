@@ -69,17 +69,17 @@
 
        </build>
 
-    <repositories>
-        <repository>
-            <id>rmx</id>
-            <name>RMXJavaKit</name>
-            <layout>default</layout>
-            <!--<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>-->
-            <url>${local-repository.url}</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>rmx</id>-->
+            <!--<name>RMXJavaKit</name>-->
+            <!--<layout>default</layout>-->
+            <!--&lt;!&ndash;<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>&ndash;&gt;-->
+            <!--<url>${local-[.url}</url>-->
+            <!--<snapshots>-->
+                <!--<enabled>false</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
 </project>
 
