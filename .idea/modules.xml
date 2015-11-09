@@ -15,7 +15,6 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" group="RMXJavaKit" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-persistence/rmx-persistence.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-persistence/rmx-persistence.iml" />
     </modules>
   </component>
 </project>

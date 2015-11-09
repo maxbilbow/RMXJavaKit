@@ -14,7 +14,6 @@
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
         <version>0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
        <dependencies>
               <dependency>

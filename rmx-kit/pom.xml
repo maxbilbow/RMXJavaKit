@@ -26,13 +26,16 @@
     <description>RMXJavaKit</description>
 
 <modules>
-    <module>rmx-debug</module>
-    <module>rmx-core</module>
-    <module>rmx-persistence</module>
-    <module>rmx-multithread-toolkit</module>
-    <module>rmx-math</module>
     <module>rmx-debug-logger</module>
+    <module>rmx-debug</module>
     <module>rmx-debug-server</module>
+
+    <module>rmx-core</module>
+    <module>rmx-math</module>
+
+    <!--<module>rmx-persistence</module>-->
+    <module>rmx-multithread-toolkit</module>
+
 </modules>
 
     <build>

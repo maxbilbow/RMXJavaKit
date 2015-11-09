@@ -1,7 +1,6 @@
 package click.rmx.debug.server;
 
 import click.rmx.debug.server.config.WebConfig;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
@@ -17,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * Created by bilbowm on 23/10/2015.
  */
-@SpringBootApplication
+//@SpringBootApplication
 public class Application implements WebApplicationInitializer {
 
     @Override

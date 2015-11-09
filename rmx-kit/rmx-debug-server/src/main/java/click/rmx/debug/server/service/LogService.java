@@ -1,5 +1,6 @@
 package click.rmx.debug.server.service;
 
+
 import click.rmx.debug.RMXException;
 import click.rmx.debug.server.control.UpdatesEndpoint;
 import click.rmx.debug.server.model.Log;
@@ -18,13 +19,14 @@ import java.util.*;
 import java.util.concurrent.TimeoutException;
 
 import static click.rmx.debug.Bugger.print;
-import static click.rmx.debug.WebBugger.DEBUG_EXCHANGE_NAME;
+
 
 /**
  * Created by Max on 25/10/2015.
  */
 @Service
 public class LogService {
+    private static final String DEBUG_EXCHANGE_NAME = "debug_topic_exchange";
     private static LogService instance;
     private Connection connection;
     private Channel channel;
