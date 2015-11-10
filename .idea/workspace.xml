@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_rmx_debug_logger_0_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1452,7 +1440,7 @@
       <workItem from="1447016530743" duration="248000" />
       <workItem from="1447062818833" duration="5203000" />
       <workItem from="1447146146418" duration="900000" />
-      <workItem from="1447148392982" duration="4120000" />
+      <workItem from="1447148392982" duration="4199000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1664,7 +1652,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447152991510</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="finalised 0.1. Now working on 0.1.1-snapshot">
+      <created>1447153233828</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1447153233828</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1679,7 +1673,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171427000" />
+    <option name="totallyTimeSpent" value="171506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1755,7 +1749,8 @@
     <MESSAGE value="Struggling to deploy all to repo" />
     <MESSAGE value="Reorganised" />
     <MESSAGE value="debug server seems to be fixed. DB is now temporary but should probably be replaced with an h2 embedded db." />
-    <option name="LAST_COMMIT_MESSAGE" value="debug server seems to be fixed. DB is now temporary but should probably be replaced with an h2 embedded db." />
+    <MESSAGE value="finalised 0.1. Now working on 0.1.1-snapshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalised 0.1. Now working on 0.1.1-snapshot" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
