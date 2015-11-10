@@ -33,7 +33,7 @@ public class ListenerEndpoint {
         }
 
         this.session = session;
-        Log log = service.addLog("Client connected: " + session.getId());
+        Log log = service.makeLog("Client connected: " + session.getId());
         service.save(log);
         service.notifySubscribers(log);
     }
@@ -58,7 +58,7 @@ public class ListenerEndpoint {
     @OnClose
     public void onClose(Session session, CloseReason closeReason, @PathParam("topic") String topic)
     {
-        Log log = service.addLog("Client disconnected: " + session.getId());
+        Log log = service.makeLog("Client disconnected: " + session.getId());
         service.save(log);
         service.notifySubscribers(log);
     }
@@ -67,7 +67,7 @@ public class ListenerEndpoint {
     public void onError(Session session, Throwable error, @PathParam("topic") String topic)
     {
         error.printStackTrace();
-        Log log = service.addException("Connection Error: " + error.toString());
+        Log log = service.makeException("Connection Error: " + error.toString());
         service.save(log);
         service.notifySubscribers(log);
     }

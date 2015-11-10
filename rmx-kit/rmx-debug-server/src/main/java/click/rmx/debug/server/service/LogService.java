@@ -2,6 +2,7 @@ package click.rmx.debug.server.service;
 
 
 import click.rmx.debug.RMXException;
+import click.rmx.debug.server.coders.LogDecoder;
 import click.rmx.debug.server.control.UpdatesEndpoint;
 import click.rmx.debug.server.model.Log;
 import click.rmx.debug.server.model.LogType;
@@ -10,10 +11,13 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.*;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.HttpPost;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import javax.websocket.DecodeException;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
@@ -65,7 +69,7 @@ public class LogService {
             message = mapper.writeValueAsString(log);
             notiftRabbitServer(message);
         } catch (Exception e) {
-            save(this.addException(RMXException.unexpected(e)));
+            save(this.makeException(RMXException.unexpected(e)));
             e.printStackTrace();
         }
 
@@ -75,7 +79,7 @@ public class LogService {
                 try {
                     e.broadcast(msg);
                 } catch (IOException e1) {
-                    save(this.addException(RMXException.unexpected(e1)));
+                    save(this.makeException(RMXException.unexpected(e1)));
                     e1.printStackTrace();
                 }
             });
@@ -144,7 +148,53 @@ public class LogService {
         return chClosed && cnnClosed;
     }
 
-    public Log addLog(String message) {
+    public Log makeLog(byte[] body)
+    {
+        String message = new String(body);
+        LogDecoder decoder = new LogDecoder();
+        if (decoder.willDecode(message))
+        {
+            try {
+                return decoder.decode(message);
+            } catch (DecodeException e) {
+                return makeException(RMXException.unexpected(e, message + "\n - Failed to decode as Log"));
+            }
+        }
+        return makeLog(message);
+    }
+
+    public Log makeLog(HttpPost post)
+    {
+
+        HttpEntity entity = post.getEntity();
+//        try {
+//            byte[] buffer = new byte[(int) entity.getContentLength()];
+//            entity.getContent().read(buffer);
+//            return makeLog(buffer);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//
+//        }
+        return makeLog(entity);
+
+    }
+    public Log makeLog(Object object)
+    {
+//        if (object instanceof HttpPost)
+//            return makeLog((HttpPost) object);
+        if (object instanceof byte[])
+           return makeLog((byte[])object);
+        if (object instanceof Log)
+            return (Log) object;
+        if (object instanceof RMXException)
+            return makeException((RMXException) object);
+        if (object instanceof Exception)
+            return makeException(RMXException.unexpected((Exception)object));
+
+        return makeLog(String.valueOf(object));
+    }
+
+    public Log makeLog(String message) {
         Log log = new Log("debug-server");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
         log.setMessage(message);
@@ -152,7 +202,7 @@ public class LogService {
         return log;
     }
 
-    public Log addException(String message)
+    public Log makeException(String message)
     {
         Log log = new Log("debug-server");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
@@ -161,7 +211,7 @@ public class LogService {
         return log;
     }
 
-    public Log addWarning(String message)
+    public Log makeWarning(String message)
     {
         Log log = new Log("debug-server");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
@@ -170,8 +220,8 @@ public class LogService {
         return log;
     }
 
-    public Log addException(RMXException e) {
-        return this.addException(e.html());
+    public Log makeException(RMXException e) {
+        return this.makeException(e.html());
     }
 
     public static String toHtml(String string)
@@ -251,8 +301,8 @@ public class LogService {
             public void handleDelivery(String consumerTag, Envelope envelope,
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
 
-                String message = new String(body, "UTF-8");
                 String topic = envelope.getRoutingKey().toLowerCase();
+                String message = new String(body, "UTF-8");
                 String log = "";
                 Map map = null;
                 if (message.startsWith("{") && message.endsWith("}"))
@@ -268,11 +318,6 @@ public class LogService {
                                 log += "\n   --> " + key + ": " + map.get(key);
                             }
                         }
-//                        else {
-//                            log += message + " (via "+topic+")";
-//                        }
-
-
                     }
                 else
                     log = message;// + " (via "+topic+")";
@@ -283,11 +328,11 @@ public class LogService {
                 try {
 
                     if (topic.contains("error") || topic.contains("exception"))
-                        newLog = thisInstance.addException(log);
+                        newLog = thisInstance.makeException(log);
                     else if (topic.contains("warning"))
-                        newLog = thisInstance.addWarning(log);
+                        newLog = thisInstance.makeWarning(log);
                     else
-                        newLog = thisInstance.addLog(log);
+                        newLog = thisInstance.makeLog(log);
                     if (properties != null)
                         newLog.setSender(properties.getAppId());
                     save(newLog);
@@ -308,7 +353,7 @@ public class LogService {
         try {
             repository.save(log);
         } catch (Exception e) {
-            notifySubscribers(addException(RMXException.unexpected(e)));
+            notifySubscribers(makeException(RMXException.unexpected(e)));
         }
     }
 
