@@ -32,7 +32,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/rmx-game-engine/pom.xml" />
+        <option value="$PROJECT_DIR$/aicubo/aicubi-desktop/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
       </set>
     </option>

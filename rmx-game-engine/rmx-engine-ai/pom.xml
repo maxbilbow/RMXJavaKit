@@ -33,7 +33,7 @@
         <dependency>
             <groupId>click.rmx.engine</groupId>
             <artifactId>rmx-engine-core</artifactId>
-            <version>v0.0.3-SNAPSHOT</version>
+            <version>${rmx-engine.version}</version>
         </dependency>
         <dependency>
             <groupId>click.rmx</groupId>

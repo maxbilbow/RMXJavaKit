@@ -7,50 +7,39 @@
     <artifactId>rmx-game-engine</artifactId>
 <packaging>pom</packaging>
 <version>0.2.ALPHA</version>
+
     <parent>
-        <artifactId>rmx-kit</artifactId>
-        <groupId>click.rmx</groupId>
-        <version>0.1</version>
-        <!--<relativePath/>-->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.2.7.RELEASE</version>
+        <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
+
     <properties>
+        <javax-servlet.version>3.1.0</javax-servlet.version>
+        <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
+        <spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
+        <spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
+        <spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>
+        <commons-logging.version>1.2</commons-logging.version>
+        <javax.json-api.version>1.0</javax.json-api.version>
+        <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
+        <!--<jetty-websocket.version>8.1.18.v20150929</jetty-websocket.version>-->
+        <javax.websocket-api.version>1.1</javax.websocket-api.version>
+        <java.version>1.8</java.version>
+        <rmx.version>${project.version}</rmx.version>
+        <javax-vecmath.version>1.5.2</javax-vecmath.version>
+
         <lwjgl.version>3.0.0a</lwjgl.version>
         <slick.version>274</slick.version>
         <java3d-vecmath.version>1.5.1</java3d-vecmath.version>
         <natives.version>0.0.7</natives.version>
         <rmx-engine.version>${project.version}</rmx-engine.version>
+        <rmx-kit.version>0.1</rmx-kit.version>
     </properties>
-    <modules>
-        <!--<module>rmx-engine-core</module>-->
-        <!--<module>rmx-engine-ai</module>-->
-        <!--<module>rmx-engine-mvc</module>-->
-    </modules>
 
 
 
-    <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>org.lwjgl.lwjgl</groupId>-->
-            <!--<artifactId>lwjgl</artifactId>-->
-            <!--<version>${lwjgl.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>slick</groupId>-->
-            <!--<artifactId>slick</artifactId>-->
-            <!--<version>${slick.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>java3d</groupId>-->
-            <!--<artifactId>vecmath</artifactId>-->
-            <!--<version>${java3d-vecmath.version}</version>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
     <build>
         <finalName>rmx-game-engine</finalName>
         <plugins>
@@ -58,7 +47,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -69,37 +57,37 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
-
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>1.0-alpha-6</version>
+            </extension>
+        </extensions>
     </build>
     <repositories>
         <repository>
-            <id>rmx</id>
+            <id>rmx-kit</id>
             <name>RMXJavaKit</name>
-            <layout>default</layout>
-            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
-            <!--<url>${settings.localRepository}</url>-->
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <url>http://m2.rmx.click</url>
         </repository>
-        <!--<repository>-->
-        <!--<id>mavenNatives</id>-->
-        <!--<name>Maven Natives Repository</name>-->
-        <!--<url>http://mavennatives.googlecode.com/svn/repo</url>-->
-        <!--<snapshots>-->
-        <!--<enabled>true</enabled>-->
-        <!--</snapshots>-->
-        <!--</repository>-->
-        <!--<repository>-->
-        <!--<id>slick</id>-->
-        <!--<name>slick</name>-->
-        <!--<url>http://slick.cokeandcode.com/mavenrepo</url>-->
-        <!--</repository>-->
-
-
-
     </repositories>
+    <distributionManagement>
+        <repository>
+            <id>m2.rmx.click</id>
+            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
+        </repository>
+    </distributionManagement>
 </project>

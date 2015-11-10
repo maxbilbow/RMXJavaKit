@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aicubo/aicubi-desktop/aicubi-desktop.iml" filepath="$PROJECT_DIR$/aicubo/aicubi-desktop/aicubi-desktop.iml" />
       <module fileurl="file://$PROJECT_DIR$/aicubo/aicubi-web/aicubi-web.iml" filepath="$PROJECT_DIR$/aicubo/aicubi-web/aicubi-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aicubo/aicubo.iml" filepath="$PROJECT_DIR$/aicubo/aicubo.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/aicubo/aicubo.iml" filepath="$PROJECT_DIR$/aicubo/aicubo.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" filepath="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/rmx-engine-ai.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" filepath="$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" group="RMXJavaKit" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" group="RMXJavaKit" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" filepath="$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
     </modules>

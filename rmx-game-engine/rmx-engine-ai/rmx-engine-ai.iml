@@ -25,9 +25,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.6" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.6" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.6" level="project" />
-    <orderEntry type="module" module-name="rmx-engine" />
     <orderEntry type="library" name="Maven: org.lwjgl:lwjgl:3.0.0a" level="project" />
-    <orderEntry type="module" module-name="rmx-persistence" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-batch:1.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.2.7.RELEASE" level="project" />

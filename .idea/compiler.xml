@@ -43,7 +43,6 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-engine-ai" />
       </profile>
       <profile default="false" name="Annotation profile for aicubi-web" enabled="true">
         <sourceOutputDir name="../../aicubi-web/target/generated-sources/annotations" />
@@ -57,7 +56,6 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="aicubi-desktop" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-engine-mvc" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

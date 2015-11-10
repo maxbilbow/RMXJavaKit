@@ -10,6 +10,16 @@
     <packaging>pom</packaging>
 
     <properties>
+        <javax-servlet.version>3.1.0</javax-servlet.version>
+        <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
+        <spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
+        <spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
+        <spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>
+        <commons-logging.version>1.2</commons-logging.version>
+        <javax.json-api.version>1.0</javax.json-api.version>
+        <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
+        <!--<jetty-websocket.version>8.1.18.v20150929</jetty-websocket.version>-->
+        <javax.websocket-api.version>1.1</javax.websocket-api.version>
         <java.version>1.8</java.version>
         <rmx.version>${project.version}</rmx.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
@@ -45,7 +55,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
