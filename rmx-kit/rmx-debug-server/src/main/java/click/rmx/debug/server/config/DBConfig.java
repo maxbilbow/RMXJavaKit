@@ -2,7 +2,6 @@ package click.rmx.debug.server.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -19,7 +18,7 @@ import java.util.Properties;
 /**
  * Created by bilbowm on 15/10/2015.
  */
-@Configuration
+//@Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories("click.rmx.debug.server.repository")
 public class DBConfig implements TransactionManagementConfigurer {
@@ -59,7 +58,7 @@ public class DBConfig implements TransactionManagementConfigurer {
 
     final Properties additionalProperties() {
         final Properties hibernateProperties = new Properties();//TODO change to create-drop or add config options
-        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");// USE_REMOTE_DATABASE ? "update" : "create-drop");
+        hibernateProperties.setProperty("hibernate.hbm2ddl.auto", false ? "update" : "create-drop");
         hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         hibernateProperties.setProperty("hibernate.globally_quoted_identifiers", "true");
         return hibernateProperties;

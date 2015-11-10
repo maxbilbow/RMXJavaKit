@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
-import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -24,17 +23,6 @@ import java.util.Locale;
 @ComponentScan(basePackages = "click.rmx.debug.server")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
-//
-//    //Normal setup
-//    @Bean
-//    public MessageSource messageSource() {
-//        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-//        messageSource.setBasename("messages");
-//        return messageSource;
-//    }
-
-
-
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver resolver = new SessionLocaleResolver();
@@ -42,29 +30,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return resolver;
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        LocaleChangeInterceptor changeInterceptor = new LocaleChangeInterceptor();
-        changeInterceptor.setParamName("language");
-        registry.addInterceptor(changeInterceptor);
-        //Websockets
-//        registry.addInterceptor(webContentInterceptor());
-    }
-
-    @Override //Websockets
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
-    }
-
-//     //Websockets
-//    private WebContentInterceptor webContentInterceptor() {
-//        WebContentInterceptor interceptor = new WebContentInterceptor();
-//        interceptor.setCacheSeconds(0);
-//        interceptor.setUseExpiresHeader(true);
-//        interceptor.setUseCacheControlHeader(true);
-//        interceptor.setUseCacheControlNoStore(true);
-//        return interceptor;
-//    }
     /**
      * Setup a simple strategy: use all the defaults and return XML by default when not sure.
      */
@@ -84,32 +49,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
         return resolver;
     }
-
-
-
-    //configure freemarker
-//    @Bean
-//    public FreeMarkerConfigurer freemarkerConfig() throws Exception
-//    {
-//        FreeMarkerConfigurer freeMarkerConfigurer = new FreeMarkerConfigurer();
-//
-//        freeMarkerConfigurer.setTemplateLoaderPath("/WEB-INF/pages/");
-//
-//
-//        return freeMarkerConfigurer;
-//    }
-//
-//    @Bean
-//    public FreeMarkerViewResolver viewResolver() {
-//        FreeMarkerViewResolver freeMarkerViewResolver = new FreeMarkerViewResolver();
-//        freeMarkerViewResolver.setCache(true);
-////        freeMarkerViewResolver
-//        freeMarkerViewResolver.setPrefix("");
-//        freeMarkerViewResolver.setSuffix(".ftl");
-//
-//
-//        return freeMarkerViewResolver;
-//    }
 
         @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
