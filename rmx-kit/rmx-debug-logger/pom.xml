@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.1</version>
+        <version>0.1.1-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -90,7 +90,7 @@
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>1.9.13</version>
+            <version>${jackson-mapper-asl.version}</version>
         </dependency>
         <!--<dependency>-->
             <!--<groupId>click.rmx</groupId>-->

@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,11 +119,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8187633">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state vertical-scroll-proportion="-1.6385542">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -119,8 +142,38 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.61445785">
-              <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
+            <state vertical-scroll-proportion="-2.8674698">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22813688">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -136,6 +189,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LogTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/server/model/LogTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,21 +209,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -235,15 +288,9 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/RMXObject.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/src/test/java/click/rmx/core/RMXObjectTest.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/src/test/java/click/rmx/core/NotificationCenterTest.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/Application.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java" />
         <option value="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai/src/main/java/click/rmx/engine/behaviour/ants/AntBehaviour.java" />
@@ -253,7 +300,13 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/DBConfig.java" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml" />
       </list>
     </option>
   </component>
@@ -330,16 +383,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="RMXJavaKit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1409,7 +1452,7 @@
       <workItem from="1447016530743" duration="248000" />
       <workItem from="1447062818833" duration="5203000" />
       <workItem from="1447146146418" duration="900000" />
-      <workItem from="1447148392982" duration="3897000" />
+      <workItem from="1447148392982" duration="4120000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1615,7 +1658,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447151580910</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="debug server seems to be fixed. DB is now temporary but should probably be replaced with an h2 embedded db.">
+      <created>1447152991510</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1447152991510</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1630,7 +1679,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171204000" />
+    <option name="totallyTimeSpent" value="171427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1646,10 +1695,10 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33422175" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14744526" sideWeight="0.49213162" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.379015" sideWeight="0.48667377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.379015" sideWeight="0.48667377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15724947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15724947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1902,37 +1951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21597096">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="23.538462">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1538463">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.8846154">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/Bugger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1959,14 +1977,6 @@
             <element signature="e#4249#4250#0" expanded="false" />
             <element signature="e#4302#4303#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="27" selection-start-line="35" selection-start-column="26" selection-end-line="39" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2006,14 +2016,6 @@
             <element signature="e#2215#2216#0" expanded="false" />
             <element signature="e#2280#2281#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="27" selection-end-line="88" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2150,18 +2152,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.61445785">
-          <caret line="207" column="43" selection-start-line="207" selection-start-column="43" selection-end-line="207" selection-end-column="43" />
+        <state vertical-scroll-proportion="-1.6385542">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8187633">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8674698">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22813688">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2276,8 +2326,8 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$/rmx-kit" />
-    <option value="clean install deploy" />
     <option value="clean install" />
+    <option value="clean install deploy" />
     <option value="install" />
     <option value="clean compile" />
     <option value="compile" />
