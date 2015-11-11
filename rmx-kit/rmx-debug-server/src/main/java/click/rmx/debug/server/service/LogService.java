@@ -12,6 +12,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.*;
 import org.apache.http.Header;
+import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,10 +20,16 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import javax.websocket.DecodeException;
 import java.io.IOException;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
 
 import static click.rmx.debug.Bugger.print;
+
+//import com.rabbitmq.client.*;
 
 
 /**
@@ -61,19 +68,20 @@ public class LogService {
         endpoints.remove(client);
     }
 
-    public void notifySubscribers(Log log)
+    public void notifySubscribers(Log... logs)
     {
-        ObjectMapper mapper = new ObjectMapper();
-        String message = "Message Failed to sent!";
-        try {
-            message = mapper.writeValueAsString(log);
-            notiftRabbitServer(message);
-        } catch (Exception e) {
-            save(this.makeException(RMXException.unexpected(e)));
-            e.printStackTrace();
-        }
+        for (Log log : logs) {
+            ObjectMapper mapper = new ObjectMapper();
+            String message = "Message Failed to send! ";
+            try {
+                message = mapper.writeValueAsString(log);
+                notiftRabbitServer(message);
+            } catch (Exception e) {
+                save(this.makeException(RMXException.unexpected(e)));
+                e.printStackTrace();
+            }
 
-        List<UpdatesEndpoint> toRemove = new ArrayList<>();
+            List<UpdatesEndpoint> toRemove = new ArrayList<>();
             final String msg = message;
             endpoints.stream().forEach(e -> {
                 try {
@@ -84,8 +92,8 @@ public class LogService {
                 }
             });
 
-        toRemove.forEach(this::removeClient);
-
+            toRemove.forEach(this::removeClient);
+        }
     }
 
 
@@ -166,13 +174,38 @@ public class LogService {
     public Log makeLog(HttpPost post)
     {
 
-//        HttpEntity entity = post.getEntity();
+        HttpEntity entity = post.getEntity();
         Header[] headers = post.getAllHeaders();
 
-        String headerInfo = "HEADERS:";
+        String info =
+                "HEADERS" +
+                "\n-------";
+
         for (Header h : headers) {
-            headerInfo += "\n --> " + h.getName() + " == " +  String.valueOf(h.getValue());
+            info += "\n --> " + h.getName() + " == " +  String.valueOf(h.getValue());
         }
+
+        if (entity != null) {
+            info += "\nENTITY INFO for " + String.valueOf(entity) + ":";
+
+            info += "\nLength: " + String.valueOf(entity.getContentLength());
+            info += "\nType: " + String.valueOf(entity.getContentType());
+            info += "\nEncoding: " + String.valueOf(entity.getContentEncoding());
+            try {
+                info += "\nContent: " + String.valueOf(entity.getContent());
+            } catch (IOException e) {
+                e.printStackTrace();
+                info += "\n Exception: " + e;
+            }
+        } else
+            info += "\nEntity was null" +
+                    "\n---------------";
+        info += "\n toString() == " + post.toString();
+//        info += "\n getMethod() == " + post.getMethod();
+//        info += "\n getConfig() == " + String.valueOf(post.getConfig());
+//        info += "\n getRequestLine() == " + String.valueOf(post.getRequestLine());
+//        info += "\n getProtocolVersion() == " + String.valueOf(post.getProtocolVersion());
+//        info += "\n getURI() == " + String.valueOf(post.getURI());
 //        try {
 //            byte[] buffer = new byte[(int) entity.getContentLength()];
 //            entity.getContent().read(buffer);
@@ -181,11 +214,14 @@ public class LogService {
 //            e.printStackTrace();
 //
 //        }
-        return makeLog(headerInfo);
+//
+        return makeLog(info);
 
     }
     public Log makeLog(Object object)
     {
+        if (object == null)
+            return makeLog("NULL");
 //        if (object instanceof HttpPost)
 //            return makeLog((HttpPost) object);
         if (object instanceof byte[])
@@ -196,8 +232,42 @@ public class LogService {
             return makeException((RMXException) object);
         if (object instanceof Exception)
             return makeException(RMXException.unexpected((Exception)object));
+        if (object instanceof String)
+            return makeLog(String.valueOf(object));
+        if (object.getClass().isArray()&& Array.getLength(object) > 0) {
+            String arrString = "{" + String.valueOf(Array.get(object,0));
+            for (int i = 1; i < Array.getLength(object); ++i)
+                arrString += ", " + String.valueOf(Array.get(object,i));
+            arrString += " }";
+            return makeLog(arrString);
+        }
 
-        return makeLog(String.valueOf(object));
+
+        String info =
+                "\nUNKNOWN OBJECT: " + object.getClass().getName() +
+                "\n================" +
+                        "\nMethods";
+        Method[] methods = object.getClass().getMethods();
+        for (Method m : methods) {
+            info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "()";
+            if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
+                try {
+                    info += " == " + String.valueOf(m.invoke(object));
+                } catch (Exception e) {
+                    info += " != FAIL: " + e;
+                }
+        }
+        info += "\nFields:";
+        Field[] fields = object.getClass().getFields();
+        for (Field f: fields) {
+            info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
+        }
+        info += "\nAnnotations:";
+        Annotation[] annotations = object.getClass().getAnnotations();
+        for (Annotation a: annotations) {
+            info += "\n --(a) " + a.getClass().getSimpleName();
+        }
+        return makeWarning(info);
     }
 
     public Log makeLog(String message) {
@@ -341,13 +411,15 @@ public class LogService {
                         newLog = thisInstance.makeLog(log);
                     if (properties != null)
                         newLog.setSender(properties.getAppId());
-                    save(newLog);
+
 //                channel.basicAck(envelope.getDeliveryTag(),false);
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
-                if (newLog != null) {
-                    notifySubscribers(newLog);
+                } finally {
+                    if (newLog != null) {
+                        notifySubscribers(newLog);
+                        save(newLog);
+                    }
                 }
             }
         };

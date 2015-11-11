@@ -211,7 +211,11 @@
             <version>${spring.version}</version>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.apache.nifi</groupId>
+            <artifactId>nifi-api</artifactId>
+            <version>0.3.0</version>
+        </dependency>
 
     </dependencies>
 

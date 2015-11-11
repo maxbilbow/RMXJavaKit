@@ -3,10 +3,7 @@ package click.rmx.debug.server.model;
 import click.rmx.debug.Bugger;
 import click.rmx.debug.WebBugger;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
@@ -24,6 +21,7 @@ public class Log {
 
     private String channel;
 
+    @Column(columnDefinition = "TEXT")
     private String message;
 
     private Date timeStamp;
@@ -32,7 +30,7 @@ public class Log {
     private String sender;
 
     @Transient
-    private String html = null;
+    private String html = "";
 
     private String shortTime;
 
@@ -63,6 +61,11 @@ public class Log {
     }
 
     public void setMessage(String message) {
+        if (message == null) {
+            message = "NULL";
+            this.setLogType(LogType.Exception);
+        }
+        this.html = WebBugger.toHtml(message);
         this.message = message;
     }
 
@@ -71,6 +74,8 @@ public class Log {
     }
 
     public void setLogType(LogType logType) {
+        if (message == "NULL" && logType == LogType.Message)
+            return;
         this.logType = logType;
         this.channel = logType.channel;
     }
@@ -91,9 +96,8 @@ public class Log {
         this.channel = channel;
     }
 
-
     public String getHtml() {
-        return html == null? WebBugger.toHtml(message) : html;
+        return html == null || html.isEmpty() ? html = WebBugger.toHtml(message) : html;
     }
 
     public void setHtml(String html) {
