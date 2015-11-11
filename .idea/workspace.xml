@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_nifi_nifi_api_0_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="$PROJECT_DIR$/.idea/findbugs-idea.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/JSPLogController.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/JSPLogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/Log.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/Log.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/RMXError.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/RMXError.java" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +97,8 @@
       <file leaf-file-name="LogService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.619137">
-              <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.3958724">
+              <caret line="261" column="52" selection-start-line="261" selection-start-column="52" selection-end-line="261" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1847,7 +1841,7 @@
       <workItem from="1447146146418" duration="900000" />
       <workItem from="1447148392982" duration="4199000" />
       <workItem from="1447168632145" duration="5570000" />
-      <workItem from="1447232463384" duration="26690000" />
+      <workItem from="1447232463384" duration="26906000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -2077,7 +2071,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447234771321</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Issues getting postHTTP to work with Apache NiFi">
+      <created>1447259282996</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1447259282996</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2092,7 +2092,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203766000" />
+    <option name="totallyTimeSpent" value="203982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -2144,7 +2144,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wheres everything gone?" />
     <MESSAGE value="meh... not quite" />
     <MESSAGE value="getting there" />
     <MESSAGE value="Works on MySql and HSQLDB. Seems that it may be impossible to subclass an Entity. Important knowledge for building a data-driven game..." />
@@ -2169,7 +2168,8 @@
     <MESSAGE value="finalised 0.1. Now working on 0.1.1-snapshot" />
     <MESSAGE value="Trying to receive and decode an http post" />
     <MESSAGE value="Debug server now connects to embedded h2 database, negating the need for mysql to be running.&#10;&#10;An option for exporting a database would be useful should the system fail." />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug server now connects to embedded h2 database, negating the need for mysql to be running.&#10;&#10;An option for exporting a database would be useful should the system fail." />
+    <MESSAGE value="Issues getting postHTTP to work with Apache NiFi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Issues getting postHTTP to work with Apache NiFi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2595,8 +2595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.619137">
-          <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.3958724">
+          <caret line="261" column="52" selection-start-line="261" selection-start-column="52" selection-end-line="261" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

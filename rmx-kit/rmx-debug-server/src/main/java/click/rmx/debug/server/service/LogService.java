@@ -218,6 +218,18 @@ public class LogService {
         return makeLog(info);
 
     }
+
+    private String toArrayString(Object array)
+    {
+        if (array.getClass().isArray() && Array.getLength(array) > 0) {
+            String arrString = "{" + String.valueOf(Array.get(array, 0));
+            for (int i = 1; i < Array.getLength(array); ++i)
+                arrString += ", " + String.valueOf(Array.get(array, i));
+            arrString += " }";
+            return arrString;
+        }
+        return "FAIL: Not an array";
+    }
     public Log makeLog(Object object)
     {
         if (object == null)
@@ -234,13 +246,8 @@ public class LogService {
             return makeException(RMXException.unexpected((Exception)object));
         if (object instanceof String)
             return makeLog(String.valueOf(object));
-        if (object.getClass().isArray()&& Array.getLength(object) > 0) {
-            String arrString = "{" + String.valueOf(Array.get(object,0));
-            for (int i = 1; i < Array.getLength(object); ++i)
-                arrString += ", " + String.valueOf(Array.get(object,i));
-            arrString += " }";
-            return makeLog(arrString);
-        }
+        if (object.getClass().isArray())
+            return makeLog(toArrayString(object));
 
 
         String info =
@@ -252,7 +259,10 @@ public class LogService {
             info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "()";
             if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
                 try {
-                    info += " == " + String.valueOf(m.invoke(object));
+                    if (m.getReturnType().isArray())
+                        info += " == " + toArrayString(object);
+                    else
+                        info += " == " + String.valueOf(m.invoke(object));
                 } catch (Exception e) {
                     info += " != FAIL: " + e;
                 }
