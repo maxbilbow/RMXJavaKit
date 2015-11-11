@@ -65,6 +65,7 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-coyote:8.0.28" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:8.0.28" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:8.0.28" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.190" />
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.1.8.RELEASE" />

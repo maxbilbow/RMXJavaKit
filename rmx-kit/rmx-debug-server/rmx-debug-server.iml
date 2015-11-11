@@ -81,6 +81,7 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-coyote:8.0.28" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util:8.0.28" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-util-scan:8.0.28" level="project" />
+    <orderEntry type="library" name="Maven: com.h2database:h2:1.4.190" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.1.8.RELEASE" level="project" />

@@ -11,7 +11,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.*;
-import org.apache.http.HttpEntity;
+import org.apache.http.Header;
 import org.apache.http.client.methods.HttpPost;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -166,7 +166,13 @@ public class LogService {
     public Log makeLog(HttpPost post)
     {
 
-        HttpEntity entity = post.getEntity();
+//        HttpEntity entity = post.getEntity();
+        Header[] headers = post.getAllHeaders();
+
+        String headerInfo = "HEADERS:";
+        for (Header h : headers) {
+            headerInfo += "\n --> " + h.getName() + " == " +  String.valueOf(h.getValue());
+        }
 //        try {
 //            byte[] buffer = new byte[(int) entity.getContentLength()];
 //            entity.getContent().read(buffer);
@@ -175,7 +181,7 @@ public class LogService {
 //            e.printStackTrace();
 //
 //        }
-        return makeLog(entity);
+        return makeLog(headerInfo);
 
     }
     public Log makeLog(Object object)

@@ -1,5 +1,6 @@
 package click.rmx.debug.server.config;
 
+import click.rmx.debug.Bugger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
@@ -27,20 +28,30 @@ public class DBConfig implements TransactionManagementConfigurer {
     public PlatformTransactionManager annotationDrivenTransactionManager() {
         return transactionManager(entityManagerFactory);
     }
-
+//jdbc:h2:C:/ide/projects/rmx/RMXJavaKit/rmx-kit/rmx-debug-server/src/main/resources/click/rmx/debug/server/config/h2
     enum DB {
         LOCAL("jdbc:mysql://localhost:3306/debug_server", //3307 at home
-                "root", "password");
+                "root", "password", "com.mysql.jdbc.Driver", "org.hibernate.dialect.MySQL5Dialect"),
+        H2("jdbc:h2:${path}debug_server","","", "org.h2.Driver", "org.hibernate.dialect.H2Dialect");
+        public final String username, password, driver, dialect;
+        private final String url;
 
-        public final String url, username, password;
-
-        DB(String url, String username, String password) {
+        DB(String url, String username, String password, String driver, String dialect) {
             this.url = url;
             this.username = username;
             this.password = password;
+            this.driver = driver;
+            this.dialect = dialect;
         }
+
+        public String getUrl(Class<?> clazz){
+            String database = url.replace("${path}",clazz.getResource("").getFile());
+            Bugger.print(database);
+            return database;
+        }
+
     }
-    private final DB db = DB.LOCAL;
+    private final DB db = DB.H2;
 
 
     @Bean
@@ -59,8 +70,10 @@ public class DBConfig implements TransactionManagementConfigurer {
     final Properties additionalProperties() {
         final Properties hibernateProperties = new Properties();//TODO change to create-drop or add config options
         hibernateProperties.setProperty("hibernate.hbm2ddl.auto", false ? "update" : "create-drop");
-        hibernateProperties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        hibernateProperties.setProperty("hibernate.dialect", db.dialect);
         hibernateProperties.setProperty("hibernate.globally_quoted_identifiers", "true");
+        hibernateProperties.setProperty("autoReconnect","true");
+        hibernateProperties.setProperty("createDatabaseIfNotExist","true");
         return hibernateProperties;
     }
 
@@ -68,8 +81,8 @@ public class DBConfig implements TransactionManagementConfigurer {
     @Bean
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl(db.url + "?autoReconnect=true&createDatabaseIfNotExist=true");
+        dataSource.setDriverClassName(db.driver);
+        dataSource.setUrl(db.getUrl(this.getClass()));
         dataSource.setUsername(db.username);
         dataSource.setPassword(db.password);
         return dataSource;

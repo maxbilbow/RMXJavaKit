@@ -16,5 +16,10 @@
       <schema-pattern>rmxdb.*</schema-pattern>
       <default-schemas>rmxdb.*</default-schemas>
     </data-source>
+    <data-source name="H2 - debug_server" uuid="91d06920-413a-432d-857a-b1b5287ae613">
+      <secret-storage>master_key</secret-storage>
+      <schema-pattern>H2.PUBLIC</schema-pattern>
+      <default-schemas>H2.PUBLIC</default-schemas>
+    </data-source>
   </component>
 </project>
