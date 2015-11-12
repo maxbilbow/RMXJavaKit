@@ -55,21 +55,21 @@
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-            <!--<artifactId>jackson-core</artifactId>-->
-            <!--<version>2.3.3</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.3.3</version>
+        </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>${jackson-mapper-asl.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-            <!--<artifactId>jackson-databind</artifactId>-->
-            <!--<version>2.3.3</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.3.3</version>
+        </dependency>
         <!--<dependency>-->
             <!--<groupId>com.fasterxml.jackson.jaxrs</groupId>-->
             <!--<artifactId>jackson-jaxrs-json-provider</artifactId>-->
@@ -216,7 +216,11 @@
             <artifactId>nifi-api</artifactId>
             <version>0.3.0</version>
         </dependency>
-
+        <!--<dependency>-->
+            <!--<groupId>org.apache.nifi</groupId>-->
+            <!--<artifactId>nifi-spark-receiver</artifactId>-->
+            <!--<version>0.3.0</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

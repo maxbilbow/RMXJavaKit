@@ -1,33 +1,34 @@
 package click.rmx.debug.server.service;
 
 
+import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
 import click.rmx.debug.server.coders.LogDecoder;
 import click.rmx.debug.server.control.UpdatesEndpoint;
 import click.rmx.debug.server.model.Log;
 import click.rmx.debug.server.model.LogType;
 import click.rmx.debug.server.repository.LogRepository;
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rabbitmq.client.*;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpPost;
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import javax.websocket.DecodeException;
 import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.*;
 import java.util.concurrent.TimeoutException;
 
 import static click.rmx.debug.Bugger.print;
+
+//import com.fasterxml.jackson.core.JsonParseException;
+//import com.fasterxml.jackson.core.type.TypeReference;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 
 //import com.rabbitmq.client.*;
 
@@ -201,35 +202,11 @@ public class LogService {
             info += "\nEntity was null" +
                     "\n---------------";
         info += "\n toString() == " + post.toString();
-//        info += "\n getMethod() == " + post.getMethod();
-//        info += "\n getConfig() == " + String.valueOf(post.getConfig());
-//        info += "\n getRequestLine() == " + String.valueOf(post.getRequestLine());
-//        info += "\n getProtocolVersion() == " + String.valueOf(post.getProtocolVersion());
-//        info += "\n getURI() == " + String.valueOf(post.getURI());
-//        try {
-//            byte[] buffer = new byte[(int) entity.getContentLength()];
-//            entity.getContent().read(buffer);
-//            return makeLog(buffer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//
-//        }
-//
+
         return makeLog(info);
 
     }
 
-    private String toArrayString(Object array)
-    {
-        if (array.getClass().isArray() && Array.getLength(array) > 0) {
-            String arrString = "{" + String.valueOf(Array.get(array, 0));
-            for (int i = 1; i < Array.getLength(array); ++i)
-                arrString += ", " + String.valueOf(Array.get(array, i));
-            arrString += " }";
-            return arrString;
-        }
-        return "FAIL: Not an array";
-    }
     public Log makeLog(Object object)
     {
         if (object == null)
@@ -247,37 +224,17 @@ public class LogService {
         if (object instanceof String)
             return makeLog(String.valueOf(object));
         if (object.getClass().isArray())
-            return makeLog(toArrayString(object));
+            return makeLog(Bugger.stringify(object));
+//        if (Map.class.isAssignableFrom(object.getClass())) {
+//            Map map = (Map) object;
+//           String log = "Map:";
+//                        for (Object key : map.keySet()) {
+//                            log += "\n   --> " + key + ": " + map.get(key);
+//                        }
+//            return makeLog(log);
+//        }
 
-
-        String info =
-                "\nUNKNOWN OBJECT: " + object.getClass().getName() +
-                "\n================" +
-                        "\nMethods";
-        Method[] methods = object.getClass().getMethods();
-        for (Method m : methods) {
-            info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "()";
-            if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
-                try {
-                    if (m.getReturnType().isArray())
-                        info += " == " + toArrayString(object);
-                    else
-                        info += " == " + String.valueOf(m.invoke(object));
-                } catch (Exception e) {
-                    info += " != FAIL: " + e;
-                }
-        }
-        info += "\nFields:";
-        Field[] fields = object.getClass().getFields();
-        for (Field f: fields) {
-            info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
-        }
-        info += "\nAnnotations:";
-        Annotation[] annotations = object.getClass().getAnnotations();
-        for (Annotation a: annotations) {
-            info += "\n --(a) " + a.getClass().getSimpleName();
-        }
-        return makeWarning(info);
+        return makeLog(Bugger.inspectObject(object));
     }
 
     public Log makeLog(String message) {
@@ -304,6 +261,22 @@ public class LogService {
         log.setMessage(message);
         log.setLogType(LogType.Warning);
         return log;
+    }
+
+    public Log makeException(Exception e)
+    {
+        if (e instanceof RMXException)
+            return makeException((RMXException) e);
+        return makeException(RMXException.unexpected(e,1));
+    }
+
+    public Log makeException(String message, Exception e)
+    {
+        if (e instanceof RMXException) {
+            ((RMXException) e).addLog(message);
+            return makeException((RMXException) e);
+        }
+        return makeException(RMXException.unexpected(e,message,1));
     }
 
     public Log makeException(RMXException e) {

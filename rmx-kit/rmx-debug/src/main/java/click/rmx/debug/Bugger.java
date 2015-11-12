@@ -1,16 +1,23 @@
 package click.rmx.debug;
 
+import click.rmx.debug.server.Logger;
+
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.nio.file.Paths;
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;
+import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
 
 import static java.nio.file.Files.createDirectories;
-
-import click.rmx.debug.server.Logger;
 
 
 public class Bugger extends RMXDebugInstance {
@@ -48,7 +55,94 @@ public class Bugger extends RMXDebugInstance {
 		    }
 		});
 	}
-	
+
+	public static boolean canBeWrittenAsList(Object object)
+	{
+		return object != null && (
+				object.getClass().isArray() ||
+						Enumeration.class.isAssignableFrom(object.getClass()) ||
+						Iterable.class.isAssignableFrom(object.getClass()) ||
+						Map.class.isAssignableFrom(object.getClass())
+		);
+
+	}
+
+	public static String inspectObject(Object object)
+	{
+		String info = object.getClass().getName() +
+				"\n==========================";
+		boolean fullList = true;
+		if (canBeWrittenAsList(object)) {
+			info = "\n"+ stringify(object);
+			fullList = false;
+		}
+
+		info += "\n" + (fullList ? "Methods" : "Declared Methods") + ":";
+		Method[] methods = fullList ? object.getClass().getMethods() : object.getClass().getDeclaredMethods();
+		for (Method m : methods) {
+			Parameter[] parameters = m.getParameters();//Types();
+			String params = "";
+			if (parameters.length > 0) {
+				params = parameters[0].getClass().getSimpleName();// + " " + parameters[0].getName();
+				for (Parameter p : parameters)
+					params += ", "+p.getClass().getSimpleName();// + " " + p.getName();
+			}
+			info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "("+params+")";
+			if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
+				try {
+					info += " == " + stringify(m.invoke(object));
+				} catch (Exception e) {
+					info += " != FAIL: " + e;
+				}
+		}
+		info += "\nFields:";
+		Field[] fields = object.getClass().getFields();
+		for (Field f: fields) {
+			info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
+		}
+		info += "\nAnnotations:";
+		Annotation[] annotations = object.getClass().getAnnotations();
+		for (Annotation a: annotations) {
+			info += "\n --(a) " + a.getClass().getSimpleName();
+		}
+		return info;
+	}
+
+
+
+	public static String stringify(Object array)
+	{
+		if (array == null)
+			return "NULL";
+
+		if (array.getClass().isArray()) {
+			String arrString = "{ " + (Array.getLength(array) > 0 ? String.valueOf(Array.get(array, 0)) : "");
+			for (int i = 1; i < Array.getLength(array); ++i)
+				arrString += ", " + String.valueOf(Array.get(array, i));
+			arrString += " }";
+			return arrString;
+		}
+
+
+		if (Enumeration.class.isAssignableFrom(array.getClass())) {
+			Enumeration e = (Enumeration) array;
+			String arrString = "{ " + (e.hasMoreElements() ? e.nextElement() : "");
+			while (e.hasMoreElements())
+				arrString += ", " + String.valueOf(e.nextElement());
+			arrString += " }";
+			return arrString;
+		}
+
+		if (Iterable.class.isAssignableFrom(array.getClass())) {
+			Iterable i = (Iterable) array;
+			final String[] arrString = {"{ "};
+			i.forEach(o ->
+					arrString[0] += String.valueOf(o) + ", "
+			);
+			return arrString[0].substring(0,arrString[0].length()-2) + " }";
+		}
+		return String.valueOf(array);
+	}
 
 	public static String timestamp()
 	{

@@ -13,17 +13,17 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-messaging:4.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.8.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.3" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.6" />
           <element id="archive" name="rmx-debug-0.1.1-SNAPSHOT.jar">
             <element id="module-output" name="rmx-debug" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework.amqp:spring-rabbit:1.4.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.retry:spring-retry:1.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.amqp:spring-amqp:1.4.6.RELEASE" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.6" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.6" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.6" />
           <element id="library" level="project" name="Maven: click.rmx:rmx-debug-logger:0.1" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:1.2.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.2.7.RELEASE" />

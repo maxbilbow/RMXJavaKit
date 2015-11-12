@@ -38,6 +38,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         super.configureContentNegotiation(configurer);
         configurer.mediaType("json", MediaType.APPLICATION_JSON);
         configurer.mediaType("xml", MediaType.APPLICATION_XML);
+//        configurer.mediaType("txt", MediaType.APPLICATION_OCTET_STREAM);
     }
 
     @Bean
