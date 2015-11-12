@@ -59,7 +59,7 @@
     </dependencies>
 
     <build>
-        <finalName>rmx-kit</finalName>
+        <finalName>rmx-kit-${project.version}</finalName>
         <plugins>
             <!-- Set a JDK compiler level -->
             <plugin>

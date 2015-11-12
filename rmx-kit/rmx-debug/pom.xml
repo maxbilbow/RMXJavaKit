@@ -5,7 +5,6 @@
 
        <groupId>click.rmx</groupId>
        <artifactId>rmx-debug</artifactId>
-       <!--<version>${rmx.version}</version>-->
        <packaging>jar</packaging>
        <parent>
               <groupId>click.rmx</groupId>
@@ -17,23 +16,6 @@
 
 
        <dependencies>
-              <!--<dependency>-->
-                     <!--<groupId>org.springframework.amqp</groupId>-->
-                     <!--<artifactId>spring-rabbit</artifactId>-->
-                     <!--<version>${spring-amqp.version}</version>-->
-              <!--</dependency>-->
-              <!--<dependency>-->
-                     <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-                     <!--<artifactId>jackson-core</artifactId>-->
-                     <!--<version>${jackson.version}</version>-->
-              <!--</dependency>-->
-
-              <!--<dependency>-->
-                     <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-                     <!--<artifactId>jackson-databind</artifactId>-->
-                     <!--<version>${jackson.version}</version>-->
-              <!--</dependency>-->
-
               <dependency>
                      <groupId>click.rmx</groupId>
                      <artifactId>rmx-debug-logger</artifactId>
@@ -42,7 +24,7 @@
 
        </dependencies>
        <build>
-              <finalName>rmx-debug</finalName>
+              <finalName>rmx-debug-${project.version}</finalName>
               <plugins>
                      <!-- Set a JDK compiler level -->
                      <plugin>

@@ -27,7 +27,7 @@ public class LogDecoder implements Decoder.Text<Log> {
         if(willDecode(msg)){
             try {
                 JsonObject obj = Json.createReader(new StringReader(msg)).readObject();
-                ObjectMapper mapper = new ObjectMapper();
+//                ObjectMapper mapper = new ObjectMapper();
                 String type = obj.getString("logType");
                 switch (type) {
                     case MESSAGE:

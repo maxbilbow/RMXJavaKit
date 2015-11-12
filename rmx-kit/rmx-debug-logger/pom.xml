@@ -184,7 +184,7 @@
         </repository>
     </repositories>
     <build>
-        <finalName>rmx-debug-logger</finalName>
+        <finalName>rmx-debug-logger-${project.version}</finalName>
         <plugins>
             <!-- Set a JDK compiler level -->
             <plugin>
