@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +29,7 @@
 <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="/debug-server">
+            <a class="brand" href="index.html">
                 Home
             </a>
             <ul class="nav">
@@ -57,8 +59,9 @@
             </label>
             <select id="toSocket" onchange="updateUri()">
                 <option> --custom-- </option>
-                <option>ws://localhost:8080/debug-server/updates</option>
-                <option>ws://repo.rmx.click/debug-server/updates</option>
+                <c:forEach items="${hostNames}" var="host">
+                    <option>${host}</option>
+                </c:forEach>
             </select>
             <input id="customSocket" type="text" value="ws://" onchange="updateUri()" hidden="true">
         </div>

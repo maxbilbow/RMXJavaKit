@@ -7,10 +7,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 /**
  * Created by Max on 25/10/2015.
@@ -76,69 +76,24 @@ public class JSPLogController {
         return get(model);
     }
 
-
-//    @RequestMapping(value = "/postString",method = RequestMethod.POST)
-//    public String  postLogString(@RequestParam String message, HttpPost post)//@ModelAttribute("body") Object data)
-//    {
-//        {
-//            Log log = service.makeLog(message);
-//            repository.save(log);
-//            service.notifySubscribers(log);
-//        }
-//        {
-//            Log log = service.makeLog(post);
-//            repository.save(log);
-//            service.notifySubscribers(log);
-//        }
-//        return get(new ModelMap());
-//    }
-
     @RequestMapping(value = "/post", method = RequestMethod.POST)
-    public String postLog(HttpServletRequest post)//, @RequestBody FlowFile body)//@ModelAttribute("body") Object data)
+    public @ResponseBody Object postLog(HttpServletRequest post)//, @RequestBody FlowFile body)//@ModelAttribute("body") Object data)
     {
-
-//            service.notifySubscribers(
-////                    service.makeLog(body),
-//                    service.makeLog(post),
-//                    service.makeLog(post.getHeaderNames())
-//            );
-
         try {
             byte[] bytes = new byte[post.getContentLength()];
             post.getInputStream().read(bytes);
             service.notifySubscribers(
                     service.makeLog(bytes)
             );
+            return "Received data with size: " + bytes.length;
         } catch (Exception e) {
             service.notifySubscribers(
                 service.makeException(e)
             );
+            return "Failed to get message: " + e;
         }
-
-//        {
-//            List<Locator.BytesLocator> bytesFound = findBytesIn(post);//, Locale.class);
-//            {
-//                Log log;
-//                String msg = "BYTES FOUND:";
-//                if (bytesFound.size() > 0) {
-//                    for (Locator.BytesLocator bytes : bytesFound)
-//                        msg += " | " + bytes;
-//                    log = service.makeLog(msg);
-//                } else {
-//                    log = service.makeLog("No Bytes Found");
-//                }
-//                service.notifySubscribers(log);
-//                service.save(log);
-//            }
-//        }
-        return get(new ModelMap());
     }
 
-//    @RequestMapping(value = "/post",method = RequestMethod.GET)
-//    public String getPostLog(ModelMap model)
-//    {
-//        return get(model);
-//    }
 
 
 }
