@@ -22,13 +22,8 @@ function useLibrary(lib) {
     return lib != null ? opt === lib : opt;
 }
 
-//function stayConnected(val) {
-//    if (val)
-//        $('#stayConnected').prop('checked', val);
-//    else
-//        return $('#stayConnected').prop('checked');
-//}
-function processKeyCode(event) {
+
+var processKey = function(event) {
     var key = event.keyCode;
     switch (key) {
         case 13:
@@ -37,7 +32,7 @@ function processKeyCode(event) {
         default:
             return;
     }
-}
+};
 
 function setConnected(connected) {
     updateUri();
@@ -63,6 +58,7 @@ function setConnected(connected) {
         $('div#sendButton').attr('disabled', 'disabled');
         //$('select#socketLibrary').removeAttr('disabled');
         $('input#chatBroker').removeAttr('disabled');
+        window.websocket = null;
         console.log('DISCONNECTED <<<');
     }
 
