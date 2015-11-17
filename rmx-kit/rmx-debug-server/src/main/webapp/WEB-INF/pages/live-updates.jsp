@@ -39,29 +39,25 @@
 </div>
 <div class="container">
     <div class="hero-unit">
-        <div class="row">
+
             <div class="right" id="output">
 
             </div>
 
-        </div>
-        <div class="row rmx-error-log">
-        </div>
-    </div>
-
-    <div class="hero-unit">
-        <textarea hidden="true" id="sendMessage" name="name" class="form-control">Send one message.</textarea>
-
-
+        <br/>
         <div class="form-group">
             <label>
-                To Socket
+                Message:
+            </label>
+            <input type="text" id="sendMessage" onkeydown="processKeyCode(event)" value="help">
+            <label>
+                 On Socket:
             </label>
             <select id="toSocket" onchange="updateUri()">
-                <option> --custom-- </option>
                 <c:forEach items="${hostNames}" var="host">
                     <option>${host}</option>
                 </c:forEach>
+                <option> --custom-- </option>
             </select>
             <input id="customSocket" type="text" value="ws://" onchange="updateUri()" hidden="true">
         </div>
@@ -83,10 +79,10 @@
 
 <%--ng-app="chatApp"--%>
 <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
-<script src="libs/sockjs/sockjs.min.js" type="text/javascript"></script>
-<script src="libs/stomp-websocket/lib/stomp.min.js" type="text/javascript"></script>
-<script src="libs/angular/angular.min.js"></script>
-<script src="libs/lodash/dist/lodash.min.js"></script>
+<%--<script src="libs/sockjs/sockjs.min.js" type="text/javascript"></script>--%>
+<%--<script src="libs/stomp-websocket/lib/stomp.min.js" type="text/javascript"></script>--%>
+<%--<script src="libs/angular/angular.min.js"></script>--%>
+<%--<script src="libs/lodash/dist/lodash.min.js"></script>--%>
 <%--<script src="app/app.js" type="text/javascript"></script>--%>
 <%--<script src="app/controllers.js" type="text/javascript"></script>--%>
 <%--<script src="app/services.js" type="text/javascript"></script>--%>

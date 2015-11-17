@@ -28,6 +28,16 @@ function useLibrary(lib) {
 //    else
 //        return $('#stayConnected').prop('checked');
 //}
+function processKeyCode(event) {
+    var key = event.keyCode;
+    switch (key) {
+        case 13:
+            sendMessage();
+            break;
+        default:
+            return;
+    }
+}
 
 function setConnected(connected) {
     updateUri();
@@ -59,7 +69,7 @@ function setConnected(connected) {
 }
 
 function getMessage() {
-    return $('textarea#sendMessage').val();
+    return $('#sendMessage').val();
 }
 
 function wsUri() {
@@ -101,10 +111,14 @@ function sendMessage() {
         switch (useLibrary()) {
             case socketLibs.socketIo:
                 if (window.websocket) {
-                    writeToScreen("SENT: " + message);
-                    websocket.send(message);
+                    writeToScreen('<span style="color: rgb(189, 204, 217);"><em>SENT: ' + message + '</em></span>');
+                    try {
+                        websocket.send(message);
+                    } catch (err) {
+                        writeErrToScreen(err);
+                    }
                 } else {
-                    console.log("NO CONNECTION!");
+                   writeErrToScreen("NO CONNECTION!");
                 }
                 break;
             case socketLibs.sockJs:
