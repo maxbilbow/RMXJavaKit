@@ -2,6 +2,7 @@ package click.rmx.debug.server.control;
 
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
+import click.rmx.debug.server.model.Log;
 import click.rmx.debug.server.service.LogService;
 
 import javax.websocket.*;
@@ -49,6 +50,8 @@ public class UpdatesEndpoint {
             }
         else if (message.toLowerCase().startsWith("help"))
             message = getHelp();
+        else if (message.toLowerCase().startsWith("log "))
+            return createNewLog(message.substring(4));
         else
             message = "\"" + message + "\" not recognised. ";
 
@@ -56,6 +59,34 @@ public class UpdatesEndpoint {
                 "<span style=\"color:green\">ON</span>" :
                 "<span style=\"color:red\">OFF</span>";
         return message + " >> Server is " + state;
+    }
+
+    private String createNewLog(String msg) {
+        final Log log;
+        final LogService logService = LogService.getInstance();
+
+        if (msg.toLowerCase().startsWith("--")){
+            msg = msg.substring(2);
+
+            char code = msg.toLowerCase().charAt(0);
+            msg = msg.substring(1);
+            switch (code) {
+                case 'e':
+                    log = logService.makeException(msg);
+                    break;
+                case 'w':
+                    log = logService.makeWarning(msg);
+                    break;
+                default:
+                    log = logService.makeLog(msg);
+                    break;
+            }
+        } else {
+            log = logService.makeLog(msg);
+        }
+        logService.notifySubscribers(log);
+        logService.save(log);
+        return "Message Received";
     }
 
     @OnClose
@@ -108,6 +139,7 @@ public class UpdatesEndpoint {
         help += "<br/> HELP - shows this message";
         help += "<br/> START - starts the server";
         help += "<br/> STOP - stops the server";
+        help += "<br/> LOG [--e/--w] - Logs a message on the server";
         help += "<br/>";
         return help;
     }

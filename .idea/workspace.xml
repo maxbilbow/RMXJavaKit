@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdatesEndpoint.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UpdatesEndpoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+            <state vertical-scroll-proportion="1.4133574">
+              <caret line="141" column="69" selection-start-line="141" selection-start-column="69" selection-end-line="141" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -104,18 +103,18 @@
       <file leaf-file-name="live-updates.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="51" column="75" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sockets.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sockets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36619717">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
               <folding>
                 <marker date="1447758310602" expanded="true" signature="3253:3279" placeholder="..." />
                 <marker date="1447758310602" expanded="true" signature="3253:3291" placeholder="..." />
@@ -141,7 +140,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-34.576923">
               <caret line="61" column="45" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="45" />
               <folding />
             </state>
@@ -151,7 +150,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1153846">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
               <folding />
             </state>
@@ -171,7 +170,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.038462">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="52" />
               <folding />
             </state>
@@ -264,9 +263,9 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" />
       </list>
     </option>
   </component>
@@ -337,7 +336,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -358,6 +356,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -523,6 +522,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rmx-debug-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-kit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-debug-logger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1410,7 +1427,6 @@
       <method />
     </configuration>
     <configuration default="false" name="Debug Server" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.26" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/dbs/" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="rmx-debug-server:war exploded">
@@ -1421,7 +1437,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_RMXJavaKit" />
-        <option name="HTTP_PORT" value="8081" />
+        <option name="HTTP_PORT" value="8085" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1566,20 +1583,20 @@
       <item index="2" class="java.lang.String" itemvalue="Application.AiCubo (Mac)" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.ComponentTest" />
-      <item index="5" class="java.lang.String" itemvalue="Maven.RMXJavaKit" />
-      <item index="6" class="java.lang.String" itemvalue="Maven.RMXGameEngine" />
-      <item index="7" class="java.lang.String" itemvalue="Maven.AiCubo" />
-      <item index="8" class="java.lang.String" itemvalue="Spring Boot.AiCubo Run" />
-      <item index="9" class="java.lang.String" itemvalue="Spring Boot.RMXPersistence" />
-      <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringTest" />
-      <item index="11" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="12" class="java.lang.String" itemvalue="Tomcat Server.Debug Server" />
-      <item index="13" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.26" />
-      <item index="14" class="java.lang.String" itemvalue="JUnit.LogServiceTest.testToListString" />
-      <item index="15" class="java.lang.String" itemvalue="JUnit.LogServiceTest.testToMapString" />
-      <item index="16" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToArrayString" />
-      <item index="17" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToListString" />
-      <item index="18" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToMapString" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.LogServiceTest.testToListString" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.LogServiceTest.testToMapString" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToArrayString" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToListString" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.BuggerTest.testToMapString" />
+      <item index="10" class="java.lang.String" itemvalue="Maven.RMXJavaKit" />
+      <item index="11" class="java.lang.String" itemvalue="Maven.RMXGameEngine" />
+      <item index="12" class="java.lang.String" itemvalue="Maven.AiCubo" />
+      <item index="13" class="java.lang.String" itemvalue="Spring Boot.AiCubo Run" />
+      <item index="14" class="java.lang.String" itemvalue="Spring Boot.RMXPersistence" />
+      <item index="15" class="java.lang.String" itemvalue="Spring Boot.SpringTest" />
+      <item index="16" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="17" class="java.lang.String" itemvalue="Tomcat Server.Debug Server" />
+      <item index="18" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.26" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1671,7 +1688,9 @@
       <workItem from="1447321650613" duration="25684000" />
       <workItem from="1447752489110" duration="129000" />
       <workItem from="1447752867813" duration="25000" />
-      <workItem from="1447754004057" duration="4522000" />
+      <workItem from="1447754004057" duration="4734000" />
+      <workItem from="1447766550312" duration="1201000" />
+      <workItem from="1447855258215" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443296564388</created>
@@ -1937,7 +1956,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447757576794</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Debug server frontend improvements">
+      <created>1447758541196</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1447758541196</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1973,7 +1998,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234380000" />
+    <option name="totallyTimeSpent" value="236945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -2326,23 +2351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#1420#1421#0" expanded="false" />
-            <element signature="e#1493#1494#0" expanded="false" />
-            <element signature="e#1542#1543#0" expanded="false" />
-            <element signature="e#1605#1606#0" expanded="false" />
-            <element signature="e#2068#2069#0" expanded="false" />
-            <element signature="e#2095#2096#0" expanded="false" />
-            <element signature="e#2289#2290#0" expanded="false" />
-            <element signature="e#2354#2355#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2350,9 +2358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2360,15 +2365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2390,7 +2386,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.038462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="52" />
           <folding />
         </state>
@@ -2398,7 +2394,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding />
         </state>
@@ -2416,19 +2412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1447062804719" expanded="true" signature="5300:5328" placeholder="..." />
-            <marker date="1447062804719" expanded="true" signature="5450:5480" placeholder="..." />
-            <marker date="1447062804719" expanded="true" signature="5579:5609" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2436,7 +2419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.889336">
           <caret line="102" column="21" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2444,13 +2426,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8752513">
           <caret line="2257" column="3" selection-start-line="2257" selection-start-column="3" selection-end-line="2257" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="75" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
           <folding />
         </state>
@@ -2458,8 +2439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36619717">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
           <folding>
             <marker date="1447758310602" expanded="true" signature="3253:3279" placeholder="..." />
             <marker date="1447758310602" expanded="true" signature="3253:3291" placeholder="..." />
@@ -2468,6 +2449,22 @@
             <marker date="1447758310602" expanded="true" signature="7265:7290" placeholder="..." />
             <marker date="1447758310602" expanded="true" signature="8255:8272" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.576923">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4133574">
+          <caret line="141" column="69" selection-start-line="141" selection-start-column="69" selection-end-line="141" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2581,13 +2578,13 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server" />
+    <option value="clean install deploy" />
+    <option value="deploy" />
     <option value="clean install" />
     <option value="install" />
     <option value="clean compile" />
-    <option value="deploy" />
     <option value="clean compile install" />
     <option value="tomcat" />
-    <option value="clean install deploy" />
     <option value="compile" />
     <option value="clean compile install -DskipTests" />
     <option value="clean compile run" />
