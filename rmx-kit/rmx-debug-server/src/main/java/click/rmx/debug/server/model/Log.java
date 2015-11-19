@@ -81,7 +81,8 @@ public class Log {
         if (message == "NULL" && logType == LogType.Info)
             return;
         this.logType = logType;
-        this.channel = logType.channel;
+        if (logType != null)
+            this.channel = logType.channel;
     }
 
     public Long getId() {

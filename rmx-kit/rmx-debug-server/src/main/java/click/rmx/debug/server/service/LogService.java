@@ -390,6 +390,15 @@ public class LogService {
                                 .channel(topic));
             }
 
+            @Override
+            public void handleShutdownSignal(String consumerTag, ShutdownSignalException sig) {
+                super.handleShutdownSignal(consumerTag, sig);
+                if (sig != null)
+                    processMessage("RabbitMQ Server shut down: " + sig, NotifyAndSave,
+                        LogBuilder.map()
+                                .sender("SERVER")
+                                .logType(LogType.Warning));
+            }
         };
     }
 
@@ -405,29 +414,30 @@ public class LogService {
 
         final String topic;
         final String sender;
-        final LogType logType;
+        LogType logType = null;
         if (properties != null) {
-            topic = String.valueOf(properties.getOrDefault("channel", "debug.log"));
-            sender = String.valueOf(properties.getOrDefault("sender", "Unknown"));
             logType = (LogType) properties.getOrDefault("logType", null);
+            sender = String.valueOf(properties.getOrDefault("sender", "Unknown"));
         } else {
             sender = "Unknown";
-            topic = "debug.log";
-            logType = null;
         }
+
+        if (logType != null)
+            topic = logType.channel;
+        else if (properties != null)
+            topic = String.valueOf(properties.getOrDefault("channel", "debug.log"));
+        else
+            topic = "debug.log";
 
         ///Try to decode as log first
         Log log = null;
         final List<Throwable> errors = new ArrayList<>();
         final LogDecoder decoder = new LogDecoder();
-//        if (decoder.willDecode(message))
-//        {
-                try {
-                    log = decoder.decode(message);
-                } catch (DecodeException e) {
-                    errors.add(e);
-                }
-//        }
+        try {
+            log = decoder.decode(message);
+        } catch (DecodeException e) {
+            errors.add(e);
+        }
         if (log != null) {
             if (log.getLogType() == null)
                 log.setLogType(logType);
@@ -437,8 +447,11 @@ public class LogService {
                 callback.invoke(log, errors);
             return log;
         }
-        ///Else try to format the message
 
+
+        ///Else try to format the message
+        if (logType == null)
+            logType = LogType.Info;
 
         Map map = null;
         String logString = "";
@@ -451,7 +464,7 @@ public class LogService {
                 errors.add(e);
             } finally {
                 if (map != null) {
-                    logString += "Via " + topic + ":";
+                    logString += "Via " + logType.channel + ":";
                     for (Object key : map.keySet()) {
                         logString += "\n   --> " + key + ": " + map.get(key);
                     }
@@ -461,7 +474,6 @@ public class LogService {
             logString = message;// + " (via "+topic+")";
 
         try {
-
             if (topic.contains("error") || topic.contains("exception"))
                 log = this.makeException(logString);
             else if (topic.contains("warning"))
