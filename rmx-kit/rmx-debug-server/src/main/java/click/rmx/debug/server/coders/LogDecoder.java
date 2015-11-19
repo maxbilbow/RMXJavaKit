@@ -2,7 +2,6 @@ package click.rmx.debug.server.coders;
 
 import click.rmx.debug.server.model.Log;
 import click.rmx.debug.server.model.LogType;
-import org.codehaus.jackson.map.ObjectMapper;
 
 import javax.json.Json;
 import javax.json.JsonException;
@@ -18,7 +17,7 @@ import java.io.StringReader;
 public class LogDecoder implements Decoder.Text<Log> {
 
     static final String
-    MESSAGE = "Message", EXCEPTION = "Exception", WARNING = "Warning";
+    MESSAGE = "Message", INFO = "Info", EXCEPTION = "Exception", WARNING = "Warning";
 
     @Override
     public Log decode(String msg) throws DecodeException {
@@ -32,6 +31,9 @@ public class LogDecoder implements Decoder.Text<Log> {
                 switch (type) {
                     case MESSAGE:
                         log.setLogType(LogType.Message);
+                        break;
+                    case INFO:
+                        log.setLogType(LogType.Info);
                         break;
                     case WARNING:
                         log.setLogType(LogType.Warning);

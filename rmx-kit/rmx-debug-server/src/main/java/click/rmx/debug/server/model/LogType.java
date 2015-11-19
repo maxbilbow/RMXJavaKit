@@ -5,7 +5,7 @@ package click.rmx.debug.server.model;
  */
 public enum LogType {
 
-    Message("debug.log"), Warning("debug.warning"), Exception("debug.error");
+    Message("updates"), Info("debug.log"), Warning("debug.warning"), Exception("debug.error");
     public final String channel;
 
     LogType(String channel) {

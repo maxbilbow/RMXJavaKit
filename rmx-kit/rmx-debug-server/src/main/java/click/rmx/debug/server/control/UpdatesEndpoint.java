@@ -2,12 +2,13 @@ package click.rmx.debug.server.control;
 
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
+import click.rmx.debug.server.LogBuilder;
 import click.rmx.debug.server.model.Log;
+import click.rmx.debug.server.model.LogType;
 import click.rmx.debug.server.service.LogService;
 
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
-import java.io.IOException;
 
 //import static click.rmx.debug.Bugger.print;
 
@@ -19,6 +20,10 @@ public class UpdatesEndpoint {
 
     private Session session;
 
+    private String username;
+
+    private LogService service;
+
     @OnOpen
     public void onOpen(Session session, EndpointConfig endpointConfig) {
         LogService service = LogService.getInstance();
@@ -27,84 +32,113 @@ public class UpdatesEndpoint {
         }
 
         this.session = session;
-
+        this.service = LogService.getInstance();
+        this.username = "User " + session.getId();
+        service.saveAndNotify(service.makeLog(username + " connected."));
         service.addClient(this);
     }
 
     @OnMessage
     public String echo(String message) {
-        boolean isActive = LogService.getInstance().isActive();
-        if (message.toLowerCase().startsWith("start"))
-            if (!isActive) {
-                message = "Starting server... ";
-                isActive = startServer(true);
-            } else {
-                message = "";
-            }
-        else if (message.toLowerCase().startsWith("stop"))
-            if (isActive) {
-                message = "Stopping server... ";
-                isActive = !startServer(false);
-            } else {
-                message = "";
-            }
-        else if (message.toLowerCase().startsWith("help"))
-            message = getHelp();
-        else if (message.toLowerCase().startsWith("log "))
-            return createNewLog(message.substring(4));
-        else
-            message = "\"" + message + "\" not recognised. ";
+        if (message.startsWith("/")) { //process as command
+            return proccessCommand(message.substring(1));
+        } else { //Send a message
+            Log log = new Log(username);
+            log.setLogType(LogType.Message);
+            log.setMessage(message);
+            service.notifySubscribers(log);
+            return "";//"sent: " + message;//username + service.processMessage(message,username,service.Notify).getMessage();
+        }
+    }
 
-        String state = isActive ?
-                "<span style=\"color:green\">ON</span>" :
-                "<span style=\"color:red\">OFF</span>";
-        return message + " >> Server is " + state;
+    static final String
+            SET_NAME = "setname ",
+            LOG_MESSAGE = "log ",
+            HELP = "help",
+            START_SERVER = "start",
+            STOP_SERVER = "stop",
+            RESPONSE = "<span style=\"color: rgb(151, 253, 255);\">RESPONSE:</span> "
+    ;
+    private String proccessCommand(String message) {
+        if (message.toLowerCase().startsWith(START_SERVER)) {
+            if (service.isActive())
+                return "RabbitMQ server is already " + service.getStatusAsHtml();
+            message = "Starting server... ";
+            startServer(true);
+            return message + "Server is " + service.getStatusAsHtml();
+        } else if (message.toLowerCase().startsWith(STOP_SERVER)) {
+            if (!service.isActive())
+                return "RabbitMQ server is already " + service.getStatusAsHtml();
+            message = "Stopping server... ";
+            startServer(false);
+            return message + "Server is " + service.getStatusAsHtml();
+        }
+        else if (message.toLowerCase().startsWith(HELP))
+            return "/HELP <br/>" + getHelp();
+        else if (message.toLowerCase().startsWith(LOG_MESSAGE))
+            return createNewLog(message.substring(LOG_MESSAGE.length()));
+        else if (message.toLowerCase().startsWith(SET_NAME)) {
+            this.username = message.substring(SET_NAME.length());
+            return "Username is now: " + username;
+        }
+
+        return "'/"+message+"' not recognised " + getHelp();
     }
 
     private String createNewLog(String msg) {
-        final Log log;
-        final LogService logService = LogService.getInstance();
-
-        if (msg.toLowerCase().startsWith("--")){
-            msg = msg.substring(2);
+        final LogBuilder props = LogBuilder.map().sender(username);
+        if (msg.toLowerCase().startsWith("-")){
+            msg = msg.substring(1);
 
             char code = msg.toLowerCase().charAt(0);
-            msg = msg.substring(1);
+            msg = msg.substring(msg.charAt(1) == ' ' ? 2 : 1);
             switch (code) {
                 case 'e':
-                    log = logService.makeException(msg);
+                    props.logType(LogType.Exception);
                     break;
                 case 'w':
-                    log = logService.makeWarning(msg);
+                    props.logType(LogType.Warning);
                     break;
                 default:
-                    log = logService.makeLog(msg);
+                    props.logType(LogType.Info);
                     break;
             }
         } else {
-            log = logService.makeLog(msg);
+            props.logType(LogType.Info);
         }
-        logService.notifySubscribers(log);
-        logService.save(log);
-        return "Message Received";
+        service.processMessage(msg, service.NotifyAndSave, props);
+        return props.logType() + " Logged";
     }
 
     @OnClose
     public void onClose(Session session, CloseReason closeReason) {
-//        print("DISCONNECTED");
-//        RemoteEndpoint.Basic remoteEndpointBasic = session.getBasicRemote();
-        LogService.getInstance().removeClient(this);
+        String report = username + " disconnected.";
+        try {
+            String rsn = closeReason.getReasonPhrase();
+            if (rsn != null && !rsn.isEmpty())
+                report += " Reason: " + rsn;
+        } catch (Exception e) {
+            Bugger.print(e);
+        } finally {
+            service.removeClient(this);
+            service.saveAndNotify(
+                    service.makeLog(report)
+            );
+        }
 
     }
 
     @OnError
     public void onError(Session session, Throwable error) {
         error.printStackTrace();
-//        print(error);
+        service.save(
+                service.makeException(error.toString())
+        );
     }
 
-    public void broadcast(String message) throws IOException {
-        this.session.getAsyncRemote().sendText(message, Bugger::print);
+
+    public void broadcast(String message) throws Exception {
+        this.session.getBasicRemote().sendText(message);//, System.out::println);
     }
 
     private boolean startServer(boolean start) {
@@ -134,13 +168,14 @@ public class UpdatesEndpoint {
     }
 
     private String getHelp() {
-        String help = " -- HELP --" +
-                "<br/><strong> Available Commands:</strong>";
-        help += "<br/> HELP - shows this message";
-        help += "<br/> START - starts the server";
-        help += "<br/> STOP - stops the server";
-        help += "<br/> LOG [--e/--w] - Logs a message on the server";
-        help += "<br/>";
+        String help =
+                "<strong> Available Commands:</strong>";
+        help += "<br/> /help - shows this message";
+        help += "<br/> /start - starts the RabbitMQ server";
+        help += "<br/> /stop - stops the RabbitMQ server";
+        help += "<br/> /log -e/-w/-i [message] - Logs a info, warning or error";
+        help += "<br/> /setname [name] - change your name" +
+                "<br/> >> Server is " + service.getStatusAsHtml();
         return help;
     }
 }

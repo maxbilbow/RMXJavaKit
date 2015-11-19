@@ -13,7 +13,7 @@
     <style>
         #output {
             min-height: 200px;
-            max-height: 800px;
+            max-height: 600px;
             overflow-y: scroll;
             background-color: #000000;
             color: #ffffff;
@@ -49,7 +49,7 @@
             <label>
                 Message:
             </label>
-            <input type="text" id="sendMessage" onkeydown="processKey(event)" value="help">
+            <input type="text" id="sendMessage" onkeydown="processKey(event)" value="/help">
             <label>
                  On Socket:
             </label>

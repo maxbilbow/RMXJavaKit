@@ -34,6 +34,10 @@ public class Log {
 
     private String shortTime;
 
+    public boolean senderIsUnknown()
+    {
+        return sender == null || sender.isEmpty() || sender.toLowerCase().equals("unknown");
+    }
     public Log()
     {
         timeStamp = new Date();
@@ -74,7 +78,7 @@ public class Log {
     }
 
     public void setLogType(LogType logType) {
-        if (message == "NULL" && logType == LogType.Message)
+        if (message == "NULL" && logType == LogType.Info)
             return;
         this.logType = logType;
         this.channel = logType.channel;

@@ -49,7 +49,7 @@ public class ListenerEndpoint {
             else if (topic.toLowerCase().contains("warning"))
                 log.setLogType(LogType.Warning);
             else
-                log.setLogType(LogType.Message);
+                log.setLogType(LogType.Info);
         }
         service.save(log);
         service.notifySubscribers(log);

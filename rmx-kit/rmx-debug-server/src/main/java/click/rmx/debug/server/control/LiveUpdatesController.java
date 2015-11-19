@@ -29,7 +29,8 @@ public class LiveUpdatesController {
         model.addAttribute("hostNames",
                 Arrays.asList(
                         localhost,
-                        "ws://repo.rmx.click/debug-server/updates"
+                        "ws://dev.maxbilbow.com:8080/debug-server/updates",
+                        "ws://localhost:8080/debug-server/updates"
                 ));
         return "live-updates";
     }

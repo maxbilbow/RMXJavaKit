@@ -3,6 +3,7 @@ package click.rmx.debug.server.service;
 
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
+import click.rmx.debug.server.LogBuilder;
 import click.rmx.debug.server.coders.LogDecoder;
 import click.rmx.debug.server.control.UpdatesEndpoint;
 import click.rmx.debug.server.model.Log;
@@ -12,7 +13,6 @@ import com.rabbitmq.client.*;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 import org.springframework.stereotype.Service;
@@ -43,8 +43,7 @@ public class LogService {
     private Connection connection;
     private Channel channel;
 
-    public LogService()
-    {
+    public LogService() {
         instance = this;
         try {
             startDebugExchange();
@@ -54,47 +53,66 @@ public class LogService {
     }
 
     private Set<UpdatesEndpoint> endpoints = new HashSet<>();
+    private Set<UpdatesEndpoint> deadEndpoints = new HashSet<>();
 
     public static LogService getInstance() {
-        return  instance;
+        return instance;
     }
 
-    public void addClient(UpdatesEndpoint client)
-    {
+    public void addClient(UpdatesEndpoint client) {
         endpoints.add(client);
     }
 
-    public void removeClient(UpdatesEndpoint client)
-    {
-        endpoints.remove(client);
+    /**
+     * Endpoints will be removed the next time notifySubscribers is called
+     * @param client
+     */
+    public void removeClient(UpdatesEndpoint client) {
+        deadEndpoints.add(client);
+        cleanEndpoints();
     }
 
-    public void notifySubscribers(Log... logs)
+    private boolean notificationInProgress = false;
+    private void cleanEndpoints()
     {
+        if (!notificationInProgress) {
+            deadEndpoints.forEach(endpoints::remove);
+            deadEndpoints.clear();
+        }
+    }
+
+    public void notifySubscribers(Log... logs) {
         for (Log log : logs) {
             ObjectMapper mapper = new ObjectMapper();
-            String message = "Message Failed to send! ";
+            String message = "Info Failed to send! ";
             try {
                 message = mapper.writeValueAsString(log);
                 notiftRabbitServer(message);
             } catch (Exception e) {
-                save(this.makeException(RMXException.unexpected(e)));
-                e.printStackTrace();
+                save(makeException(e,"notifySubscribers(Log... logs)"));
+//                e.printStackTrace();
+            } finally {
+                notifySubscribers(String.valueOf(message));
             }
 
-            List<UpdatesEndpoint> toRemove = new ArrayList<>();
-            final String msg = message;
-            endpoints.stream().forEach(e -> {
+        }
+
+    }
+
+
+    public synchronized void notifySubscribers(final String message) {
+        cleanEndpoints();
+        notificationInProgress = true;
+                endpoints.stream().forEach(endpoint -> {
                 try {
-                    e.broadcast(msg);
-                } catch (IOException e1) {
-                    save(this.makeException(RMXException.unexpected(e1)));
-                    e1.printStackTrace();
+                    endpoint.broadcast(message);
+                } catch (Exception e) {
+//                    e.printStackTrace();
+                    save(makeException(e, "notifySubscribers(final String message)"));
                 }
             });
-
-            toRemove.forEach(this::removeClient);
-        }
+        notificationInProgress = false;
+        cleanEndpoints();
     }
 
 
@@ -109,18 +127,16 @@ public class LogService {
         String routingKey = "updates";
 
         channel.basicPublish(DEBUG_EXCHANGE_NAME, routingKey, null, message.getBytes());
-        System.out.println(" [x] Sent '" + routingKey + "':'" + message + "'");
+        System.out.println(" [RabbitMQ] Sent on topic: '" + routingKey + "', Info: '" + message + "'");
 
         connection.close();
     }
 
 
-
     @Resource//(type = LogRepository.class)
     private LogRepository repository;
 
-    public boolean isActive()
-    {
+    public boolean isActive() {
         return channel != null && connection != null
                 && channel.isOpen() && connection.isOpen();
     }
@@ -157,12 +173,10 @@ public class LogService {
         return chClosed && cnnClosed;
     }
 
-    public Log makeLog(byte[] body)
-    {
+    public Log makeLog(byte[] body) {
         String message = new String(body);
         LogDecoder decoder = new LogDecoder();
-        if (decoder.willDecode(message))
-        {
+        if (decoder.willDecode(message)) {
             try {
                 return decoder.decode(message);
             } catch (DecodeException e) {
@@ -172,18 +186,17 @@ public class LogService {
         return makeLog(message);
     }
 
-    public Log makeLog(HttpPost post)
-    {
+    public Log makeLog(HttpPost post) {
 
         HttpEntity entity = post.getEntity();
         Header[] headers = post.getAllHeaders();
 
         String info =
                 "HEADERS" +
-                "\n-------";
+                        "\n-------";
 
         for (Header h : headers) {
-            info += "\n --> " + h.getName() + " == " +  String.valueOf(h.getValue());
+            info += "\n --> " + h.getName() + " == " + String.valueOf(h.getValue());
         }
 
         if (entity != null) {
@@ -207,20 +220,19 @@ public class LogService {
 
     }
 
-    public Log makeLog(Object object)
-    {
+    public Log makeLog(Object object) {
         if (object == null)
             return makeLog("NULL");
 //        if (object instanceof HttpPost)
 //            return makeLog((HttpPost) object);
         if (object instanceof byte[])
-           return makeLog((byte[])object);
+            return makeLog((byte[]) object);
         if (object instanceof Log)
             return (Log) object;
         if (object instanceof RMXException)
             return makeException((RMXException) object);
         if (object instanceof Exception)
-            return makeException(RMXException.unexpected((Exception)object));
+            return makeException(RMXException.unexpected((Exception) object));
         if (object instanceof String)
             return makeLog(String.valueOf(object));
         if (object.getClass().isArray())
@@ -238,53 +250,52 @@ public class LogService {
     }
 
     public Log makeLog(String message) {
-        Log log = new Log("debug-server");
+        Log log = new Log("SERVER");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
         log.setMessage(message);
-        log.setLogType(LogType.Message);
+        log.setLogType(LogType.Info);
         return log;
     }
 
-    public Log makeException(String message)
-    {
-        Log log = new Log("debug-server");
+    public Log makeException(String message) {
+        Log log = new Log("SERVER");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
         log.setMessage(message);
         log.setLogType(LogType.Exception);
         return log;
     }
 
-    public Log makeWarning(String message)
-    {
-        Log log = new Log("debug-server");
+    public Log makeWarning(String message) {
+        Log log = new Log("SERVER");
 //        log.setTimeStamp(Instant.now().toEpochMilli());
         log.setMessage(message);
         log.setLogType(LogType.Warning);
         return log;
     }
-
-    public Log makeException(Exception e)
-    {
+    public Log makeException(Exception e, String message) {
         if (e instanceof RMXException)
             return makeException((RMXException) e);
-        return makeException(RMXException.unexpected(e,1));
+        return makeException(RMXException.unexpected(e, message, 1));
+    }
+    public Log makeException(Exception e) {
+        if (e instanceof RMXException)
+            return makeException((RMXException) e);
+        return makeException(RMXException.unexpected(e, 1));
     }
 
-    public Log makeException(String message, Exception e)
-    {
+    public Log makeException(String message, Exception e) {
         if (e instanceof RMXException) {
             ((RMXException) e).addLog(message);
             return makeException((RMXException) e);
         }
-        return makeException(RMXException.unexpected(e,message,1));
+        return makeException(RMXException.unexpected(e, message, 1));
     }
 
     public Log makeException(RMXException e) {
         return this.makeException(e.html());
     }
 
-    public static String toHtml(String string)
-    {
+    public static String toHtml(String string) {
         return string
                 .replace("\n", "<br/>")
                 .replace("COMPLETED", "<span style=\"color=green;\">COMPLETED</span>")
@@ -351,9 +362,20 @@ public class LogService {
         });
     }
 
+    public final LogCallback NotifyAndSave = (log, error) -> {
+        if (log != null) {
+            save(log);
+            notifySubscribers(log);
+        }
+    }, Notify = (log, error) -> {
+        if (log != null)
+            notifySubscribers(log);
+    }, Save = (log, error) -> {
+        if (log != null)
+            save(log);
+    };
+
     private Consumer defaultConsumer() {
-        final LogService thisInstance = this;
-        final ObjectMapper mapper = new ObjectMapper();
         return new DefaultConsumer(this.channel) {
             //TODO should this be transactional?
             @Override
@@ -362,61 +384,122 @@ public class LogService {
 
                 String topic = envelope.getRoutingKey().toLowerCase();
                 String message = new String(body, "UTF-8");
-                String log = "";
-                Map map = null;
-                if (message.startsWith("{") && message.endsWith("}"))
-                    try {
-                        map = mapper.readValue(message, new TypeReference<Map<String, String>>() {
-                        });
-                    } catch (JsonParseException e) {
-                        print("Failed to parse as JSON: " + e.getMessage());
-                    } finally {
-                        if (map != null) {
-                            log += "Via "+topic+":";
-                            for (Object key : map.keySet()) {
-                                log += "\n   --> " + key + ": " + map.get(key);
-                            }
-                        }
-                    }
-                else
-                    log = message;// + " (via "+topic+")";
-
-
-//                print(log);
-                Log newLog = null;
-                try {
-
-                    if (topic.contains("error") || topic.contains("exception"))
-                        newLog = thisInstance.makeException(log);
-                    else if (topic.contains("warning"))
-                        newLog = thisInstance.makeWarning(log);
-                    else
-                        newLog = thisInstance.makeLog(log);
-                    if (properties != null)
-                        newLog.setSender(properties.getAppId());
-
-//                channel.basicAck(envelope.getDeliveryTag(),false);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                } finally {
-                    if (newLog != null) {
-                        notifySubscribers(newLog);
-                        save(newLog);
-                    }
-                }
+                processMessage(message, NotifyAndSave,
+                        LogBuilder.map()
+                                .sender(properties.getAppId())
+                                .channel(topic));
             }
+
         };
     }
 
+    public Log processMessage(String message, LogCallback callback) {
+        return processMessage(message,callback,null);
+    }
+
+    public Log processMessage(String message, String sender, LogCallback callback) {
+        return processMessage(message,callback,LogBuilder.map().sender(sender));
+    }
+
+    public Log processMessage(String message, LogCallback callback,  Map<String, Object> properties) {
+
+        final String topic;
+        final String sender;
+        final LogType logType;
+        if (properties != null) {
+            topic = String.valueOf(properties.getOrDefault("channel", "debug.log"));
+            sender = String.valueOf(properties.getOrDefault("sender", "Unknown"));
+            logType = (LogType) properties.getOrDefault("logType", null);
+        } else {
+            sender = "Unknown";
+            topic = "debug.log";
+            logType = null;
+        }
+
+        ///Try to decode as log first
+        Log log = null;
+        final List<Throwable> errors = new ArrayList<>();
+        final LogDecoder decoder = new LogDecoder();
+//        if (decoder.willDecode(message))
+//        {
+                try {
+                    log = decoder.decode(message);
+                } catch (DecodeException e) {
+                    errors.add(e);
+                }
+//        }
+        if (log != null) {
+            if (log.getLogType() == null)
+                log.setLogType(logType);
+            if (log.senderIsUnknown())
+                log.setSender(sender);
+            if (callback != null)
+                callback.invoke(log, errors);
+            return log;
+        }
+        ///Else try to format the message
+
+
+        Map map = null;
+        String logString = "";
+        final ObjectMapper mapper = new ObjectMapper();
+        if (message.startsWith("{") && message.endsWith("}"))
+            try {
+                map = mapper.readValue(message, new TypeReference<Map<String, String>>() {
+                });
+            } catch (Exception e) {
+                errors.add(e);
+            } finally {
+                if (map != null) {
+                    logString += "Via " + topic + ":";
+                    for (Object key : map.keySet()) {
+                        logString += "\n   --> " + key + ": " + map.get(key);
+                    }
+                }
+            }
+        else
+            logString = message;// + " (via "+topic+")";
+
+        try {
+
+            if (topic.contains("error") || topic.contains("exception"))
+                log = this.makeException(logString);
+            else if (topic.contains("warning"))
+                log = this.makeWarning(logString);
+            else
+                log = this.makeLog(logString);
+            if (properties != null) {
+                log.setSender(sender == null ? "Unknown" : sender.toString());
+            }
+        } catch (Exception e) {
+            if (log == null)
+                log = makeException(e);
+            errors.add(e);
+        } finally {
+            if (callback != null)
+                callback.invoke(log, errors);
+        }
+        return log;
+    }
+
     @Transactional
-    public void save(Log log)
-    {
+    public void save(Log log) {
         try {
             repository.save(log);
         } catch (Exception e) {
-            notifySubscribers(makeException(RMXException.unexpected(e)));
+            notifySubscribers(makeException(e));
         }
     }
 
+    @Transactional
+    public void saveAndNotify(Log log) {
+        save(log);
+        notifySubscribers(log);
+    }
 
+    public String getStatusAsHtml() {
+        return isActive() ?
+                "<span style=\"color:green\">ON</span>" :
+                "<span style=\"color:red\">OFF</span>";
+    }
 }

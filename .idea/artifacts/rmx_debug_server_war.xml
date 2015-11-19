@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="rmx-debug-server:war">
     <output-path>$PROJECT_DIR$/rmx-kit/rmx-debug-server/target</output-path>
-    <root id="archive" name="debug-server-0.1.1-SNAPSHOT.war">
+    <root id="archive" name="debug-server-0.1.1-STABLE.war">
       <element id="artifact" artifact-name="rmx-debug-server:war exploded" />
     </root>
   </artifact>
