@@ -1,6 +1,6 @@
 package click.rmx.debug;
 
-import click.rmx.debug.server.Logger;
+import click.rmx.debug.logger.Logger;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +12,7 @@ import java.lang.reflect.Parameter;
 import java.nio.file.Paths;
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 import static java.nio.file.Files.createDirectories;
 
@@ -67,17 +64,35 @@ public class Bugger extends RMXDebugInstance {
 
 	}
 
-	public static String inspectObject(Object object)
+
+	public static final String
+			DECLARED_MEMBERS_ONLY = "declared",
+			SHOW_ALL_MEMBERS = "verbose";
+	public static String inspectObject(Object object, String... args)
 	{
 		String info = object.getClass().getName() +
 				"\n==========================";
-		boolean fullList = true;
+		boolean fullList = false;
 		if (canBeWrittenAsList(object)) {
 			info = "\n"+ stringify(object);
 			fullList = false;
 		}
+		for (String arg : args) {
+			switch (arg){
+				case "v":
+				case SHOW_ALL_MEMBERS:
+					fullList = true;
+					break;
+				case DECLARED_MEMBERS_ONLY:
+				case "d":
+				case "compact":
+					fullList = false;
+					break;
 
-		info += "\n" + (fullList ? "Methods" : "Declared Methods") + ":";
+			}
+		}
+
+		info += "\n" + (fullList ? "Showing All Members" : "Showing Declared Methods") + ":";
 		Method[] methods = fullList ? object.getClass().getMethods() : object.getClass().getDeclaredMethods();
 		for (Method m : methods) {
 			Parameter[] parameters = m.getParameters();//Types();

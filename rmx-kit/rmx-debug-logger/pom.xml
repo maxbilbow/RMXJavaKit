@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.1.1-STABLE</version>
+        <version>0.1.2-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -214,7 +214,7 @@
                     <archive>
                         <manifest>
                             <!-- Jar file entry point -->
-                            <mainClass>click.rmx.debug.server.Logger</mainClass>
+                            <mainClass>click.rmx.debug.logger.Logger</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

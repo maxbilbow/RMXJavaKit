@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="rmx-debug-server:war exploded">
-    <output-path>$PROJECT_DIR$/rmx-kit/rmx-debug-server/target/debug-server-0.1.1-STABLE</output-path>
+    <output-path>$PROJECT_DIR$/rmx-kit/rmx-debug-server/target/debug-server-0.1.2-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -15,10 +15,10 @@
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
-          <element id="archive" name="rmx-debug-0.1.1-STABLE.jar">
+          <element id="archive" name="rmx-debug-0.1.2-SNAPSHOT.jar">
             <element id="module-output" name="rmx-debug" />
           </element>
-          <element id="archive" name="rmx-debug-logger-0.1.1-STABLE.jar">
+          <element id="archive" name="rmx-debug-logger-0.1.2-SNAPSHOT.jar">
             <element id="module-output" name="rmx-debug-logger" />
           </element>
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" />
@@ -75,7 +75,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-debug-server/target/debug-server-0.1.1-STABLE/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/rmx-kit/rmx-debug-server/target/debug-server-0.1.2-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="rmx-debug-server/web/Web" />
     </root>

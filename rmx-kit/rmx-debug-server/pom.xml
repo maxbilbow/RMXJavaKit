@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.1.1-STABLE</version>
+        <version>0.1.2-SNAPSHOT</version>
     </parent>
 
     <dependencies>
@@ -212,7 +212,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>click.rmx.debug.server.Application</mainClass>
+                    <mainClass>click.rmx.debug.logger.Application</mainClass>
                 </configuration>
 
             </plugin>
@@ -249,7 +249,7 @@
                 <!--<version>2.2</version>-->
                 <!--<configuration>-->
                     <!--<url>http://localhost:8000</url>-->
-                    <!--<path>/debug-server</path>-->
+                    <!--<path>/debug-logger</path>-->
                     <!--<username>root</username>-->
                     <!--<password>password</password>-->
                 <!--</configuration>-->
@@ -259,8 +259,8 @@
                 <!--<artifactId>tomcat-maven-plugin</artifactId>-->
                 <!--<configuration>-->
                     <!--<url>http://localhost:8000</url>-->
-                    <!--<server>localhost</server>-->
-                    <!--<path>/debug-server</path>-->
+                    <!--<logger>localhost</logger>-->
+                    <!--<path>/debug-logger</path>-->
                 <!--</configuration>-->
             <!--</plugin>-->
         </plugins>

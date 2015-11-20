@@ -172,7 +172,7 @@ function connect(quietly) {
                     passcode: getPassword(),
                     persistent: true,
                     // additional header
-                    //'server-id': 'fjwa',
+                    //'logger-id': 'fjwa',
                     //'heart-beat':'30000,30000'
                 } : {};
                 stompClient.heartbeat.outgoing = 0;

@@ -1,5 +1,6 @@
-click\rmx\debug\server\LogBuilder$MapBuilder.class
-click\rmx\debug\server\RMQLogger.class
-click\rmx\debug\server\LogBuilder.class
-click\rmx\debug\server\WSLogger.class
-click\rmx\debug\server\Logger.class
+click\rmx\debug\logger\LogBuilder$MapBuilder.class
+click\rmx\debug\logger\Logger.class
+click\rmx\debug\logger\RMQLogger.class
+click\rmx\debug\cmd\Terminal.class
+click\rmx\debug\logger\LogBuilder.class
+click\rmx\debug\logger\WSLogger.class
