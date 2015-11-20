@@ -42,8 +42,10 @@ public class UpdatesEndpoint {
                 userProperties = new HashMap<>();
                 userProperties.put("username", "User " + session.getId());
             }
+
             userProperties.put("state", "connected");
-            userPropertiesStore.put(httpSessionId, userProperties);
+            if (httpSessionId != null)
+                userPropertiesStore.put(httpSessionId, userProperties);
         }
         sessionProperties.put("this", this);
         sessionProperties.put("endpoint", this);
@@ -52,6 +54,7 @@ public class UpdatesEndpoint {
         sessionProperties.put("session", session);
         sessionProperties.put("httpSessionId", httpSessionId);
         sessionProperties.put("userProperties", userProperties);
+        sessionProperties.put("sessions", userPropertiesStore);
 
         this.terminal = new DebugServerTerminal(sessionProperties);
 

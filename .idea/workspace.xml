@@ -5,43 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/cmd/Terminal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/DebugServerTerminal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/LogBuilder.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/LogBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/Logger.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/Logger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/RMQLogger.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/RMQLogger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/server/WSLogger.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/WSLogger.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/test/java/click/rmx/debug/server/RMQLoggerTest.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/src/test/java/click/rmx/debug/logger/RMQLoggerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/Application.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/coders/LogDecoder.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/coders/LogDecoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/coders/LogEncoder.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/coders/LogEncoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/DBConfig.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/config/DBConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/config/WebConfig.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/config/WebConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/JSPLogController.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/JSPLogController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/ListenerEndpoint.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/ListenerEndpoint.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/LiveUpdatesController.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/UpdatesEndpoint.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/Log.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/model/Log.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/model/LogType.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/model/LogType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/repository/LogRepository.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/repository/LogRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogCallback.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/LogCallback.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogService.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/LogService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources/click/rmx/debug/server/config/debug_server.h2.db" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources/click/rmx/debug/logger/config/debug_server.h2.db" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/server/model/LogTest.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/logger/model/LogTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/server/service/LogServiceTest.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/test/java/click/rmx/debug/logger/service/LogServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/RMXObject.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/RMXObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/jquery.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/sockets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,20 +148,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdatesEndpoint.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UpdatesEndpoint.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7368422">
-              <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.6450939">
+              <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveUpdatesController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LiveUpdatesController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6828358">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding />
             </state>
@@ -289,9 +254,9 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/LogService.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/RMXObject.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/Bugger.java" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/DebugServerTerminal.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java" />
       </list>
     </option>
   </component>
@@ -1671,13 +1636,7 @@
       <workItem from="1447923980172" duration="1179000" />
       <workItem from="1447925169416" duration="20762000" />
       <workItem from="1447950537467" duration="1127000" />
-      <workItem from="1448023366711" duration="18453000" />
-    </task>
-    <task id="LOCAL-00001" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
-      <created>1443296564388</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1443296564388</updated>
+      <workItem from="1448023366711" duration="19080000" />
     </task>
     <task id="LOCAL-00002" summary="modules working but shaders still have to ve locally referenced. rmx-core changes; sendMessage(...) may cause system to crash. Testing should help avoid this.">
       <created>1443300504445</created>
@@ -1967,7 +1926,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447953783009</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="0.1.2-SNAPSHOT">
+      <created>1448041870209</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1448041870228</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2003,7 +1968,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279527000" />
+    <option name="totallyTimeSpent" value="280154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -2055,7 +2020,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rmx-core, rmx-debug, rmx-persistence and rmx-multithread-toolkit now build to jars using maven" />
     <MESSAGE value="Need to pom the rest...." />
     <MESSAGE value="Simplified Bugger.longAndPrint to print()" />
     <MESSAGE value="WebBugger stack depth fix" />
@@ -2080,7 +2044,8 @@
     <MESSAGE value="refined build sizes" />
     <MESSAGE value="Debug server frontend improvements" />
     <MESSAGE value="0.1.1 stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.1.1 stable" />
+    <MESSAGE value="0.1.2-SNAPSHOT" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.1.2-SNAPSHOT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2092,13 +2057,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java</url>
-          <line>55</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java</url>
-          <line>63</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -2179,6 +2144,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2218,6 +2184,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2515,18 +2482,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7368422">
-          <caret line="53" column="64" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/UpdatesEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6828358">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.6450939">
+          <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -2640,9 +2607,9 @@
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="$PROJECT_DIR$/rmx-kit" />
-    <option value="deploy" />
+    <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server" />
     <option value="clean install" />
+    <option value="deploy" />
     <option value="compile" />
     <option value="install" />
     <option value="clean compile" />
