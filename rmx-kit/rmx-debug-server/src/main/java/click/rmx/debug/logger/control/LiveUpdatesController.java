@@ -13,10 +13,9 @@ import java.util.Arrays;
  * Created by bilbowm on 04/11/2015.
  */
 @Controller
-@RequestMapping({"/live"})
 public class LiveUpdatesController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "live", method = RequestMethod.GET)
     public String get(ModelMap model, HttpServletRequest request)
     {
 
@@ -33,5 +32,13 @@ public class LiveUpdatesController {
 //                        "ws://localhost:8080/debug-server/updates"
                 ));
         return "live-updates";
+    }
+
+    @RequestMapping(value = "/live/v2", method = RequestMethod.GET)
+    public String getV2(ModelMap model, HttpServletRequest request)
+    {
+        get(model,request);
+        model.addAttribute("contextPath",request.getContextPath());
+        return "live-updates-v2";
     }
 }
