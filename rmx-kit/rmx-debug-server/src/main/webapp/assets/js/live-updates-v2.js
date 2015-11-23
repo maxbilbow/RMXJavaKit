@@ -4,38 +4,29 @@
 
 require(['jquery', 'rmxjs/rmx-sockets', 'rmxjs/web-console'], function($,SocketConfig,wc){
     $(document).ready(function () {
-        var helper = new SocketConfig();
+        var helper = new SocketConfig(wc);
 
-        var messageInput = wc.input();
         var btnOpenSocket = $('#openSocket');
-        helper.onmessage = helper.onconnect = helper.onmessage = helper.onerror = function(data) {
-            wc.print(data);
-        };
 
 
         btnOpenSocket.click(function(){
-           var socket = helper.connect();
+           helper.connect();
         });
 
-
-
-        helper.addMessageValidator(function(msg){
-            if (msg.message.length == 0) {
-                return false;
+        wc.onComplete(function(success){
+            if (!success) {
+                wc.print('<i>Failed: ' + wc.last() + '</i>');
             }
         });
-
-        messageInput.keyup(function(evt){
-            if (evt.keyCode == 13) {
-                helper.send();
-            }
-        });
-
 
         var uriOpt = $('select#uri-options');
-        uriOpt.change(function() {
+        var updateUri;
+        (updateUri = function() {
             $('input#uri').val($('select#uri-options  option:selected').text());
-        });
+        })();
+
+        uriOpt.change(updateUri);
+
 
     });
 });

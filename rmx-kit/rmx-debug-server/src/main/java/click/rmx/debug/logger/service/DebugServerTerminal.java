@@ -154,6 +154,7 @@ public class DebugServerTerminal implements Terminal<String>  {
         return result + "</div>";
     }
 
+
     @Override
     public String sendMessage(String message) {
         if (message != null && message.length() > 0) {

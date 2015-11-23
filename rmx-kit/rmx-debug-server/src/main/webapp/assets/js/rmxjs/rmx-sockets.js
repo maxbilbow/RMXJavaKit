@@ -2,81 +2,63 @@
  * Created by bilbowm on 23/11/2015.
  */
 
-define(['jquery', '../socket.io'], function ($, WebSocket) {
-
-    var Message = function (message) {
-        return {
-            id: null,
-            timestamp: new Date(),
-            message: message | ''
-        };
-    }
+define(['jquery','./log'], function ($,Log) {
 
 
-    var SocketConfig = function () {
+    var SocketConfig = function (wc) {
 
-        var getMessage = function (msg) {
-            msg.message = $('input#message-input').val();
-            return msg;
-        };
 
         var getUri = function () {
             return $('input#uri').val();
         }
-        var properties = {
-            username: "unknown",
-            cookie: 'SessionID=' + (Math.random() * 10000)
-        };
 
-        console.log('cookie: ' + properties.cookie);
+
+        function parseJSON(helper, data) {
+            var msg = data;
+            try {
+                var log = JSON.parse(data);
+                msg = helper.onJSON(log);
+            } catch(e){
+                console.log('Message is not a JSON');
+                msg = '<span style="color: rgb(151, 253, 255);"> >> </span>' + msg;
+            }
+            return msg;
+        }
 
         var socket;
 
-        var messageValidators = [];
-
-        var _onopen= function (data) {
-            console.log(uri + ' >> OPEN: ' + data);
+        var _onopen= function (evt) {
+            var msg = '<span style="color: rgb(152, 255, 183);"> CONNECTED</span>';
+            if (wc)
+                wc.print(msg);
+            else
+                console.log(msg);
         };
-        var _onerror= function (data) {
-            console.error(uri + ' >> ERROR: ' + data);
+        var _onerror= function (evt) {
+            var msg = '<span style="color: rgb(255, 46, 42);">ERROR >> </span>' + evt.data;
+            if (wc)
+                wc.print(msg);
+            else
+                console.error(msg);
         };
-        var _onmessage= function (data) {
-            console.log(uri + ' >> MESSAGE: ' + data);
+        var _onmessage = function (evt) {
+            var msg = parseJSON(helper,evt.data);
+            if (wc)
+                wc.print(msg);
+            else
+                console.log(msg);
         };
-        var _onclose= function (data) {
-                        console.log(uri + ' >> CLOSED: ' + data);
+        var _onclose= function (evt) {
+            var msg = '<span style="color: rgb(255, 188, 91);"> DISCONNECTED </span>';
+            if (wc)
+                wc.print(msg);
+            else
+                console.log(msg);
+            socket = null;
         };
-        function sendMessage(msg) {
-            if (socket && socket.connected) {
-                try {
-                    socket.send(msg.message);
-                    return "Success after connection: " + msg;
-                } catch (e) {
-                    _onerror(e);
-                    return "Failed to Send: " + msg;
-                }
-                return false;
-            }
-        }
 
-
-        //var onPrepareCallbacks = [];
-
-        return {
-            property: function (aProp, value) {
-                if (value) {
-                    properties[aProp] = value;
-                } else {
-                    return properties[aProp];
-                }
-            },
-            properties: function (aProps) {
-                if (aProps) {
-                    properties = aProps;
-                } else {
-                    return properties;
-                }
-            }, onopen: function (callback) {
+        var helper =  {
+             onopen: function (callback) {
                 _onopen = callback;
 
             }, onerror: function (callback) {
@@ -86,7 +68,7 @@ define(['jquery', '../socket.io'], function ($, WebSocket) {
             }, onclose: function (callback) {
                 _onclose = callback;
             }, connect: function (uri) {
-                if (socket && socket.connected) {
+                if (helper.connected()) {
                     try {
                         socket.close();
                         socket.disconnect();
@@ -97,52 +79,94 @@ define(['jquery', '../socket.io'], function ($, WebSocket) {
 
                 if (uri === undefined) {
                     uri = getUri();
+                    if (!uri) {
+                        throw new Error(uri + ' not a valid uri');
+                    }
                 }
-                socket = new WebSocket(uri);
 
-                socket.onopen = this.onopen;
-                socket.onerror = this.onerror;
-                socket.onclose = this.onclose;
-                socket.onmessage = this.onmessage;
+                socket = new WebSocket(uri);
+                console.log('Connecting to: ' + uri);
+                socket.onopen = _onopen;
+                socket.onerror = _onerror;
+                socket.onclose = _onclose;
+                socket.onmessage = _onmessage;
                 return socket;
-            }, send: function () {
+            }, send: function (msg) {
                 //console.log('Nothing to send.')
-                var msg = new Message();
-                msg = getMessage(msg) | msg; //Override should return an object
-                for (var i = 0; i < messageValidators.length; ++i) {
-                    if (messageValidators[i](msg) != true) {
-                        return false;
-                    }
-                }
-                if (!this.connected()) {
-                    var socket = this.connect();
-                    socket.onopen = function(data) {
-                        this.onopen(data);
-                        return sendMessage(msg);
-                    }
+                msg = helper.newMessage(msg);
+                if (helper.connected()) {
+                    socket.send(msg);
                 } else {
-                    this.connect();
-                    return sendMessage(msg);
+                    socket = helper.connect();
+                    socket.onopen = function(data) {
+                        _onopen(data);
+                        return socket.send(msg);
+                    }
                 }
-            },
-            addMessageValidator: function (callback) {
-                messageValidators.push(callback);
             },
             connected: function () {
-                return socket && socket.connected;
+                return socket != null;
             },
-            messageObject: function (obj) {
-                if (obj) {
-                    Message = obj;
-                } else {
-                    return new Message();
-                }
-            }, onGetMessage: function (getter) {
-                getMessage = getter;
+            newMessage: function (message) {
+                return message;
             }, onGetUri: function (getter) {
-                getUri = getter;
+                if (getter) {
+                    getUri = getter;
+                } else {
+                    alert(getUri());
+                }
+            }, onJSON : function(data) {
+                var result = '';
+                var log = data;
+
+                var color = "rgb(151, 253, 255)";
+                if (log.logType)
+                switch(log.logType) {
+                    case 'Warning':
+                        color =  'rgb(255, 147, 40)';
+                        break;
+                    case 'Exception':
+                        color = 'rgb(255, 46, 42)';
+                        break;
+                    case 'Info':
+                        color = 'rgb(73, 255, 114)';
+                        break;
+                }
+                var time = new Date(log.timeStamp),
+                        h = time.getHours(), // 0-24 format
+                        m = time.getMinutes();
+                    result += (time = '' + h + ':' + m + ' >> ');
+
+                if (log.sender) {
+                    result += '<strong>' + log.sender + ':</strong> ';
+                }
+
+                var spacer = '';
+                for (var i=0;i<time.length + 4;++i) {
+                    spacer += '&nbsp;';
+                }
+                var msg = log.message.replace(/\n|<br>/gi, '<br/>' + spacer);
+                result += '<span style="color: '+color+';">'+
+                    msg +'</span>';//.replace('\n','<br/>');
+                return result;
             }
+
         };
+
+        if (wc) {
+            wc.onSubmit(function(message){
+                try {
+                    helper.send(message);
+                    return true;
+                } catch (e) {
+                    wc.print(e);
+                    console.error(e);
+                    return false;
+                }
+            });
+        }
+
+        return helper;
     };
 
     return SocketConfig;
