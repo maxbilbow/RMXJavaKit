@@ -21,6 +21,12 @@
             background-color: #000000;
             color: #ffffff;
             padding: 5px;
+            font-size: 75%;
+            font-family:"Courier New";
+            line-height: 1;
+        }
+        #wc-output p {
+            line-height: 1;
         }
 
         #uri {
@@ -49,7 +55,8 @@
 
         <br/>
 
-        <div class="form-group socket-config">
+        <form class="form-group socket-config row-fluid" action="">
+            <div class="span6">
             <label>
                 Message:
             </label>
@@ -62,8 +69,17 @@
                     <option>${host}</option>
                 </c:forEach>
             </select>
-            <input id="uri" type="text" value="ws://">
-        </div>
+            <input id="get-uri" type="text" value="ws://">
+            </div>
+
+            <div class="span6 debug-level">
+                <label>Debug Level</label>
+                <input type="radio" name="debug-level" value="pubsub-info" checked>Info<br/>
+                <input type="radio" name="debug-level" value="pubsub-warn">Warn<br/>
+                <input type="radio" name="debug-level" value="pubsub-error">Error<br/>
+                <input type="radio" name="debug-level" value="false">None<br/>
+            </div>
+        </form>
 
         <div class="form-group">
             <input hidden="true" id="username" value="root"/>

@@ -2,172 +2,156 @@
  * Created by bilbowm on 23/11/2015.
  */
 
-define(['jquery','./log'], function ($,Log) {
-
-
-    var SocketConfig = function (wc) {
-
-
-        var getUri = function () {
-            return $('input#uri').val();
+define(['jquery', './pubsub'], function ($, ps) {
+    var sockets = [];
+    var defaultConsole = {
+        send: console.log,
+        log: console.log,
+        warn: console.warn,
+        error: console.error,
+        success: console.log,
+        fail: console.error,
+        green: function (msg) {
+            wc.log(msg)
+        },
+        orange: function (msg) {
+            wc.log(msg)
+        },
+        red: function (msg) {
+            wc.log(msg)
         }
+        //color: function (msg,color) {wc.log('Color: ' + color + ', Message: ' + msg)}
+    };
 
 
-        function parseJSON(helper, data) {
-            var msg = data;
-            try {
-                var log = JSON.parse(data);
-                msg = helper.onJSON(log);
-            } catch(e){
-                console.log('Message is not a JSON');
-                msg = '<span style="color: rgb(151, 253, 255);"> >> </span>' + msg;
+    var WSHelper = function (webConsole, decoder) {
+
+        var wc;
+
+        //if (!decoder) {
+        //    decoder = {
+        //        decode: function (evt) {
+        //            ps.warn('No decoder supplied');
+        //            return evt.data || evt;
+        //        }
+        //    };
+        //}
+
+        function init($this) {
+            ps.info('WSHelper initialized');
+            if (webConsole) {
+                $this.webConsole(webConsole);
             }
-            return msg;
+            return $this;
         }
 
-        var socket;
+        function isValidEvt(evt){
+            return evt.data && evt.data.length > 0;
+        }
 
-        var _onopen= function (evt) {
-            var msg = '<span style="color: rgb(152, 255, 183);"> CONNECTED</span>';
-            if (wc)
-                wc.print(msg);
-            else
-                console.log(msg);
-        };
-        var _onerror= function (evt) {
-            var msg = '<span style="color: rgb(255, 46, 42);">ERROR >> </span>' + evt.data;
-            if (wc)
-                wc.print(msg);
-            else
-                console.error(msg);
-        };
-        var _onmessage = function (evt) {
-            var msg = parseJSON(helper,evt.data);
-            if (wc)
-                wc.print(msg);
-            else
-                console.log(msg);
-        };
-        var _onclose= function (evt) {
-            var msg = '<span style="color: rgb(255, 188, 91);"> DISCONNECTED </span>';
-            if (wc)
-                wc.print(msg);
-            else
-                console.log(msg);
-            socket = null;
-        };
-
-        var helper =  {
-             onopen: function (callback) {
-                _onopen = callback;
-
-            }, onerror: function (callback) {
-               _onerror = callback;
-            }, onmessage: function (callback) {
-                _onmessage = callback;
-            }, onclose: function (callback) {
-                _onclose = callback;
-            }, connect: function (uri) {
-                if (helper.connected()) {
+        return init({
+            socket: undefined, decoder: decoder,
+            webConsole: function (aWebConsole) {
+                if (aWebConsole) {
+                    wc = aWebConsole;
+                    var $this = this;
+                    wc.onSubmit = function (message) {
+                        try {
+                            $this.send(message);
+                        } catch (e) {
+                            ps.error(e);
+                        }
+                    };
+                }
+                return wc || defaultConsole;
+            },
+            onOpen: function () {
+                wc.success("CONNECTED")
+            },
+            onError: function (evt) {
+                wc.error(evt.data)
+            },
+            onMessage: function (msg) {
+                wc.log(msg);
+            },
+            onClose: function () {
+                wc.orange("DISCONNECTED")
+            },
+            onValidateUri: function (uri) {
+                return uri && uri.length > 5;
+            },
+            connect: function (aUri) {
+                if (this.connected()) {
+                    var socket = this.socket;
                     try {
+                        ps.info('Attempting to close old connection.');
                         socket.close();
                         socket.disconnect();
+                        sockets.remove(socket);
                     } catch (e) {
-                        console.warn(e);
+                        ps.error(e);
                     }
                 }
-
-                if (uri === undefined) {
-                    uri = getUri();
-                    if (!uri) {
-                        throw new Error(uri + ' not a valid uri');
-                    }
+                var uri = aUri || this.onGetUri();
+                if (this.onValidateUri(uri) == false) {
+                    ps.warn('Not a valid URI: ' + uri);
+                    this.onError(uri + ' not a valid uri');
+                    return;
                 }
 
-                socket = new WebSocket(uri);
-                console.log('Connecting to: ' + uri);
-                socket.onopen = _onopen;
-                socket.onerror = _onerror;
-                socket.onclose = _onclose;
-                socket.onmessage = _onmessage;
-                return socket;
+                this.socket = new WebSocket(uri);
+                sockets.push(this.socket);
+                ps.info('Socket: ' + (sockets.length - 1) + ', Connecting to: ' + uri);
+                this.socket.onopen = this.onOpen;
+                this.socket.onerror = this.onError;
+                this.socket.onclose = this.onClose;
+                var $this = this;
+                this.socket.onmessage = function (evt) {
+                    if (!isValidEvt(evt)) return;
+                    var msg = evt.data || evt;
+                    if ($this.decoder)
+                        try {
+                            msg = $this.decoder.decode(evt.data);
+                        } catch (e) {
+                            msg = evt.data || evt;
+                            ps.error(msg, e);
+                            return;
+                        }
+                    else
+                        ps.warn('Message decoder undefined');
+                    $this.onMessage(msg);
+                };
+                //socket.onopen = function(evt) { this.onOpen(evt)} ;
+                //socket.onerror = function(evt) { this.onError(evt)};
+                //socket.onclose = function(evt) { this.onClose(evt)};
+                //socket.onmessage = function(evt) { this.onMessage(evt)};
+                return this.socket;
             }, send: function (msg) {
-                //console.log('Nothing to send.')
-                msg = helper.newMessage(msg);
-                if (helper.connected()) {
-                    socket.send(msg);
+                ps.info("Sending message: " + msg);
+                if (this.connected()) {
+                    ps.info('Socket is already open. Sending message');
+                    this.socket.send(msg);
+                    ps.info('Message sent: ' + msg);
                 } else {
-                    socket = helper.connect();
-                    socket.onopen = function(data) {
-                        _onopen(data);
-                        return socket.send(msg);
+                    ps.info('Socket is not open, Trying to connect. Message will be send onOpen');
+                    this.socket = this.connect();
+                    var socket = this.socket;
+                    var $this = this;
+                    this.socket.onopen = function (data) {
+                        $this.onOpen(data);
+                        socket.send(msg);
+                        ps.info('Message sent: ' + msg);
                     }
                 }
             },
             connected: function () {
-                return socket != null;
+                return this.socket != null;
             },
-            newMessage: function (message) {
-                return message;
-            }, onGetUri: function (getter) {
-                if (getter) {
-                    getUri = getter;
-                } else {
-                    alert(getUri());
-                }
-            }, onJSON : function(data) {
-                var result = '';
-                var log = data;
-
-                var color = "rgb(151, 253, 255)";
-                if (log.logType)
-                switch(log.logType) {
-                    case 'Warning':
-                        color =  'rgb(255, 147, 40)';
-                        break;
-                    case 'Exception':
-                        color = 'rgb(255, 46, 42)';
-                        break;
-                    case 'Info':
-                        color = 'rgb(73, 255, 114)';
-                        break;
-                }
-                var time = new Date(log.timeStamp),
-                        h = time.getHours(), // 0-24 format
-                        m = time.getMinutes();
-                    result += (time = '' + h + ':' + m + ' >> ');
-
-                if (log.sender) {
-                    result += '<strong>' + log.sender + ':</strong> ';
-                }
-
-                var spacer = '';
-                for (var i=0;i<time.length + 4;++i) {
-                    spacer += '&nbsp;';
-                }
-                var msg = log.message.replace(/\n|<br>/gi, '<br/>' + spacer);
-                result += '<span style="color: '+color+';">'+
-                    msg +'</span>';//.replace('\n','<br/>');
-                return result;
+            onGetUri: function () {
+                return $('#get-uri').val();
             }
-
-        };
-
-        if (wc) {
-            wc.onSubmit(function(message){
-                try {
-                    helper.send(message);
-                    return true;
-                } catch (e) {
-                    wc.print(e);
-                    console.error(e);
-                    return false;
-                }
-            });
-        }
-
-        return helper;
+        });
     };
 
-    return SocketConfig;
+    return WSHelper;
 });
