@@ -52,7 +52,9 @@ define(['./pubsub'],function ($ps) {
             process: function (txt) { //Returns false if no command was received
                 if (txt) {
                     if (this.expectsReply && this.onReply) {
-                        return this.onReply(txt, this); //process reply
+                        this.expectsReply = false;
+                        this.onReply(txt, this); //process reply
+                        return true;
                     } else if (txt[0] === this.cmdKey) {
                         $ps.info('Received command: ' + cmd);
                         var cmd = txt.substring(1).split(' ');
@@ -72,12 +74,19 @@ define(['./pubsub'],function ($ps) {
              * @param key
              * @param processor
              */
-            onProcess: function (key,processor) {
-                computers[key] = processor;
+            onProcess: function (key,processor,desc) {
+                computers[key] = [processor, desc || 'new custom processor'];
             },
+            /**
+             * this.expectsReply was set to false before this method is called.
+             * If the reply is not satisfactory, it can be set back to true
+             * with $this.expectsReply = true;
+             * @param txt
+             * @param $this
+             *
+             */
             onReply: function(txt,$this){
                 $ps.warn('onReply was not set:' + txt);
-                return false;
             },
             expectsReply: false
         }

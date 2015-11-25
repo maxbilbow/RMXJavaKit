@@ -12,33 +12,10 @@
     <%--<jsp:include page="header.jsp"/>--%>
     <link rel="stylesheet" href="${contextPath}/assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="${contextPath}/assets/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="${contextPath}/assets/css/web-console.css"/>
 
     <style>
-        .wc-output {
-            min-height: 200px;
-            max-height: 400px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            overflow-wrap: break-word;
-            background-color: #000000;
-            color: #ffffff;
-            padding: 5px;
-            font-size: 75%;
-            font-family: "Courier New";
-            line-height: 1;
-            margin-bottom: 10px;
-        }
 
-        #wc-output p {
-            line-height: 1;
-        }
-
-        #uri {
-            /*width: 100%;*/
-        }
-        #uri-options {
-         width: 100%;
-        }
     </style>
 </head>
 <body>
@@ -49,6 +26,8 @@
                 Home
             </a>
             <ul class="nav">
+                <li><a href="${contextPath}/live/">Live Updates</a> </li>
+                <li><a href="${contextPath}/pages/?p=console">Console Module</a> </li>
             </ul>
         </div>
     </div>
@@ -85,7 +64,7 @@
 </div>
 
 
-<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+
 <script data-main="${contextPath}/assets/js/live-updates-v2" src="${contextPath}/assets/js/require.min.js"></script>
 </body>
 </html>

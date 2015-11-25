@@ -26,10 +26,11 @@ public class JSPLogController {
     private LogRepository repository;
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String get(ModelMap model) {
+    public String get(ModelMap model,HttpServletRequest request) {
         model.addAttribute("logs", repository.getMessages());
         model.addAttribute("errors", repository.getErrors());
         model.addAttribute("warnings", repository.getWarnings());
+        model.addAttribute("contextPath",request.getContextPath());
         model.addAttribute("status",
                 service.isActive() ?
                         "<span style=\"color: green\">SERVER IS ON</span>" :
@@ -40,7 +41,7 @@ public class JSPLogController {
     }
 
     @RequestMapping(value = "/index", method = RequestMethod.POST)
-    public String start(ModelMap model) {
+    public String start(ModelMap model, HttpServletRequest request) {
         if (service.isActive()) {
             try {
                 if (service.closeServer())
@@ -73,7 +74,7 @@ public class JSPLogController {
                 );
             }
         }
-        return get(model);
+        return get(model,request);
     }
 
     @RequestMapping(value = "/post", method = RequestMethod.POST)

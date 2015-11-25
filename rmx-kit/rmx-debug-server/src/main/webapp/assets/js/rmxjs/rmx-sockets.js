@@ -30,6 +30,7 @@ define(['jquery', './pubsub'], function ($, ps) {
         if (view.length > 0) {
             if (view.find('.get-uri') > 0) {
                 ps.info('Socket Config view already exists');
+
                 return view;
             }
             ps.info('Socket Config view exists but is empty. Generating...');
@@ -82,12 +83,23 @@ define(['jquery', './pubsub'], function ($, ps) {
             if (webConsole) {
                 $this.webConsole(webConsole);
             }
+            var view = $($this.view);
+            view.find('.get-uri').keyup(function(evt){
+                if (evt.keyCode == 13){
+                    $this.connect();
+                }
+            });
+            view.find('.ws-connect').mouseup(function(){
+                $this.connect();
+            });
+
             return $this;
         }
 
         function isValidEvt(evt) {
             return evt.data && evt.data.length > 0;
         }
+
 
         return init({
             socket: undefined, decoder: decoder, view:$(getSocketConfigView(webConsole)),

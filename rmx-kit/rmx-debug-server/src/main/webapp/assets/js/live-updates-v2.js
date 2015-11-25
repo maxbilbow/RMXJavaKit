@@ -43,11 +43,7 @@ require(['jquery', 'rmxjs/rmx-sockets', 'rmxjs/web-console', 'rmxjs/pubsub', 'rm
                 ps.info('Connection changed to: '+helper.onGetUri());
                 helper.connect();
             });
-            $('.get-uri').keyup(function(evt){
-                if (evt.keyCode == 13){
-                    helper.connect();
-                }
-            })
+            
 
 
             helper.connect();
