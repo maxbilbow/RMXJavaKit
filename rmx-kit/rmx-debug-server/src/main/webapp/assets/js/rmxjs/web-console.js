@@ -1,13 +1,13 @@
 /**
  * Created by bilbowm on 23/11/2015.
  */
-define(['jquery', './pubsub'], function ($, ps) {
+define(['jquery', './pubsub','./client-terminal'], function ($, ps, DefaultTerminal) {
     var webConsoles = [];
+
 
     var getConsoleView = function () {
 
         var view = $('.web-console');
-
 
         if (view.length > 0) {
             if (view.html()) {
@@ -84,9 +84,11 @@ define(['jquery', './pubsub'], function ($, ps) {
             $this.view.find('.wc-send').click(function () {
                 $this.submit();
             });
+            $this.terminal = new DefaultTerminal($this);
             return $this;
         })({
             id: webConsoles.length, debugLevel: ps.NONE, view : $(getConsoleView()),
+            terminal:null,
             onComplete: function (callback) {
                 completionHandlers.push(callback);
             },
@@ -127,8 +129,22 @@ define(['jquery', './pubsub'], function ($, ps) {
                     this.inputText('');
                 }
                 ps.info(history + ' +++ ' + this.inputText() + ' +++ ' + fwdHistory);
+            }, pushCmd: function() {
+                last = this.inputText();
+                if (sentHistory.length == 0 ||
+                    sentHistory[sentHistory.length - 1] !== last) {
+                    sentHistory.push(last);
+                }
+                fwdHistory = [];
+                history = sentHistory.slice(0);
+                this.inputText('');
             }
             , submit: function () {
+                if (this.terminal &&
+                    this.terminal.process(this.inputText()) == true) {
+                    this.pushCmd();
+                    return;
+                }
                 for (var i = 0; i < validators.length; ++i) {
                     var error;
                     if (error = validators[i](this.input())) {
@@ -138,14 +154,7 @@ define(['jquery', './pubsub'], function ($, ps) {
                 }
                 var success;
                 try {
-
-                    last = this.inputText();
-                    if (sentHistory.length == 0 || sentHistory[sentHistory.length - 1] !== last)
-                        sentHistory.push(last);
-                    fwdHistory = [];
-                    history = sentHistory.slice(0);
-                    this.inputText('');
-
+                    this.pushCmd();
                     success = this.onSubmit(last);
                 } catch (e) {
                     success = false;
@@ -183,8 +192,8 @@ define(['jquery', './pubsub'], function ($, ps) {
                     style = prefix;
                     prefix = null;
                 }
-                //var pre = document.createElement("p");
-                //pre.style.wordWrap = "break-word";
+               msg = msg.replace(/\n|<br>/gi, '<br/>')
+                   .replace(/  /g, '&nbsp ');
                 var html = '<span style="' +
                     (style || '') + '"> ' +
                     (prefix || msg ) + ' </span>' +

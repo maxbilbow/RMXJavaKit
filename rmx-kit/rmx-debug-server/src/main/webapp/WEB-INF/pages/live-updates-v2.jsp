@@ -18,6 +18,8 @@
             min-height: 200px;
             max-height: 400px;
             overflow-y: scroll;
+            overflow-x: hidden;
+            overflow-wrap: break-word;
             background-color: #000000;
             color: #ffffff;
             padding: 5px;
