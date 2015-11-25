@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="${contextPath}/assets/css/bootstrap-responsive.min.css"/>
 
     <style>
-        #wc-output {
+        .wc-output {
             min-height: 200px;
             max-height: 400px;
             overflow-y: scroll;
@@ -34,6 +34,9 @@
         #uri {
             /*width: 100%;*/
         }
+        #uri-options {
+         width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -48,19 +51,12 @@
         </div>
     </div>
 </div>
-<div class="container web-console">
-    <div class="hero-unit ">
+<div class="container">
 
-        <div id="wc-output">
 
-        </div>
-        <div class="wc-input row-fluid">
-            <input type="text" class="span10 wc-message" value="/help">
-            <input class="btn btn-primary span2 wc-send" value="Send">
-        </div>
-    </div>
+    <div class="web-console"></div>
 
-    <div class="hero-unit">
+    <div class="ws-config">
         <div class="row-fluid">
             <div class="span6 socket-config ">
 
@@ -72,14 +68,13 @@
                         <option>${host}</option>
                     </c:forEach>
                 </select>
-                <input id="get-uri" type="text" value="ws://">
             </div>
 
             <div class="span6 debug-level">
                 <label>Debug Level</label>
-                <input type="radio" name="debug-level" value="debug-info" checked>Info<br/>
-                <input type="radio" name="debug-level" value="debug-warning">Warn<br/>
-                <input type="radio" name="debug-level" value="debug-error">Error<br/>
+                <input type="radio" name="debug-level" value="debug-info">Info
+                <input type="radio" name="debug-level" value="debug-warning" checked>Warn
+                <input type="radio" name="debug-level" value="debug-error">Error
                 <input type="radio" name="debug-level" value="debug-none">None
             </div>
         </div>

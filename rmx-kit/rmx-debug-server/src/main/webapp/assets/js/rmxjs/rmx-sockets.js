@@ -23,6 +23,46 @@ define(['jquery', './pubsub'], function ($, ps) {
         //color: function (msg,color) {wc.log('Color: ' + color + ', Message: ' + msg)}
     };
 
+    var getSocketConfigView = function (webConsole) {
+        ps.info('init getSocketConfig');
+        var view = $('.ws-config');
+
+        if (view.length > 0) {
+            if (view.find('.get-uri') > 0) {
+                ps.info('Socket Config view already exists');
+                return view;
+            }
+            ps.info('Socket Config view exists but is empty. Generating...');
+        } else {
+            //else append view to body
+            ps.info('Generating NEW SocketConfigView');
+            view = $(document.createElement('div'))
+                .addClass('ws-config');
+        }
+        if (webConsole) {
+            webConsole.view.append(view);
+        } else {
+            view.appendTo('body');
+            view.addClass('hero-unit');
+        }
+        view.prepend(
+            $(document.createElement('div'))
+                .addClass('row-fluid')
+                .append(
+                    $(document.createElement('input'))
+                    .addClass('span10').addClass('get-uri')
+                        .attr('type', 'text')
+                        .css('float','left')
+                        .val('ws://dev.maxbilbow.com:8080/debug-server/updates')
+                ).append(
+                $(document.createElement('span'))
+                .addClass('btn').addClass('btn-primary')
+                .addClass('span2').addClass('ws-connect')
+                .html('Connect')
+            ));
+        return view;
+
+    };
 
     var WSHelper = function (webConsole, decoder) {
 
@@ -50,7 +90,7 @@ define(['jquery', './pubsub'], function ($, ps) {
         }
 
         return init({
-            socket: undefined, decoder: decoder,
+            socket: undefined, decoder: decoder, view:$(getSocketConfigView(webConsole)),
             webConsole: function (aWebConsole) {
                 if (aWebConsole) {
                     wc = aWebConsole;
@@ -150,7 +190,7 @@ define(['jquery', './pubsub'], function ($, ps) {
                 return this.socket != null;
             },
             onGetUri: function () {
-                return $('#get-uri').val();
+                return this.view.find('.get-uri').val();
             }
         });
     };

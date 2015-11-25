@@ -34,7 +34,7 @@ require(['jquery', 'rmxjs/rmx-sockets', 'rmxjs/web-console', 'rmxjs/pubsub', 'rm
 
             var uriOpt = $('select#uri-options');
             var updateUri = function () {
-                $('#get-uri').val($('select#uri-options  option:selected').text());
+                $('.get-uri').val($('select#uri-options  option:selected').text());
             };
 
             updateUri();
@@ -43,7 +43,7 @@ require(['jquery', 'rmxjs/rmx-sockets', 'rmxjs/web-console', 'rmxjs/pubsub', 'rm
                 ps.info('Connection changed to: '+helper.onGetUri());
                 helper.connect();
             });
-            $('#get-uri').keyup(function(evt){
+            $('.get-uri').keyup(function(evt){
                 if (evt.keyCode == 13){
                     helper.connect();
                 }

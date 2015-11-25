@@ -1,33 +1,51 @@
 /**
  * Created by bilbowm on 23/11/2015.
  */
-define(['jquery','./pubsub'], function ($,ps) {
+define(['jquery', './pubsub'], function ($, ps) {
     var webConsoles = [];
 
-    var WebConsoleView = function() {
-        var view =  $('.web-console');
-        if (view)
-            return view;
-        //else append view to body
-        view = $(document.createElement('div'));
+    var getConsoleView = function () {
 
-        view.addClass('container')
-            .addClass('web-console')
+        var view = $('.web-console');
+
+
+        if (view.length > 0) {
+            if (view.html()) {
+                ps.info(view.html());
+                ps.info('Web Console view already exists');
+                return view;
+            }
+            ps.info('Web Console view exists but is empty. Generating...');
+        } else {
+            //else append view to body
+            ps.info('Generating NEW WebConsoleView');
+            view = $(document.createElement('div'))
+                .addClass('container').addClass('web-console')
+                .appendTo('body');
+        }
+
+
+        view.addClass('hero-unit')
             .append(
+                    $(document.createElement('div'))
+                        .addClass('wc-output')
+                ).append(
                 $(document.createElement('div'))
-                    .addClass('hero-unit')
-                    .append(
-                        $(document.createElement('div'))
-                            .addClass('wc-output')
-                    ).append(
-                        $(document.createElement('div'))
-                            .addClass('wc-input').addClass('row-fluid')
+                    .addClass('wc-input').addClass('row-fluid')
+                    .append($(document.createElement('input'))
+                        .addClass('span10').addClass('wc-message')
+                        .css('float','left')
+                        .attr('type', 'text').val('/help')
+                    )
+                    .append($(document.createElement('span'))
+                        .addClass('btn').addClass('btn-primary')
+                        .addClass('span2').addClass('wc-send')
+                        .html('Send')
+                    )
+            );
+        return view;
 
-                )
-                )
-            )
-
-    }
+    };
 
     var WebConsole = function (inputField, outputField) {
         var history = [], sentHistory = [],
@@ -39,35 +57,36 @@ define(['jquery','./pubsub'], function ($,ps) {
         var last = '';
         var input, output;
 
-        var webConsole = new WebConsoleView();
+
 
         return (function ($this) {
-            output = outputField || document.getElementById('wc-output')
-            $this.input(inputField || $('.wc-input .wc-message'));
+
+            output = outputField || $this.view.find('.wc-output');
+            $this.input(inputField || $this.view.find('.wc-message'));
             $this.onValidate(function () {
                 if ($this.inputText().length == 0) {
                     return 'Message cannot be empty!';
                 }
             });
-            ps.sub(ps.INFO,function(msg){
-                if ($this.debugLevel === ps.INFO){
-                    $this.print(msg,'color: grey;');
+            ps.sub(ps.INFO, function (msg) {
+                if ($this.debugLevel === ps.INFO) {
+                    $this.print(msg, 'color: grey;');
                 }
-            }).sub(ps.WARN,function(msg){
-                if ($this.debugLevel === ps.INFO || $this.debugLevel === ps.WARN){
+            }).sub(ps.WARN, function (msg) {
+                if ($this.debugLevel === ps.INFO || $this.debugLevel === ps.WARN) {
                     $this.warn(msg);
                 }
-            }).sub(ps.ERROR,function(msg){
-                if ($this.debugLevel && $this.debugLevel !== 'false'){
+            }).sub(ps.ERROR, function (msg) {
+                if ($this.debugLevel && $this.debugLevel !== 'false') {
                     $this.error(msg);
                 }
             });
-            $('.web-console .wc-send').click(function(){
-               $this.submit();
+            $this.view.find('.wc-send').click(function () {
+                $this.submit();
             });
             return $this;
         })({
-            id: webConsoles.length, debugLevel:ps.NONE,
+            id: webConsoles.length, debugLevel: ps.NONE, view : $(getConsoleView()),
             onComplete: function (callback) {
                 completionHandlers.push(callback);
             },
@@ -90,7 +109,7 @@ define(['jquery','./pubsub'], function ($,ps) {
 
                 if (history.length > 0) {
                     if (txt.length > 0) {
-                        if (fwdHistory.length ==0 || fwdHistory[fwdHistory.length-1] !== txt)
+                        if (fwdHistory.length == 0 || fwdHistory[fwdHistory.length - 1] !== txt)
                             fwdHistory.push(txt);
                     }
                     this.inputText(history.pop());
@@ -99,7 +118,7 @@ define(['jquery','./pubsub'], function ($,ps) {
             }, stepForward: function () {
                 var txt = this.inputText();
                 if (txt.length > 0) {
-                    if (history.length ==0 || history[history.length-1] !== txt)
+                    if (history.length == 0 || history[history.length - 1] !== txt)
                         history.push(txt);
                 }
                 if (fwdHistory.length > 0) {
@@ -121,7 +140,7 @@ define(['jquery','./pubsub'], function ($,ps) {
                 try {
 
                     last = this.inputText();
-                    if (sentHistory.length ==0 || sentHistory[sentHistory.length-1] !== last)
+                    if (sentHistory.length == 0 || sentHistory[sentHistory.length - 1] !== last)
                         sentHistory.push(last);
                     fwdHistory = [];
                     history = sentHistory.slice(0);
@@ -159,35 +178,43 @@ define(['jquery','./pubsub'], function ($,ps) {
                     return input;
                 }
             },
-            print: function (msg,prefix,style) {
+            print: function (msg, prefix, style) {
                 if (style === undefined) { //If color not given, assume prefix is color.
                     style = prefix;
                     prefix = null;
                 }
-                var pre = document.createElement("p");
-                pre.style.wordWrap = "break-word";
-                pre.innerHTML = '<span style="' +
-                    (style || '') +'"> '+
-                    (prefix || msg ) +' </span>' +
+                //var pre = document.createElement("p");
+                //pre.style.wordWrap = "break-word";
+                var html = '<span style="' +
+                    (style || '') + '"> ' +
+                    (prefix || msg ) + ' </span>' +
                     (prefix ? msg : '');
-                if (pre.innerHTML.length > 0) {
-                    this.output().appendChild(pre);
-                    this.output().scrollTop = this.output().scrollHeight;
-                }
-            },log: function(msg,prefix,style) {
-                this.print(msg,prefix || '>> ', style || 'color: rgb(151, 253, 255);');
+                this.output().append($(document.createElement('p')).html(html));
+                this.output().scrollTop(this.output()[0].scrollHeight);
+            }, log: function (msg, prefix, style) {
+                this.print(msg, prefix || '>> ', style || 'color: rgb(151, 253, 255);');
             },
-            error:function(msg,prefix,style) {
-                this.print(msg,prefix || 'ERROR >> ',style || 'color: rgb(255, 46, 42);');
+            error: function (msg, prefix, style) {
+                this.print(msg, prefix || 'ERROR >> ', style || 'color: rgb(255, 46, 42);');
             },
-            warn:function(msg,prefix,style) {
-                this.print(msg,prefix || 'WARNING >> ', style || 'color: rgb(255, 188, 91);');
+            warn: function (msg, prefix, style) {
+                this.print(msg, prefix || 'WARNING >> ', style || 'color: rgb(255, 188, 91);');
             },
-            success:function(msg) { this.green(msg)},
-            fail:function(msg) { this.print(msg,'FAIL >> ', 'color: rgb(255, 46, 42);')},
-            green:function(msg,prefix) {this.print( msg, prefix,'color: rgb(152, 255, 183);')},
-            orange:function(msg,prefix) {this.print( msg, prefix,'color: rgb(255, 188, 91);')},
-            red:function(msg,prefix) { this.print(msg,prefix,'color: rgb(255, 46, 42);')},
+            success: function (msg) {
+                this.green(msg)
+            },
+            fail: function (msg) {
+                this.print(msg, 'FAIL >> ', 'color: rgb(255, 46, 42);')
+            },
+            green: function (msg, prefix) {
+                this.print(msg, prefix, 'color: rgb(152, 255, 183);')
+            },
+            orange: function (msg, prefix) {
+                this.print(msg, prefix, 'color: rgb(255, 188, 91);')
+            },
+            red: function (msg, prefix) {
+                this.print(msg, prefix, 'color: rgb(255, 46, 42);')
+            },
             inputText: function (val) {
                 if (val || val === '')
                     this.input().val(val);
@@ -225,7 +252,7 @@ define(['jquery','./pubsub'], function ($,ps) {
                 return wc;
             }
         },
-        newInstance: function(id) {
+        newInstance: function (id) {
             if (id) {
                 for (var i = 0; i < webConsoles.length; ++i) {
                     if (webConsoles[i].id === id) {
