@@ -45,7 +45,7 @@ define(['jquery', './pubsub'], function ($, ps) {
             return $this;
         }
 
-        function isValidEvt(evt){
+        function isValidEvt(evt) {
             return evt.data && evt.data.length > 0;
         }
 
@@ -79,15 +79,17 @@ define(['jquery', './pubsub'], function ($, ps) {
             },
             onValidateUri: function (uri) {
                 return uri && uri.length > 5;
+            }, disconnect: function () {
+                ps.info('Attempting to close old connection.');
+                this.socket.close();
+                //socket.disconnect();
+                //sockets.remove(this.socket);
+                this.socket = null;
             },
             connect: function (aUri) {
                 if (this.connected()) {
-                    var socket = this.socket;
                     try {
-                        ps.info('Attempting to close old connection.');
-                        socket.close();
-                        socket.disconnect();
-                        sockets.remove(socket);
+                        this.disconnect();
                     } catch (e) {
                         ps.error(e);
                     }

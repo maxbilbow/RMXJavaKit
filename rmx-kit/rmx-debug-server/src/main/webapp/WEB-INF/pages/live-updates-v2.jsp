@@ -22,9 +22,10 @@
             color: #ffffff;
             padding: 5px;
             font-size: 75%;
-            font-family:"Courier New";
+            font-family: "Courier New";
             line-height: 1;
         }
+
         #wc-output p {
             line-height: 1;
         }
@@ -38,7 +39,7 @@
 <div class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="index.html">
+            <a class="brand" href="${contextPath}/">
                 Home
             </a>
             <ul class="nav">
@@ -47,53 +48,49 @@
     </div>
 </div>
 <div class="container">
-    <div class="hero-unit">
+    <div class="hero-unit row-fluid">
 
-            <div id="wc-output">
+        <div id="wc-output">
 
-            </div>
-
-        <br/>
-
-        <form class="form-group socket-config row-fluid" action="">
-            <div class="span6">
-            <label>
-                Message:
-            </label>
-            <input type="text" id="wc-input" value="/help">
-            <label>
-                 On Socket:
-            </label>
-            <select id="uri-options">
-                <c:forEach items="${hostNames}" var="host">
-                    <option>${host}</option>
-                </c:forEach>
-            </select>
-            <input id="get-uri" type="text" value="ws://">
-            </div>
-
-            <div class="span6 debug-level">
-                <label>Debug Level</label>
-                <input type="radio" name="debug-level" value="pubsub-info" checked>Info<br/>
-                <input type="radio" name="debug-level" value="pubsub-warn">Warn<br/>
-                <input type="radio" name="debug-level" value="pubsub-error">Error<br/>
-                <input type="radio" name="debug-level" value="false">None<br/>
-            </div>
-        </form>
-
-        <div class="form-group">
-            <input hidden="true" id="username" value="root"/>
-
-            <input hidden="true" id="password" value="password"/>
         </div>
+    </div>
 
-        <div id="openSocket" class="btn btn-primary" >Open Socket</div>
-        <div id="sendButton" class="btn btn-primary">Send</div>
-        <div id="closeSocket" class="btn btn-primary">Disconnect</div>
+    <div class="hero-unit row-fluid">
+        <form class="form-group socket-config" action="">
+            <div class="row-fluid">
+                <div class="span6">
+                    <label>
+                        Message:
+                    </label>
+                    <input type="text" id="wc-input" value="/help">
+                    <label>
+                        On Socket:
+                    </label>
+                    <select id="uri-options">
+                        <c:forEach items="${hostNames}" var="host">
+                            <option>${host}</option>
+                        </c:forEach>
+                    </select>
+                    <input id="get-uri" type="text" value="ws://">
+                </div>
+
+                <div class="span6 debug-level">
+                    <label>Debug Level</label>
+                    <input type="radio" name="debug-level" value="debug-info" checked>Info<br/>
+                    <input type="radio" name="debug-level" value="debug-warning">Warn<br/>
+                    <input type="radio" name="debug-level" value="debug-error">Error<br/>
+                    <input type="radio" name="debug-level" value="debug-none" >None<br/>
+                </div>
+
+            </div>
+            <%--<div class="row-fluid">--%>
+
+                <%--<div id="openSocket" class="btn btn-primary">Open Socket</div>--%>
+                <%--<div id="sendButton" class="btn btn-primary">Send</div>--%>
+                <%--<div id="closeSocket" class="btn btn-primary">Disconnect</div>--%>
+            <%--</div>--%>
     </div>
 </div>
-
-
 
 
 <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>

@@ -4,6 +4,7 @@
 define(['./pubsub'], function ($ps) {
 
 
+
     var LogDecoder = function () {
         function tryParseJSON(data, desc) {
             try {
@@ -31,34 +32,33 @@ define(['./pubsub'], function ($ps) {
                 var result = '';
 
 
-                var color = "";//color: rgb(151, 253, 255)";
+                var color = 'rgb(151, 253, 255)';
                 if (log.logType)
                     switch (log.logType) {
                         case 'Warning':
-                            color = 'color: rgb(255, 147, 40)';
+                            color = 'rgb(255, 147, 40)';
                             break;
                         case 'Exception':
-                            color = 'color: rgb(255, 46, 42)';
+                            color = 'rgb(255, 46, 42)';
                             break;
                         case 'Info':
-                            color = 'color: rgb(73, 255, 114)';
+                            color = 'rgb(73, 255, 114)';
                             break;
                     }
                 var time = new Date(log.timeStamp),
                     h = time.getHours(), // 0-24 format
                     m = time.getMinutes();
-                result += (time = '' + h + ':' + m + ' >> ');
+                result += (time = '' + h + ':' + m + ' ');
 
-                if (log.sender) {
-                    result += '<strong>' + log.sender + ':</strong> ';
-                }
+                result += '<strong>' + (log.sender || '') + '</strong> >> ';
+
 
                 var spacer = '';
                 for (var i = 0; i < time.length + 4; ++i) {
                     spacer += '&nbsp;';
                 }
                 var msg = log.message.replace(/\n|<br>/gi, '<br/>' + spacer);
-                result += '<span style=' + color + ';">' +
+                result += '<span style="color: ' + color + ';">' +
                     msg + '</span>';//.replace('\n','<br/>');
                 return result;
             }

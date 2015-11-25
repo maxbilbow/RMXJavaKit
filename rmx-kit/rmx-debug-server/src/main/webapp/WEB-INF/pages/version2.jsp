@@ -60,7 +60,7 @@
 
 <div class="container">
     <h2>${status}</h2>
-    <p><a href="live.html">Live Updates</a> </p>
+    <p><a href="live/">Live Updates</a> </p>
 
     <div class="hero-unit">
         <form action="#" name="f" method="post">

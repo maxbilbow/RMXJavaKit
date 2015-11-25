@@ -5,27 +5,28 @@ define(function () {
     var cache = {};
 
     function toStack(e) {
-        return e.stack ? e.stack + ' >> ' + e : e;
+        return e;//e.stack ? e.stack + ' >> ' + e : e;
     }
     return (function($this){
         $this.sub($this.ERROR,console.error);
         return $this;
     })({
-        INFO: 'pubsub-info', WARN : 'pubsub-warn', ERROR : 'pubsub-error',
+        INFO: 'debug-info', WARN : 'debug-warning', ERROR : 'debug-error', NONE:'debug-none',
         info:function(msg,e) {
             console.log(msg,e || '');
-            this.pub(this.INFO,toStack(msg),e);
+            this.pub(this.INFO,msg,e);
         },
         warn:function(msg,e) {
-            console.warn(msg,e || '');
-            this.pub(this.WARN,toStack(msg),e);
+            console.warn(msg,e);
+            this.pub(this.WARN,msg,e);
         },
         error:function(msg,e) {
-
-            console.error(msg,e || '');
-            this.pub(this.ERROR,toStack(msg),e);
+            console.error(arguments);
+            this.pub(this.ERROR,msg,e);
         },
         pub: function (id) {
+            if (id===this.NONE)
+                 return this;
             var args = [].slice.call(arguments, 1);
 
             if (!cache[id]) {
@@ -38,10 +39,17 @@ define(function () {
             }
 
             for (var i = 0, il = cache[id].callbacks.length; i < il; i++) {
-                cache[id].callbacks[i].apply(null, args);
+                try {
+                    cache[id].callbacks[i].apply(null, args);
+                } catch (e){
+                    console.error(e);
+                }
             }
+            return this;
         },
         sub: function (id, fn) {
+            if (id===this.NONE)
+                return this;
             if (!cache[id]) {
                 cache[id] = {
                     callbacks: [fn],

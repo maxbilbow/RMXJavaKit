@@ -15,7 +15,7 @@ import java.util.Arrays;
 @Controller
 public class LiveUpdatesController {
 
-    @RequestMapping(value = "live", method = RequestMethod.GET)
+    @RequestMapping(value = "live/old", method = RequestMethod.GET)
     public String get(ModelMap model, HttpServletRequest request)
     {
 
@@ -34,11 +34,16 @@ public class LiveUpdatesController {
         return "live-updates";
     }
 
-    @RequestMapping(value = "/live/v2", method = RequestMethod.GET)
+    @RequestMapping(value = "/live/index", method = RequestMethod.GET)
     public String getV2(ModelMap model, HttpServletRequest request)
     {
         get(model,request);
         model.addAttribute("contextPath",request.getContextPath());
         return "live-updates-v2";
+    }
+
+    @RequestMapping(value = "/live", method = RequestMethod.GET)
+    public String getOriginal(ModelMap model,HttpServletRequest request){
+        return "redirect:live/index.html";
     }
 }
