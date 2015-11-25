@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,8 +119,8 @@
           <file leaf-file-name="client-terminal.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.44402984">
-                  <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+                <state vertical-scroll-proportion="0.8880597">
+                  <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -1992,13 +1990,7 @@
       <workItem from="1448023366711" duration="19092000" />
       <workItem from="1448269774368" duration="27457000" />
       <workItem from="1448368895741" duration="28328000" />
-      <workItem from="1448440440112" duration="18748000" />
-    </task>
-    <task id="LOCAL-00008" summary="Up to date with persistence, thread tools and new debug classes">
-      <created>1444989437725</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1444989437725</updated>
+      <workItem from="1448440440112" duration="19551000" />
     </task>
     <task id="LOCAL-00009" summary="rmx-core, rmx-debug, rmx-persistence and rmx-multithread-toolkit now build to jars using maven">
       <created>1445000193258</created>
@@ -2288,7 +2280,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448454921050</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="can now add custom function thru terminal">
+      <created>1448463068026</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1448463068026</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2324,7 +2322,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354699000" />
+    <option name="totallyTimeSpent" value="355502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -2376,7 +2374,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="WebBugger now accepts logs from Rabbit Queue" />
     <MESSAGE value="general improvements" />
     <MESSAGE value="general improvements to debugger" />
     <MESSAGE value="Refinded RabbitMQ webDebug server" />
@@ -2401,7 +2398,8 @@
     <MESSAGE value="new modulised websocket js" />
     <MESSAGE value="much better visually and modulised" />
     <MESSAGE value="Sorted. WS console can now draw itself in an empty html file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted. WS console can now draw itself in an empty html file." />
+    <MESSAGE value="can now add custom function thru terminal" />
+    <option name="LAST_COMMIT_MESSAGE" value="can now add custom function thru terminal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2848,8 +2846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44402984">
-          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.8880597">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
           <folding />
         </state>
       </provider>

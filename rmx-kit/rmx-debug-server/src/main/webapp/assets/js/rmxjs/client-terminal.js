@@ -28,7 +28,7 @@ define(['./pubsub'],function ($ps) {
                 terminal.console.log(txt, 'NEW FUNC: ');
                 computers[name] = [function (cmd,txt,terminal) {
                     try {
-                        txt = new Function('cmd','txt','terminal',response)(cmd,txt,terminal);
+                        txt = new Function('args','text','$this',response)(cmd.splice(1),txt,terminal.console);
                     } catch (e) {
                         txt = response + ': ' + e;
                     }
@@ -37,8 +37,9 @@ define(['./pubsub'],function ($ps) {
                     return true;
                 },desc];
                 return true;
-            },'Create a new function. parameters are Array cmd, String txt, Terminal terminal.' +
-            '\n    e.g. "/func test return \'IT WORKED! \' + txt;"']
+            },'Create a new js function. parameters are Array args, String text, WebConsole $this.' +
+            '\n    e.g. "/func testA return \'IT WORKED!  \' + args.length + \' words in: \' + text;"' +
+            '\n         "/func testB $this.log(\'IT WORKED!  \' + args.length + \' words in: \' + text);"']
         };
 
         return {
