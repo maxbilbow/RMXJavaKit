@@ -4,6 +4,31 @@
 define(['jquery','./pubsub'], function ($,ps) {
     var webConsoles = [];
 
+    var WebConsoleView = function() {
+        var view =  $('.web-console');
+        if (view)
+            return view;
+        //else append view to body
+        view = $(document.createElement('div'));
+
+        view.addClass('container')
+            .addClass('web-console')
+            .append(
+                $(document.createElement('div'))
+                    .addClass('hero-unit')
+                    .append(
+                        $(document.createElement('div'))
+                            .addClass('wc-output')
+                    ).append(
+                        $(document.createElement('div'))
+                            .addClass('wc-input').addClass('row-fluid')
+
+                )
+                )
+            )
+
+    }
+
     var WebConsole = function (inputField, outputField) {
         var history = [], sentHistory = [],
             fwdHistory = [],
@@ -14,10 +39,11 @@ define(['jquery','./pubsub'], function ($,ps) {
         var last = '';
         var input, output;
 
+        var webConsole = new WebConsoleView();
 
         return (function ($this) {
             output = outputField || document.getElementById('wc-output')
-            $this.input(inputField || $('input#wc-input'));
+            $this.input(inputField || $('.wc-input .wc-message'));
             $this.onValidate(function () {
                 if ($this.inputText().length == 0) {
                     return 'Message cannot be empty!';
@@ -35,6 +61,9 @@ define(['jquery','./pubsub'], function ($,ps) {
                 if ($this.debugLevel && $this.debugLevel !== 'false'){
                     $this.error(msg);
                 }
+            });
+            $('.web-console .wc-send').click(function(){
+               $this.submit();
             });
             return $this;
         })({

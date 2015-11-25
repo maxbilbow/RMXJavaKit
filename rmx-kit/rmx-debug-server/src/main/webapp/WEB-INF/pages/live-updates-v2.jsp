@@ -16,7 +16,7 @@
     <style>
         #wc-output {
             min-height: 200px;
-            max-height: 600px;
+            max-height: 400px;
             overflow-y: scroll;
             background-color: #000000;
             color: #ffffff;
@@ -24,6 +24,7 @@
             font-size: 75%;
             font-family: "Courier New";
             line-height: 1;
+            margin-bottom: 10px;
         }
 
         #wc-output p {
@@ -47,49 +48,43 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="hero-unit row-fluid">
+<div class="container web-console">
+    <div class="hero-unit ">
 
         <div id="wc-output">
 
         </div>
+        <div class="wc-input row-fluid">
+            <input type="text" class="span10 wc-message" value="/help">
+            <input class="btn btn-primary span2 wc-send" value="Send">
+        </div>
     </div>
 
-    <div class="hero-unit row-fluid">
-        <form class="form-group socket-config" action="">
-            <div class="row-fluid">
-                <div class="span6">
-                    <label>
-                        Message:
-                    </label>
-                    <input type="text" id="wc-input" value="/help">
-                    <label>
-                        On Socket:
-                    </label>
-                    <select id="uri-options">
-                        <c:forEach items="${hostNames}" var="host">
-                            <option>${host}</option>
-                        </c:forEach>
-                    </select>
-                    <input id="get-uri" type="text" value="ws://">
-                </div>
+    <div class="hero-unit">
+        <div class="row-fluid">
+            <div class="span6 socket-config ">
 
-                <div class="span6 debug-level">
-                    <label>Debug Level</label>
-                    <input type="radio" name="debug-level" value="debug-info" checked>Info<br/>
-                    <input type="radio" name="debug-level" value="debug-warning">Warn<br/>
-                    <input type="radio" name="debug-level" value="debug-error">Error<br/>
-                    <input type="radio" name="debug-level" value="debug-none" >None<br/>
-                </div>
-
+                <label>
+                    On Socket:
+                </label>
+                <select id="uri-options">
+                    <c:forEach items="${hostNames}" var="host">
+                        <option>${host}</option>
+                    </c:forEach>
+                </select>
+                <input id="get-uri" type="text" value="ws://">
             </div>
-            <%--<div class="row-fluid">--%>
 
-                <%--<div id="openSocket" class="btn btn-primary">Open Socket</div>--%>
-                <%--<div id="sendButton" class="btn btn-primary">Send</div>--%>
-                <%--<div id="closeSocket" class="btn btn-primary">Disconnect</div>--%>
-            <%--</div>--%>
+            <div class="span6 debug-level">
+                <label>Debug Level</label>
+                <input type="radio" name="debug-level" value="debug-info" checked>Info<br/>
+                <input type="radio" name="debug-level" value="debug-warning">Warn<br/>
+                <input type="radio" name="debug-level" value="debug-error">Error<br/>
+                <input type="radio" name="debug-level" value="debug-none">None
+            </div>
+        </div>
     </div>
+
 </div>
 
 
