@@ -4,19 +4,11 @@
     <option name="SCOPE_TYPE" value="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="can now add custom function thru terminal">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/GenericController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/console.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/web-console.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/console.js" />
+    <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/JSPLogController.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/JSPLogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/live-updates-v2.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/live-updates-v2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/rmx-sockets.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/rmx-sockets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,18 +97,18 @@
       <file leaf-file-name="live-updates-v2.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
+            <state vertical-scroll-proportion="-3.7692308">
               <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web-console.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web-console.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="195" column="42" selection-start-line="195" selection-start-column="42" selection-end-line="195" selection-end-column="42" />
+            <state vertical-scroll-proportion="1.0695364">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
               </folding>
@@ -124,15 +116,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log-decoder.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log-decoder.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="37" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
               <folding>
                 <element signature="e#0#44#0" expanded="false" />
-                <marker date="1448440620359" expanded="true" signature="2098:2119" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client-terminal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,7 +151,7 @@
       <file leaf-file-name="console.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/console.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
+            <state vertical-scroll-proportion="-5.8846154">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
               <folding />
             </state>
@@ -150,17 +161,17 @@
       <file leaf-file-name="version2.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.3846154">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="error.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73333335">
+            <state vertical-scroll-proportion="-25.5">
               <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding />
             </state>
@@ -172,29 +183,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/console.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9824562">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding>
-                <element signature="e#0#44#0" expanded="false" />
+                <element signature="imports" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rmx-sockets.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/rmx-sockets.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0">
-              <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -241,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/control/JSPLogController.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/server/service/LogCallback.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates.jsp" />
@@ -276,11 +266,9 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/LiveUpdatesController.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/socket.io.js" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/cookies.js" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/DebugServerTerminal.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/pubsub.js" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log-decoder.js" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/web-console.css" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/GenericController.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/live-updates-v2.js" />
@@ -292,6 +280,9 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/JSPLogController.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/main.js" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js" />
       </list>
     </option>
   </component>
@@ -573,74 +564,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-debug-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-debug-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -661,6 +587,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1831,13 +1758,8 @@
       <workItem from="1448269774368" duration="27457000" />
       <workItem from="1448368895741" duration="28328000" />
       <workItem from="1448440440112" duration="19785000" />
-      <workItem from="1448466457095" duration="5591000" />
-    </task>
-    <task id="LOCAL-00010" summary="Need to pom the rest....">
-      <created>1445012401469</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1445012401469</updated>
+      <workItem from="1448466457095" duration="5783000" />
+      <workItem from="1448533896084" duration="2887000" />
     </task>
     <task id="LOCAL-00011" summary="Simplified Bugger.longAndPrint to print()">
       <created>1445252624982</created>
@@ -2127,7 +2049,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448463859495</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="can now add custom function thru terminal">
+      <created>1448472064776</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1448472064776</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2163,7 +2091,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361327000" />
+    <option name="totallyTimeSpent" value="364406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -2172,14 +2100,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35117772" sideWeight="0.49307036" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.521855" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3326226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3326226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14668094" sideWeight="0.48987207" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3961456" sideWeight="0.478145" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3961456" sideWeight="0.478145" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.49427754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20415778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2196,6 +2123,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35117772" sideWeight="0.49307036" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2272,13 +2200,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../java/jdk1.8.0_66/src.zip!/java/lang/CharSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1678201">
-          <caret line="58" column="26" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../java/jdk1.8.0_66/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3615917">
@@ -2524,16 +2445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/pubsub.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2566,7 +2477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4183223">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2591,32 +2501,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="195" column="42" selection-start-line="195" selection-start-column="42" selection-end-line="195" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/rmx-sockets.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding />
         </state>
@@ -2635,7 +2527,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/console.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9824562">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="e#0#44#0" expanded="false" />
@@ -2653,33 +2545,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/console.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/control/JSPLogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/version2.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.3846154">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
           <folding />
         </state>
@@ -2687,9 +2565,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/css/error.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73333335">
+        <state vertical-scroll-proportion="-25.5">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/console.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="36" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages/live-updates-v2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7692308">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/client-terminal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/assets/js/rmxjs/web-console.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0695364">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#44#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

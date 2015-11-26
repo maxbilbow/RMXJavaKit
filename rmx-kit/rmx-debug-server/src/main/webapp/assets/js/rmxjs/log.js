@@ -3,6 +3,7 @@
  */
 define(['./cookies','./pubsub'],function($c,$ps){
 
+
    var Log = function(msg){
 
        var user = $c.get('username');
@@ -22,5 +23,6 @@ define(['./cookies','./pubsub'],function($c,$ps){
            sender: user
        });
    }
+
     return Log;
 });
