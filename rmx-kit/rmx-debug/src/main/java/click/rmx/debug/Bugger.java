@@ -4,23 +4,31 @@ import click.rmx.debug.logger.Logger;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
 import java.nio.file.Paths;
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 import static java.nio.file.Files.createDirectories;
 
 
-public class Bugger extends RMXDebugInstance {
+public class Bugger implements RMXDebugInstance {
+	public static Bugger getInstance() {
+		return instance != null ? instance : (instance = new Bugger());
+	}
 
+	public static final int
+			DEBUG_NONE = -1,
+			DEBUG_INFO = 2,
+			DEBUG_WARNING = 1,
+			DEBUG_ERROR = 0;
+	private int debugLevel = DEBUG_INFO;
 	private boolean printLogOnExit = false;
 	private boolean printLogImmediately = true;
+	private static Bugger instance;
+
+
 	private Logger logger;
 
 	public boolean willUpdateLogFile() {
@@ -53,151 +61,18 @@ public class Bugger extends RMXDebugInstance {
 		});
 	}
 
-	public static boolean canBeWrittenAsList(Object object)
-	{
-		return object != null && (
-				object.getClass().isArray() ||
-						Enumeration.class.isAssignableFrom(object.getClass()) ||
-						Iterable.class.isAssignableFrom(object.getClass()) ||
-						Map.class.isAssignableFrom(object.getClass())
-		);
-
-	}
-
-
-	public static final String
-			DECLARED_MEMBERS_ONLY = "declared",
-			SHOW_ALL_MEMBERS = "verbose";
-	public static String inspectObject(Object object, String... args)
-	{
-		String info = object.getClass().getName() +
-				"\n==========================";
-		boolean fullList = false;
-		if (canBeWrittenAsList(object)) {
-			info = "\n"+ stringify(object);
-			fullList = false;
-		}
-		for (String arg : args) {
-			switch (arg){
-				case "v":
-				case SHOW_ALL_MEMBERS:
-					fullList = true;
-					break;
-				case DECLARED_MEMBERS_ONLY:
-				case "d":
-				case "compact":
-					fullList = false;
-					break;
-
-			}
-		}
-
-		info += "\n" + (fullList ? "Showing All Members" : "Showing Declared Methods") + ":";
-		Method[] methods = fullList ? object.getClass().getMethods() : object.getClass().getDeclaredMethods();
-		for (Method m : methods) {
-			Parameter[] parameters = m.getParameters();//Types();
-			String params = "";
-			if (parameters.length > 0) {
-				params = parameters[0].getClass().getSimpleName();// + " " + parameters[0].getName();
-				for (Parameter p : parameters)
-					params += ", "+p.getClass().getSimpleName();// + " " + p.getName();
-			}
-			info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "("+params+")";
-			if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
-				try {
-					info += " == " + stringify(m.invoke(object));
-				} catch (Exception e) {
-					info += " != FAIL: " + e;
-				}
-		}
-		info += "\nFields:";
-		Field[] fields = object.getClass().getFields();
-		for (Field f: fields) {
-			info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
-		}
-		info += "\nAnnotations:";
-		Annotation[] annotations = object.getClass().getAnnotations();
-		for (Annotation a: annotations) {
-			info += "\n --(a) " + a.getClass().getSimpleName();
-		}
-		return info;
-	}
-
-
-
-	public static String stringify(Object array)
-	{
-		if (array == null)
-			return "NULL";
-
-		if (array.getClass().isArray()) {
-			String arrString = "{ " + (Array.getLength(array) > 0 ? String.valueOf(Array.get(array, 0)) : "");
-			for (int i = 1; i < Array.getLength(array); ++i)
-				arrString += ", " + String.valueOf(Array.get(array, i));
-			arrString += " }";
-			return arrString;
-		}
-
-
-		if (Enumeration.class.isAssignableFrom(array.getClass())) {
-			Enumeration e = (Enumeration) array;
-			String arrString = "{ " + (e.hasMoreElements() ? e.nextElement() : "");
-			while (e.hasMoreElements())
-				arrString += ", " + String.valueOf(e.nextElement());
-			arrString += " }";
-			return arrString;
-		}
-
-		if (Iterable.class.isAssignableFrom(array.getClass())) {
-			Iterable i = (Iterable) array;
-			final String[] arrString = {"{ "};
-			i.forEach(o ->
-					arrString[0] += String.valueOf(o) + ", "
-			);
-			return arrString[0].substring(0,arrString[0].length()-2) + " }";
-		}
-		return String.valueOf(array);
-	}
-
 	public static String timestamp()
 	{
 		return DateTimeFormatter.ISO_INSTANT
 				.format(Instant.now()).split("T")[1];//.split(".")[0];
 	}
-	/**
-	 * @Depricated Use @{link:print} instead
-	 * @param o
-	 * @param keep
-	 */
-	@Deprecated
-	public static void logAndPrint(Object o, boolean keep) {
-		print(o,keep);
-	}
-
-	/**
-	 * Print but do not store output in log
-	 * @param o
-	 */
-	public static void print(Object o)
-	{
-		if (getInstance().printLogOnExit)
-			getInstance().logMessage(o);
-		if (getInstance().printLogImmediately)
-			Tests.note(String.valueOf(o),1);
-	}
-	public static void print(Object o, boolean andLog) {
-		if (getInstance().printLogOnExit && andLog)
-			getInstance().logMessage(o);
-		if (getInstance().printLogImmediately)
-			Tests.note(String.valueOf(o),1);
-	}
-
-	
-	public static void log(Object o) {
-		getInstance().logMessage(o);
-	}
 
 	int count = 1;
+
+	@Deprecated
+	static final String
+			DECLARED_MEMBERS_ONLY = "declared",
+			SHOW_ALL_MEMBERS = "verbose";
 
 	public static void PrintTrace() {
 		StackTraceElement[] trace = Thread.currentThread().getStackTrace();//[2];
@@ -209,7 +84,7 @@ public class Bugger extends RMXDebugInstance {
 		}
 	}
 	
-	private String logMessage(Object o) {
+	String logMessage(Object o) {
 		if (logger != null)
 			logger.logMessage(o);
 		
@@ -234,6 +109,66 @@ public class Bugger extends RMXDebugInstance {
 		return newLog;
 	}
 
+	void info(Object o, int depth)
+	{
+		if (debugLevel < DEBUG_INFO)
+			return;
+		final String log = "INFO: " + String.valueOf(o);
+		logMessage(log);
+		print(log,depth + 1);
+	}
+
+	void warn(Object o, int depth)
+	{
+		if (debugLevel < DEBUG_WARNING)
+			return;
+		final String log = "WARNING: " + String.valueOf(o);
+		logMessage(log);
+		print(log,depth + 1);
+	}
+
+	void error(Object o, int depth)
+	{
+		if (debugLevel == DEBUG_NONE)
+			return;
+		final String log = "ERROR: " + String.valueOf(o);
+		logMessage(log);
+		print(log,depth + 1);
+	}
+
+
+	public void info(Object o)
+	{
+		info(o,1);
+	}
+
+	public void warn(Object o)
+	{
+		warn(o,1);
+	}
+
+	public void error(Object o)
+	{
+		error(o,1);
+	}
+
+	/**
+	 * Print but do not store output in log
+	 * @param o
+	 */
+	public static void print(Object o)
+	{
+		Tests.note(String.valueOf(o),1);
+	}
+
+	/**
+	 * Print but do not store output in log
+	 * @param o
+	 */
+	private void print(Object o, int depth)
+	{
+		Tests.note(String.valueOf(o),1 + depth);
+	}
 
 	public void printAll() {
 		String systemLog = "====== BEGIN LOG ======\n";
@@ -266,22 +201,7 @@ public class Bugger extends RMXDebugInstance {
 			}
 		}
 	}
-	
-	public static void test (String[] args) {
-//		Bugger b = Bugger.getInstance();
-		log("Hello!");
-//		Print(true);
-		
-		log("Hello again!");
-		print("My Friends!", true); print("My Friends!", true);
 
-	
-	}
-
-	public static void main (String [] args)
-	{
-		Bugger.log("Hello!");
-	}
 
 	public boolean willPrintLogImmediately() {
 		return printLogImmediately;
@@ -289,5 +209,61 @@ public class Bugger extends RMXDebugInstance {
 
 	public void setPrintLogImmediately(boolean printLogImmediately) {
 		this.printLogImmediately = printLogImmediately;
+	}
+
+
+	/**
+	 *
+	 * @param object
+	 * @param args
+	 * @return
+	 */
+	@Deprecated
+	public static String inspectObject(Object object, String... args)
+	{
+		final ObjectInspector inspector = new ObjectInspector();
+		return inspector.inspectObject(object,args);
+	}
+
+
+	/**
+	 * Use {@Link ObjectInspector#stringify()} instead
+	 * @param array
+	 * @return
+	 */
+	@Deprecated
+	public static String stringify(Object array)
+	{
+		final ObjectInspector inspector = new ObjectInspector();
+		return inspector.stringify(array);
+	}
+
+
+	/**
+	 * @Depricated Use @{link:print} instead
+	 * @param o
+	 * @param keep
+	 */
+	@Deprecated
+	public static void logAndPrint(Object o, boolean keep) {
+		print(o,keep);
+	}
+
+	@Deprecated
+	public static void print(Object o, boolean andLog) {
+		final Bugger instance = Bugger.getInstance();
+		if (instance.willPrintLogOnExit() && andLog)
+			instance.logMessage(o);
+		if (instance.willPrintLogImmediately())
+			Tests.note(String.valueOf(o),1);
+	}
+
+	@Deprecated
+	public static void log(Object o) {
+		Bugger.getInstance().logMessage(o);
+	}
+
+	public void setDebugLevel(int debugLevel) {
+		this.debugLevel = debugLevel;
 	}
 }
