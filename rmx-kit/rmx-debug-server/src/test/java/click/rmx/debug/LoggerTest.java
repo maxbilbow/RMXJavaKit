@@ -11,20 +11,19 @@ public class LoggerTest implements Logger {
 
     Logger logger = new Logger();
 
-
     @Test
     public void testLogInfo() throws Exception {
-        logInfo("Line 22: testLogInfo()");
+        logInfo("Line 16: testLogInfo()");
     }
 
     @Test
     public void testLogWarning() throws Exception {
-        logInfo("Line 27: testLogWarning()");
+        logInfo("Line 21: testLogWarning()");
     }
 
     @Test
     public void testLogError() throws Exception {
-        logError("Line 32: testLogError()");
+        logError("Line 26: testLogError()");
     }
 
     private void printAllLevels()
@@ -61,6 +60,5 @@ public class LoggerTest implements Logger {
         printAllLevels();
         System.out.println();
     }
-
 
 }
