@@ -7,29 +7,26 @@ import org.junit.Test;
  */
 public class LoggerTest implements Logger {
 
-    class Logger implements click.rmx.debug.Logger {}
-
-    Logger logger = new Logger();
-
     @Test
     public void testLogInfo() throws Exception {
-        logInfo("Line 16: testLogInfo()");
+        logInfo("Line 12: testLogInfo()");
     }
 
     @Test
     public void testLogWarning() throws Exception {
-        logInfo("Line 21: testLogWarning()");
+        logInfo("Line 17: testLogWarning()");
     }
 
     @Test
     public void testLogError() throws Exception {
-        logError("Line 26: testLogError()");
+        logError("Line 22: testLogError()");
     }
 
     private void printAllLevels()
     {
         logInfo(); logWarning(); logError();
     }
+
     @Test
     public void testLevels() throws Exception {
 
