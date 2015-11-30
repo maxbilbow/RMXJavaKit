@@ -33,27 +33,27 @@ public class LoggerTest implements Logger {
         System.out.println();
 
         logger().setDebugLevel(Bugger.DEBUG_INFO);
-        System.out.println("LEVEL: INFO");
+        System.out.println("LEVEL: INFO - Expect 3 lines");
         printAllLevels();
         System.out.println();
 
-       logger().setDebugLevel(Bugger.DEBUG_WARNING);
-        System.out.println("LEVEL: WARNING");
+        logger().setDebugLevel(Bugger.DEBUG_WARNING);
+        System.out.println("LEVEL: WARNING - Expect 2 lines");
         printAllLevels();
         System.out.println();
 
         logger().setDebugLevel(Bugger.DEBUG_ERROR);
-        System.out.println("LEVEL: ERROR");
+        System.out.println("LEVEL: ERROR - Expect 1 line");
         printAllLevels();
         System.out.println();
 
         logger().setDebugLevel(Bugger.DEBUG_NONE);
-        System.out.println("LEVEL: NONE");
+        System.out.println("LEVEL: NONE - Expect 0 lines");
         printAllLevels();
         System.out.println();
 
         logger().setDebugLevel(Bugger.DEBUG_INFO + 1);
-        System.out.println("LEVEL: CUSTOM");
+        System.out.println("LEVEL: CUSTOM - Expect 3 lines");
         printAllLevels();
         System.out.println();
     }

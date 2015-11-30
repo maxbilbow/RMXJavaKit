@@ -51,8 +51,16 @@ public class Bugger implements RMXDebugInstance {
 	private final LinkedList<String> logs = new LinkedList<>();
 
 
-	public Bugger(){
-        Bugger b = this;
+	public Bugger()
+	{
+		logFilePath = null;
+	}
+
+	private final String logFilePath;
+
+	public Bugger(String logFilePath){
+		this.logFilePath = logFilePath;
+        final Bugger b = this;
 		Runtime.getRuntime().addShutdownHook(new Thread() {
                     @Override
 		    public void run() {
@@ -180,10 +188,10 @@ public class Bugger implements RMXDebugInstance {
 		systemLog += "====== END OF LOG ======\n\n"; //= systemLog.substring(0, systemLog.length()) +
 		if (printLogOnExit)
 			System.out.println(systemLog);
-		if (updateLogFile) {
+		if (logFilePath != null) {
 			FileWriter writer = null;
 			try {
-				createDirectories(Paths.get("bugger"));
+				createDirectories(Paths.get(logFilePath));
 				writer = new FileWriter("rmx_bugger" + ".log", true);
 				systemLog = systemLog.replace("\n", "\r\n");
 				writer.write(systemLog);
