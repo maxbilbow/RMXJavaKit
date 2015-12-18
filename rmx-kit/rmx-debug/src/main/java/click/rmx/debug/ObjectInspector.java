@@ -47,6 +47,7 @@ public class ObjectInspector {
                 case DECLARED_MEMBERS_ONLY:
                 case "d":
                 case "compact":
+                case "short":
                     fullList = false;
                     break;
 
