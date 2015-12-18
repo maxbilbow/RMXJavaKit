@@ -121,7 +121,7 @@ public class Bugger implements RMXDebugInstance {
 	{
 		if (debugLevel < DEBUG_INFO)
 			return;
-		final String log = "INFO: " + String.valueOf(o);
+		final String log = String.valueOf(o);
 		logMessage(log);
 		System.out.println(
 				makeLog(log,depth + 1, "INFO: ")
@@ -143,7 +143,7 @@ public class Bugger implements RMXDebugInstance {
 	{
 		if (debugLevel == DEBUG_NONE)
 			return;
-		final String log = "ERROR: " + String.valueOf(o);
+		final String log = String.valueOf(o);
 		logMessage(log);
 		System.err.println(
 				makeLog(log,depth + 1, "ERROR: ")
@@ -190,7 +190,7 @@ public class Bugger implements RMXDebugInstance {
 	 */
 	private String makeLog(Object o, int depth, String prefix)
 	{
-		return Tests.getNote(prefix + String.valueOf(o),1 + depth);
+		return prefix + Tests.getNote(String.valueOf(o),1 + depth);
 	}
 
 	public void printAll() {
