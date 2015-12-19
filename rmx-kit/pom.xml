@@ -6,15 +6,16 @@
 
     <groupId>click.rmx</groupId>
     <artifactId>rmx-kit</artifactId>
-    <version>0.1</version>
+    <version>0.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
         <javax-servlet.version>3.1.0</javax-servlet.version>
         <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
-        <spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
-        <spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
-        <spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>
+        <spring-boot.version>1.2.7.RELEASE</spring-boot.version>
+        <!--<spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>-->
+        <!--<spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>-->
+        <!--<spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>-->
         <commons-logging.version>1.2</commons-logging.version>
         <javax.json-api.version>1.0</javax.json-api.version>
         <jackson-mapper-asl.version>1.9.13</jackson-mapper-asl.version>
@@ -22,8 +23,8 @@
         <javax.websocket-api.version>1.1</javax.websocket-api.version>
         <java.version>1.8</java.version>
         <rmx.version>${project.version}</rmx.version>
-        <rabbit-amqp-client.version>3.5.5</rabbit-amqp-client.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
+        <rabbitmq.version>3.5.5</rabbitmq.version>
     </properties>
 
     <parent>
@@ -41,11 +42,11 @@
     <module>rmx-debug</module>
     <module>rmx-debug-server</module>
 
-    <module>rmx-core</module>
-    <module>rmx-math</module>
+    <!--<module>rmx-core</module>-->
+    <!--<module>rmx-math</module>-->
 
     <!--<module>rmx-persistence</module>-->
-    <module>rmx-multithread-toolkit</module>
+    <!--<module>rmx-multithread-toolkit</module>-->
 
 </modules>
 
@@ -59,7 +60,7 @@
     </dependencies>
 
     <build>
-        <finalName>rmx-kit</finalName>
+        <finalName>rmx-kit-${project.version}</finalName>
         <plugins>
             <!-- Set a JDK compiler level -->
             <plugin>

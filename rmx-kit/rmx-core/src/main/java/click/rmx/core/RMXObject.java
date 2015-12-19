@@ -2,7 +2,7 @@ package click.rmx.core;
 
 import click.rmx.debug.Bugger;
 
-import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -402,6 +402,36 @@ public class RMXObject implements IRMXObject {
 		return s;
 
 	}
-	
-	
+
+	/**
+	 * Inspect properties - Only works for public fields and those stored in the hashmap
+	 * @param object
+	 * @param property null returns a list of available properties
+     * @return
+     */
+	public static String inspectProperty(RMXObject object, String property, String... args) {
+		String result = "";
+		Object inspection = null;
+		if (property == null || property.length() == 0)
+			result += "Known available objects: " + Bugger.stringify(object.values.keySet());
+		else {
+			if (object.values.containsKey(property))
+				inspection = object.values.get(property);
+			else {
+				for (Field field : object.getClass().getFields())
+					if (field.getName().toLowerCase().equals(property))
+						try {
+							inspection = field.get(object);
+							break;
+						} catch (Exception e) {
+							result += e.getLocalizedMessage() + "! >> ";
+						}
+				result += property + " cannot be inspected.";
+			}
+		}
+
+		if (inspection != null)
+			result += Bugger.inspectObject(inspection, args);
+		return result;
+	}
 }

@@ -29,24 +29,28 @@ public class Tests {
 	}
 
 	public static void todo() {
-		_note(null,0);
+		System.out.print(_note(null,0));
 	}
 
 	public static void note() {
-		_note("testing",0);
+		System.out.print(_note("testing",0));
 	}
 
 	public static void note(String s) {
-		_note(s,0);
+		System.out.print(_note(s,0));
 	}
 	public static void note(Object s) {
-		_note(s.toString(),0);
+		System.out.print(_note(s.toString(),0));
+	}
+
+	public static String getNote(String s, int depth) {
+		return _note(s,depth);
 	}
 
 	public static void note(String s, int depth) {
-		_note(s,depth);
+		System.out.print(_note(s,depth));
 	}
-	private static void _note(String s, int depth) {
+	private static String _note(String s, int depth) {
 		depth += 3;
 		if (s == null) {
 			s = "not yet implemented";
@@ -64,10 +68,10 @@ public class Tests {
 				log += ' ';
 		}
 		log += "=> " + s;			
-		System.out.println(log);
+		return log;
 	}
 
 	public static void success() {
-		_note("Success!",0);
+		System.out.print(_note("Success!",0));
 	}
 }

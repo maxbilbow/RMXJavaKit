@@ -23,7 +23,7 @@ public enum RMXError {
 	
 	private final String color;
 	private final boolean serious;
-	private RMXError(String color, boolean serious){
+	RMXError(String color, boolean serious){
 		this.color = color;
 		this.serious = serious;
 	}

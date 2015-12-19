@@ -1,4 +1,5 @@
-C:\ide\projects\rmx\RMXJavaKit\rmx-kit\rmx-debug-logger\src\main\java\click\rmx\debug\server\LogBuilder.java
-C:\ide\projects\rmx\RMXJavaKit\rmx-kit\rmx-debug-logger\src\main\java\click\rmx\debug\server\Logger.java
-C:\ide\projects\rmx\RMXJavaKit\rmx-kit\rmx-debug-logger\src\main\java\click\rmx\debug\server\RMQLogger.java
-C:\ide\projects\rmx\RMXJavaKit\rmx-kit\rmx-debug-logger\src\main\java\click\rmx\debug\server\WSLogger.java
+/Users/Max/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/Logger.java
+/Users/Max/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/WSLogger.java
+/Users/Max/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/RMQLogger.java
+/Users/Max/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/logger/LogBuilder.java
+/Users/Max/Gits/RMXJavaKit/rmx-kit/rmx-debug-logger/src/main/java/click/rmx/debug/cmd/Terminal.java

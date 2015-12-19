@@ -30,7 +30,7 @@
            </dependency>
        </dependencies>
        <build>
-              <finalName>rmx-core</finalName>
+              <finalName>rmx-core-${project.version}</finalName>
               <plugins>
                      <!-- Set a JDK compiler level -->
                      <plugin>

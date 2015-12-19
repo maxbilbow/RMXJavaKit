@@ -22,12 +22,17 @@ function useLibrary(lib) {
     return lib != null ? opt === lib : opt;
 }
 
-//function stayConnected(val) {
-//    if (val)
-//        $('#stayConnected').prop('checked', val);
-//    else
-//        return $('#stayConnected').prop('checked');
-//}
+
+var processKey = function(event) {
+    var key = event.keyCode;
+    switch (key) {
+        case 13:
+            sendMessage();
+            break;
+        default:
+            return;
+    }
+};
 
 function setConnected(connected) {
     updateUri();
@@ -53,13 +58,14 @@ function setConnected(connected) {
         $('div#sendButton').attr('disabled', 'disabled');
         //$('select#socketLibrary').removeAttr('disabled');
         $('input#chatBroker').removeAttr('disabled');
+        window.websocket = null;
         console.log('DISCONNECTED <<<');
     }
 
 }
 
 function getMessage() {
-    return $('textarea#sendMessage').val();
+    return $('#sendMessage').val();
 }
 
 function wsUri() {
@@ -101,10 +107,14 @@ function sendMessage() {
         switch (useLibrary()) {
             case socketLibs.socketIo:
                 if (window.websocket) {
-                    writeToScreen("SENT: " + message);
-                    websocket.send(message);
+                    writeToScreen('<span style="color: rgb(189, 204, 217);"><em>SENT: ' + message + '</em></span>');
+                    try {
+                        websocket.send(message);
+                    } catch (err) {
+                        writeErrToScreen(err);
+                    }
                 } else {
-                    console.log("NO CONNECTION!");
+                   writeErrToScreen("NO CONNECTION!");
                 }
                 break;
             case socketLibs.sockJs:
@@ -162,7 +172,7 @@ function connect(quietly) {
                     passcode: getPassword(),
                     persistent: true,
                     // additional header
-                    //'server-id': 'fjwa',
+                    //'logger-id': 'fjwa',
                     //'heart-beat':'30000,30000'
                 } : {};
                 stompClient.heartbeat.outgoing = 0;
@@ -224,7 +234,7 @@ function onClose(evt) {
     setConnected(false);
 }
 function onMessage(evt) {
-    writeToScreen(evt.data, '<span style="color: rgb(151, 253, 255);">RESPONSE:</span> ');
+    writeToScreen(evt.data, '<span style="color: rgb(151, 253, 255);"> >> </span> ');
     //websocket.close();
 }
 function onError(evt) {
@@ -240,25 +250,24 @@ function tryParseLog(data) {
         var result = '';
         var log = JSON.parse(data);
 
-        var color = "white";
+        var color = "rgb(151, 253, 255)";
         switch(log.logType) {
-            case 'Message':
-                color = 'rgb(151, 253, 255)';
-                break;
             case 'Warning':
                 color =  'rgb(255, 147, 40)';
                 break;
             case 'Exception':
                 color = 'rgb(255, 46, 42)';
                 break;
-
+            case 'Info':
+                color = 'rgb(73, 255, 114)';
+                break;
         }
-
 
         var time = new Date(log.timeStamp),
             h = time.getHours(), // 0-24 format
             m = time.getMinutes();
         result += (time = '' + h + ':' + m + ' >> ');
+        result += '<strong>' + log.sender + ':</strong> ';
 
         var spacer = '';
         for (var i=0;i<time.length + 4;++i) {
@@ -268,7 +277,7 @@ function tryParseLog(data) {
         result += '<span style="color: '+color+';">'+
             msg +'</span>';//.replace('\n','<br/>');
 
-        result += '<br/>&nbsp;&nbsp;&nbsp;>> SENDER: ' + log.sender;
+        //result += '<br/>&nbsp;&nbsp;&nbsp;>> SENDER: ' + log.sender;
 
         return result;
     }catch (e) {
@@ -345,7 +354,10 @@ function tryParse(data, prefix) {
     //if (result == false)
     //    result = tryParseList(data);
     if (result == false)
-        return (prefix ? prefix : '') + data;
+        if (data.length > 0)
+            return (prefix ? prefix : '') + data;
+        else
+            return '';
     else
         return result;//.replace('\n','<br/>');
 }
@@ -354,7 +366,8 @@ function writeToScreen(message, prefix) {
     var pre = document.createElement("p");
     pre.style.wordWrap = "break-word";
     pre.innerHTML = tryParse(message, prefix);
-    output.appendChild(pre);
+    if (pre.innerHTML.length > 0)
+        output.appendChild(pre);
     //console.log(message);
     try {
         output.scrollTop = output.scrollHeight;

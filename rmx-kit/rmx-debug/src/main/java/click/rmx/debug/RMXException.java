@@ -61,7 +61,7 @@ public class RMXException extends Exception {
 	 * @param depth use this if the Exception was declared in a deeper method than when the exception first occurred
 	 * @return
 	 */
-	static RMXException unexpected(Exception e, String message, int depth) {
+	public static RMXException unexpected(Exception e, String message, int depth) {
 		e.printStackTrace();
 		RMXException err = new RMXException(e, RMXError.Unexpected, getLocation(1 + depth));
 		err.addLog(message);
@@ -81,14 +81,13 @@ public class RMXException extends Exception {
 	 * @param depth use this if the Exception was declared in a deeper method than when the exception first occurred
 	 * @return
 	 */
-	static RMXException unexpected(Exception e, int depth)
+	public static RMXException unexpected(Exception e, int depth)
 	{
 		if (RMXException.class.isAssignableFrom(e.getClass()))
 			return (RMXException) e;
 		e.printStackTrace();
 		return new RMXException(e, RMXError.Unexpected, getLocation(1 + depth));
 	}
-
 
 	public static RMXException unexpected(Exception e)
 	{

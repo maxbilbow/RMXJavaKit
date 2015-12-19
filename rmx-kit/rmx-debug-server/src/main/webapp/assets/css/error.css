@@ -25,12 +25,12 @@
     overflow-x: auto;
 }
 
-#fjwa-errors {
+.fjwa-errors {
     background-color: #ffEEEE;
     border: 3px solid #ff0000;
 }
 
-#fjwa-log {
+.fjwa-log {
     background-color: #d3ffff;
     border: 3px solid #3189ff;
     padding: 8px;
