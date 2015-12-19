@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by Max on 25/10/2015.
  */
-@Repository
+@Repository("logRepository")
 public interface LogRepository extends JpaRepository<Log,Long> {
 //
     @Query("Select l from Log l where l.channel = 'debug.log'")

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -19,8 +20,8 @@ import javax.servlet.http.HttpServletRequest;
 public class LogController {
 
 
-    @Autowired
-    private LogService service;
+    @Resource
+    private LogService service;// = LogService.getInstance();
 
     @Autowired//(type = LogRepository.class)
     private LogRepository repository;

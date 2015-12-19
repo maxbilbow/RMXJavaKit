@@ -36,19 +36,25 @@ import static click.rmx.debug.Bugger.print;
 /**
  * Created by Max on 25/10/2015.
  */
-@Service
+@Service("logService")
 public class LogService {
     private static final String DEBUG_EXCHANGE_NAME = "debug_topic_exchange";
     private static LogService instance;
     private Connection connection;
     private Channel channel;
 
+    @Resource(name = "logRepository")//(type = LogRepository.class)
+    private LogRepository repository;
+
+
     public LogService() {
-        instance = this;
-        try {
-            startDebugExchange();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (instance == null) {
+            instance = this;
+            try {
+                startDebugExchange();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -56,7 +62,7 @@ public class LogService {
     private Set<UpdatesEndpoint> deadEndpoints = new HashSet<>();
 
     public static LogService getInstance() {
-        return instance;
+        return instance != null ? instance : new LogService();
     }
 
     public void addClient(UpdatesEndpoint client) {
@@ -133,8 +139,6 @@ public class LogService {
     }
 
 
-    @Resource//(type = LogRepository.class)
-    private LogRepository repository;
 
     public boolean isActive() {
         return channel != null && connection != null
