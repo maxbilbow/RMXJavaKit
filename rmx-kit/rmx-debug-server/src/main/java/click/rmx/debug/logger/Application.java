@@ -1,6 +1,7 @@
 package click.rmx.debug.logger;
 
 import click.rmx.debug.logger.config.WebConfig;
+import org.springframework.boot.SpringApplication;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
@@ -17,6 +18,7 @@ import java.nio.charset.StandardCharsets;
  * Created by bilbowm on 23/10/2015.
  */
 //@SpringBootApplication
+//@EnableAutoConfiguration
 public class Application implements WebApplicationInitializer {
 
     @Override
@@ -73,5 +75,10 @@ public class Application implements WebApplicationInitializer {
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding(StandardCharsets.UTF_8.name());
         return characterEncodingFilter;
+    }
+
+    public static void main(String[] args)
+    {
+        SpringApplication.run(Application.class,args);
     }
 }

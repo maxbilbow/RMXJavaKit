@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * Created by Max on 25/10/2015.
  */
 @Controller
-public class JSPLogController {
+public class LogController {
 
 
     @Resource
