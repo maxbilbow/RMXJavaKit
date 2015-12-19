@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app
+        version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>debug-server</display-name>
+    <description>blah</description>
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>click.rmx.debug.logger.config.WebConfig</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>errorPage</servlet-name>
+        <jsp-file>/WEB-INF/error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>errorPage</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>dispatcherServlet</servlet-name>-->
+    <!--<url-pattern>*.json</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>dispatcherServlet</servlet-name>-->
+    <!--<url-pattern>*.xml</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>dispatcherServlet</servlet-name>-->
+    <!--<url-pattern>*.css</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+    <!--<servlet-name>dispatcherServlet</servlet-name>-->
+    <!--<url-pattern>*.js</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <welcome-file-list>
+        <welcome-file>error.jsp</welcome-file>
+        <welcome-file>/WEB-INF/error.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

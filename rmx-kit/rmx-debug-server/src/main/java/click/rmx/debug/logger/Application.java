@@ -3,6 +3,7 @@ package click.rmx.debug.logger;
 import click.rmx.debug.logger.config.WebConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
@@ -10,8 +11,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
+import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 import java.nio.charset.StandardCharsets;
 
@@ -22,11 +22,9 @@ import java.nio.charset.StandardCharsets;
  */
 @SpringBootApplication
 @EnableWebMvc
-public class Application
-//        extends WebMvcConfigurerAdapter
-//        implements WebApplicationInitializer,
-//        WebMvcConfigurer,
-implements ServletContextListener
+//@WebListener
+//@Import(WebConfig.class)
+public class Application implements WebApplicationInitializer
 {
 
 
@@ -34,6 +32,7 @@ implements ServletContextListener
     {
 //        onStartup();
     }
+
 
 
 
@@ -49,20 +48,21 @@ implements ServletContextListener
         SpringApplication.run(Application.class,args);
     }
 
+
     @Override
-    public void contextInitialized(ServletContextEvent servletContextEvent)
+    public void onStartup(ServletContext servletContext) throws ServletException
     {
+
         final AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();//getContext();
 
         context.register(WebConfig.class);
 
-        final ServletContext servletContext = servletContextEvent.getServletContext();
-        servletContext.addListener(new ContextLoaderListener(context));
-
-        servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
+        servletContext.addListener(new ContextLoaderListener(context)); //ContextLoadListener is here
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
         dispatcher.setLoadOnStartup(1);
+//
 
+//        ServletRegistration dispatcher = servletContext.getServletRegistration("dispatcherServlet");
         //Add Mappings
         dispatcher.addMapping("*.html");
         dispatcher.addMapping("*.json");
@@ -70,11 +70,12 @@ implements ServletContextListener
         dispatcher.addMapping("*.js");
         dispatcher.addMapping("*.css");
 
-    }
 
-    @Override
-    public void contextDestroyed(ServletContextEvent servletContextEvent)
-    {
+        //Filter mappings (is this needed?)
+//        servletContext.addFilter("characterEncodingFilter", characterEncodingFilter());
 
+        //for webSockets
+        dispatcher.setInitParameter("dispatchOptionsRequest", "true");
+        dispatcher.setAsyncSupported(true);
     }
 }

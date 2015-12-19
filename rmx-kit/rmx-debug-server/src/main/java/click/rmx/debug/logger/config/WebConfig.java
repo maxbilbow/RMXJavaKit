@@ -1,41 +1,45 @@
 package click.rmx.debug.logger.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
-import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.ContextLoaderListener;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration;
-import javax.servlet.annotation.WebListener;
 import java.util.Locale;
 
 /**
  * Created by bilbowm on 23/10/2015.
  */
 @Configuration
-//@EnableWebMvc
+@EnableWebMvc
 @Import({
         DBConfig.class//, EndpointConfig.class
 })
-@WebListener
+//@WebListener
 @ComponentScan(basePackages = "click.rmx.debug.logger")
 public class WebConfig
         extends WebMvcConfigurerAdapter
-        implements WebApplicationInitializer
+//        implements WebApplicationInitializer
 {
+
+    @Autowired
+    public void configureMappings(DispatcherServlet dispatcherServlet)
+    {
+//        dispatcherServlet
+//        dynamic.addMapping("*.html");
+    }
+
+
 
     @Bean
     public LocaleResolver localeResolver() {
@@ -50,9 +54,6 @@ public class WebConfig
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setPrefix("/WEB-INF/pages/");
         resolver.setSuffix(".jsp");
-
-
-
         return resolver;
     }
 
@@ -74,34 +75,4 @@ public class WebConfig
         registry.addResourceHandler("/js/**").addResourceLocations("/assets/js/");
     }
 
-    @Override
-//    @Autowired
-    public void onStartup(ServletContext servletContext) throws ServletException
-    {
-        final AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();//getContext();
-
-        context.register(WebConfig.class);
-
-        servletContext.addListener(new ContextLoaderListener(context)); //ContextLoadListener is here
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
-        dispatcher.setLoadOnStartup(1);
-//
-
-//        ServletRegistration dispatcher = servletContext.getServletRegistration("dispatcherServlet");
-        //Add Mappings
-        dispatcher.addMapping("*.html");
-        dispatcher.addMapping("*.json");
-        dispatcher.addMapping("*.xml");
-        dispatcher.addMapping("*.js");
-        dispatcher.addMapping("*.css");
-
-
-        //Filter mappings (is this needed?)
-//        servletContext.addFilter("characterEncodingFilter", characterEncodingFilter());
-
-        //for webSockets
-        dispatcher.setInitParameter("dispatchOptionsRequest", "true");
-        dispatcher.setAsyncSupported(true);
-
-    }
 }
