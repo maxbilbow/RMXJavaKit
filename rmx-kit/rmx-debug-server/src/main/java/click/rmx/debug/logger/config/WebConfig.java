@@ -1,12 +1,10 @@
 package click.rmx.debug.logger.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
-import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -29,17 +27,7 @@ import java.util.Locale;
 @ComponentScan(basePackages = "click.rmx.debug.logger")
 public class WebConfig
         extends WebMvcConfigurerAdapter
-//        implements WebApplicationInitializer
 {
-
-    @Autowired
-    public void configureMappings(DispatcherServlet dispatcherServlet)
-    {
-//        dispatcherServlet
-//        dynamic.addMapping("*.html");
-    }
-
-
 
     @Bean
     public LocaleResolver localeResolver() {
@@ -49,6 +37,21 @@ public class WebConfig
     }
 
 
+//    @Bean
+//    public FreeMarkerConfigurer freeMarkerConfigurer()
+//    {
+//        FreeMarkerConfigurer configurer = new FreeMarkerConfigurer();
+//        configurer.setTemplateLoaderPath("/WEB-INF/templates/");
+//        return configurer;
+//    }
+//
+//    @Bean
+//    public FreeMarkerViewResolver getFreeMarkerViewResolver() {
+//        FreeMarkerViewResolver resolver = new FreeMarkerViewResolver();
+//        resolver.setPrefix("/WEB-INF/templates/");
+//        resolver.setSuffix(".ftl");
+//        return resolver;
+//    }
     @Bean
     public InternalResourceViewResolver getInternalResourceViewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -62,7 +65,6 @@ public class WebConfig
      */
     @Override
     public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        super.configureContentNegotiation(configurer);
         configurer.mediaType("json", MediaType.APPLICATION_JSON);
 //        configurer.mediaType("xml", MediaType.APPLICATION_XML);
 //        configurer.mediaType("txt", MediaType.APPLICATION_OCTET_STREAM);
@@ -70,9 +72,9 @@ public class WebConfig
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/assets/**").addResourceLocations("/assets/");
-        registry.addResourceHandler("/css/**").addResourceLocations("/assets/css/");
-        registry.addResourceHandler("/js/**").addResourceLocations("/assets/js/");
+        registry.addResourceHandler("/assets/**").addResourceLocations("/assets/"    );
+        registry.addResourceHandler("/css/**"   ).addResourceLocations("/assets/css/");
+        registry.addResourceHandler("/js/**"    ).addResourceLocations("/assets/js/" );
     }
 
 }

@@ -8,7 +8,6 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -21,19 +20,12 @@ import java.nio.charset.StandardCharsets;
  * Created by bilbowm on 23/10/2015.
  */
 @SpringBootApplication
-@EnableWebMvc
+//@EnableWebMvc
+//@EnableAutoConfiguration
 //@WebListener
 //@Import(WebConfig.class)
 public class Application implements WebApplicationInitializer
 {
-
-
-    public Application()
-    {
-//        onStartup();
-    }
-
-
 
 
     private CharacterEncodingFilter characterEncodingFilter() {
@@ -47,7 +39,6 @@ public class Application implements WebApplicationInitializer
     {
         SpringApplication.run(Application.class,args);
     }
-
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException

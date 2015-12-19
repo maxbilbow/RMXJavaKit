@@ -18,13 +18,13 @@ public class IndexController {
         return "Hello World";
     }
 
-    @RequestMapping("/string")
+    @RequestMapping(value = "/string", method = RequestMethod.GET)
     public String getString()
     {
         return "Hello, World!";
     }
 
-    @RequestMapping("/ftl")
+    @RequestMapping(value = "/ftl", method = RequestMethod.GET)
     public ModelAndView getFtl()
     {
         return new ModelAndView("index");

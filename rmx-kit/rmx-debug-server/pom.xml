@@ -38,6 +38,11 @@
             <!--<artifactId>spring-session</artifactId>-->
         <!--</dependency>-->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>${spring.version}</version>
@@ -93,6 +98,7 @@
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
         </dependency>
+
         <!--<dependency>-->
             <!--<groupId>com.fasterxml.jackson.core</groupId>-->
             <!--<artifactId>jackson-core</artifactId>-->
@@ -247,7 +253,16 @@
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
+            <!--<resource>-->
+                <!--<directory>src/main/webapp/WEB-INF</directory>-->
+                <!--<targetPath>WEB-INF</targetPath>-->
+            <!--</resource>-->
+            <!--<resource>-->
+                <!--<directory>src/main/webapp/assets</directory>-->
+                <!--<targetPath>assets</targetPath>-->
+            <!--</resource>-->
         </resources>
+
         <plugins>
 
             <plugin>
@@ -256,7 +271,6 @@
                 <configuration>
                     <mainClass>click.rmx.debug.logger.Application</mainClass>
                 </configuration>
-
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -271,7 +285,6 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <!--<version>2.6</version>-->
                 <configuration>
-
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>

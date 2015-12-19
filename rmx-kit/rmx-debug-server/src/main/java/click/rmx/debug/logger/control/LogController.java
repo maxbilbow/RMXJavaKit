@@ -28,6 +28,10 @@ public class LogController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public ModelAndView get(ModelAndView model,HttpServletRequest request) {
+        if (model == null)
+            model = new ModelAndView();
+        else
+            model.setViewName("version2");
         model.addObject("logs", repository.getMessages());
         model.addObject("errors", repository.getErrors());
         model.addObject("warnings", repository.getWarnings());
@@ -38,10 +42,8 @@ public class LogController {
                         "<span style=\"color: red\">SERVER IS OFF</span>"
         );
         model.addObject("connect", service.isActive() ? "Stop" : "Start");
-        ModelAndView mv = model;//new ModelAndView("version2");
-        mv.setViewName("version2");
-//        mv.addAllObjects(model);
-        return mv;//"version2";
+
+        return model;
     }
 
     @RequestMapping(value = "/index", method = RequestMethod.POST)
