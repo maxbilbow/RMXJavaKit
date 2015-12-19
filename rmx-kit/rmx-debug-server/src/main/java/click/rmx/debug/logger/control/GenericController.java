@@ -1,27 +1,29 @@
 package click.rmx.debug.logger.control;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by bilbowm (Max Bilbow) on 25/11/2015.
  */
-@Controller
+@RestController
 @RequestMapping({"/pages","/pages/index"})
 public class GenericController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String get(@RequestParam(value = "p",required = false,defaultValue = "forward:/live/") String page, ModelMap model, HttpServletRequest request)
+    public ModelAndView get(@RequestParam(value = "p",required = false,defaultValue = "") String page, ModelAndView model, HttpServletRequest request)
     {
-        if (page.startsWith("forward:"))
-            return page;
+        model.addObject("contextPath",request.getContextPath());
+        if (page.isEmpty())
+            model.setViewName("live-updates-v2");// "forward:/live/";
+        else
+            model.setViewName(page);
 
-        model.addAttribute("contextPath",request.getContextPath());
-        return page;
+        return model;//new ModelAndView(page);//.getView();
     }
 }

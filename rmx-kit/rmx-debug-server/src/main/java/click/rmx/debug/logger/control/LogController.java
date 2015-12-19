@@ -3,13 +3,13 @@ package click.rmx.debug.logger.control;
 import click.rmx.debug.RMXException;
 import click.rmx.debug.logger.repository.LogRepository;
 import click.rmx.debug.logger.service.LogService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -19,10 +19,10 @@ import javax.servlet.http.HttpServletRequest;
 public class LogController {
 
 
-    @Resource
+    @Autowired
     private LogService service;
 
-    @Resource//(type = LogRepository.class)
+    @Autowired//(type = LogRepository.class)
     private LogRepository repository;
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
