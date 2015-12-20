@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
     </modules>
   </component>

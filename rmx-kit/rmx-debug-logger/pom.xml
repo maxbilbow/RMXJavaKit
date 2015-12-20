@@ -13,24 +13,11 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.1.2-SNAPSHOT</version>
+        <version>0.1.3-SNAPSHOT</version>
     </parent>
 
     <properties>
-        <javax-servlet.version>3.1.0</javax-servlet.version>
-        <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
-        <spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
-        <spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>
-        <spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>
-        <commons-logging.version>1.2</commons-logging.version>
-        <!--<jetty-websocket.version>8.1.18.v20150929</jetty-websocket.version>-->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!--<windows.repository>C:\Users\bilbowm\.m2\repository</windows.repository>-->
-
-        <java.version>1.8</java.version>
-
-        <rmx.version>0.1</rmx.version>
     </properties>
 
     <dependencies>
@@ -146,17 +133,23 @@
             <!--<version>${spring-data-commons.version}</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring-data-mongodb.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.data</groupId>-->
+            <!--<artifactId>spring-data-mongodb</artifactId>-->
+            <!--<version>${spring-data-mongodb.version}</version>-->
+        <!--</dependency>-->
 
 
         <!--<dependency>-->
             <!--<groupId>mysql</groupId>-->
             <!--<artifactId>mysql-connector-java</artifactId>-->
             <!--<version>${mysql.version}</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.codehaus.jackson</groupId>-->
+            <!--<artifactId>jackson-core-asl</artifactId>-->
+            <!--<version>${jackson-core-asl.version}</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.springframework</groupId>

@@ -1,6 +1,6 @@
 package click.rmx.debug.logger;
 
-import com.mongodb.util.JSONParseException;
+
 import com.rabbitmq.client.*;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -58,7 +58,7 @@ public class RMQLogger implements Logger {
         String json = null;
         try {
             json = mapper.writeValueAsString(object);
-        } catch (JSONParseException e) {
+        } catch (IOException e) {//JSonParseException?
             try {
                 send("Couuld not parse as JSON will use toString() instead.", properties,  "debug.warning");
             } catch (Exception e1) {

@@ -104,7 +104,7 @@ public class DebugServerTerminal implements Terminal<String>  {
             case SET_NAME:
                 if (message.replace(" ", "").length() == 0)
                     return "'" + message + "' is not a valid username.";
-                if (message == getUsername())
+                if (message.equals(getUsername()))
                     return "Your username is " + getUsername();
 
                 final String oldName = getUsername();
