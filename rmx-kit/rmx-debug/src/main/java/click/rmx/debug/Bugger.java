@@ -117,53 +117,56 @@ public class Bugger implements RMXDebugInstance {
 		return newLog;
 	}
 
-	public void info(Object o, int depth)
+	public String info(Object o, int depth)
 	{
 		if (debugLevel < DEBUG_INFO)
-			return;
-		final String log = String.valueOf(o);
+			return "";
+		final String log = makeLog(o,depth + 1, "INFO: ");
 		logMessage(log);
 		System.out.println(
-				makeLog(log,depth + 1, "INFO: ")
+				log
 		);
+		return log;
 	}
 
-	public void warn(Object o, int depth)
+	public String warn(Object o, int depth)
 	{
 		if (debugLevel < DEBUG_WARNING)
-			return;
-		final String log = String.valueOf(o);
+			return "";
+		final String log = makeLog(o,depth + 1, "WARNING: ");
 		logMessage(log);
 		System.err.println(
-				makeLog(log,depth + 1, "WARNING: ")
+				log
 		);
+		return log;
 	}
 
-	public void error(Object o, int depth)
+	public String error(Object o, int depth)
 	{
 		if (debugLevel == DEBUG_NONE)
-			return;
-		final String log = String.valueOf(o);
+			return "";
+		final String log = makeLog(o,depth + 1, "ERROR: ");
 		logMessage(log);
 		System.err.println(
-				makeLog(log,depth + 1, "ERROR: ")
+				log
 		);
+		return log;
 	}
 
 
-	public void info(Object o)
+	public String info(Object o)
 	{
-		info(o,1);
+		return info(o,1);
 	}
 
-	public void warn(Object o)
+	public String warn(Object o)
 	{
-		warn(o,1);
+		return warn(o,1);
 	}
 
-	public void error(Object o)
+	public String error(Object o)
 	{
-		error(o,1);
+		return error(o,1);
 	}
 
 	/**

@@ -126,6 +126,13 @@
         <processorPath useClasspath="true" />
         <module name="rmx-mvc" />
       </profile>
+      <profile default="false" name="Annotation profile for rmx-websockets" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-websockets" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="aicubi-desktop" target="1.8" />
@@ -145,6 +152,7 @@
       <module name="rmx-multithread-toolkit" target="1.8" />
       <module name="rmx-mvc" target="1.8" />
       <module name="rmx-persistence" target="1.8" />
+      <module name="rmx-websockets" target="1.8" />
       <module name="spring-boot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
