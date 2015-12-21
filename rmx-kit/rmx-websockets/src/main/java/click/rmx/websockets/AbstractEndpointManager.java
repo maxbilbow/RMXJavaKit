@@ -3,6 +3,8 @@ package click.rmx.websockets;
 
 //import com.rabbitmq.client.Channel;
 //import com.rabbitmq.client.Connection;
+
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,7 +19,7 @@ public class AbstractEndpointManager implements EnpointManager {
     private Set<RMXEndpoint> endpoints = new HashSet<>();
     private Set<RMXEndpoint> deadEndpoints = new HashSet<>();
 
-
+    @Override
     public void addClient(RMXEndpoint client) {
         endpoints.add(client);
     }
@@ -26,6 +28,7 @@ public class AbstractEndpointManager implements EnpointManager {
      * Endpoints will be removed the next time notifySubscribers is called
      * @param client
      */
+    @Override
     public void removeClient(RMXEndpoint client) {
         deadEndpoints.add(client);
         cleanEndpoints();
@@ -58,14 +61,14 @@ public class AbstractEndpointManager implements EnpointManager {
 //
 //    }
 
-
+    @Override
     public synchronized void notifySubscribers(final String message) {
         cleanEndpoints();
         notificationInProgress = true;
         endpoints.stream().forEach(endpoint -> {
             try {
                 endpoint.broadcast(message);
-            } catch (Exception e) {
+            } catch (IOException e) {
                 e.printStackTrace();
 
             }
