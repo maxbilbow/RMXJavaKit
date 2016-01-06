@@ -110,11 +110,23 @@
             </extension>
         </extensions>
     </build>
+
+
     <distributionManagement>
         <repository>
             <id>m2.rmx.click</id>
             <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
         </repository>
+        <!--<repository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Utilisoft Releases</name>-->
+            <!--<url>http://ut-svn-01:8081/nexus/content/repositories/releases</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Utilisoft Snapshots</name>-->
+            <!--<url>http://ut-svn-01:8081/nexus/content/repositories/snapshots</url>-->
+        <!--</snapshotRepository>-->
     </distributionManagement>
 
     <repositories>
