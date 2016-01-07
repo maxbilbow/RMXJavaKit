@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_rmx_debug_0_2_RELEASE.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__click_rmx_rmx_debug_0_2_RELEASE.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/rmx_debug_server_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-websockets/pom.xml" afterPath="$PROJECT_DIR$/rmx-kit/rmx-websockets/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/AbstractEndpointManager.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/AbstractEndpointManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/EnpointManager.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/EnpointManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ObjectInspector.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ObjectInspector.java" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,6 +114,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="IMessageable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/IMessageable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AbstractEndpointManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/AbstractEndpointManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -125,11 +134,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23632812">
-              <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="118" selection-end-column="21" />
+            <state vertical-scroll-proportion="-8.846154">
+              <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectInspector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ObjectInspector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.358736">
+              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -138,8 +157,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state vertical-scroll-proportion="8.807693">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -190,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/LogService.java" />
         <option value="$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28.jar!/javax/servlet/ServletRegistration.class" />
         <option value="$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.0.28/tomcat-embed-core-8.0.28.jar!/javax/servlet/Registration.class" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.8.RELEASE/spring-webmvc-4.1.8.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.class" />
@@ -237,10 +255,11 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-websockets/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/EnpointManager.java" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/AbstractEndpointManager.java" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ObjectInspector.java" />
       </list>
     </option>
   </component>
@@ -431,6 +450,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rmx-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-kit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmx-debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="debug" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1667,13 +1716,7 @@
       <workItem from="1451901520593" duration="623000" />
       <workItem from="1452094662847" duration="3145000" />
       <workItem from="1452105365523" duration="185000" />
-      <workItem from="1452157975152" duration="646000" />
-    </task>
-    <task id="LOCAL-00036" summary="finalised 0.1. Now working on 0.1.1-snapshot">
-      <created>1447153233828</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1447153233828</updated>
+      <workItem from="1452157975152" duration="3314000" />
     </task>
     <task id="LOCAL-00037" summary="Trying to receive and decode an http post">
       <created>1447174144462</created>
@@ -1963,7 +2006,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452105066525</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="improved endpoint manager">
+      <created>1452158632607</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1452158632608</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1999,7 +2048,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="461224000" />
+    <option name="totallyTimeSpent" value="463892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -2055,7 +2104,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Sources now uploading to repo" />
     <MESSAGE value="Struggling to deploy all to repo" />
     <MESSAGE value="Reorganised" />
     <MESSAGE value="debug server seems to be fixed. DB is now temporary but should probably be replaced with an h2 embedded db." />
@@ -2080,7 +2128,8 @@
     <MESSAGE value="Still cant launch debug server in sb" />
     <MESSAGE value="Upgraded rmx-kit to version 0.1.3-SNAPSHOT" />
     <MESSAGE value="deployed to nexus" />
-    <option name="LAST_COMMIT_MESSAGE" value="deployed to nexus" />
+    <MESSAGE value="improved endpoint manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved endpoint manager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2148,13 +2197,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/ServerProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231">
-          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/freemarker/FreeMarkerProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29864255">
@@ -2429,6 +2471,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2485,18 +2528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/IMessageable.java">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/EnpointManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028333334">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -2509,10 +2544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/src/main/java/click/rmx/websockets/EnpointManager.java">
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state vertical-scroll-proportion="8.807693">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -2525,10 +2560,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/core/IMessageable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23632812">
-          <caret line="115" column="20" selection-start-line="115" selection-start-column="20" selection-end-line="118" selection-end-column="21" />
+        <state vertical-scroll-proportion="-8.846154">
+          <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ObjectInspector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.358736">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -2642,12 +2693,13 @@
     </states>
   </component>
   <component name="mavenExecuteGoalHistory">
-    <option value="$PROJECT_DIR$/rmx-kit/rmx-websockets" />
+    <option value="$PROJECT_DIR$/rmx-kit/rmx-debug" />
     <option value="deploy" />
+    <option value="clean deploy" />
+    <option value="install deploy" />
     <option value="clean install" />
     <option value="install" />
     <option value="clean install deploy" />
-    <option value="install deploy" />
     <option value="clean compile" />
     <option value="compile" />
     <option value="clean compile install" />

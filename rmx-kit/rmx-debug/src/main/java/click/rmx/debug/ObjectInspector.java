@@ -31,6 +31,7 @@ public class ObjectInspector {
 
     public String inspectObject(Object object, String... args)
     {
+        boolean gettersOnly = false;
         String info = object.getClass().getName() +
                 "\n==========================";
         boolean fullList = false;
@@ -50,6 +51,11 @@ public class ObjectInspector {
                 case "short":
                     fullList = false;
                     break;
+                case "g":
+                case "get":
+                case "getters":
+                    gettersOnly = true;
+                    break;
 
             }
         }
@@ -57,6 +63,9 @@ public class ObjectInspector {
         info += "\n" + (fullList ? "Showing All Members" : "Showing Declared Methods") + ":";
         Method[] methods = fullList ? object.getClass().getMethods() : object.getClass().getDeclaredMethods();
         for (Method m : methods) {
+            boolean isGetter = m.getReturnType() != Void.TYPE && m.getParameterCount() == 0;
+            if (gettersOnly && (!isGetter || m.getName().equals("toString")))
+                continue;
             Parameter[] parameters = m.getParameters();//Types();
             String params = "";
             if (parameters.length > 0) {
@@ -65,23 +74,31 @@ public class ObjectInspector {
                     params += ", "+p.getType().getSimpleName();// + " " + p.getName();
             }
             info += "\n --(m) " + m.getReturnType().getSimpleName() + " " + m.getName() + "("+params+")";
-            if (m.getReturnType() != Void.TYPE && m.getParameterCount() == 0)
+            if (isGetter)
                 try {
                     info += " == " + stringify(m.invoke(object));
                 } catch (Exception e) {
                     info += " != FAIL: " + e;
                 }
         }
-        info += "\nFields:";
         Field[] fields = object.getClass().getFields();
-        for (Field f: fields) {
-            info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
+        if (fields.length > 0) {
+            info += "\nFields:";
+            for (Field f : fields) {
+                info += "\n --(f) " + f.getType().getSimpleName() + " " + f.getName();
+            }
         }
-        info += "\nAnnotations:";
-        Annotation[] annotations = object.getClass().getAnnotations();
-        for (Annotation a: annotations) {
-            info += "\n --(a) " + a.getClass().getSimpleName();
+
+        if (!gettersOnly) {
+            Annotation[] annotations = object.getClass().getAnnotations();
+            if (annotations.length > 0) {
+                info += "\nAnnotations:";
+                for (Annotation a : annotations) {
+                    info += "\n --(a) " + a.getClass().getSimpleName();
+                }
+            }
         }
+
         return info;
     }
 
