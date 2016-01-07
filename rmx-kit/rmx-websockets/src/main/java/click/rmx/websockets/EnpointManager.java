@@ -10,4 +10,9 @@ public interface EnpointManager {
 
     void notifySubscribers(String message);
 
+    long getEndpointCount();
+
+    boolean hasConnections();
+
+
 }

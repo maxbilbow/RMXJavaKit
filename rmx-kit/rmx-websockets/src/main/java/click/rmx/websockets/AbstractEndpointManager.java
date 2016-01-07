@@ -77,6 +77,19 @@ public class AbstractEndpointManager implements EnpointManager {
         cleanEndpoints();
     }
 
+    @Override
+    public long getEndpointCount()
+    {
+        cleanEndpoints();
+        return endpoints.size();
+    }
+
+    @Override
+    public boolean hasConnections()
+    {
+        cleanEndpoints();
+        return !endpoints.isEmpty();
+    }
 }
 
 

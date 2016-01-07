@@ -11,6 +11,7 @@
 
     <!--<groupId>uk.co.utilisoft.click.rmx</groupId>-->
     <groupId>click.rmx</groupId>
+    <!--<version>0.2-RELEASE</version>-->
     <artifactId>rmx-websockets</artifactId>
 
     <dependencies>
