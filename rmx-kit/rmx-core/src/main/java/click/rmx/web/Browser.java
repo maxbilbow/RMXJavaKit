@@ -11,10 +11,21 @@ import java.net.URISyntaxException;
 
 public class Browser {
 
+
     public void launch()
     {
         final String port = System.getProperty("server.port");
         final String url = "localhost:"+ (port != null ? port : "8080");
+        launch(url);
+    }
+
+    /**
+     * Launch on localhost:port
+     * @param port
+     */
+    public void launch(int port)
+    {
+        final String url = "localhost:"+ port;
         launch(url);
     }
 
