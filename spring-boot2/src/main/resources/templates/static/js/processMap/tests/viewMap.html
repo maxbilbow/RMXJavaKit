@@ -1,0 +1,32 @@
+<script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../raphael.js"></script>
+<script type="text/javascript" src="../ProcessMap.js"></script>
+
+<script type="text/javascript" src="../maps/ursTransaction.js"></script>
+<script type="text/javascript" src="../maps/sfrTransaction.js"></script>
+<script type="text/javascript" src="../maps/mrvJob.js"></script>
+
+
+<div id='processMap' style="position:relative; width:2000px; height: 800px;" ></div>
+
+<script>
+$(function(){
+  //refresh every 3 seconds
+  //setTimeout(function(){ document.location = document.URL; }, 3000);
+
+	var mapName = 'critical';
+	var re = /(\?map\=.*)/g;
+	var matches = re.exec(document.URL);
+
+	if(typeof(matches) != 'undefined' && matches.length > 0){
+	  var name = matches[0];
+	  mapName = name.replace('?map=', '');
+	}
+
+  var pm = new ProcessMap('processMap', maps[mapName], [
+                  {"result":false,"op":"MRVJOB01"},{"op":"MRVJOB59","result":true},{"result":true,"op":"MRVJOB60"},{"result":true,"op":"MRVJOB09"},{"result":true,"op":"MRVJOB08"},{"result":true,"op":"MRVJOB20"},{"result":true,"op":"MRVJOB30"},{"result":true,"op":"MRVJOB47"}
+                  //{"result":false,"op":"MRVJOB01"},{"op":"MRVJOB59","count":123},{"count":456,"op":"MRVJOB60"},{"count":789,"op":"MRVJOB09"},{"result":true,"op":"MRVJOB08"},{"result":true,"op":"MRVJOB20"},{"result":true,"op":"MRVJOB30"},{"result":true,"op":"MRVJOB47"}
+	]
+	//,true);
+});
+</script>

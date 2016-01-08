@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xmlns:c="http://www.springframework.org/schema/c"
+	   xmlns:p="http://www.springframework.org/schema/p"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+              			   http://www.springframework.org/schema/beans/spring-beans.xsd
+              			   http://www.springframework.org/schema/context
+              			   http://www.springframework.org/schema/context/spring-context.xsd
+              			   http://www.springframework.org/schema/tx
+              			   http://www.springframework.org/schema/tx/spring-tx.xsd
+              			   http://www.springframework.org/schema/util
+              			   http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="gas.validation.transactionManager" name="gas.validation.transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="gas.validation.sessionFactory" />
+		<property name="rollbackOnCommitFailure" value="true" />
+	</bean>
+
+	<tx:annotation-driven/>
+
+	<bean id="gas.validation.dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${v8.gas.db.driverClassName}" />
+		<property name="username" value="${v8.gas.db.username}" />
+		<property name="password" value="${v8.gas.db.password}" />
+		<property name="url" value="${v8.gas.db.url}" />
+
+		<property name="initialSize" value="${v8.gas.db.initialSize}" />
+		<property name="maxActive" value="${v8.gas.db.maxActive}" />
+		<property name="maxIdle" value="${v8.gas.db.maxIdle}" />
+		<property name="minIdle" value="${v8.gas.db.minIdle}" />
+		<property name="maxWait" value="${v8.gas.db.maxWait}" />
+
+		<property name="testOnBorrow" value="${v8.gas.db.testOnBorrow}" />
+		<property name="testOnReturn" value="${v8.gas.db.testOnReturn}" />
+		<property name="testWhileIdle" value="${v8.gas.db.testWhileIdle}" />
+		<property name="validationQuery" value="${v8.gas.db.validationQuery}" />
+	</bean>
+
+	<bean id="gas.validation.sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${v8.gas.hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${v8.gas.hibernate.show_sql}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+				<prop key="hibernate.transaction.flush_before_completion">true</prop>
+				<prop key="hibernate.order_inserts">true</prop>
+				<prop key="hibernate.order_updates">true</prop>
+				<prop key="hibernate.jdbc.batch_size">50</prop>
+				<prop key="hibernate.default_batch_fetch_size">50</prop>
+			</props>
+		</property>
+		<property name="dataSource" ref="gas.validation.dataSource" />
+		<!-- <property name="packagesToScan">
+			<list>
+				<value>uk.co.utilisoft.afms.domain.validation</value>
+				
+			</list>
+		</property>
+		<property name="annotatedPackages">
+			<list>
+				<value>uk.co.utilisoft.afms.domain.validation</value>
+			</list>
+		</property> -->
+	</bean>
+	
+	<bean id="comparisontoolV8Facade" class="uk.co.utilisoft.comparisontool.valid8.gas.V8FacadeImplGas" p:rootPath="C:/Utilisoft/ComparisonTool/" init-method="init">
+		<lookup-method name="getFlowExporter" bean="comparisontoolFlowExporter" />
+	</bean>
+</beans>

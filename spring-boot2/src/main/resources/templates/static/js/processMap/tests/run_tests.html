@@ -1,0 +1,36 @@
+<html>
+    <head>
+      <link href="qunit/qunit.css" rel="Stylesheet" type="text/css">
+      <script src="qunit/qunit.js"></script>
+
+      <!-- Test Dependencies -->
+      <script src="../jquery-1.9.1.min.js"></script>
+      <script src="../raphael.js"></script>
+      <script src="../ProcessMap.js"></script>
+
+      <script src="../maps/critical.js"></script>
+
+      <!-- Tests  -->
+      <script src="ProcessMapTests.js"></script>
+
+    </head>
+    <body>
+         <h1 id="qunit-header">Test ProcessMap.js and Maps</h1>
+         <h2 id="qunit-banner"></h2>
+         <div id="qunit-testrunner-toolbar"></div>
+         <h2 id="qunit-userAgent"></h2>
+         <ol id="qunit-tests"></ol>
+
+         <div id="qunit-fixture">
+          <!-- Add dom elements for tests -->
+           <div  style="width: 100PX; height: 100px;" id='processMap'></div>
+         </div>
+
+    </body>
+    <script>
+        $(function(){
+          //call the test init method inside test
+          runProcessMapTests();
+        });
+    </script>
+</html>

@@ -5,8 +5,1037 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2230439-d993-4bd8-8c50-225ad97dafbf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.pro/glyphicons-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.pro/glyphicons-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.pro/glyphicons-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.social.pro/glyphicons-social-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.social.pro/glyphicons-social-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.social.pro/glyphicons-social-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/WorkBenchIcon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/WorkBenchIcon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/icon76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.chosen/chosen-sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.chosen/chosen-sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.colorpicker/alpha-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.colorpicker/alpha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.colorpicker/hue-horizontal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.colorpicker/hue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.colorpicker/saturation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_asc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_asc@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_asc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_asc_disabled@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_both.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_both@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_desc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_desc@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_desc_disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.datatables/sort_desc_disabled@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.select2/select2-spinner.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.select2/select2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/jquery.select2/select2x2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar10@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar11@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar12@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar13@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar14@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar15@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar16@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar1@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar2@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar3@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar4@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar5@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar6@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar7@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar8@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar9@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/avatar@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/backgrounds/coming_soon_full_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/backgrounds/lock_full_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/backgrounds/login_full_bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/article_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/dashboard_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/lock_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/login_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/profile_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget1_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget2_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget3_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget4_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget5_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/headers/widget6_header.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo10@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo11@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo12@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo13@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo14@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo15@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo16@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo17@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo18@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo19@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo1@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo20@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo21@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo22@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo23@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo24@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo2@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo3@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo4@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo5@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo6@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo7@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo8@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/photos/photo9@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_dark_15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_dark_20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_dark_30.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_dark_40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_dark_60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_light_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/template/ie8_opacity_light_75.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/utilisoft-logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/utilisoft-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/flash/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/images/hiddenfield.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/iframe/images/placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/image/images/noimage.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/link/images/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/magicline/images/icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_blockquote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_div.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_h6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_p.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/showblocks/images/block_pre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/angel_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/angry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/broken_heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/confused_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/cry_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/cry_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/devil_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/devil_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/envelope.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/heart.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/kiss.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/lightbulb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/omg_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/regular_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/sad_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/shades_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/teeth_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/thumbs_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/thumbs_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/tongue_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/templates/images/template1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/templates/images/template2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/templates/images/template3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/assets/inlineall/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/assets/sample.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-icons_2e83ff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-icons_888888_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/ui-icons_cd0a0a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/images/white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/HikariCP-2.3.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/Utilisoft-BPMN-1.0.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/V8-2.1.0_test06.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-bpmn-converter-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-bpmn-model-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-engine-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-image-generator-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-process-validation-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/activiti-spring-5.17.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/amqp-client-3.3.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/c3p0-0.9.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/camel-core-2.15.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/camel-rabbitmq-2.15.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/codemodel-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-beanutils-1.9.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-collections-3.2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-dbcp-1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-email-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-io-2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-lang3-3.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-logging-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/commons-pool-1.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/geronimo-validation_1.0_spec-1.0-CR5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/gson-2.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/h2-1.4.187.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-core-4.3.9.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-entitymanager-4.1.9.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-validator-4.2.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/hibernate-validator-annotation-processor-4.3.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jackson-annotations-2.4.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jackson-core-2.4.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jackson-databind-2.4.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jandex-1.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/javassist-3.18.1-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/javax.inject-1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jaxb-core-2.2.11.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jaxb-impl-2.2.11.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jcl-over-slf4j-1.7.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/joda-time-2.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/joox-1.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/jul-to-slf4j-1.7.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/log4j-over-slf4j-1.7.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/logback-classic-1.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/logback-core-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/mail-1.4.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/maven-plugin-api-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/mchange-commons-java-0.2.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/mpicommon-2.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/mybatis-3.2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/ojdbc6-11.2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/slf4j-api-1.7.12.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/snakeyaml-1.14.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-aop-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-beans-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-autoconfigure-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-starter-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-starter-logging-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-starter-tomcat-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-boot-starter-web-1.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-context-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-context-support-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-core-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-expression-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-jdbc-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-orm-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-oxm-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-test-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-tx-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-web-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/spring-webmvc-4.1.7.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/tomcat-embed-core-8.0.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/tomcat-embed-el-8.0.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/tomcat-embed-logging-juli-8.0.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/tomcat-embed-websocket-8.0.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/v8-group-generator-maven-plugin-0.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/validation-api-1.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/lib/xml-apis-1.0.b2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/runtime/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/runtime/config/poixls.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/runtime/lib/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/runtime/run.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/spring-boot2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/assemble-zip.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/java/uk/co/utilisoft/poi/PoisxlsApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/java/uk/co/utilisoft/utilities/Database.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/java/uk/co/utilisoft/utilities/DatabaseConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/java/uk/co/utilisoft/utilities/LoggerProperties.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/java/uk/co/utilisoft/utilities/NumberValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/comparisontool-V8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/default-db.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/default-dtc.valid8.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/default-gas.valid8.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/messages.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/Glyphicons PRO (License).txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/fontawesome/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.filetypes.pro/glyphicons-filetypes-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.halflings.pro/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.pro/glyphicons-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/fonts/glyphicons.social.pro/glyphicons-social-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/plugins.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/amethyst.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/autumn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/blackberry.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/coral.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/emerald.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/fancy.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/fire.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/flatie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/forest.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/lake.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/modern.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/night.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/spring.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/themes/waterlily.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/css/vendor/datetimepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/img/placeholders/avatars/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/CHANGES.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/adapters/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/build-config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/div/dialogs/div.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/find/dialogs/find.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/flash/dialogs/flash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/checkbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/radio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/select.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/forms/dialogs/textfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/iframe/dialogs/iframe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/preview/preview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/scayt/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/scayt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/table/dialogs/table.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/dialogs/templates.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/dialogs/templates.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/templates/templates/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/api.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/appendto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/assets/outputxhtml/outputxhtml.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/assets/posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/assets/uilanguages/languages.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/datafiltering.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/divreplace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/inlineall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/inlinebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/inlinetextarea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/jquery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/dialog/assets/my_dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/dialog/dialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/enterkey/enterkey.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/htmlwriter/outputhtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/magicline/magicline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/toolbar/toolbar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/plugins/wysiwygarea/fullpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/readonly.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/replacebyclass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/replacebycode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/sample.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/sample.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/sample_posteddata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/tabindex.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/uicolor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/uilanguages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/samples/xhtmlstyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/dialog_opera.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/.temp/css/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/dialog_opera.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/sample/bootstrapck-sample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/sample/css/bootstrapck-sample.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/sample/js/analytics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/skins/bootstrapck/sample/js/jquery-1.11.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/helpers/gmaps.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/compAnimations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/compCalendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/compCharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/compMaps.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/ecomDashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/ecomOrders.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/ecomProducts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/formsGeneral.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/formsValidation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/formsWizard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/icons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/index2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyChat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyComingSoon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyFiles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyInbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyInboxCompose.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyProfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyTasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyTickets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/readyTimeline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/tablesDatatables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/tablesGeneral.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/uiDraggable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/uiProgress.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/uiTypography.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/widgetsSocial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/pages/widgetsStats.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/ProcessMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/jquery-1.9.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/maps/mrvJob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/maps/sfrTransaction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/maps/ursTransaction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/raphael.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/ProcessMapTests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/qunit/qunit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/qunit/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/run_tests.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/testPopUp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/processMap/tests/viewMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/theme/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/theme/plugins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-beautify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-chromevox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-elastic_tabstops_lite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-emmet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-error_marker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-keybinding_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-language_tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-linking.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-modelist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-old_ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-searchbox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-settings_menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-spellcheck.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-split.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-static_highlight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-statusbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-textarea.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-themelist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/ext-whitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/keybinding-emacs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/keybinding-vim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-abap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-actionscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ada.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-apache_conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-applescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-asciidoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-assembly_x86.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-autohotkey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-batchfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-c9search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-c_cpp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-cirru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-coldfusion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-csharp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-curly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-dockerfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-dot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ejs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-forth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ftl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-gcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-gitignore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-glsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-golang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-html_ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-jack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-java.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-jsoniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-jsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-jsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-liquid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-logiql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-lsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-luapage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-lucene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-makefile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-mel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-mushcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-mysql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-nix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-objectivec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ocaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-pgsql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-plain_text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-powershell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-praat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-prolog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-protobuf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-rdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-rhtml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-scad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-scss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-sh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-sjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-snippets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-soy_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-space.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-svg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-twig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-typescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-vala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/mode-yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/abap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/actionscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ada.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/apache_conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/applescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/asciidoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/assembly_x86.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/autohotkey.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/batchfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/c9search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/c_cpp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/cirru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/clojure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/cobol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/coldfusion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/csharp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/curly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/d.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/dart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/diff.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/django.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/dockerfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/dot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/eiffel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ejs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/erlang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/forth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ftl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/gcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/gherkin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/gitignore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/glsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/golang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/groovy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/haml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/handlebars.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/haskell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/haxe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/html_ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ini.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/io.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/jack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/jade.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/java.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/jsoniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/jsp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/jsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/julia.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/latex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/liquid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/lisp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/livescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/logiql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/lsl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/luapage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/lucene.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/makefile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/markdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/matlab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/mel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/mushcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/mysql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/nix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/objectivec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ocaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/pascal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/perl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/pgsql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/plain_text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/powershell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/praat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/prolog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/properties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/protobuf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/python.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/r.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/rdoc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/rhtml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/ruby.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/rust.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/sass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/scad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/scala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/scheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/scss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/sh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/sjs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/smarty.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/snippets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/soy_template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/space.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/sql.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/stylus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/svg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/tcl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/tex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/textile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/toml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/twig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/typescript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/vala.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/vbscript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/velocity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/verilog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/vhdl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/xml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/snippets/yaml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-ambiance.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-chaos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-chrome.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-clouds.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-clouds_midnight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-cobalt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-crimson_editor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-dawn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-dreamweaver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-eclipse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-github.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-idle_fingers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-katzenmilch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-kr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-kr_theme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-kuroir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-merbivore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-merbivore_soft.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-mono_industrial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-monokai.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-pastel_on_dark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-solarized_dark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-solarized_light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-terminal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-textmate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-tomorrow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-tomorrow_night.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-tomorrow_night_blue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-tomorrow_night_bright.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-tomorrow_night_eighties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-twilight.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-vibrant_ink.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/theme-xcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-coffee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-javascript.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-json.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-lua.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-php.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/ace/worker-xquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/datetimepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/dom.jsPlumb-1.6.2-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/dom.jsPlumb-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/handlebars-v2.0.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-1.11.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/datetimepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/dom.jsPlumb-1.6.2-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/dom.jsPlumb-1.7.2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/excanvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/external/jquery/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/handlebars-v2.0.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.structure.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.structure.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery-ui.theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/justgage.1.0.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/raphael.2.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/sock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/stomp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery-ui/swag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/jquery.validate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/justgage.1.0.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/modernizr-respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/raphael.2.1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/sock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/stomp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/static/js/vendor/swag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/catalogueView.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/flowItemSearchPanel.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/flowTreeViewer.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/groupView.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/itemGroupFlowResults.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/catalogueViewer/itemView.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/chooseDatasource.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/filteredChanges.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/flowChangeDetails.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/flowChangeDetailsNew.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/flowSearchpanel.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/flowTreeChanges.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/itemCounterModal.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/listChanges.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/change/test.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/changeNew/listChanges.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/changeNew/tableContent.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/components/filterableTable/filterableTable.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/components/pagingTable/pagingTable.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/components/searchingTable/searchingTable.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/dataflow/alert.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/dataflow/alertNestedDetails.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/dataflow/list.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/dataflow/listGroups.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/dataflow/tableContent.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/error/error.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/layout/dashboard.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/layout/layout.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/layout/sidebar.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/valid8/valid8flows.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/resources/templates/templates/valid8/valid8utility.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-boot2/src/test/java/uk/co/utilisoft/poi/PoisxlsApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/web/Browser.java" afterPath="$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/web/Browser.java" />
     </list>
     <ignored path="RMXJavaKit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,7 +1133,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +1173,8 @@
       <file leaf-file-name="Browser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/web/Browser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21901709">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.22542734">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,7 +1195,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.538462">
+            <state vertical-scroll-proportion="0.0">
               <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="125" selection-end-column="29" />
               <folding />
             </state>
@@ -176,7 +1207,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -346,212 +1379,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-boot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-websockets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="testsuite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Browser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMXJavaKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-kit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -568,6 +1395,28 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMXJavaKit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-boot2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -609,6 +1458,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="click.rmx.websockets" />
+      <recent name="click.rmx.debug.server.service" />
+      <recent name="click.rmx.engine.model.interfaces" />
+      <recent name="click.rmx.engine.model.impl" />
+      <recent name="click.rmx.engine.model" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="click.rmx.web" />
       <recent name="click.rmx.debug" />
@@ -625,31 +1481,24 @@
       <recent name="click.rmx.persistence.model" />
       <recent name="click.rmx.persistence.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages" />
-      <recent name="$PROJECT_DIR$/spring-boot/src/main/resources/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ide\projects\rmx\RMXJavaKit\spring-boot2" />
       <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-kit\rmx-core\src\main\java\click\rmx" />
       <recent name="C:\ide\projects\rmx\RMXJavaKit\rmx-kit" />
       <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="click.rmx.config" />
       <recent name="click.rmx.debug" />
       <recent name="click.rmx.persistence.security" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="click.rmx.websockets" />
-      <recent name="click.rmx.debug.server.service" />
-      <recent name="click.rmx.engine.model.interfaces" />
-      <recent name="click.rmx.engine.model.impl" />
-      <recent name="click.rmx.engine.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/webapp/WEB-INF/pages" />
+      <recent name="$PROJECT_DIR$/spring-boot/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.BrowserTest.testLaunch">
@@ -1804,13 +2653,8 @@
       <workItem from="1452105365523" duration="185000" />
       <workItem from="1452157975152" duration="3934000" />
       <workItem from="1452272447223" duration="971000" />
-      <workItem from="1452273467531" duration="202000" />
-    </task>
-    <task id="LOCAL-00039" summary="Issues getting postHTTP to work with Apache NiFi">
-      <created>1447259282996</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1447259282996</updated>
+      <workItem from="1452273467531" duration="212000" />
+      <workItem from="1452274379041" duration="89000" />
     </task>
     <task id="LOCAL-00040" summary="Issues getting postHTTP to work with Apache NiFi">
       <created>1447259478858</created>
@@ -2100,7 +2944,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452273411876</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="rmx-core">
+      <created>1452273672275</created>
+      <option name="number" value="00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1452273672275</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2136,16 +2986,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465685000" />
+    <option name="totallyTimeSpent" value="465784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34854773" sideWeight="0.47496423" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39820743" sideWeight="0.50858366" order="8" side_tool="true" content_ui="tabs" />
@@ -2155,7 +3004,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.49427754" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2171,6 +3020,7 @@
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39820743" sideWeight="0.4914163" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34854773" sideWeight="0.47496423" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41286308" sideWeight="0.47353363" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2289,7 +3139,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2531,7 +3383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2539,7 +3390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2561,7 +3411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2576,7 +3425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2584,7 +3432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2592,11 +3439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#548#549#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2604,9 +3446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2614,7 +3453,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2638,7 +3479,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2660,7 +3503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.538462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="125" selection-end-column="29" />
           <folding />
         </state>
@@ -2676,8 +3519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-core/src/main/java/click/rmx/web/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21901709">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.22542734">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
