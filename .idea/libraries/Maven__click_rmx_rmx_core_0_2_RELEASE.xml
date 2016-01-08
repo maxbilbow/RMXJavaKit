@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: click.rmx:rmx-core:0.2-RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/rmx-core/0.2-RELEASE/rmx-core-0.2-RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core-0.2-RELEASE-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/rmx-core/0.2-RELEASE/rmx-core-0.2-RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core-0.2-RELEASE-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/click/rmx/rmx-core/0.2-RELEASE/rmx-core-0.2-RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

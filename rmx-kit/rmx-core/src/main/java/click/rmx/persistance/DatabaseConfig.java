@@ -1,8 +1,7 @@
-package main.java.uk.co.utilisoft.utilities;
+package click.rmx.persistance;
 
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import uk.co.utilisoft.poi.PoisxlsApplication;
 
 import javax.sql.DataSource;
 
@@ -10,7 +9,10 @@ import javax.sql.DataSource;
  * Created by bilbowm (Max Bilbow) on 30/11/2015.
  */
 public interface DatabaseConfig {
-    String getUrl();
+    default String getUrl()
+    {
+        return getUrl(getJarLocation()+"/db");
+    }
 
     String getUrl(Class<?> clazz);
 
@@ -19,7 +21,7 @@ public interface DatabaseConfig {
     default String getUrl(Object object)
     {
         if (object == null)
-            return getUrl(PoisxlsApplication.class);
+            return getUrl(getJarLocation()+"/db");
         if (object instanceof String)
             return getUrl((String) object);
         else if (object instanceof Class<?>)
@@ -28,6 +30,8 @@ public interface DatabaseConfig {
             throw new RuntimeException(object.toString());
 
     }
+
+    String getJarLocation();
 
     String getDriver();
 

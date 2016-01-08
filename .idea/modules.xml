@@ -16,7 +16,6 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot2/spring-boot2.iml" filepath="$PROJECT_DIR$/spring-boot2/spring-boot2.iml" />
     </modules>
   </component>
 </project>
