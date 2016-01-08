@@ -9,29 +9,7 @@ import javax.sql.DataSource;
  * Created by bilbowm (Max Bilbow) on 30/11/2015.
  */
 public interface DatabaseConfig {
-    default String getUrl()
-    {
-        return getUrl(getJarLocation()+"/db");
-    }
-
-    String getUrl(Class<?> clazz);
-
-    String getUrl(String path);
-
-    default String getUrl(Object object)
-    {
-        if (object == null)
-            return getUrl(getJarLocation()+"/db");
-        if (object instanceof String)
-            return getUrl((String) object);
-        else if (object instanceof Class<?>)
-            return getUrl((Class<?>) object);
-        else
-            throw new RuntimeException(object.toString());
-
-    }
-
-    String getJarLocation();
+    String getUrl();
 
     String getDriver();
 
@@ -40,6 +18,7 @@ public interface DatabaseConfig {
     String getPassword();
 
     String getDialect();
+
 
     default DataSource create()
     {

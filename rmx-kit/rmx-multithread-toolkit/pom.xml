@@ -13,9 +13,10 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.1</version>
+        <version>0.2-RELEASE</version>
     </parent>
        <dependencies>
+
               <dependency>
                      <groupId>click.rmx</groupId>
                      <artifactId>rmx-debug</artifactId>
