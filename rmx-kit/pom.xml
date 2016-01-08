@@ -49,17 +49,14 @@
     <description>RMXJavaKit</description>
 
 <modules>
+    <module>rmx-core</module>
     <module>rmx-debug-logger</module>
     <module>rmx-debug</module>
     <module>rmx-debug-server</module>
     <module>rmx-mvc</module>
     <module>rmx-websockets</module>
 
-    <!--<module>rmx-core</module>-->
-    <!--<module>rmx-math</module>-->
 
-    <!--<module>rmx-persistence</module>-->
-    <!--<module>rmx-multithread-toolkit</module>-->
 
 </modules>
 

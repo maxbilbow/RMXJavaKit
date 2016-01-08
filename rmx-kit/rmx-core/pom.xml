@@ -16,12 +16,10 @@
         <version>0.2-RELEASE</version>
     </parent>
        <dependencies>
-              <dependency>
-                  <groupId>click.rmx</groupId>
-                  <artifactId>rmx-debug</artifactId>
-                  <version>${rmx.version}</version>
-              </dependency>
-
+           <!--<dependency>-->
+               <!--<groupId>org.apache.tomcat.embed</groupId>-->
+               <!--<artifactId>tomcat-embed-core</artifactId>-->
+           <!--</dependency>-->
            <dependency>
                <groupId>junit</groupId>
                <artifactId>junit</artifactId>
@@ -29,57 +27,6 @@
                <scope>test</scope>
            </dependency>
        </dependencies>
-       <build>
-              <finalName>rmx-core-${project.version}</finalName>
-              <plugins>
-                     <!-- Set a JDK compiler level -->
-                     <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-compiler-plugin</artifactId>
-                            <version>3.3</version>
-                            <configuration>
-                                   <source>${java.version}</source>
-                                   <target>${java.version}</target>
 
-                            </configuration>
-                     </plugin>
-                     <plugin>
-                            <groupId>org.springframework.boot</groupId>
-                            <artifactId>spring-boot-maven-plugin</artifactId>
-                     </plugin>
-
-                  <!-- Make this jar executable -->
-                  <plugin>
-                      <groupId>org.apache.maven.plugins</groupId>
-                      <artifactId>maven-jar-plugin</artifactId>
-                      <configuration>
-                          <!-- DO NOT include log4j.properties file in your Jar -->
-                          <excludes>
-                              <exclude>**/log4j.properties</exclude>
-                          </excludes>
-                          <archive>
-                              <manifest>
-                                  <!-- Jar file entry point -->
-                                  <mainClass>click.rmx.core.RMX</mainClass>
-                              </manifest>
-                          </archive>
-                      </configuration>
-                  </plugin>
-              </plugins>
-
-       </build>
-
-    <repositories>
-        <repository>
-            <id>rmx</id>
-            <name>RMXJavaKit</name>
-            <layout>default</layout>
-            <!--<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>-->
-            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
-            <!--<snapshots>-->
-                <!--<enabled>false</enabled>-->
-            <!--</snapshots>-->
-        </repository>
-    </repositories>
 </project>
 

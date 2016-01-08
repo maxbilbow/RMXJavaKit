@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+       <modelVersion>4.0.0</modelVersion>
+
+       <groupId>click.rmx</groupId>
+       <artifactId>rmx-messaging</artifactId>
+
+       <packaging>jar</packaging>
+
+
+       <description>RMXJavaKit Core Bundle</description>
+    <parent>
+        <groupId>click.rmx</groupId>
+        <artifactId>rmx-kit</artifactId>
+        <version>0.2-RELEASE</version>
+    </parent>
+       <dependencies>
+              <dependency>
+                  <groupId>click.rmx</groupId>
+                  <artifactId>rmx-debug</artifactId>
+                  <version>${rmx.version}</version>
+              </dependency>
+
+           <dependency>
+               <groupId>junit</groupId>
+               <artifactId>junit</artifactId>
+               <version>4.12</version>
+               <scope>test</scope>
+           </dependency>
+       </dependencies>
+       <build>
+              <finalName>rmx-core-${project.version}</finalName>
+              <plugins>
+                     <!-- Set a JDK compiler level -->
+                     <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <version>3.3</version>
+                            <configuration>
+                                   <source>${java.version}</source>
+                                   <target>${java.version}</target>
+
+                            </configuration>
+                     </plugin>
+                     <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                     </plugin>
+
+                  <!-- Make this jar executable -->
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-jar-plugin</artifactId>
+                      <configuration>
+                          <!-- DO NOT include log4j.properties file in your Jar -->
+                          <excludes>
+                              <exclude>**/log4j.properties</exclude>
+                          </excludes>
+                          <archive>
+                              <manifest>
+                                  <!-- Jar file entry point -->
+                                  <mainClass>RMX</mainClass>
+                              </manifest>
+                          </archive>
+                      </configuration>
+                  </plugin>
+              </plugins>
+
+       </build>
+
+    <repositories>
+        <repository>
+            <id>rmx</id>
+            <name>RMXJavaKit</name>
+            <layout>default</layout>
+            <!--<url>C:\Users\bilbowm\.m2\RMXJavaKit</url>-->
+            <url>ftp://m2.rmx.click/m2.rmx.click/public</url>
+            <!--<snapshots>-->
+                <!--<enabled>false</enabled>-->
+            <!--</snapshots>-->
+        </repository>
+    </repositories>
+</project>
+
