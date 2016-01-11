@@ -1,8 +1,7 @@
-package main.java.uk.co.utilisoft.utilities;
+package click.rmx.persistance;
 
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import uk.co.utilisoft.poi.PoisxlsApplication;
 
 import javax.sql.DataSource;
 
@@ -12,23 +11,6 @@ import javax.sql.DataSource;
 public interface DatabaseConfig {
     String getUrl();
 
-    String getUrl(Class<?> clazz);
-
-    String getUrl(String path);
-
-    default String getUrl(Object object)
-    {
-        if (object == null)
-            return getUrl(PoisxlsApplication.class);
-        if (object instanceof String)
-            return getUrl((String) object);
-        else if (object instanceof Class<?>)
-            return getUrl((Class<?>) object);
-        else
-            throw new RuntimeException(object.toString());
-
-    }
-
     String getDriver();
 
     String getUsername();
@@ -36,6 +18,7 @@ public interface DatabaseConfig {
     String getPassword();
 
     String getDialect();
+
 
     default DataSource create()
     {

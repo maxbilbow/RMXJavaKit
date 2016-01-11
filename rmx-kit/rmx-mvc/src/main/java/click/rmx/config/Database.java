@@ -1,4 +1,4 @@
-package main.java.uk.co.utilisoft.utilities;
+package click.rmx.config;
 
 /**
  * Created by bilbowm (Max Bilbow) on 30/11/2015.

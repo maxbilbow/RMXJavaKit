@@ -1,7 +1,5 @@
 package click.rmx.multithread;
 
-import click.rmx.debug.ExceptionHandler;
-
 import java.time.Duration;
 import java.time.Instant;
 
