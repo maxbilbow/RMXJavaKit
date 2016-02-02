@@ -30,14 +30,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="rex-spring" />
-        <module name="spring-boot" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-math" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-math" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-engine-ai" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -50,7 +48,6 @@
         <sourceTestOutputDir name="../../aicubi-web/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="aicubi-web" />
       </profile>
       <profile default="false" name="Annotation profile for aicubi-desktop" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -69,21 +66,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-core" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-debug" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-debug" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-engine-math" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-engine-math" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-persistence" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -96,7 +90,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-debug-server" />
       </profile>
       <profile default="false" name="Annotation profile for debug-client" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -110,28 +103,37 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-debug-logger" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-multithread-toolkit" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-multithread-toolkit" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-mvc" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-mvc" />
       </profile>
       <profile default="false" name="Annotation profile for rmx-websockets" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="rmx-websockets" />
+      </profile>
+      <profile default="false" name="Annotation profile for poisxls" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for spring-boot-2" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="spring-boot-2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -139,6 +141,7 @@
       <module name="aicubi-web" target="1.8" />
       <module name="aicubo" target="1.8" />
       <module name="debug-client" target="1.8" />
+      <module name="poisxls" target="1.8" />
       <module name="rmx-core" target="1.8" />
       <module name="rmx-debug" target="1.8" />
       <module name="rmx-debug-logger" target="1.8" />
@@ -154,6 +157,7 @@
       <module name="rmx-persistence" target="1.8" />
       <module name="rmx-websockets" target="1.8" />
       <module name="spring-boot" target="1.8" />
+      <module name="spring-boot-2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

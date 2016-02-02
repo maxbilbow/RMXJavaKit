@@ -69,12 +69,16 @@ public class AbstractEndpointManager implements EnpointManager {
             try {
                 endpoint.broadcast(message);
             } catch (IOException e) {
-                e.printStackTrace();
-
+                onNotificationError(e);
             }
         });
         notificationInProgress = false;
         cleanEndpoints();
+    }
+
+    protected void onNotificationError(IOException e)
+    {
+
     }
 
     @Override

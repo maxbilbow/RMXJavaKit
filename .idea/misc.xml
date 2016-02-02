@@ -25,10 +25,7 @@
         <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/debug-server/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-game-engine/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

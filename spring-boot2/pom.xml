@@ -4,12 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>uk.co.utilisoft</groupId>
-	<artifactId>poisxls</artifactId>
+	<artifactId>spring-boot-2</artifactId>
 	<version>0.1_test01-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>poisxls</name>
-	<description>xls conversion tool</description>
+	<description>rmx spring boot template</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -26,6 +25,12 @@
 
 	<dependencies>
 
+		<!-- ESSENTIAL -->
+
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
 		<!-- POI -->
 
 		<dependency>
