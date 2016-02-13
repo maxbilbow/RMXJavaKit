@@ -1,6 +1,6 @@
 package click.rmx.debug;
 
-import click.rmx.debug.logger.Logger;
+
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,8 +12,8 @@ import java.util.LinkedList;
 
 import static java.nio.file.Files.createDirectories;
 
-
-public class Bugger implements RMXDebugInstance {
+@Deprecated
+public class Bugger{
 	public static Bugger getInstance() {
 		return instance != null ? instance : (instance = new Bugger());
 	}
@@ -27,9 +27,6 @@ public class Bugger implements RMXDebugInstance {
 	private boolean printLogOnExit = false;
 	private boolean printLogImmediately = true;
 	private static Bugger instance;
-
-
-	private Logger logger;
 
 	public boolean willUpdateLogFile() {
 		return updateLogFile;
@@ -93,8 +90,6 @@ public class Bugger implements RMXDebugInstance {
 	}
 	
 	String logMessage(Object o) {
-		if (logger != null)
-			logger.logMessage(o);
 		
 		StackTraceElement trace = Thread.currentThread().getStackTrace()[3];
 		String theClass = trace.getClassName();
@@ -235,33 +230,6 @@ public class Bugger implements RMXDebugInstance {
 
 	public void setPrintLogImmediately(boolean printLogImmediately) {
 		this.printLogImmediately = printLogImmediately;
-	}
-
-
-	/**
-	 *
-	 * @param object
-	 * @param args
-	 * @return
-	 */
-	@Deprecated
-	public static String inspectObject(Object object, String... args)
-	{
-		final ObjectInspector inspector = new ObjectInspector();
-		return inspector.inspectObject(object,args);
-	}
-
-
-	/**
-	 * Use {@Link ObjectInspector#stringify()} instead
-	 * @param array
-	 * @return
-	 */
-	@Deprecated
-	public static String stringify(Object array)
-	{
-		final ObjectInspector inspector = new ObjectInspector();
-		return inspector.stringify(array);
 	}
 
 

@@ -17,6 +17,7 @@ public class Application {
 		Logger.getLogger(Application.class).error("Logging an error");
 
 
+//		new Browser()
 
 	}
 }

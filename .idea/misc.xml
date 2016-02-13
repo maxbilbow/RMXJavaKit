@@ -11,6 +11,7 @@
       <list>
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
         <option value="$PROJECT_DIR$/Templates/SpringStarter/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
       </list>
     </option>
   </component>

@@ -3,6 +3,7 @@ package click.rmx.debug;
 /**
  * Created by bilbowm (Max Bilbow) on 27/11/2015.
  */
+@Deprecated
 public interface Logger {
 
     /**

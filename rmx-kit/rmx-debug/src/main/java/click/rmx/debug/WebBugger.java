@@ -9,22 +9,8 @@ import static click.rmx.debug.Bugger.timestamp;
 /**
  * Created by bilbowm on 13/10/2015.
  */
+@Deprecated
 public class WebBugger {
-
-    public static final String DEBUG_EXCHANGE_NAME = "debug_topic_exchange";
-
-    private static WebBugger instance;
-
-    public static WebBugger getInstance()
-    {
-        return instance != null ? instance : (instance = new WebBugger());
-    }
-
-    private WebBugger()
-    {
-        final WebBugger b = this;
-    }
-
 
     private final LinkedList<String> errors = new LinkedList<>();
 

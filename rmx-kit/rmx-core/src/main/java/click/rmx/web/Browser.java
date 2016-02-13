@@ -1,21 +1,22 @@
 package click.rmx.web;
 
-import click.rmx.os.OSValidator;
+import click.rmx.util.OSValidator;
+import org.apache.log4j.Logger;
 
 import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-//import org.springframework.context.ApplicationContext;
 
 public class Browser {
 
+    private Logger mLogger = Logger.getLogger(Browser.class);
 
     public void launch()
     {
         final String port = System.getProperty("server.port");
-        final String url = "localhost:"+ (port != null ? port : "8080");
+        final String url = "localhost:"+ (port != null ? port : "80");
         launch(url);
     }
 
@@ -42,8 +43,7 @@ public class Browser {
             try {
                 desktop.browse(new URI(url));
             } catch (IOException | URISyntaxException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                mLogger.error(e);
             }
         }else{
             Runtime runtime = Runtime.getRuntime();
@@ -57,7 +57,7 @@ public class Browser {
                 try {
                     runtime.exec(cmd);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    mLogger.error(e);
                 }
             }
             else {
@@ -65,8 +65,7 @@ public class Browser {
                 try {
                     runtime.exec(cmd + url);
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    mLogger.error(e);
                 }
             }
         }

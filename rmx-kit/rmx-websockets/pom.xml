@@ -7,14 +7,17 @@
         <groupId>click.rmx</groupId>
         <version>0.2-RELEASE</version>
     </parent>
+
+
+
     <modelVersion>4.0.0</modelVersion>
 
-    <!--<groupId>uk.co.utilisoft.click.rmx</groupId>-->
     <groupId>click.rmx</groupId>
-    <!--<version>0.2-RELEASE</version>-->
+    <version>0.2.1-SNAPSHOT</version>
     <artifactId>rmx-websockets</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>javax.websocket</groupId>
             <artifactId>javax.websocket-api</artifactId>
