@@ -2,7 +2,6 @@ package click.rmx.debug.logger.service;
 
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
-import click.rmx.debug.cmd.Terminal;
 import click.rmx.debug.logger.LogBuilder;
 import click.rmx.debug.logger.model.Log;
 import click.rmx.debug.logger.model.LogType;

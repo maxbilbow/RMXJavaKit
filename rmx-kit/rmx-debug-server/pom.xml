@@ -127,6 +127,11 @@
         </dependency>
 
         <dependency>
+            <groupId>click.rmx</groupId>
+            <artifactId>rmx-core</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
