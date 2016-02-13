@@ -1,38 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CppTools.Loader" reportImplicitCastToBool="false" reportNameReferencedOnce="false" version="3" compilerSelect="AUTO" />
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core" />
     <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server" />
-    <file type="web" url="file://$PROJECT_DIR$/rmx-kit/rmx-persistence" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/rmx-engine/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-repository/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-persistence/pom.xml" />
-        <option value="$PROJECT_DIR$/aicubi-web/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-core/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-debug/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-multithread-toolkit/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-engine-math/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
-        <option value="$PROJECT_DIR$/aicubo/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-game-engine/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/debug-server/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/debug-client/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot2/pom.xml" />
+        <option value="$PROJECT_DIR$/Templates/SpringStarter/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/aicubo/aicubi-desktop/pom.xml" />
-        <option value="$PROJECT_DIR$/rmx-kit/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -45,10 +21,5 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
-  </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="mySupportsUserInfoFilter" value="true" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/aicubo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/aicubo/aicubi-desktop" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/aicubo/aicubi-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-game-engine" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-ai" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-core/pom.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-game-engine/rmx-engine-mvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Templates/SpringStarter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/ExceptionHandler.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/RMXError.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/RMXException.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/Tests.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-debug/src/main/java/click/rmx/debug/WebBugger.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-math" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-math/pom.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/pom.xml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadGroup.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/src/main/java/click/rmx/multithread/RMXThreadMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-mvc" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rmx-kit/rmx-persistence" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rmx-kit/rmx-websockets" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot2" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

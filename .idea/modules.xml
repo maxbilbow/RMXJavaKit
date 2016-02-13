@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/aicubo/aicubi-web/aicubi-web.iml" filepath="$PROJECT_DIR$/aicubo/aicubi-web/aicubi-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aicubo/aicubo.iml" filepath="$PROJECT_DIR$/aicubo/aicubo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RMXJavaKit.iml" filepath="$PROJECT_DIR$/.idea/RMXJavaKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-core/rmx-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug/rmx-debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-engine-math.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" filepath="$PROJECT_DIR$/rmx-game-engine/rmx-game-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-math/rmx-math.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-multithread-toolkit/rmx-multithread-toolkit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot/spring-boot.iml" filepath="$PROJECT_DIR$/spring-boot/spring-boot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot2/spring-boot-2.iml" filepath="$PROJECT_DIR$/spring-boot2/spring-boot-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Templates/SpringStarter/springstarter.iml" filepath="$PROJECT_DIR$/Templates/SpringStarter/springstarter.iml" />
     </modules>
   </component>
 </project>
