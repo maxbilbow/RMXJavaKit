@@ -39,7 +39,7 @@
         <sqljdbc4.version>4.0</sqljdbc4.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<rmx-kit.version>0.2.1-SNAPSHOT</rmx-kit.version>
+		<rmx-kit.version>0.3-RELEASE</rmx-kit.version>
 		<sqljdbc4.version>4.0</sqljdbc4.version>
 	</properties>
 
@@ -73,11 +73,11 @@
             <version>${rmx-kit.version}</version>
         </dependency>
 
-		<dependency>
-			<groupId>click.rmx</groupId>
-			<artifactId>rmx-debug</artifactId>
-			<version>${rmx-kit.version}</version>
-		</dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.5</version>
+        </dependency>
 
 		<!-- DATABASES -->
 
