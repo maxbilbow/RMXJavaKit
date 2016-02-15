@@ -1,5 +1,6 @@
 package click.rmx.debug.logger.service;
 
+import click.rmx.cmd.Terminal;
 import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
 import click.rmx.debug.logger.LogBuilder;
@@ -14,7 +15,7 @@ import static click.rmx.debug.logger.service.LogService.toHtml;
 /**
  * Created by bilbowm (Max Bilbow) on 20/11/2015.
  */
-public class DebugServerTerminal implements Terminal<String>  {
+public class DebugServerTerminal implements Terminal<String> {
 
 
     private static final String
