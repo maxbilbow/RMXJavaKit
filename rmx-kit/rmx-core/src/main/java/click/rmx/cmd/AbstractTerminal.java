@@ -9,14 +9,14 @@ import java.util.Map;
 /**
  * Created by Max on 22/02/2016.
  */
-public abstract class AbstractTerminal<T,E extends AbstractTerminal> implements Terminal<T>
+public abstract class AbstractTerminal<T,E> implements Terminal<T>
 {
   private Map<String,Command<T>> mCommands = new HashMap<>();
 
   protected Logger mLogger = Logger.getLogger(getClass());
 
   @PostConstruct
-  public abstract void init();
+  public abstract AbstractTerminal init();
 
   public AbstractTerminal<T,E> addCommand(final String aCommand,
                                         final String aDescription,
@@ -44,7 +44,7 @@ public abstract class AbstractTerminal<T,E extends AbstractTerminal> implements 
       }
 
       @Override
-      public <Ex> T invoke(String[] args, String aMessage, Ex aObject)
+      public <Ex> T invoke(String[] args, String aMessage, Ex aObject) throws Exception
       {
         return aExecution.invoke(aMessage, (E) aObject,args);
       }
@@ -60,7 +60,7 @@ public abstract class AbstractTerminal<T,E extends AbstractTerminal> implements 
   {
     try
     {
-      return invoke(cmd, message, args, (E) this);
+      return invoke(cmd.toLowerCase(), message, args, (E) this);
     } catch (Exception aE)
     {
       aE.printStackTrace();
@@ -77,7 +77,7 @@ public abstract class AbstractTerminal<T,E extends AbstractTerminal> implements 
 
   protected T invoke(String cmd, String aMessage, String[] aArgs, E aTerminal) throws Exception
   {
-    if (mCommands.containsKey(cmd.toLowerCase()))
+    if (mCommands.containsKey(cmd))
     {
       return mCommands.get(cmd).invoke(aArgs,aMessage,aTerminal);
     }

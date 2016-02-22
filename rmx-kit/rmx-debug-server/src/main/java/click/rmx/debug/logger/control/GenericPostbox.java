@@ -4,18 +4,18 @@ package click.rmx.debug.logger.control;
 import click.rmx.debug.logger.service.LogService;
 import click.rmx.util.ObjectInspector;
 import org.apache.log4j.Logger;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by Max on 22/02/2016.
  */
-@Controller
+@RestController
 public class GenericPostbox
 {
   @Resource
@@ -25,13 +25,11 @@ public class GenericPostbox
 
   ObjectInspector mInspector = new ObjectInspector();
 
-  @RequestMapping(value = "bol",method = RequestMethod.POST)
-  public @ResponseBody String postBol(
-          @RequestParam("bol") Object aBol)
+  @RequestMapping(value = "/p1", method = RequestMethod.POST)
+  public @ResponseBody Object post(
+          HttpServletRequest post)//, @RequestBody FlowFile body)//@ModelAttribute("body") Object data)
   {
-
-    mLogger.info(mInspector.stringify(aBol));
-
-    return "Thank you!";
+    System.exit(1);
+    return null;
   }
 }

@@ -7,8 +7,13 @@ import click.rmx.debug.logger.model.Log;
 import click.rmx.debug.logger.model.LogType;
 import click.rmx.util.ObjectInspector;
 
-import javax.annotation.PostConstruct;
+import javax.websocket.Session;
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Field;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Map;
 
 import static click.rmx.debug.logger.service.LogService.toHtml;
@@ -18,6 +23,14 @@ import static click.rmx.debug.logger.service.LogService.toHtml;
  */
 public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerminal>
 {
+
+  public static final ThreadLocal<DebugServerTerminal> INSTANCE = new ThreadLocal(){
+    @Override
+    protected Object initialValue()
+    {
+      return new DebugServerTerminal().init();
+    }
+  };
 
   private static final String
           SET_NAME = "setname",
@@ -36,14 +49,9 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
     ((Map) properties.get("userProperties")).put("username", username);
   }
 
-//  @FunctionalInterface
-//  interface Execution<T,Ex>
-//  {
-//    T invoke(String cmd, String[] args, String aMessage, Ex aObject);
-//  }
 
-  @PostConstruct
-  public void init()
+  @Override
+  public DebugServerTerminal init()
   {
     addCommand(SET_NAME, "Change your username", (message,ds,args)->{
       if (message.replace(" ", "").length() == 0)
@@ -81,20 +89,56 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
 
     addCommand(INSPECT, "Inspect an -object if it exists.", (aMessage, aObject, args) -> inspectObject(aMessage, args));
 
-    addCommand(POST,"Post to a url \"/post url\"",(aMessage, aObject, args) -> {
-      return aMessage;
+    addCommand(POST,"Post to a url \"/post url\"",(aMessage, t, args) -> {
+      String url = aMessage == null || aMessage.isEmpty() ? "http://localhost:8081/post":aMessage;
+      URL obj = new URL(url);
+      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+      //add reuqest header
+      con.setRequestMethod("POST");
+      con.setRequestProperty("User-Agent", t.getUsername());
+      con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
+
+      String urlParameters = "sn=C02G8416DRJM&cn=&locale=&caller=&num=12345";
+
+      // Send post request
+      con.setDoOutput(true);
+      DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+      wr.writeBytes(urlParameters);
+      wr.flush();
+      wr.close();
+
+      int responseCode = con.getResponseCode();
+      System.out.println("\nSending 'POST' request to URL : " + url);
+      System.out.println("Post parameters : " + urlParameters);
+      System.out.println("Response Code : " + responseCode);
+
+      BufferedReader in = new BufferedReader(
+              new InputStreamReader(con.getInputStream()));
+      String inputLine;
+      StringBuffer response = new StringBuffer();
+
+      while ((inputLine = in.readLine()) != null) {
+        response.append(inputLine);
+      }
+      in.close();
+
+      //print result
+      return response.toString();
     });
+    return this;
   }
 
 
 
-  private final Map<String, Object> properties;
-  private final LogService service;
+  private Map<String, Object> properties;
+  private LogService service;
 
-  public DebugServerTerminal(Map properties)
+  public DebugServerTerminal setProperties(Map properties)
   {
     this.properties = properties;
     this.service = (LogService) properties.get("logService");
+    return this;
   }
 
 
@@ -221,5 +265,10 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
   public String getHelp()
   {
     return listCommands();
+  }
+
+  public Session getSession()
+  {
+    return (Session) properties.get("session");
   }
 }

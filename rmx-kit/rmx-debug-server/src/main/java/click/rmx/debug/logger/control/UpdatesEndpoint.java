@@ -56,7 +56,7 @@ public class UpdatesEndpoint {
         sessionProperties.put("userProperties", userProperties);
         sessionProperties.put("sessions", userPropertiesStore);
 
-        this.terminal = new DebugServerTerminal(sessionProperties);
+        this.terminal = DebugServerTerminal.INSTANCE.get().setProperties(sessionProperties);
 
         if (service == null) {
             throw new NullPointerException("LogService Was Not initialized");
