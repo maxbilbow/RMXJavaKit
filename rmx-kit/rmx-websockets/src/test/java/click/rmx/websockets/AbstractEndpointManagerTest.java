@@ -18,6 +18,7 @@ public class AbstractEndpointManagerTest implements RMXEndpoint
       System.out.println(aRMXEndpoint + ": " + e);
     }
   };
+
   @Test
   public void notifySubscribers() throws Exception
   {

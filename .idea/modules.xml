@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/rmx-debug-logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-debug-server/rmx-debug-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-kit.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-kit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-mvc/rmx-mvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" filepath="$PROJECT_DIR$/rmx-kit/rmx-websockets/rmx-websockets.iml" />
       <module fileurl="file://$PROJECT_DIR$/Templates/SpringStarter/springstarter.iml" filepath="$PROJECT_DIR$/Templates/SpringStarter/springstarter.iml" />
     </modules>

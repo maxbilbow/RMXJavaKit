@@ -128,6 +128,12 @@
 
         <dependency>
             <groupId>click.rmx</groupId>
+            <artifactId>rmx-debug-logger</artifactId>
+            <version>${rmx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>click.rmx</groupId>
             <artifactId>rmx-core</artifactId>
             <version>${rmx.version}</version>
         </dependency>

@@ -65,6 +65,9 @@
           <element id="archive" name="rmx-debug-0.3-RELEASE.jar">
             <element id="module-output" name="rmx-debug" />
           </element>
+          <element id="archive" name="rmx-debug-logger-0.3-RELEASE.jar">
+            <element id="module-output" name="rmx-debug-logger" />
+          </element>
           <element id="archive" name="rmx-core-0.3-RELEASE.jar">
             <element id="module-output" name="rmx-core" />
           </element>
