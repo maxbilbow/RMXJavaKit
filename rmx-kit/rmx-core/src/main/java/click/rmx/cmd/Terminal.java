@@ -8,6 +8,7 @@ import java.util.Set;
  */
 public interface Terminal<T>
 {
+
   default String cmdPrefix()
   {
     return "/";

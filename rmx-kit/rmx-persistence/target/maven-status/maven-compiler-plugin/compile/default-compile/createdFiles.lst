@@ -1,0 +1,11 @@
+click/rmx/persistence/SQLBeano.class
+click/rmx/persistence/model/Box.class
+click/rmx/persistence/model/RMXPersistence.class
+click/rmx/persistence/SQLType.class
+click/rmx/persistence/BoxController.class
+click/rmx/persistence/RmxSpringApplication.class
+click/rmx/persistence/SQLDescriber.class
+click/rmx/persistence/model/IEntity.class
+click/rmx/persistence/SQLConnectionDescriber.class
+click/rmx/persistence/model/RMXPersistenceObject.class
+click/rmx/persistence/repository/BoxRepository.class

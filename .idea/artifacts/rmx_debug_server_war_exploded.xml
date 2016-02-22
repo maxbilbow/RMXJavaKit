@@ -62,9 +62,11 @@
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
-          <element id="library" level="project" name="Maven: click.rmx:rmx-debug:0.2-RELEASE" />
-          <element id="archive" name="rmx-debug-logger-0.2-RELEASE.jar">
-            <element id="module-output" name="rmx-debug-logger" />
+          <element id="archive" name="rmx-debug-0.3-RELEASE.jar">
+            <element id="module-output" name="rmx-debug" />
+          </element>
+          <element id="archive" name="rmx-core-0.3-RELEASE.jar">
+            <element id="module-output" name="rmx-core" />
           </element>
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" />

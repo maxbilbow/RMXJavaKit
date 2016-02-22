@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.2-RELEASE</version>
+        <version>0.3-RELEASE</version>
     </parent>
 
     <properties>
@@ -185,8 +185,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
 
                 </configuration>
             </plugin>

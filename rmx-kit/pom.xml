@@ -30,7 +30,7 @@
         <!--<jetty-websocket.version>8.1.18.v20150929</jetty-websocket.version>-->
         <javax.websocket-api.version>1.1</javax.websocket-api.version>
 
-        <rmx.version>0.2-RELEASE</rmx.version>
+        <rmx.version>0.3-RELEASE</rmx.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
         <rabbitmq.version>3.5.5</rabbitmq.version>
         <maven-compiler.version>3.3</maven-compiler.version>

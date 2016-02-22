@@ -1,7 +1,6 @@
 package click.rmx.debug.logger.service;
 
 
-import click.rmx.debug.Bugger;
 import click.rmx.debug.RMXException;
 import click.rmx.debug.logger.LogBuilder;
 import click.rmx.debug.logger.coders.LogDecoder;
@@ -9,6 +8,7 @@ import click.rmx.debug.logger.control.UpdatesEndpoint;
 import click.rmx.debug.logger.model.Log;
 import click.rmx.debug.logger.model.LogType;
 import click.rmx.debug.logger.repository.LogRepository;
+import click.rmx.util.ObjectInspector;
 import com.rabbitmq.client.*;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -42,6 +42,8 @@ public class LogService {
     private static LogService instance;
     private Connection connection;
     private Channel channel;
+
+    private ObjectInspector mInspector = new ObjectInspector();
 
     @Resource(name = "logRepository")//(type = LogRepository.class)
     private LogRepository repository;
@@ -240,7 +242,7 @@ public class LogService {
         if (object instanceof String)
             return makeLog(String.valueOf(object));
         if (object.getClass().isArray())
-            return makeLog(Bugger.stringify(object));
+            return makeLog(mInspector.stringify(object));
 //        if (Map.class.isAssignableFrom(object.getClass())) {
 //            Map map = (Map) object;
 //           String log = "Map:";
@@ -250,7 +252,7 @@ public class LogService {
 //            return makeLog(log);
 //        }
 
-        return makeLog(Bugger.inspectObject(object));
+        return makeLog(mInspector.inspectObject(object));
     }
 
     public Log makeLog(String message) {

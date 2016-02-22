@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/Templates/SpringStarter/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-core/pom.xml" />
         <option value="$PROJECT_DIR$/rmx-kit/rmx-websockets/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-server/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug/pom.xml" />
+        <option value="$PROJECT_DIR$/rmx-kit/rmx-debug-logger/pom.xml" />
       </list>
     </option>
   </component>

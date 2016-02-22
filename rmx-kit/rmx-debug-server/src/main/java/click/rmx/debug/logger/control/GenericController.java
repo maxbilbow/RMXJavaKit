@@ -12,18 +12,20 @@ import javax.servlet.http.HttpServletRequest;
  * Created by bilbowm (Max Bilbow) on 25/11/2015.
  */
 @RestController
-@RequestMapping({"/pages","/pages/index"})
-public class GenericController {
+@RequestMapping({"/pages", "/pages/index"})
+public class GenericController
+{
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView get(@RequestParam(value = "p",required = false,defaultValue = "") String page, ModelAndView model, HttpServletRequest request)
-    {
-        model.addObject("contextPath",request.getContextPath());
-        if (page.isEmpty())
-            model.setViewName("live-updates-v2");// "forward:/live/";
-        else
-            model.setViewName(page);
+  @RequestMapping(method = RequestMethod.GET)
+  public ModelAndView get(@RequestParam(value = "p", required = false, defaultValue = "") String page, ModelAndView model, HttpServletRequest request)
+  {
+    model.addObject("contextPath", request.getContextPath());
+    if (page.isEmpty())
+      model.setViewName("live-updates-v2");// "forward:/live/";
+    else
+      model.setViewName(page);
 
-        return model;//new ModelAndView(page);//.getView();
-    }
+    return model;//new ModelAndView(page);//.getView();
+  }
+
 }
