@@ -72,11 +72,9 @@
       <file leaf-file-name="DebugServerTerminal.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/DebugServerTerminal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1070,8 +1068,8 @@
     </configuration>
     <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="click.rmx.debug.logger.Application" />
-      <module name="rmx-debug-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.maxbilbow.spring.Application" />
+      <module name="springstarter" />
       <envs />
       <method />
     </configuration>
@@ -1183,7 +1181,7 @@
       <workItem from="1455532122002" duration="468000" />
       <workItem from="1455545385695" duration="1684000" />
       <workItem from="1455549500898" duration="462000" />
-      <workItem from="1456166684197" duration="14845000" />
+      <workItem from="1456166684197" duration="15123000" />
     </task>
     <task id="LOCAL-00001" summary="Reoganising">
       <created>1455372762834</created>
@@ -1233,7 +1231,25 @@
       <option name="project" value="LOCAL" />
       <updated>1456181671201</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Improved the Terminal and added an AbstractTerminal">
+      <created>1456182778917</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456182778917</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Improved the Terminal and added an AbstractTerminal">
+      <created>1456182832955</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456182832955</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Improved the Terminal and added an AbstractTerminal">
+      <created>1456182847541</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1456182847541</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1269,7 +1285,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24813000" />
+    <option name="totallyTimeSpent" value="25091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1767,11 +1783,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rmx-kit/rmx-debug-server/src/main/java/click/rmx/debug/logger/service/DebugServerTerminal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="211" column="10" selection-start-line="211" selection-start-column="10" selection-end-line="211" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
