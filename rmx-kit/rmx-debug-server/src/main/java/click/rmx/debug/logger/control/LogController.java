@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
@@ -91,27 +90,7 @@ public class LogController
     return get(model, request);// "version2";
   }
 
-  @RequestMapping(value = "/post", method = RequestMethod.POST)
-  public
-  @ResponseBody
-  Object postLog(HttpServletRequest post)//, @RequestBody FlowFile body)//@ModelAttribute("body") Object data)
-  {
-    try
-    {
-      byte[] bytes = new byte[post.getContentLength()];
-      post.getInputStream().read(bytes);
-      service.notifySubscribers(
-              service.makeLog(bytes)
-      );
-      return "Received data with size: " + bytes.length;
-    } catch (Exception e)
-    {
-      service.notifySubscribers(
-              service.makeException(e)
-      );
-      return "Failed to get message: " + e;
-    }
-  }
+
 
 
 }

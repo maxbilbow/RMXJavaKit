@@ -2,6 +2,7 @@ package click.rmx.debug.logger.service;
 
 import click.rmx.cmd.AbstractTerminal;
 import click.rmx.debug.RMXException;
+import click.rmx.debug.logger.Application;
 import click.rmx.debug.logger.LogBuilder;
 import click.rmx.debug.logger.model.Log;
 import click.rmx.debug.logger.model.LogType;
@@ -90,7 +91,8 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
     addCommand(INSPECT, "Inspect an -object if it exists.", (aMessage, aObject, args) -> inspectObject(aMessage, args));
 
     addCommand(POST,"Post to a url \"/post url\"",(aMessage, t, args) -> {
-      String url = aMessage == null || aMessage.isEmpty() ? "http://localhost:8081/post":aMessage;
+      String url = aMessage == null || aMessage.isEmpty() ? "http://localhost:" + Application.PORT
+                                                            + "/post.html":aMessage;
       URL obj = new URL(url);
       HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 

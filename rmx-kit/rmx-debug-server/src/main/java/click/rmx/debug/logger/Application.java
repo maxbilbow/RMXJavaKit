@@ -1,6 +1,7 @@
 package click.rmx.debug.logger;
 
 import click.rmx.debug.logger.config.WebConfig;
+import click.rmx.util.ObjectInspector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Import;
@@ -31,45 +32,54 @@ public class Application implements WebApplicationInitializer
 {
 
 
-    private CharacterEncodingFilter characterEncodingFilter() {
-        CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
-        characterEncodingFilter.setEncoding(StandardCharsets.UTF_8.name());
-        return characterEncodingFilter;
-    }
+  public static String PORT;
+
+  private CharacterEncodingFilter characterEncodingFilter()
+  {
+    CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
+    characterEncodingFilter.setEncoding(StandardCharsets.UTF_8.name());
+    return characterEncodingFilter;
+  }
 
 
-    public static void main(String[] args)
-    {
-        SpringApplication.run(Application.class,args);
-    }
+  public static void main(String[] args)
+  {
+    SpringApplication.run(Application.class, args);
+  }
 
-    @Override
-    public void onStartup(ServletContext servletContext) throws ServletException
-    {
+  @Override
+  public void onStartup(ServletContext servletContext) throws ServletException
+  {
 
-        final AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();//getContext();
+    final AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();//getContext();
 
-        context.register(WebConfig.class);
+    context.register(WebConfig.class);
 
-        servletContext.addListener(new ContextLoaderListener(context)); //ContextLoadListener is here
-        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
-        dispatcher.setLoadOnStartup(1);
-//
+    servletContext.addListener(new ContextLoaderListener(context)); //ContextLoadListener is here
+    ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
+    dispatcher.setLoadOnStartup(1);
+    //
 
-//        ServletRegistration dispatcher = servletContext.getServletRegistration("dispatcherServlet");
-        //Add Mappings
-        dispatcher.addMapping("*.html");
-        dispatcher.addMapping("*.json");
-        dispatcher.addMapping("*.xml");
-        dispatcher.addMapping("*.js");
-        dispatcher.addMapping("*.css");
+    //        ServletRegistration dispatcher = servletContext.getServletRegistration("dispatcherServlet");
+    //Add Mappings
+    dispatcher.addMapping("*.html");
+    dispatcher.addMapping("*.json");
+    dispatcher.addMapping("*.xml");
+    dispatcher.addMapping("*.js");
+    dispatcher.addMapping("*.css");
 
 
-        //Filter mappings (is this needed?)
-//        servletContext.addFilter("characterEncodingFilter", characterEncodingFilter());
+    //Filter mappings (is this needed?)
+    //        servletContext.addFilter("characterEncodingFilter", characterEncodingFilter());
+    PORT = context.getEnvironment().getProperty("httpPort");
+    if (PORT == null)
+      PORT = "8081";
 
-        //for webSockets
-        dispatcher.setInitParameter("dispatchOptionsRequest", "true");
-        dispatcher.setAsyncSupported(true);
-    }
+
+  System.out.println(new ObjectInspector().stringify(System.getProperties()));
+    //for webSockets
+    dispatcher.setInitParameter("dispatchOptionsRequest", "true");
+    dispatcher.setAsyncSupported(true);
+
+  }
 }
