@@ -7,10 +7,25 @@ rmx-persistence/hsqldb/rmxdb.script
 
 .idea/dataSources.xml
 
-.idea/dataSources.xml
-
 rmx-persistence/hsqldb/rmxdb?autoReconnect=true&createDatabaseIfNotExist=true.log
 
-*.log
+.idea
 
-*.log
+#IntelliJ Idea
+*.iml
+*.idea
+
+#Eclipse
+.classpath
+.project
+.settings
+
+#Application Logs
+config/logs
+
+#Maven
+target
+
+#WebApp Artifacts
+src/main/webapp/WEB-INF/lib
+src/main/webapp/WEB-INF/classes
