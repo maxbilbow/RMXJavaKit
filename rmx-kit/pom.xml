@@ -6,20 +6,20 @@
 
     <groupId>click.rmx</groupId>
     <artifactId>rmx-kit</artifactId>
-    <version>0.3-RELEASE</version>
+    <version>0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.3.3.RELEASE</version>
+        <version>1.3.5.RELEASE</version>
         <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
     <properties>
         <!--<javax-servlet.version>3.1.0</javax-servlet.version>-->
         <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
-        <spring-boot.version>1.3.1.RELEASE</spring-boot.version>
+        <spring-boot.version>1.3.5.RELEASE</spring-boot.version>
         <!--<spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>-->
         <!--<spring-data-mongodb.version>1.8.0.RELEASE</spring-data-mongodb.version>-->
         <!--<spring-data-commons.version>1.11.0.RELEASE</spring-data-commons.version>-->
@@ -30,7 +30,7 @@
         <!--<jetty-websocket.version>8.1.18.v20150929</jetty-websocket.version>-->
         <javax.websocket-api.version>1.1</javax.websocket-api.version>
 
-        <rmx.version>0.3-RELEASE</rmx.version>
+        <rmx.version>0.4-SNAPSHOT</rmx.version>
         <javax-vecmath.version>1.5.2</javax-vecmath.version>
         <rabbitmq.version>3.5.5</rabbitmq.version>
         <maven-compiler.version>3.3</maven-compiler.version>
@@ -91,33 +91,33 @@
                 <version>${spring-boot.version}</version>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-source-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<goals>-->
+                            <!--<goal>jar-no-fork</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ftp</artifactId>
-                <version>1.0-alpha-6</version>
-            </extension>
-        </extensions>
+        <!--<extensions>-->
+            <!--<extension>-->
+                <!--<groupId>org.apache.maven.wagon</groupId>-->
+                <!--<artifactId>wagon-ftp</artifactId>-->
+                <!--<version>1.0-alpha-6</version>-->
+            <!--</extension>-->
+        <!--</extensions>-->
     </build>
 
 
     <distributionManagement>
-        <!--<repository>-->
-            <!--<id>m2.maxbilbow.com</id>-->
-            <!--<url>ftp://m2.maxbilbow.com/m2.rmx.click/public</url>-->
-        <!--</repository>-->
+        <repository>
+            <id>m2.maxbilbow.com</id>
+            <url>ftp://m2.maxbilbow.com/m2.rmx.click/public</url>
+        </repository>
         <!--<repository>-->
             <!--<id>nexus</id>-->
             <!--<name>Utilisoft Releases</name>-->

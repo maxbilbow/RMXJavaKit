@@ -1,8 +1,8 @@
 package click.rmx.debug.logger;
 
 
+import com.google.gson.Gson;
 import com.rabbitmq.client.*;
-import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.IOException;
 import java.util.Map;
@@ -54,13 +54,14 @@ public class RMQLogger implements Logger {
 
     @Override
     public void send(Object object, AMQP.BasicProperties properties, String... routing) throws IOException, TimeoutException  {
-        ObjectMapper mapper = new ObjectMapper();
+//        ObjectMapper mapper = new ObjectMapper();
+        final Gson gson = new Gson();
         String json = null;
         try {
-            json = mapper.writeValueAsString(object);
-        } catch (IOException e) {//JSonParseException?
+            json = gson.toJson(object);
+        } catch (Throwable e) {//JSonParseException?
             try {
-                send("Couuld not parse as JSON will use toString() instead.", properties,  "debug.warning");
+                send("Could not parse as JSON will use toString() instead.", properties,  "debug.warning");
             } catch (Exception e1) {
                 e1.printStackTrace();
                 json = object.toString();

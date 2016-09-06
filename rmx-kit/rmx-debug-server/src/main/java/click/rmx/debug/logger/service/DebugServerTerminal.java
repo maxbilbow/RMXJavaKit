@@ -29,7 +29,7 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
     @Override
     protected Object initialValue()
     {
-      return new DebugServerTerminal().init();
+      return new DebugServerTerminal();
     }
   };
 
@@ -51,8 +51,8 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
   }
 
 
-  @Override
-  public DebugServerTerminal init()
+//  @Override
+  public DebugServerTerminal()
   {
     addCommand(SET_NAME, "Change your username", (message,ds,args)->{
       if (message.replace(" ", "").length() == 0)
@@ -128,7 +128,7 @@ public class DebugServerTerminal extends AbstractTerminal<String,DebugServerTerm
       //print result
       return response.toString();
     });
-    return this;
+//    return this;
   }
 
 

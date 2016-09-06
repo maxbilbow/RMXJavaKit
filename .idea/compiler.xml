@@ -17,47 +17,23 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rmx-core" />
+        <module name="rmx-debug" />
+        <module name="rmx-debug-logger" />
+        <module name="rmx-websockets" />
+        <module name="springstarter" />
+      </profile>
       <profile default="false" name="Annotation profile for rmx-debug-server" enabled="true">
         <sourceOutputDir name="src/main/generated" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="rmx-debug-server" />
-      </profile>
-      <profile default="false" name="Annotation profile for springstarter" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="springstarter" />
-      </profile>
-      <profile default="false" name="Annotation profile for rmx-debug" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rmx-debug" />
-      </profile>
-      <profile default="false" name="Annotation profile for rmx-debug-logger" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rmx-debug-logger" />
-      </profile>
-      <profile default="false" name="Annotation profile for rmx-websockets" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rmx-websockets" />
-      </profile>
-      <profile default="false" name="Annotation profile for rmx-core" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="rmx-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -67,8 +43,8 @@
       <module name="rmx-debug-server" target="1.8" />
       <module name="rmx-kit" target="1.8" />
       <module name="rmx-mvc" target="1.8" />
-      <module name="rmx-websockets" target="1.8" />
-      <module name="springstarter" target="1.8" />
+      <module name="rmx-websockets" target="1.9" />
+      <module name="springstarter" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

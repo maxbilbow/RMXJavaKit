@@ -2,7 +2,6 @@ package click.rmx.cmd;
 
 import org.apache.log4j.Logger;
 
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,9 +13,6 @@ public abstract class AbstractTerminal<T,E> implements Terminal<T>
   private Map<String,Command<T>> mCommands = new HashMap<>();
 
   protected Logger mLogger = Logger.getLogger(getClass());
-
-  @PostConstruct
-  public abstract AbstractTerminal init();
 
   public AbstractTerminal<T,E> addCommand(final String aCommand,
                                         final String aDescription,

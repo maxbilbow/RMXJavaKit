@@ -5,7 +5,7 @@
 
     <groupId>click.rmx</groupId>
     <artifactId>rmx-debug-server</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <!--<name>debug-server</name>-->
     <description>Debug Server for detached logging</description>
@@ -13,7 +13,7 @@
     <parent>
         <groupId>click.rmx</groupId>
         <artifactId>rmx-kit</artifactId>
-        <version>0.3-RELEASE</version>
+        <version>0.4-SNAPSHOT</version>
     </parent>
 
     <dependencies>
@@ -104,11 +104,11 @@
             <!--<artifactId>jackson-core</artifactId>-->
             <!--<version>2.3.3</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-            <version>${jackson-mapper-asl.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.codehaus.jackson</groupId>-->
+            <!--<artifactId>jackson-mapper-asl</artifactId>-->
+            <!--<version>${jackson-mapper-asl.version}</version>-->
+        <!--</dependency>-->
         <!--<dependency>-->
             <!--<groupId>com.fasterxml.jackson.core</groupId>-->
             <!--<artifactId>jackson-databind</artifactId>-->
@@ -292,23 +292,23 @@
                     <generatedSourcesDirectory>src/main/generated</generatedSourcesDirectory>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
+            <!--<plugin>-->
+                <!--<artifactId>maven-war-plugin</artifactId>-->
                 <!--<version>2.6</version>-->
-                <configuration>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
+                <!--<configuration>-->
+                    <!--<warSourceDirectory>src/main/webapp</warSourceDirectory>-->
+                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
+                <!--</configuration>-->
 
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>tomcat-maven-plugin</artifactId>
-                <version>1.1</version>
-                <configuration>
-                    <path>/debug-server</path>
-                </configuration>
-            </plugin>
+            <!--</plugin>-->
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.mojo</groupId>-->
+                <!--<artifactId>tomcat-maven-plugin</artifactId>-->
+                <!--<version>1.1</version>-->
+                <!--<configuration>-->
+                    <!--<path>/debug-server</path>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
             <!--<plugin>-->
                 <!--<groupId>org.apache.tomcat.maven</groupId>-->
                 <!--<artifactId>tomcat-maven-plugin</artifactId>-->

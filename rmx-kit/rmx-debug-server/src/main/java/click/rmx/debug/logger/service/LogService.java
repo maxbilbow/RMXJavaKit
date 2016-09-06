@@ -9,12 +9,11 @@ import click.rmx.debug.logger.model.Log;
 import click.rmx.debug.logger.model.LogType;
 import click.rmx.debug.logger.repository.LogRepository;
 import click.rmx.util.ObjectInspector;
+import com.google.gson.Gson;
 import com.rabbitmq.client.*;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.type.TypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -91,10 +90,9 @@ public class LogService {
 
     public void notifySubscribers(Log... logs) {
         for (Log log : logs) {
-            ObjectMapper mapper = new ObjectMapper();
             String message = "Info Failed to send! ";
             try {
-                message = mapper.writeValueAsString(log);
+                message = new Gson().toJson(log);
                 notiftRabbitServer(message);
             } catch (Exception e) {
                 save(makeException(e,"notifySubscribers(Log... logs)"));
@@ -461,11 +459,9 @@ public class LogService {
 
         Map map = null;
         String logString = "";
-        final ObjectMapper mapper = new ObjectMapper();
         if (message.startsWith("{") && message.endsWith("}"))
             try {
-                map = mapper.readValue(message, new TypeReference<Map<String, String>>() {
-                });
+                map = new Gson().fromJson(message, Map.class);
             } catch (Exception e) {
                 errors.add(e);
             } finally {
