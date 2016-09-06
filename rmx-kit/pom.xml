@@ -12,7 +12,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.3.2.RELEASE</version>
+        <version>1.3.3.RELEASE</version>
         <!--<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
     </parent>
 
@@ -115,26 +115,26 @@
 
     <distributionManagement>
         <!--<repository>-->
-            <!--<id>m2.rmx.click</id>-->
-            <!--<url>ftp://m2.rmx.click/m2.rmx.click/public</url>-->
+            <!--<id>m2.maxbilbow.com</id>-->
+            <!--<url>ftp://m2.maxbilbow.com/m2.rmx.click/public</url>-->
         <!--</repository>-->
-        <repository>
-            <id>nexus</id>
-            <name>Utilisoft Releases</name>
-            <url>http://ut-svn-01:8081/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>nexus</id>
-            <name>Utilisoft Snapshots</name>
-            <url>http://ut-svn-01:8081/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <!--<repository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Utilisoft Releases</name>-->
+            <!--<url>http://ut-svn-01:8081/nexus/content/repositories/releases</url>-->
+        <!--</repository>-->
+        <!--<snapshotRepository>-->
+            <!--<id>nexus</id>-->
+            <!--<name>Utilisoft Snapshots</name>-->
+            <!--<url>http://ut-svn-01:8081/nexus/content/repositories/snapshots</url>-->
+        <!--</snapshotRepository>-->
     </distributionManagement>
 
     <repositories>
         <repository>
             <id>rmx-kit</id>
             <name>RMXJavaKit</name>
-            <url>http://m2.rmx.click</url>
+            <url>http://m2.maxbilbow.com</url>
         </repository>
     </repositories>
 </project>
